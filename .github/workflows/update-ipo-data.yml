@@ -67,20 +67,18 @@ jobs:
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
         run: vercel pull --yes --environment=production --token="$VERCEL_TOKEN"
 
+      - name: Build Vercel output
+        if: github.event_name == 'push' || steps.auto-commit.outputs.changes_detected == 'true' || inputs.force_deploy == true
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+        run: vercel build --prod --token="$VERCEL_TOKEN"
+
       - name: Deploy to Vercel
         if: github.event_name == 'push' || steps.auto-commit.outputs.changes_detected == 'true' || inputs.force_deploy == true
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
-        run: |
-          for attempt in 1 2 3; do
-            echo "Vercel deploy attempt $attempt/3"
-            if vercel deploy --prod --yes --no-wait --force --archive=tgz --token="$VERCEL_TOKEN"; then
-              exit 0
-            fi
-            if [ "$attempt" != "3" ]; then
-              sleep 20
-            fi
-          done
-          exit 1
+        run: vercel deploy --prebuilt --prod --yes --no-wait --token="$VERCEL_TOKEN"

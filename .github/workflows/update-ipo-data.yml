@@ -67,29 +67,13 @@ jobs:
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
         run: vercel pull --yes --environment=production --token="$VERCEL_TOKEN"
 
-      - name: Build static Vercel output
+      - name: Build Vercel output
         if: github.event_name == 'push' || steps.auto-commit.outputs.changes_detected == 'true' || inputs.force_deploy == true
-        run: |
-          node <<'NODE'
-          const fs = require("fs");
-          const path = require("path");
-
-          const out = path.join(".vercel", "output");
-          const statics = path.join(out, "static");
-          fs.rmSync(out, { recursive: true, force: true });
-          fs.mkdirSync(statics, { recursive: true });
-
-          for (const name of ["index.html", "数据检查.html", "data", "vendor"]) {
-            fs.cpSync(name, path.join(statics, name), { recursive: true });
-          }
-
-          fs.copyFileSync("数据检查.html", path.join(statics, "数据检查"));
-          fs.writeFileSync(path.join(out, "config.json"), JSON.stringify({
-            version: 3
-          }, null, 2));
-
-          console.log("Static files packed for Vercel:", fs.readdirSync(statics).join(", "));
-          NODE
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+        run: vercel build --prod --token="$VERCEL_TOKEN"
 
       - name: Deploy to Vercel
         if: github.event_name == 'push' || steps.auto-commit.outputs.changes_detected == 'true' || inputs.force_deploy == true

@@ -67,13 +67,43 @@ jobs:
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
         run: vercel pull --yes --environment=production --token="$VERCEL_TOKEN"
 
-      - name: Build Vercel output
+      - name: Build static Vercel output
         if: github.event_name == 'push' || steps.auto-commit.outputs.changes_detected == 'true' || inputs.force_deploy == true
-        env:
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
-        run: vercel build --prod --token="$VERCEL_TOKEN"
+        run: |
+          node <<'NODE'
+          const fs = require("fs");
+          const path = require("path");
+
+          const out = path.join(".vercel", "output");
+          const statics = path.join(out, "static");
+          fs.rmSync(out, { recursive: true, force: true });
+          fs.mkdirSync(statics, { recursive: true });
+
+          for (const name of ["index.html", "数据检查.html", "data", "vendor"]) {
+            fs.cpSync(name, path.join(statics, name), { recursive: true });
+          }
+
+          fs.writeFileSync(path.join(out, "config.json"), JSON.stringify({
+            version: 3,
+            routes: [
+              { src: "/", dest: "/数据检查.html" },
+              {
+                src: "/data/(.*)",
+                headers: { "Cache-Control": "public, max-age=0, must-revalidate" },
+                continue: true
+              },
+              {
+                src: "/vendor/(.*)",
+                headers: { "Cache-Control": "public, max-age=31536000, immutable" },
+                continue: true
+              },
+              { handle: "filesystem" },
+              { src: "/(.*)", dest: "/$1" }
+            ]
+          }, null, 2));
+
+          console.log("Static files packed for Vercel:", fs.readdirSync(statics).join(", "));
+          NODE
 
       - name: Deploy to Vercel
         if: github.event_name == 'push' || steps.auto-commit.outputs.changes_detected == 'true' || inputs.force_deploy == true

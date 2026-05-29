@@ -47,6 +47,7 @@
 1. 运行 `scripts/run_official_update.py`。
 2. 如果 `data/*.js` 有有效变化，自动提交 `Update IPO data snapshot`。
 3. 如果有数据变化、手动运行时选择 `force_deploy=true`，或直接 push 到 `main`，自动部署到 Vercel。
+4. 部署前会把 `index.html`、`数据检查.html`、`data/` 和 `vendor/` 明确打包成 Vercel 静态输出，避免平台误判为空项目。
 
 GitHub Actions 需要以下 Secrets：
 

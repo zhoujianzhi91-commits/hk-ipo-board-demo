@@ -83,23 +83,9 @@ jobs:
             fs.cpSync(name, path.join(statics, name), { recursive: true });
           }
 
+          fs.copyFileSync("数据检查.html", path.join(statics, "数据检查"));
           fs.writeFileSync(path.join(out, "config.json"), JSON.stringify({
-            version: 3,
-            routes: [
-              { src: "/", dest: "/数据检查.html" },
-              {
-                src: "/data/(.*)",
-                headers: { "Cache-Control": "public, max-age=0, must-revalidate" },
-                continue: true
-              },
-              {
-                src: "/vendor/(.*)",
-                headers: { "Cache-Control": "public, max-age=31536000, immutable" },
-                continue: true
-              },
-              { handle: "filesystem" },
-              { src: "/(.*)", dest: "/$1" }
-            ]
+            version: 3
           }, null, 2));
 
           console.log("Static files packed for Vercel:", fs.readdirSync(statics).join(", "));

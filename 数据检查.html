@@ -204,32 +204,6 @@
           <div class="section-empty" id="todayListingEmpty" style="display:none">当前筛选下暂无今日上市股票。</div>
         </div>
       </section>
-      <section class="section-block" id="sectionSuspended">
-        <div class="section-head">
-          <h3>特殊情况 / 延迟上市</h3>
-          <div class="muted" id="suspendedSummary"></div>
-        </div>
-        <div class="table-wrap">
-          <table class="upcoming-table">
-            <thead>
-              <tr>
-                <th>代码 + 名称</th>
-                <th>入场费</th>
-                <th>认购倍数</th>
-                <th>公开手数</th>
-                <th>申购时间</th>
-                <th>中签公布时间</th>
-                <th>暗盘时间</th>
-                <th class="sortable" data-sort="listDate">上市时间<span class="sort-mark" id="sort-listDate-suspended"></span></th>
-                <th>状态</th>
-                <th>操作</th>
-              </tr>
-            </thead>
-            <tbody id="suspendedRows"></tbody>
-          </table>
-          <div class="section-empty" id="suspendedEmpty" style="display:none">当前没有延迟上市或其他特殊情况股票。</div>
-        </div>
-      </section>
       <section class="section-block" id="sectionListed">
         <div class="section-head">
           <h3>已上市新股</h3>
@@ -649,7 +623,6 @@
     const ACTIVE_LIFECYCLE_KEYS = ["subscribing", "pendingDark", "todayDark", "todayListing"];
     const MODULE_SECTIONS = [
       ["sectionSubscribing", "活跃新股", "active"],
-      ["sectionSuspended", "特殊情况", "suspended"],
       ["sectionListed", "已上市新股", "listed"],
     ];
     let currentDisplayLanguage = (() => {
@@ -1526,27 +1499,18 @@ ${mode === "prediction" ? "预测" : "实际"}中签率/手数：${tierCurveMetr
       setTimeout(() => row.classList.remove("row-highlight"), 2200);
     }
     function renderActiveFilterSummary(baseRows, options={}){
-      const quickNavBeforeRects = options.animate ? quickNavButtonRectMap() : null;
-      const moduleButtons = quickNavSectionItems(baseRows).map(([sectionId, label, count]) =>
-        `<button type="button" class="segment-pill module-pill ${count ? "" : "empty"} ${activeQuickSection === sectionId ? "active" : ""}" data-nav-section="${sectionId}">${label}<b>${count}</b></button>`
-      ).join("");
       const hotStocks = hotStocksForQuickNav(baseRows);
       const hotButtons = hotStocks.map((stock, index) => {
         const heat = displayHeatValue(stock, index, hotStocks);
         return `<button type="button" class="segment-pill hot-pill" data-hot-stock="${stock.stockCode}"><span>${stock.stockCode} ${displayStockName(stock)}</span><span class="heat">热度 ${heat}</span></button>`;
       }).join("") || `<span class="muted">暂无活跃热门股票</span>`;
       $("activeFilterSummary").innerHTML = `
-        <div class="quick-nav-row"><span class="quick-nav-title">常用模块</span>${moduleButtons}</div>
         <div class="quick-nav-row"><span class="quick-nav-title">热门关注</span>${hotButtons}</div>
       `;
-      $("activeFilterSummary").querySelectorAll("[data-nav-section]").forEach(button => {
-        button.onclick = () => scrollToSection(button.dataset.navSection);
-      });
       $("activeFilterSummary").querySelectorAll("[data-hot-stock]").forEach(button => {
         button.onclick = () => scrollToStock(button.dataset.hotStock);
       });
       if (currentDisplayLanguage === "tc") applyDisplayLanguage($("activeFilterSummary"));
-      if (options.animate) animateQuickNavReorder(quickNavBeforeRects);
     }
     function renderStockNameCell(s){
       const displayName = displayStockName(s);
@@ -1595,8 +1559,8 @@ ${mode === "prediction" ? "预测" : "实际"}中签率/手数：${tierCurveMetr
         pendingDark: [],
         todayDark: [],
         todayListing: [],
-        suspended: sortedStocks(baseRows.filter(stock => lifecycleSection(stock) === "suspended")),
-        listed: sortedStocks(baseRows.filter(stock => lifecycleSection(stock) === "listed")),
+        listed: sortedStocks(baseRows.filter(stock => lifecycleSection(stock) === "listed"))
+          .concat(sortedStocks(baseRows.filter(stock => lifecycleSection(stock) === "suspended"))),
       };
       const visibleCount = Object.values(lifecycleRows).reduce((sum, rows) => sum + rows.length, 0);
       const listedCount = stocks.filter(s=>lifecycleSection(s)==="listed").length;
@@ -1606,8 +1570,7 @@ ${mode === "prediction" ? "预测" : "实际"}中签率/手数：${tierCurveMetr
       const todayDarkCount = stocks.filter(s=>lifecycleSection(s)==="todayDark").length;
       const pendingAllotmentCount = stocks.filter(s=>["待分配结果", "配发结果待补全"].includes(statusPhase(s))).length;
       const pendingListingCount = stocks.filter(s=>statusPhase(s)==="待上市").length;
-      const suspendedCount = stocks.filter(s=>statusPhase(s)==="延迟上市").length;
-      $("coverage").textContent = `活跃新股 ${activeRows.length} 只（招股中 ${subscribingCount}；待暗盘 ${pendingDarkCount}；今天暗盘 ${todayDarkCount}；今日上市 ${todayListingCount}）；已正式上市 ${listedCount} 只；待分配 ${pendingAllotmentCount} 只；待上市 ${pendingListingCount} 只；延迟上市 ${suspendedCount} 只${activeMonthRange ? `；上市月份 ${activeMonthRange}` : ""}；当前显示 ${visibleCount} 只。`;
+      $("coverage").textContent = `活跃新股 ${activeRows.length} 只（招股中 ${subscribingCount}；待暗盘 ${pendingDarkCount}；今天暗盘 ${todayDarkCount}；今日上市 ${todayListingCount}）；已正式上市 ${listedCount} 只；待分配 ${pendingAllotmentCount} 只；待上市 ${pendingListingCount} 只${activeMonthRange ? `；上市月份 ${activeMonthRange}` : ""}；当前显示 ${visibleCount} 只。`;
       $("updated").textContent = `静态 MVP · 官方数据 + 当前观察 · ${activeRefreshSummary()}`;
       renderActiveFilterSummary(baseRows);
       renderSortMarks();
@@ -1615,20 +1578,17 @@ ${mode === "prediction" ? "预测" : "实际"}中签率/手数：${tierCurveMetr
       $("pendingDarkSummary").textContent = "";
       $("todayDarkSummary").textContent = "";
       $("todayListingSummary").textContent = "";
-      $("suspendedSummary").textContent = lifecycleRows.suspended.length ? `显示 ${lifecycleRows.suspended.length} 只，需等待官方恢复或新安排` : "";
       $("subscribingRows").innerHTML = lifecycleRows.subscribing.map(renderUpcomingRow).join("");
       $("pendingDarkRows").innerHTML = lifecycleRows.pendingDark.map(renderUpcomingRow).join("");
       $("todayDarkRows").innerHTML = lifecycleRows.todayDark.map(renderUpcomingRow).join("");
       $("todayListingRows").innerHTML = "";
-      $("suspendedRows").innerHTML = lifecycleRows.suspended.map(renderUpcomingRow).join("");
       $("listedRows").innerHTML = lifecycleRows.listed.map(renderListedRow).join("");
       $("subscribingEmpty").style.display = lifecycleRows.subscribing.length ? "none" : "block";
       $("pendingDarkEmpty").style.display = lifecycleRows.pendingDark.length ? "none" : "block";
       $("todayDarkEmpty").style.display = lifecycleRows.todayDark.length ? "none" : "block";
       $("todayListingEmpty").style.display = lifecycleRows.todayListing.length ? "none" : "block";
-      $("suspendedEmpty").style.display = lifecycleRows.suspended.length ? "none" : "block";
       $("listedEmpty").style.display = lifecycleRows.listed.length ? "none" : "block";
-      ["subscribingRows", "pendingDarkRows", "todayDarkRows", "todayListingRows", "suspendedRows", "listedRows"].forEach(id => $(id).querySelectorAll("button").forEach(btn => btn.onclick = () => openCompare(btn.dataset.code, "detail")));
+      ["subscribingRows", "pendingDarkRows", "todayDarkRows", "todayListingRows", "listedRows"].forEach(id => $(id).querySelectorAll("button").forEach(btn => btn.onclick = () => openCompare(btn.dataset.code, "detail")));
       applySectionOrder();
       if (currentDisplayLanguage === "tc") applyDisplayLanguage(document.body);
     }
@@ -3388,7 +3348,7 @@ ${mode === "prediction" ? "预测" : "实际"}中签率/手数：${tierCurveMetr
     document.addEventListener("mousemove", e => {
       if (handleInstantChartTip(e)) return;
       const cell = e.target.closest("[data-full]");
-      if (!cell || (!cell.closest("#subscribingRows") && !cell.closest("#pendingDarkRows") && !cell.closest("#todayDarkRows") && !cell.closest("#todayListingRows") && !cell.closest("#suspendedRows") && !cell.closest("#listedRows") && !cell.closest("thead"))) { hoverTip.classList.remove("show"); return; }
+      if (!cell || (!cell.closest("#subscribingRows") && !cell.closest("#pendingDarkRows") && !cell.closest("#todayDarkRows") && !cell.closest("#todayListingRows") && !cell.closest("#listedRows") && !cell.closest("thead"))) { hoverTip.classList.remove("show"); return; }
       const full = cell.dataset.full || "";
       if (!full || (!cell.classList.contains("type-help") && cell.scrollWidth <= cell.clientWidth + 1)) { hoverTip.classList.remove("show"); return; }
       positionHoverTip(e, full, cell);

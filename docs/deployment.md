@@ -32,18 +32,21 @@
 
 ## 自动更新
 
-`Update IPO data` GitHub Actions 会定时运行：
+`Update IPO data` GitHub Actions 会每 15 分钟运行一次。脚本只处理活跃新股候选：
 
-- 港股交易日 09:00-12:45：跟踪招股中的认购倍数、招股资料。
-- 港股交易日 16:15-18:45：跟踪暗盘窗口。
-- 港股交易日 21:00-23:45：跟踪配发结果公告。
-- 周二至周六 00:00-00:45：补抓深夜发布的配发结果。
+- 开启招股。
+- 申购结束 / 待暗盘。
+- 今日暗盘。
+- 今日上市。
+- 暗盘结束 / 待上市。
+
+已上市历史股票和延迟上市 / 特殊情况股票不进入自动刷新；这些内容通过手动修正、提交和部署维护。
 
 自动更新流程：
 
 1. 运行 `scripts/run_official_update.py`。
 2. 如果 `data/*.js` 有有效变化，自动提交 `Update IPO data snapshot`。
-3. 如果有数据变化，或手动运行时选择 `force_deploy=true`，自动部署到 Vercel。
+3. 如果有数据变化、手动运行时选择 `force_deploy=true`，或直接 push 到 `main`，自动部署到 Vercel。
 
 GitHub Actions 需要以下 Secrets：
 

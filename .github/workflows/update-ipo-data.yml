@@ -84,7 +84,7 @@ jobs:
         run: |
           for attempt in 1 2 3; do
             echo "Vercel deploy attempt $attempt/3"
-            if vercel deploy --prebuilt --prod --yes --no-wait --token="$VERCEL_TOKEN"; then
+            if vercel deploy --prod --yes --no-wait --force --archive=tgz --token="$VERCEL_TOKEN"; then
               exit 0
             fi
             if [ "$attempt" != "3" ]; then

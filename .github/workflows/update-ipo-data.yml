@@ -81,4 +81,14 @@ jobs:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
-        run: vercel deploy --prebuilt --prod --yes --no-wait --token="$VERCEL_TOKEN"
+        run: |
+          for attempt in 1 2 3; do
+            echo "Vercel deploy attempt $attempt/3"
+            if vercel deploy --prebuilt --prod --yes --no-wait --token="$VERCEL_TOKEN"; then
+              exit 0
+            fi
+            if [ "$attempt" != "3" ]; then
+              sleep 20
+            fi
+          done
+          exit 1

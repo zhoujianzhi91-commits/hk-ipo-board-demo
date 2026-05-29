@@ -2,6 +2,12 @@ name: Update IPO data
 
 on:
   workflow_dispatch:
+    inputs:
+      force_deploy:
+        description: "Deploy to Vercel even when no data file changed"
+        required: false
+        default: false
+        type: boolean
   schedule:
     # Hong Kong time 09:00-12:45 on weekdays: active subscription windows.
     - cron: "*/15 1-4 * * 1-5"
@@ -44,7 +50,28 @@ jobs:
         run: python scripts/run_official_update.py
 
       - name: Commit data changes
+        id: auto-commit
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Update IPO data snapshot"
           file_pattern: "data/*.js"
+
+      - name: Install Vercel CLI
+        if: steps.auto-commit.outputs.changes_detected == 'true' || inputs.force_deploy == true
+        run: npm install -g vercel@latest
+
+      - name: Pull Vercel project settings
+        if: steps.auto-commit.outputs.changes_detected == 'true' || inputs.force_deploy == true
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+        run: vercel pull --yes --environment=production --token="$VERCEL_TOKEN"
+
+      - name: Deploy to Vercel
+        if: steps.auto-commit.outputs.changes_detected == 'true' || inputs.force_deploy == true
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+        run: vercel deploy --prod --yes --token="$VERCEL_TOKEN"

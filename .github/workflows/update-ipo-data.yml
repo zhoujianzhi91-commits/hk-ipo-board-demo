@@ -23,6 +23,7 @@ permissions:
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+  VERCEL_TELEMETRY_DISABLED: "1"
 
 concurrency:
   group: ipo-data-update
@@ -58,7 +59,7 @@ jobs:
 
       - name: Install Vercel CLI
         if: steps.auto-commit.outputs.changes_detected == 'true' || inputs.force_deploy == true
-        run: npm install -g vercel@latest
+        run: npm install -g vercel@54.6.1
 
       - name: Pull Vercel project settings
         if: steps.auto-commit.outputs.changes_detected == 'true' || inputs.force_deploy == true
@@ -68,10 +69,18 @@ jobs:
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
         run: vercel pull --yes --environment=production --token="$VERCEL_TOKEN"
 
+      - name: Build Vercel output
+        if: steps.auto-commit.outputs.changes_detected == 'true' || inputs.force_deploy == true
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+        run: vercel build --prod --token="$VERCEL_TOKEN"
+
       - name: Deploy to Vercel
         if: steps.auto-commit.outputs.changes_detected == 'true' || inputs.force_deploy == true
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
-        run: vercel deploy --prod --yes --no-wait --token="$VERCEL_TOKEN"
+        run: vercel deploy --prebuilt --prod --yes --no-wait --token="$VERCEL_TOKEN"

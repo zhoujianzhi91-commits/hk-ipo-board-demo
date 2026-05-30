@@ -1,6 +1,6 @@
 # 部署说明
 
-当前项目先按静态网站部署，入口是 `数据检查.html`，根路径 `/` 会跳到这个页面。
+当前项目先按静态网站部署，产品名为 `hk-ipo`，入口文件是 `hk-ipo.html`。旧 `数据检查.html` 只保留为跳转兼容页。
 
 ## 推荐首发
 
@@ -13,12 +13,13 @@
 
 当前生产地址：
 
-- https://hk-ipo-dashboard-zhoujianzhi91-commits-projects.vercel.app/数据检查
+- https://hk-ipo-dashboard-zhoujianzhi91-commits-projects.vercel.app/hk-ipo
 
 ## 需要部署的静态资源
 
 - `index.html`
-- `数据检查.html`
+- `hk-ipo.html`
+- `数据检查.html`（旧入口跳转页）
 - `data/*.js`
 - `data/*.xlsx`
 - `vendor/lightweight-charts.standalone.production.js`

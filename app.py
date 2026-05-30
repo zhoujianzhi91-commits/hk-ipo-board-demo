@@ -15,9 +15,10 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parent
-HTML_FILE = ROOT / "数据检查.html"
+HTML_FILE = ROOT / "hk-ipo.html"
 HKEX_TITLE_SEARCH_URL = "https://www1.hkexnews.hk/search/titlesearch.xhtml?lang=zh"
 HKEX_NEW_LISTING_INFO_URL = "https://www2.hkexnews.hk/new-listings/new-listing-information/main-board?sc_lang=zh-HK"
+HKEX_PREDEFINED_ALLOTMENT_URL = "https://www1.hkexnews.hk/search/predefineddoc.xhtml?lang=zh&predefineddocuments=4"
 OFFICIAL_UPDATES_FILE = ROOT / "data" / "official-updates-2026.js"
 OFFICIAL_UPDATES_GLOBAL = "window.OFFICIAL_UPDATES_2026"
 OFFICIAL_UPDATE_API_VERSION = "2026-05-18-title-search-v4-live-subscription"
@@ -328,6 +329,9 @@ def post_title_search(stock_id=None, t1code="10000", t2gcode="5", t2code="15100"
 
 
 def find_allotment_notice(code, stock_id=None):
+    predefined = fetch_predefined_allotment_notices().get(str(code).zfill(5))
+    if predefined:
+        return {"status": "found", **predefined}
     url = hkex_search_url(code, stock_id)
     if not stock_id:
         return {"status": "manual_review", "searchUrl": url, "title": "缺少披露易 stockId，请人工打开搜索页确认。"}
@@ -447,6 +451,40 @@ def parse_title_search_entries(html):
 
 def clean_title_search_stock_name(value):
     return re.sub(r"^股份簡稱\s*:\s*", "", value or "").strip()
+
+
+def parse_predefined_allotment_entries(html):
+    entries = {}
+    for row_html in re.findall(r"<tr[^>]*>([\s\S]*?)</tr>", html, re.I):
+        if ".pdf" not in row_html.lower():
+            continue
+        row_text = strip_html(row_html)
+        if not re.search(r"配發結果|分配結果|配发结果|allotment results|basis of allocation", row_text, re.I):
+            continue
+        cells = re.findall(r"<td[^>]*>([\s\S]*?)</td>", row_html, re.I)
+        code_source = strip_html(cells[1]) if len(cells) >= 2 else row_text
+        code_match = re.search(r"\b(\d{4,5})\b", code_source)
+        if not code_match:
+            continue
+        doc_cell = cells[3] if len(cells) >= 4 else row_html
+        link_match = re.search(r'<a\s+href="([^"]+\.pdf[^"]*)"[^>]*>([\s\S]*?)</a>', doc_cell, flags=re.I)
+        if not link_match:
+            continue
+        href, link_text = link_match.groups()
+        pdf = href if href.startswith("http") else urllib.parse.urljoin("https://www1.hkexnews.hk", href)
+        code = code_match.group(1).zfill(5)
+        entries[code] = {
+            "code": code,
+            "name": clean_title_search_stock_name(strip_html(cells[2]) if len(cells) >= 3 else ""),
+            "title": row_text or strip_html(link_text),
+            "url": pdf,
+            "searchUrl": HKEX_PREDEFINED_ALLOTMENT_URL,
+        }
+    return entries
+
+
+def fetch_predefined_allotment_notices():
+    return parse_predefined_allotment_entries(fetch_text(HKEX_PREDEFINED_ALLOTMENT_URL))
 
 
 def is_global_offering_entry(entry):
@@ -705,7 +743,225 @@ def prelisting_source_url(row):
     return row.get("prospectus") or row.get("announcement")
 
 
-def parse_basis_rows(text):
+def normalized_basis_lines(segment):
+    lines = []
+    for line in segment.splitlines():
+        clean = re.sub(r"\s+", " ", line).strip()
+        if not clean:
+            continue
+        lines.append(clean)
+    return lines
+
+
+def is_integer_line(value):
+    return bool(re.fullmatch(r"\d[\d,]*", value or ""))
+
+
+def is_percent_line(value):
+    return bool(re.fullmatch(r"\d+(?:\.\d+)?%", value or ""))
+
+
+def is_next_entry_start(lines, index):
+    return index + 1 < len(lines) and is_integer_line(lines[index]) and is_integer_line(lines[index + 1])
+
+
+def vertical_basis_entries(segment):
+    lines = normalized_basis_lines(segment)
+    entries = []
+    i = 0
+    while i < len(lines):
+        shares = None
+        valid = None
+        initial_basis = ""
+        if is_next_entry_start(lines, i):
+            shares = parse_int(lines[i])
+            valid = parse_int(lines[i + 1])
+            i += 2
+        elif is_integer_line(lines[i]) and i + 1 < len(lines):
+            combined_match = re.match(r"^(\d[\d,]*)\s+(.+)$", lines[i + 1])
+            if combined_match:
+                shares = parse_int(lines[i])
+                valid = parse_int(combined_match.group(1))
+                initial_basis = combined_match.group(2).strip()
+                i += 2
+            else:
+                i += 1
+                continue
+        else:
+            i += 1
+            continue
+        basis_lines = [initial_basis] if initial_basis else []
+        percent = None
+        while i < len(lines):
+            line = lines[i]
+            if is_percent_line(line):
+                percent = parse_float(line.rstrip("%"))
+                i += 1
+                break
+            if is_next_entry_start(lines, i):
+                break
+            if line.startswith("總計") or line.startswith("截至本公告日期"):
+                break
+            basis_lines.append(line)
+            i += 1
+        basis = re.sub(r"\s+", "", "".join(basis_lines))
+        if basis:
+            entries.append({
+                "sharesApplied": shares,
+                "validApplications": valid,
+                "basis": basis,
+                "approxPercent": percent,
+            })
+    return entries
+
+
+def parse_basis_entry_allocation(entry):
+    basis = entry["basis"]
+    valid = entry["validApplications"]
+    zero_match = re.fullmatch(r"0股H?股(?:股份)?", basis)
+    if zero_match:
+        return {
+            "successfulApplications": 0,
+            "baseAllottedShares": 0,
+            "baseSuccessfulApplications": 0,
+            "extraLotteryShares": None,
+            "extraLotteryWinners": None,
+            "sharesAllotted": 0,
+            "guaranteedShares": 0,
+        }
+
+    guaranteed_extra = re.search(
+        r"([\d,]+)\s*股(?:H?股)?(?:股份)?[，,]?(?:另加|加上)([\d,]+)\s*名(?:申請人)?(?:中|中的)(?:有)?([\d,]+)\s*名獲(?:分配|配發|發|得)額外([\d,]+)\s*股(?:H?股)?(?:股份)?",
+        basis,
+    )
+    if guaranteed_extra:
+        base, listed_valid, winners, extra = guaranteed_extra.groups()
+        base_shares = parse_int(base)
+        extra_shares = parse_int(extra)
+        winner_count = parse_int(winners)
+        return {
+            "successfulApplications": valid,
+            "baseAllottedShares": base_shares,
+            "baseSuccessfulApplications": valid,
+            "extraLotteryShares": extra_shares,
+            "extraLotteryWinners": winner_count,
+            "sharesAllotted": valid * base_shares + winner_count * extra_shares,
+            "guaranteedShares": base_shares,
+        }
+
+    lottery = re.search(
+        r"([\d,]+)\s*名(?:申請人)?(?:中|中的)(?:有)?([\d,]+)\s*名(?:將)?獲(?:分配|配發|發|得)([\d,]+)\s*股(?:H?股)?(?:股份)?",
+        basis,
+    )
+    if lottery:
+        listed_valid, winners, allotted = lottery.groups()
+        winner_count = parse_int(winners)
+        allotted_shares = parse_int(allotted)
+        return {
+            "successfulApplications": winner_count,
+            "baseAllottedShares": allotted_shares,
+            "baseSuccessfulApplications": winner_count,
+            "extraLotteryShares": None,
+            "extraLotteryWinners": None,
+            "sharesAllotted": winner_count * allotted_shares,
+            "guaranteedShares": 0,
+        }
+
+    guaranteed = re.fullmatch(r"([\d,]+)\s*股(?:H?股)?(?:股份)?", basis)
+    if guaranteed:
+        allotted_shares = parse_int(guaranteed.group(1))
+        return {
+            "successfulApplications": valid,
+            "baseAllottedShares": allotted_shares,
+            "baseSuccessfulApplications": valid,
+            "extraLotteryShares": None,
+            "extraLotteryWinners": None,
+            "sharesAllotted": valid * allotted_shares,
+            "guaranteedShares": allotted_shares,
+        }
+
+    return None
+
+
+def group_for_shares(shares, explicit_group, base_stock):
+    if explicit_group:
+        return explicit_group
+    summary = (base_stock or {}).get("applicationSummary") or {}
+    b_min = positive_number(summary.get("bMinShares"))
+    if b_min and shares >= b_min:
+        return "B"
+    return "A"
+
+
+def combine_vertical_basis_entries(entries, explicit_group=None, base_stock=None):
+    rows = []
+    pending = None
+    for entry in entries:
+        allocation = parse_basis_entry_allocation(entry)
+        if not allocation:
+            continue
+        shares = entry["sharesApplied"]
+        if not pending or pending["sharesApplied"] != shares:
+            if pending:
+                rows.append(pending)
+            pending = {
+                "group": group_for_shares(shares, explicit_group, base_stock),
+                "sharesApplied": shares,
+                "validApplications": 0,
+                "baseAllottedShares": 0,
+                "baseSuccessfulApplications": 0,
+                "extraLotteryShares": None,
+                "extraLotteryWinners": None,
+                "successfulApplications": 0,
+                "sharesAllotted": 0,
+                "guaranteedShares": 0,
+                "approxPercent": entry.get("approxPercent"),
+                "rawBasis": "",
+            }
+        pending["validApplications"] += entry["validApplications"]
+        pending["successfulApplications"] += allocation["successfulApplications"]
+        pending["baseSuccessfulApplications"] += allocation["baseSuccessfulApplications"]
+        pending["sharesAllotted"] = max(pending["sharesAllotted"], allocation["baseAllottedShares"])
+        pending["baseAllottedShares"] = max(pending["baseAllottedShares"], allocation["baseAllottedShares"])
+        pending["guaranteedShares"] = max(pending["guaranteedShares"], allocation["guaranteedShares"])
+        if allocation["extraLotteryShares"]:
+            pending["extraLotteryShares"] = allocation["extraLotteryShares"]
+            pending["extraLotteryWinners"] = (pending["extraLotteryWinners"] or 0) + (allocation["extraLotteryWinners"] or 0)
+        if pending["approxPercent"] is None and entry.get("approxPercent") is not None:
+            pending["approxPercent"] = entry["approxPercent"]
+        pending["rawBasis"] = "；".join(part for part in (pending["rawBasis"], entry["basis"]) if part)
+    if pending:
+        rows.append(pending)
+    for row in rows:
+        if row["approxPercent"] is None and row["sharesApplied"] and row["validApplications"]:
+            row["approxPercent"] = round(row["sharesAllotted"] / (row["sharesApplied"] * row["validApplications"]) * 100, 2)
+    return rows
+
+
+def parse_vertical_basis_rows(text, base_stock=None):
+    start = text.find("香港公開發售的分配基準")
+    if start < 0:
+        return []
+    end_candidates = [
+        index for index in (
+            text.find("截至本公告日期", start),
+            text.find("遵守上市規則", start),
+            text.find("其他╱額外資料", start),
+        ) if index > start
+    ]
+    end = min(end_candidates) if end_candidates else len(text)
+    segment = text[start:end]
+    a_index = segment.find("甲組")
+    b_index = segment.find("乙組")
+    if a_index >= 0 and b_index > a_index:
+        return (
+            combine_vertical_basis_entries(vertical_basis_entries(segment[a_index:b_index]), "A", base_stock)
+            + combine_vertical_basis_entries(vertical_basis_entries(segment[b_index:]), "B", base_stock)
+        )
+    return combine_vertical_basis_entries(vertical_basis_entries(segment), None, base_stock)
+
+
+def parse_basis_rows(text, base_stock=None):
     compact = clean_pdf_text(text)
     a_start = compact.find("甲組")
     b_start = compact.find("乙組", a_start + 1)
@@ -715,20 +971,20 @@ def parse_basis_rows(text):
     if table_end < 0:
         table_end = len(compact)
     if a_start < 0 or b_start < 0 or table_end < 0:
-        return []
+        return parse_vertical_basis_rows(text, base_stock)
 
     rows = []
     for group, start, end in (("A", a_start, b_start), ("B", b_start, table_end)):
         segment = compact[start:end]
         matches = []
         simple_pattern = re.compile(
-            r"([\d,]+)\s+([\d,]+)\s+([\d,]+)\s*名申請人中(?:有)?\s*([\d,]+)\s*名(?:將)?獲(?:配發|發)\s*([\d,]+)\s*股H\s*股(?:股份)?\s+([\d.]+)%"
+            r"([\d,]+)\s+([\d,]+)\s+([\d,]+)\s*名(?:申請人)?(?:中|中的)(?:有)?\s*([\d,]+)\s*名(?:將)?獲(?:配發|分配|發|得)\s*([\d,]+)\s*股(?:H\s*股)?(?:股份)?\s+([\d.]+)%"
         )
         extra_pattern = re.compile(
-            r"([\d,]+)\s+([\d,]+)\s+([\d,]+)\s*股H\s*股(?:股份)?[，,]?\s*(?:加上|另加)\s*([\d,]+)\s*名申請人中(?:有)?\s*([\d,]+)\s*名(?:將)?獲(?:配發|發)\s*額外\s*([\d,]+)\s*股H\s*股(?:股份)?\s+([\d.]+)%"
+            r"([\d,]+)\s+([\d,]+)\s+([\d,]+)\s*股(?:H\s*股)?(?:股份)?[，,]?\s*(?:加上|另加)\s*([\d,]+)\s*名(?:申請人)?(?:中|中的)(?:有)?\s*([\d,]+)\s*名(?:將)?獲(?:配發|分配|發|得)\s*額外\s*([\d,]+)\s*股(?:H\s*股)?(?:股份)?\s+([\d.]+)%"
         )
         guaranteed_pattern = re.compile(
-            r"([\d,]+)\s+([\d,]+)\s+([\d,]+)\s*股H\s*股(?:股份)?\s+([\d.]+)%"
+            r"([\d,]+)\s+([\d,]+)\s+([\d,]+)\s*股(?:H\s*股)?(?:股份)?\s+([\d.]+)%"
         )
         for match in simple_pattern.finditer(segment):
             matches.append(("simple", match.start(), match))
@@ -786,7 +1042,8 @@ def parse_basis_rows(text):
                     "approxPercent": parse_float(pct),
                     "rawBasis": f"{allotted}股H股股份",
                 })
-    return rows
+    vertical_rows = parse_vertical_basis_rows(text, base_stock)
+    return vertical_rows if len(vertical_rows) > len(rows) else rows
 
 
 def parse_group_totals(text):
@@ -822,10 +1079,10 @@ def extract_minimal_allotment_record(base_stock, pdf_url, text_path, text):
     final_percent = parse_final_public_offer_percent(text)
     public_offer_multiple = first_number_after_any(text, ["認購水平", "認購額"], 80)
 
-    offer_price_value = parse_float(offer_price) if offer_price else None
+    offer_price_value = parse_float(offer_price) if offer_price else positive_number(base_stock.get("offerPrice"))
     issued_shares_value = parse_int(issued_shares) if issued_shares else None
-    basis_rows = parse_basis_rows(text)
-    shares_per_lot = min((row["sharesApplied"] for row in basis_rows if row["group"] == "A"), default=None)
+    basis_rows = parse_basis_rows(text, base_stock)
+    shares_per_lot = min((row["sharesApplied"] for row in basis_rows if row["group"] == "A"), default=None) or base_stock.get("sharesPerLot")
 
     record = {
         "stockCode": code,
@@ -837,7 +1094,7 @@ def extract_minimal_allotment_record(base_stock, pdf_url, text_path, text):
         "sharesPerLot": shares_per_lot,
         "totalOfferShares": parse_int(total_offer_shares) if total_offer_shares else None,
         "marketCap": issued_shares_value * offer_price_value if issued_shares_value and offer_price_value else None,
-        "publicOfferSharesBefore": parse_int(public_before) if public_before else None,
+        "publicOfferSharesBefore": parse_int(public_before) if public_before else base_stock.get("publicOfferSharesBefore"),
         "publicOfferReallocatedShares": parse_int(public_reallocated) if public_reallocated else None,
         "publicOfferSharesFinal": parse_int(public_final) if public_final else None,
         "publicOfferMultiple": parse_float(public_offer_multiple) if public_offer_multiple else None,
@@ -852,6 +1109,8 @@ def extract_minimal_allotment_record(base_stock, pdf_url, text_path, text):
             "extractedText": text_path,
             "title": "官方配發結果 PDF",
         },
+        "applicationSummary": base_stock.get("applicationSummary"),
+        "applicationTiers": base_stock.get("applicationTiers"),
         "basisOfAllocation": basis_rows,
     }
     return {key: value for key, value in record.items() if value is not None}
@@ -912,6 +1171,12 @@ def base_stock_from_official(stock):
         "listDate": stock.get("listDate", ""),
         "mechanism": stock.get("mechanism", ""),
         "listingType": stock.get("listingType", ""),
+        "offerPrice": stock.get("offerPrice"),
+        "sharesPerLot": stock.get("sharesPerLot"),
+        "totalOfferShares": stock.get("totalOfferShares"),
+        "publicOfferSharesBefore": stock.get("publicOfferSharesBefore"),
+        "applicationSummary": stock.get("applicationSummary"),
+        "applicationTiers": stock.get("applicationTiers"),
         "stockId": stock_ids.get(code),
     }
 
@@ -994,9 +1259,14 @@ def write_official_update_record(record):
 
 def write_official_update_records(records):
     payload = read_official_updates()
-    incoming_codes = {record["stockCode"] for record in records}
+    existing_by_code = {stock.get("stockCode"): stock for stock in payload.get("stocks", []) if stock.get("stockCode")}
+    merged_records = [
+        merge_missing_stock_fields(record, existing_by_code.get(record.get("stockCode")))
+        for record in records
+    ]
+    incoming_codes = {record["stockCode"] for record in merged_records}
     stocks = [stock for stock in payload.get("stocks", []) if stock.get("stockCode") not in incoming_codes]
-    stocks.extend(records)
+    stocks.extend(merged_records)
     payload = {
         "generatedAt": datetime.now().isoformat(timespec="seconds"),
         "stocks": sorted(stocks, key=lambda stock: stock.get("stockCode", "")),
@@ -1147,11 +1417,13 @@ def build_check_official_updates_response():
                     "searchUrl": HKEX_NEW_LISTING_INFO_URL,
                 }
             elif listing_row and not stock.get("stockId"):
-                result = {
-                    "status": "not_found",
-                    "title": "披露易新上市资料暂未列出股份配发结果",
-                    "searchUrl": HKEX_NEW_LISTING_INFO_URL,
-                }
+                result = find_allotment_notice(stock["code"], stock.get("stockId"))
+                if result.get("status") != "found":
+                    result = {
+                        "status": "not_found",
+                        "title": "披露易新上市资料暂未列出股份配发结果",
+                        "searchUrl": HKEX_NEW_LISTING_INFO_URL,
+                    }
             else:
                 result = find_allotment_notice(stock["code"], stock.get("stockId"))
             if result.get("status") == "found":
@@ -1197,6 +1469,12 @@ class Handler(SimpleHTTPRequestHandler):
         self.send_header("Access-Control-Allow-Methods", "POST, OPTIONS")
         self.send_header("Access-Control-Allow-Headers", "Content-Type")
         super().end_headers()
+
+    def do_GET(self):
+        clean_path = urllib.parse.urlparse(self.path).path.rstrip("/")
+        if clean_path in ("", "/hk-ipo"):
+            self.path = "/hk-ipo.html"
+        super().do_GET()
 
     def do_OPTIONS(self):
         self.send_response(204)
@@ -1269,10 +1547,10 @@ def lan_ipv4_addresses():
 
 
 def serving_urls(host, port, lan_ips=None):
-    urls = [f"http://127.0.0.1:{port}/数据检查.html"]
+    urls = [f"http://127.0.0.1:{port}/hk-ipo"]
     if host == "0.0.0.0":
         for ip in lan_ips if lan_ips is not None else lan_ipv4_addresses():
-            urls.append(f"http://{ip}:{port}/数据检查.html")
+            urls.append(f"http://{ip}:{port}/hk-ipo")
     return urls
 
 

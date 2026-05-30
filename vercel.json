@@ -4,7 +4,7 @@
   "rewrites": [
     {
       "source": "/",
-      "destination": "/数据检查.html"
+      "destination": "/hk-ipo.html"
     }
   ],
   "headers": [

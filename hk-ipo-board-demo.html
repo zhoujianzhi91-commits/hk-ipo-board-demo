@@ -404,7 +404,11 @@
       height:100%;
       min-height:0;
       min-width:0;
-      overflow:hidden;
+      overflow-x:hidden;
+      overflow-y:auto;
+      scrollbar-gutter:stable;
+      overscroll-behavior:contain;
+      -webkit-overflow-scrolling:touch;
     }
     .detail-hero{
       flex:0 0 auto;
@@ -573,14 +577,16 @@
       font-weight:750;
     }
     .detail-body{
-      flex:1 1 auto;
-      min-height:0;
+      flex:0 0 auto;
+      min-height:auto;
       display:grid;
       grid-template-columns:minmax(0,1.18fr) minmax(320px,.82fr);
       gap:16px;
       padding:16px;
       background:#f8efe6;
-      overflow:hidden;
+      overflow-x:visible;
+      overflow-y:visible;
+      align-content:start;
     }
     body.theme-live .detail-body{
       background:#f5e7d6;

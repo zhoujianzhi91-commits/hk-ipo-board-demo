@@ -9,25 +9,31 @@
     *{box-sizing:border-box}
     body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
     header{min-height:76px;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:18px;background:linear-gradient(180deg,#fff 0%,#fbfdff 100%);border-bottom:1px solid var(--line)}
-    .brand{display:flex;align-items:center;gap:12px;min-width:0}.brand-mark{position:relative;flex:0 0 auto;width:38px;height:38px;border-radius:10px;background:#111827;box-shadow:0 10px 22px rgba(15,23,42,.16),inset 0 0 0 1px rgba(255,255,255,.12)}.brand-mark::before{content:"";position:absolute;left:9px;right:9px;bottom:10px;height:14px;border-left:3px solid #60a5fa;border-bottom:3px solid #60a5fa;transform:skew(-18deg)}.brand-mark::after{content:"";position:absolute;right:8px;top:9px;width:7px;height:7px;border-radius:50%;background:#34d399;box-shadow:-10px 11px 0 -2px #f59e0b}.brand-copy{min-width:0}.brand-copy h1{display:flex;align-items:baseline;gap:8px}.brand-subtitle{max-width:520px}.header-actions{display:flex;align-items:center;gap:12px;justify-content:flex-end;flex-wrap:wrap}.header-status{padding:5px 10px;border:1px solid #e2e8f0;border-radius:999px;background:#fff;color:#475467;font-size:12px;font-weight:750;box-shadow:0 1px 2px rgba(16,24,40,.04)}.header-status:empty{display:none}.language-toggle{display:inline-flex;align-items:center;padding:2px;border:1px solid var(--line);border-radius:999px;background:#f8fafc}.language-toggle button{height:26px;padding:0 10px;border:0;border-radius:999px;background:transparent;color:var(--muted);font-size:12px;font-weight:800}.language-toggle button.active{background:#fff;color:var(--blue);box-shadow:0 1px 3px rgba(16,24,40,.12)}.update-panel{display:none;margin:10px 22px 0;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:#fff;font-size:13px;line-height:1.55}.update-panel.show{display:block}.update-panel b{display:block;margin-bottom:4px}.update-panel a{color:var(--blue);text-decoration:none}.update-panel a:hover{text-decoration:underline}.update-panel ul{margin:6px 0 0;padding-left:18px}
+    .brand{display:flex;align-items:center;gap:12px;min-width:0}.brand-mark{position:relative;flex:0 0 auto;width:38px;height:38px;border-radius:10px;background:#111827;box-shadow:0 10px 22px rgba(15,23,42,.16),inset 0 0 0 1px rgba(255,255,255,.12)}.brand-mark::before{content:"";position:absolute;left:9px;right:9px;bottom:10px;height:14px;border-left:3px solid #60a5fa;border-bottom:3px solid #60a5fa;transform:skew(-18deg)}.brand-mark::after{content:"";position:absolute;right:8px;top:9px;width:7px;height:7px;border-radius:50%;background:#34d399;box-shadow:-10px 11px 0 -2px #f59e0b}.brand-copy{min-width:0}.brand-copy h1{display:flex;align-items:baseline;gap:8px}.brand-subtitle{max-width:520px}.header-actions{display:flex;align-items:center;gap:12px;justify-content:flex-end;flex-wrap:wrap}.header-status{padding:5px 10px;border:1px solid #e2e8f0;border-radius:999px;background:#fff;color:#475467;font-size:12px;font-weight:750;box-shadow:0 1px 2px rgba(16,24,40,.04)}.header-status:empty{display:none}.time-status{font-variant-numeric:tabular-nums}.language-toggle{display:inline-flex;align-items:center;padding:2px;border:1px solid var(--line);border-radius:999px;background:#f8fafc}.language-toggle button{height:26px;padding:0 10px;border:0;border-radius:999px;background:transparent;color:var(--muted);font-size:12px;font-weight:800}.language-toggle button.active{background:#fff;color:var(--blue);box-shadow:0 1px 3px rgba(16,24,40,.12)}.update-panel{display:none;margin:10px 22px 0;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:#fff;font-size:13px;line-height:1.55}.update-panel.show{display:block}.update-panel b{display:block;margin-bottom:4px}.update-panel a{color:var(--blue);text-decoration:none}.update-panel a:hover{text-decoration:underline}.update-panel ul{margin:6px 0 0;padding-left:18px}
     .update-progress{display:grid;grid-template-columns:repeat(5,minmax(110px,1fr));gap:8px;margin:8px 0 10px;padding:0;list-style:none}.update-progress li{position:relative;padding:8px 9px;border:1px solid var(--line);border-radius:7px;background:#f8fafc;color:var(--muted);font-weight:700;line-height:1.25}.update-progress li.done{border-color:#b7e4cf;background:#ecfdf3;color:#067647}.update-progress li.active{border-color:#8bb7ff;background:#eff6ff;color:#1f6feb;box-shadow:0 0 0 2px rgba(31,111,235,.08)}.update-progress li.pending{color:#98a2b3}.update-progress small{display:block;margin-top:2px;font-weight:500;color:inherit;opacity:.82}
     h1{margin:0;font-size:22px;letter-spacing:0}.brand-subtitle{margin-top:3px;color:var(--muted);font-size:13px;font-weight:650} h2{margin:0;font-size:20px} h3{margin:0 0 10px;font-size:16px}
     .muted{color:var(--muted);font-size:13px}.wrap{padding:16px}.card{background:var(--card);border:1px solid var(--line);border-radius:8px;box-shadow:0 10px 26px rgba(23,32,42,.06)}
-    .toolbar{display:flex;gap:10px;align-items:center;justify-content:space-between;padding:14px 16px;border-bottom:1px solid var(--line)}
+    .toolbar{display:grid;grid-template-columns:minmax(0,1fr) minmax(220px,280px);gap:12px;align-items:stretch;padding:14px 16px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,#fff 0%,#fbfdff 100%)}
     .filters{display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+    .search-card{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:center;gap:10px;min-height:46px;padding:7px 10px 7px 13px;border:1px solid #d7e0ea;border-radius:12px;background:#fff;box-shadow:0 8px 20px rgba(15,23,42,.04)}
+    .search-card span{color:#344054;font-size:12px;font-weight:900;white-space:nowrap}
+    .search-card span::before{content:"";display:inline-block;width:7px;height:7px;margin-right:7px;border:2px solid #94a3b8;border-radius:50%;box-shadow:5px 5px 0 -3px #94a3b8;vertical-align:1px}
+    .search-card input{width:100%;height:32px;border:0;outline:0;padding:0 8px;font-size:14px;background:transparent}
+    .ipo-overview{padding:13px 16px 12px;border-bottom:1px solid var(--line);background:#fff}
+    .ipo-overview .muted{max-width:980px;line-height:1.55}
     .date-filter{display:flex;align-items:center;gap:5px;padding:3px 5px;border:1px solid #e2e8f0;border-radius:8px;background:#fbfdff;color:var(--muted);font-size:12px}
     .date-filter button{height:30px}
     .date-filter .apply-date{background:var(--blue);border-color:var(--blue);color:#fff}
     .filter-clear{color:var(--muted);background:#f8fafc}
-    .toolbar input,.toolbar select{height:36px;padding:0 10px;border:1px solid #cbd5e1;border-radius:7px;font:inherit;background:#fff}
-    .toolbar input{width:240px}.toolbar select{width:150px}
+    .toolbar select{height:36px;padding:0 10px;border:1px solid #cbd5e1;border-radius:7px;font:inherit;background:#fff}
+    .toolbar select{width:150px}
     .date-filter select{width:80px;height:30px;padding:0 7px;font-size:12px}.date-filter .year-select{width:86px}
     .table-wrap{max-width:100%;overflow:auto;-webkit-overflow-scrolling:touch} table{width:100%;min-width:1180px;border-collapse:collapse;font-size:12px;table-layout:fixed} th,td{padding:8px 8px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis} th:first-child,td:first-child{text-align:left} th{background:var(--soft);color:var(--muted);font-weight:700} tbody tr:hover{background:#f7fbff}
     .main-table th:nth-child(1),.main-table td:nth-child(1){width:150px}.main-table th:nth-child(2),.main-table td:nth-child(2){width:148px}.main-table th:nth-child(3),.main-table td:nth-child(3){width:122px}.main-table th:nth-child(4),.main-table td:nth-child(4){width:114px}.main-table th:nth-child(5),.main-table td:nth-child(5){width:112px}.main-table th:nth-child(6),.main-table td:nth-child(6){width:104px}.main-table th:nth-child(7),.main-table td:nth-child(7){width:112px}.main-table th:nth-child(8),.main-table td:nth-child(8){width:112px}.main-table th:nth-child(9),.main-table td:nth-child(9){width:92px}.main-table th:nth-child(10),.main-table td:nth-child(10){width:86px;text-align:center}
-    .segment-bar{display:grid;gap:10px;padding:14px 16px;border-bottom:1px solid var(--line);background:#fff}.quick-nav-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.quick-nav-title{min-width:70px;color:var(--muted);font-size:12px;font-weight:900}.segment-pill{height:38px;padding:0 14px;border:1px solid #d7e0ea;border-radius:999px;background:#fff;color:#101828;font-size:14px;font-weight:900;box-shadow:0 1px 2px rgba(16,24,40,.04);display:inline-flex;align-items:center;gap:6px}.segment-pill b{color:#667085}.segment-pill:hover{border-color:#b9c8d8;background:#f8fbff}.segment-pill.module-pill{background:#f8fafc}.segment-pill.module-pill.active{border-color:#fbbf24;background:#fffbeb;box-shadow:0 0 0 3px rgba(245,158,11,.14)}.segment-pill.hot-pill{border-color:#fed7aa;background:#fff7ed}.segment-pill.hot-pill .heat{color:#c2410c;font-size:12px}.segment-pill.empty{opacity:.5}.row-highlight{animation:rowPulse 2.2s ease}.section-focus{animation:sectionPulse 1.8s ease}@keyframes sectionPulse{0%,100%{box-shadow:none}20%,75%{box-shadow:inset 0 0 0 2px #f59e0b;background:#fffbeb}}@keyframes rowPulse{0%,100%{box-shadow:none;background:transparent}20%,70%{box-shadow:inset 4px 0 0 #f59e0b;background:#fffbeb}}
-    .section-block{border-top:1px solid var(--line)}.section-block.merged-away{display:none}.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;padding:16px;background:#fff}.section-head h3{margin:0;font-size:20px}.section-head .muted{text-align:right}.section-tools{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end}.section-empty{padding:22px 16px;color:var(--muted);font-size:13px;border-top:1px solid var(--line);background:#fff}.upcoming-table{min-width:980px}.upcoming-table th,.upcoming-table td{vertical-align:middle}.upcoming-table td{height:92px}.upcoming-table th:nth-child(1),.upcoming-table td:nth-child(1){width:170px}.upcoming-table th:nth-child(2),.upcoming-table td:nth-child(2){width:118px}.upcoming-table th:nth-child(3),.upcoming-table td:nth-child(3){width:126px}.upcoming-table th:nth-child(4),.upcoming-table td:nth-child(4){width:104px}.upcoming-table th:nth-child(5),.upcoming-table td:nth-child(5){width:auto;text-align:center}.upcoming-table th:nth-child(6),.upcoming-table td:nth-child(6){width:98px;text-align:center}.listed-table{min-width:1180px}#sectionSubscribing .upcoming-table{font-size:13px}#sectionSubscribing .upcoming-table th{font-size:12px}#sectionSubscribing .upcoming-table td{font-weight:700}#sectionSubscribing .stock-name-wrap b{font-size:14px}#sectionSubscribing .time-main{font-size:14px}#sectionSubscribing .time-source{font-size:11px}#sectionSubscribing .time-countdown{height:22px;font-size:12px}.timeline-cell{white-space:normal;overflow:visible;text-overflow:clip}.timeline-grid{display:grid;grid-template-columns:repeat(4,minmax(112px,1fr));gap:8px;align-items:stretch}
+    .segment-bar{min-width:0}.quick-nav-row{height:100%;display:grid;grid-template-columns:auto minmax(0,1fr);align-items:center;gap:12px;padding:7px 10px;border:1px solid #e2e8f0;border-radius:12px;background:linear-gradient(180deg,#fff,#f8fbff);box-shadow:0 8px 20px rgba(15,23,42,.035)}.quick-nav-heading{display:grid;gap:2px;min-width:70px}.quick-nav-title{color:#344054;font-size:12px;font-weight:900}.quick-nav-heading small{color:var(--muted);font-size:11px;font-weight:700}.hot-pill-group{display:flex;align-items:center;gap:8px;min-width:0;overflow:hidden}.segment-pill{min-width:0;height:32px;padding:0 10px;border:1px solid #d7e0ea;border-radius:999px;background:#fff;color:#101828;font-size:12px;font-weight:900;box-shadow:0 1px 2px rgba(16,24,40,.04);display:inline-flex;align-items:center;justify-content:center;gap:6px;flex:1 1 0}.segment-pill span:first-child{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.segment-pill b{color:#667085}.segment-pill:hover{border-color:#b9c8d8;background:#f8fbff}.segment-pill.module-pill{background:#f8fafc}.segment-pill.module-pill.active{border-color:#fbbf24;background:#fffbeb;box-shadow:0 0 0 3px rgba(245,158,11,.14)}.segment-pill.hot-pill{border-color:#fed7aa;background:#fff7ed}.segment-pill.hot-pill .heat{flex:0 0 auto;color:#c2410c;font-size:11px}.segment-pill.empty{opacity:.5}.row-highlight{animation:rowPulse 2.2s ease}.section-focus{animation:sectionPulse 1.8s ease}@keyframes sectionPulse{0%,100%{box-shadow:none}20%,75%{box-shadow:inset 0 0 0 2px #f59e0b;background:#fffbeb}}@keyframes rowPulse{0%,100%{box-shadow:none;background:transparent}20%,70%{box-shadow:inset 4px 0 0 #f59e0b;background:#fffbeb}}
+    .section-block{border-top:1px solid var(--line)}.section-block.merged-away{display:none}.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;padding:16px;background:#fff}.section-head h3{margin:0;font-size:20px}.section-head .muted{text-align:left}.section-kicker{margin-bottom:3px;color:#667085;font-size:12px;font-weight:850}.section-tools{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end}.listed-toggle{height:36px;padding:0 18px;border-color:#bfd2ea;background:#f8fbff;color:#175cd3;font-size:13px;font-weight:850;box-shadow:0 8px 18px rgba(23,92,211,.08)}.listed-toggle-wrap{display:flex;justify-content:center;padding:14px 16px 18px;background:#fff}.section-empty{padding:22px 16px;color:var(--muted);font-size:13px;border-top:1px solid var(--line);background:#fff}.upcoming-table{min-width:980px}.upcoming-table th,.upcoming-table td{vertical-align:middle}.upcoming-table td{height:92px}.upcoming-table th:nth-child(1),.upcoming-table td:nth-child(1){width:170px}.upcoming-table th:nth-child(2),.upcoming-table td:nth-child(2){width:118px}.upcoming-table th:nth-child(3),.upcoming-table td:nth-child(3){width:126px}.upcoming-table th:nth-child(4),.upcoming-table td:nth-child(4){width:104px}.upcoming-table th:nth-child(5),.upcoming-table td:nth-child(5){width:auto;text-align:center}.upcoming-table th:nth-child(6),.upcoming-table td:nth-child(6){width:98px;text-align:center}.listed-table{min-width:1180px}#sectionSubscribing .upcoming-table{font-size:13px}#sectionSubscribing .upcoming-table th{font-size:12px}#sectionSubscribing .upcoming-table td{font-weight:700}#sectionSubscribing .stock-name-wrap b{font-size:14px}#sectionSubscribing .time-main{font-size:14px}#sectionSubscribing .time-source{font-size:11px}#sectionSubscribing .time-countdown{height:22px;font-size:12px}.timeline-cell{white-space:normal;overflow:visible;text-overflow:clip}.timeline-grid{display:grid;grid-template-columns:repeat(4,minmax(112px,1fr));gap:8px;align-items:stretch}
     .multiple-cell{position:relative}.multiple-value{display:inline-block;transition:transform .22s ease,color .22s ease}.multiple-cell.live-updated{background:#eff6ff;box-shadow:inset 0 0 0 1px rgba(31,111,235,.18);animation:live-cell-flash 1.8s ease-out}.multiple-cell.live-updated .multiple-value{color:var(--blue);transform:translateY(-1px)}.live-badge{display:inline-block;margin-left:5px;padding:1px 5px;border-radius:999px;background:#dbeafe;color:#175cd3;font-size:10px;font-weight:800;vertical-align:middle}
-    .main-table td.stock-name-cell{white-space:normal;overflow:visible;text-overflow:clip;line-height:1.35}.stock-name-wrap{display:flex;align-items:center;gap:6px;flex-wrap:wrap;min-width:0}.stock-name-content{display:flex;flex:1 1 auto;min-width:0;flex-direction:column;gap:2px}.stock-name-wrap b{display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.stock-name-wrap .tag{flex:0 0 auto;max-width:none}.status-meta{display:flex;align-items:center;gap:4px;flex-wrap:wrap;font-size:11px;font-weight:700;color:#067647;line-height:1.2}.deadline-countdown{display:inline-flex;align-items:center;padding:1px 6px;border-radius:999px;background:#fef3c7;color:#92400e;font-size:11px;font-weight:900}
+    .main-table td.stock-name-cell{white-space:normal;overflow:visible;text-overflow:clip;line-height:1.35}.stock-name-wrap{display:flex;align-items:flex-start;gap:6px;flex-wrap:wrap;min-width:0}.stock-name-content{display:flex;flex:1 1 auto;min-width:0;flex-direction:column;gap:5px}.stock-name-wrap b{display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.stock-status-line{display:flex;align-items:center;gap:6px;min-height:22px}.stock-name-wrap .tag{flex:0 0 auto;max-width:none}.status-meta{display:flex;align-items:center;gap:4px;flex-wrap:wrap;font-size:11px;font-weight:700;color:#067647;line-height:1.2}.deadline-countdown{display:inline-flex;align-items:center;padding:1px 6px;border-radius:999px;background:#fef3c7;color:#92400e;font-size:11px;font-weight:900}
     .hover-tip{position:fixed;z-index:9999;max-width:min(520px,90vw);padding:8px 10px;border:1px solid #cbd5e1;border-radius:7px;background:#111827;color:#fff;font-size:12px;line-height:1.45;box-shadow:0 12px 28px rgba(15,23,42,.22);pointer-events:none;opacity:0;transform:translate(10px,10px);transition:opacity .08s ease;white-space:pre-line}
     .hover-tip.show{opacity:1}.type-popover{position:fixed;z-index:10000;display:none;min-width:260px;max-width:min(420px,90vw);padding:10px 12px;border:1px solid #fecaca;border-radius:8px;background:#fff;color:var(--text);font-size:12px;line-height:1.55;text-align:left;box-shadow:0 14px 34px rgba(15,23,42,.18);white-space:pre-line}.type-popover.show{display:block}
     th.sortable{cursor:pointer;color:#344054}.sort-mark{margin-left:4px;color:var(--blue);font-size:11px}.th-label{display:inline-flex;align-items:center;gap:4px;vertical-align:middle}
@@ -38,18 +44,24 @@
     .modal-head{height:58px;padding:0 16px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);background:#fff}.modal-title{display:flex;gap:10px;align-items:baseline;min-width:0}.modal-title h2{min-width:0;max-width:min(560px,calc(96vw - 190px));white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
     .compare-grid{height:calc(100% - 58px);display:grid;grid-template-columns:1fr 1fr;min-height:0}.pane{min-width:0;overflow:auto;overscroll-behavior:contain;padding:16px}.pane.left{border-right:1px solid var(--line);background:#fbfcff}.pane.right{background:#fff}
     .pane-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}.lock{color:var(--green);font-weight:700}.control-note{color:var(--blue);font-weight:700}
+    .decision-panel{display:grid;grid-template-columns:1fr;gap:12px;margin-bottom:16px}.decision-card{border:1px solid #d8e0ea;border-radius:10px;background:linear-gradient(180deg,#fff,#fbfdff);box-shadow:0 10px 24px rgba(15,23,42,.06);padding:14px}.decision-card h3{margin:0 0 10px;font-size:14px}.hero-metric{display:grid;gap:7px;margin-bottom:14px}.hero-metric span{color:var(--muted);font-size:12px;font-weight:800}.hero-metric b{font-size:28px;line-height:1.05;letter-spacing:0}.heat-meter{height:10px;border-radius:999px;background:#eef2f7;overflow:hidden}.heat-meter i{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,#60a5fa,#22c55e,#f59e0b,#ef4444)}.metric-tiles{display:grid;grid-template-columns:repeat(3,minmax(150px,1fr));gap:10px}.metric-tile{min-width:0;min-height:66px;padding:10px 12px;border:1px solid #e5edf6;border-radius:8px;background:#fff}.metric-tile span{display:block;color:var(--muted);font-size:11px;font-weight:800}.metric-tile b{display:block;margin-top:6px;font-size:16px;line-height:1.25;white-space:normal;overflow:visible;text-overflow:clip;word-break:keep-all}.company-profile-card{margin:0 0 16px;padding:14px 16px;border:1px solid #d8e0ea;border-radius:10px;background:linear-gradient(180deg,#fff,#fbfdff);box-shadow:0 10px 24px rgba(15,23,42,.045)}.company-profile-card.profile-empty{background:#fff}.profile-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px}.profile-eyebrow{display:block;margin-bottom:3px;color:#667085;font-size:11px;font-weight:900}.profile-head h3{margin:0;font-size:18px}.profile-tag{flex:0 0 auto;padding:3px 8px;border-radius:999px;background:#eff6ff;color:#175cd3;font-size:11px;font-weight:900}.profile-summary{margin:0 0 12px;color:#17202a;font-size:14px;font-weight:750;line-height:1.65}.profile-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:14px;padding-top:12px;border-top:1px solid #edf2f7}.profile-block{min-width:0}.profile-block span{display:block;margin-bottom:4px;color:#667085;font-size:11px;font-weight:900}.profile-block p{margin:0;color:#344054;font-size:13px;line-height:1.65}.profile-points{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}.profile-point{max-width:100%;padding:5px 8px;border-radius:999px;background:#f8fafc;border:1px solid #e5edf6;color:#344054;font-size:12px;font-weight:750;line-height:1.35}.profile-source{margin-top:12px;color:#98a2b3;font-size:11px;line-height:1.45}.detail-drawer{margin-top:16px;border:1px solid #d8e0ea;border-radius:10px;background:#fff;overflow:hidden}.detail-drawer summary{cursor:pointer;list-style:none;padding:13px 15px;font-size:14px;font-weight:900;color:#102033;background:#f8fbff}.detail-drawer summary::-webkit-details-marker{display:none}.detail-drawer summary:after{content:"展开";float:right;color:#667085;font-size:12px;font-weight:800}.detail-drawer[open] summary:after{content:"收起"}.detail-drawer-body{display:grid;gap:14px;padding:0 15px 15px}.detail-drawer-body h3{margin:10px 0 0}
     .info-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-bottom:14px}.box{padding:10px;border:1px solid var(--line);border-radius:8px;background:#fff}.box span{display:block;color:var(--muted);font-size:12px}.box b{display:block;margin-top:5px;font-size:15px}.box .err{margin-left:6px;font-size:12px}.err.good{color:var(--green)}.err.warn{color:var(--amber)}.err.bad{color:var(--red)}
     .broker-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-bottom:14px}.broker-card{border:1px solid var(--line);border-radius:8px;background:#fff;overflow:hidden}.broker-head{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;border-bottom:1px solid #eef2f7}.broker-head a{color:var(--text);font-weight:800;text-decoration:none}.broker-head a:hover{color:var(--blue);text-decoration:underline}.broker-head span{color:var(--muted);font-size:12px}.broker-metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:10px 12px}.broker-metrics div{min-width:0}.broker-metrics span{display:block;color:var(--muted);font-size:11px}.broker-metrics b{display:block;margin-top:3px;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.broker-metrics .highlight b{color:var(--green)}.broker-metrics .low b{color:#c01048}
     .param-grid{display:grid;grid-template-columns:1fr 90px;gap:8px 10px;align-items:end;margin-bottom:12px}.param-grid label{display:grid;gap:5px;color:var(--muted);font-size:12px}.param-grid input,.param-grid select{height:36px;padding:0 8px;border:1px solid #cbd5e1;border-radius:7px;font:inherit;background:#fff}.param-grid input[type=range]{padding:0}.param-grid input[disabled]{background:#f1f5f9;color:#667085}
     .calc-bar{display:flex;gap:10px;align-items:center;justify-content:space-between;margin:10px 0 14px}.formula{padding:10px 12px;background:#f4f8ff;border-left:4px solid var(--blue);font-size:13px;line-height:1.6;color:#344054}
-    .market-chart{min-height:320px;margin:10px 0 14px;border:1px solid var(--line);border-radius:8px;background:#fff;position:relative;overflow:hidden}.market-chart svg{width:100%;height:100%;display:block}.chart-empty{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:13px;text-align:center;padding:20px}.legend{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:10px;color:var(--muted);font-size:12px}.legend a{color:var(--muted);text-decoration:none}.legend a:hover{color:var(--blue);text-decoration:underline}.legend i{display:inline-block;width:16px;height:3px;margin-right:5px;border-radius:999px;vertical-align:middle}.legend .futu{background:#1f6feb}.legend .phillip{background:#d92d20}.subsection-title{margin-top:14px}
-    .cutoff-stack{display:grid;gap:3px;min-width:112px}.cutoff-main{font-weight:900;color:#101828}.cutoff-source{display:block;color:var(--muted);font-size:11px;font-weight:800}.cutoff-countdown{display:inline-flex;align-items:center;width:max-content;max-width:100%;padding:2px 7px;border-radius:999px;background:#fff7ed;color:#c2410c;font-size:12px;font-weight:900}.subscribing-row .cutoff-countdown{background:#fef3c7;color:#92400e}.time-card{min-height:68px;min-width:118px;padding:6px 8px;display:grid;align-content:center;justify-items:center;gap:4px;border:1px solid transparent;border-radius:10px;text-align:center;line-height:1.15;transition:background .18s ease,border-color .18s ease,box-shadow .18s ease,transform .18s ease}.time-card.active{border-color:#f59e0b;background:#fffbeb;box-shadow:0 0 0 3px rgba(245,158,11,.14);transform:translateY(-1px)}.time-main{font-size:15px;font-weight:900;color:#101828;font-variant-numeric:tabular-nums}.time-source{font-size:12px;font-weight:900;color:#667085}.time-card.active .time-source{color:#92400e}.time-countdown{display:inline-flex;align-items:center;justify-content:center;min-width:74px;height:24px;padding:0 10px;border-radius:999px;background:#fef3c7;color:#92400e;font-size:13px;font-weight:900;white-space:nowrap}
-    .summary-chart{padding:14px;background:#fff}.summary-head{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:14px}.summary-head strong{display:block;font-size:15px}.summary-head span{color:var(--muted);font-size:12px}.summary-meta{text-align:right;color:var(--muted);font-size:12px;line-height:1.45}.summary-meta b{display:block;color:var(--text);font-size:12px}.summary-meta small{display:block}.venue-row{display:grid;grid-template-columns:70px 1fr 118px;gap:12px;align-items:center;padding:14px 0;border-top:1px solid #eef2f7}.venue-name{font-weight:800}.venue-name a{color:var(--text);text-decoration:none}.venue-name a:hover{color:var(--blue);text-decoration:underline}.venue-name small{display:block;margin-top:3px;color:var(--muted);font-weight:500}.range-wrap{min-width:0}.range-track{position:relative;height:10px;border-radius:999px;background:#eef2f7}.range-fill{position:absolute;top:0;bottom:0;border-radius:999px;background:linear-gradient(90deg,#93c5fd,#1f6feb)}.range-fill.phillip{background:linear-gradient(90deg,#fda4af,#d92d20)}.marker{position:absolute;top:50%;width:10px;height:10px;border:2px solid #fff;border-radius:50%;box-shadow:0 0 0 1px rgba(15,23,42,.18);transform:translate(-50%,-50%)}.marker.open{background:#667085}.marker.close{background:#111827}.range-labels{display:flex;justify-content:space-between;margin-top:7px;color:var(--muted);font-size:11px}.high-time{margin-top:5px;color:var(--muted);font-size:11px}.high-time b{color:var(--text);font-weight:700}.venue-stats{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px;margin-top:10px}.venue-stats div{padding:7px 8px;border:1px solid #eef2f7;border-radius:7px;background:#fbfdff}.venue-stats span{display:block;color:var(--muted);font-size:11px}.venue-stats b{display:block;margin-top:3px;font-size:12px}.gain-stack{display:grid;gap:6px}.gain-pill{min-width:0;padding:6px 7px;border-radius:8px;background:#ecfdf3;color:#067647;text-align:center;font-weight:800}.gain-pill.low{background:#fff1f3;color:#c01048}.gain-pill span{display:block;font-size:11px;font-weight:600}.summary-foot{margin-top:10px;color:var(--muted);font-size:12px;line-height:1.5}
+    .market-chart{min-height:320px;margin:10px 0 14px;border:1px solid var(--line);border-radius:8px;background:#fff;position:relative;overflow:hidden}.market-chart.summary-mode{min-height:0;overflow:visible}.market-chart svg{width:100%;height:100%;display:block}.chart-empty{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:13px;text-align:center;padding:20px}.market-chart.summary-mode .chart-empty{position:static;min-height:150px}.legend{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:10px;color:var(--muted);font-size:12px}.legend a{color:var(--muted);text-decoration:none}.legend a:hover{color:var(--blue);text-decoration:underline}.legend i{display:inline-block;width:16px;height:3px;margin-right:5px;border-radius:999px;vertical-align:middle}.legend .futu{background:#1f6feb}.legend .phillip{background:#d92d20}.subsection-title{margin-top:14px}
+    .cutoff-stack{display:grid;gap:3px;min-width:112px}.cutoff-main{font-weight:900;color:#101828}.cutoff-source{display:block;color:var(--muted);font-size:11px;font-weight:800}.cutoff-countdown{display:inline-flex;align-items:center;width:max-content;max-width:100%;padding:2px 7px;border-radius:999px;background:#fff7ed;color:#c2410c;font-size:12px;font-weight:900}.subscribing-row .cutoff-countdown{background:#fef3c7;color:#92400e}.time-card{min-height:68px;min-width:118px;padding:6px 8px;display:grid;align-content:center;justify-items:center;gap:4px;border:1px solid transparent;border-radius:10px;text-align:center;line-height:1.15;transition:background .18s ease,border-color .18s ease,box-shadow .18s ease,transform .18s ease}.time-card.past{border-color:#e5e7eb;background:#f3f4f6;color:#98a2b3}.time-card.active{border-color:#f59e0b;background:#fffbeb;box-shadow:0 0 0 3px rgba(245,158,11,.14);transform:translateY(-1px)}.time-main{font-size:15px;font-weight:900;color:#101828;font-variant-numeric:tabular-nums}.time-card.past .time-main,.time-card.past .time-source{color:#98a2b3}.time-source{font-size:12px;font-weight:900;color:#667085}.time-card.active .time-main{color:#101828}.time-card.active .time-source{color:#92400e}.time-countdown{display:inline-flex;align-items:center;justify-content:center;min-width:74px;height:24px;padding:0 10px;border-radius:999px;background:#fef3c7;color:#92400e;font-size:13px;font-weight:900;white-space:nowrap}.time-card.past .time-countdown{background:#e5e7eb;color:#667085}
+    .summary-chart{padding:14px;background:#fff}.summary-head{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:14px}.summary-head strong{display:block;font-size:15px}.summary-head span{color:var(--muted);font-size:12px}.summary-meta{text-align:right;color:var(--muted);font-size:12px;line-height:1.45}.summary-meta b{display:block;color:var(--text);font-size:12px}.summary-meta small{display:block}.venue-row{display:grid;grid-template-columns:minmax(64px,78px) minmax(0,1fr) minmax(118px,150px);gap:14px;align-items:start;padding:16px 0;border-top:1px solid #eef2f7}.venue-name{font-weight:800}.venue-name a{color:var(--text);text-decoration:none}.venue-name a:hover{color:var(--blue);text-decoration:underline}.venue-name small{display:block;margin-top:3px;color:var(--muted);font-weight:500}.range-wrap{min-width:0}.range-track{position:relative;height:10px;border-radius:999px;background:#eef2f7}.range-fill{position:absolute;top:0;bottom:0;border-radius:999px;background:linear-gradient(90deg,#93c5fd,#1f6feb)}.range-fill.phillip{background:linear-gradient(90deg,#fda4af,#d92d20)}.marker{position:absolute;top:50%;width:10px;height:10px;border:2px solid #fff;border-radius:50%;box-shadow:0 0 0 1px rgba(15,23,42,.18);transform:translate(-50%,-50%)}.marker.open{background:#667085}.marker.close{background:#111827}.range-labels{display:flex;justify-content:space-between;margin-top:7px;color:var(--muted);font-size:11px}.venue-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(88px,1fr));gap:8px;margin-top:10px}.venue-stats div{min-width:0;padding:8px 9px;border:1px solid #eef2f7;border-radius:7px;background:#fbfdff}.venue-stats span{display:block;color:var(--muted);font-size:11px;font-weight:800}.venue-stats b{display:block;margin-top:4px;font-size:13px;line-height:1.25;white-space:normal;word-break:keep-all}.gain-stack{display:grid;gap:8px}.gain-pill{min-width:0;padding:8px 9px;border-radius:8px;background:#ecfdf3;color:#067647;text-align:center;font-weight:800}.gain-pill.low{background:#fff1f3;color:#c01048}.gain-pill span{display:block;font-size:11px;font-weight:600}.summary-foot{margin-top:10px;color:var(--muted);font-size:12px;line-height:1.5}
     .tier-label{display:inline-flex;align-items:center;margin-left:6px;padding:1px 5px;border-radius:999px;background:#eef4ff;color:#175cd3;font-size:10px;font-weight:800;vertical-align:middle}.tier-label.tail{background:#ecfdf3;color:#067647}.tier-label.head{background:#fff6e5;color:#b54708}.tier-label.top{background:#fee4e2;color:#b42318}
     .tier-chart{margin:4px 0 12px;padding:12px 12px 10px;border:1px solid var(--line);border-radius:8px;background:#fff}.tier-chart-head{display:flex;align-items:flex-end;justify-content:space-between;gap:10px;margin-bottom:8px}.tier-chart-head strong{font-size:13px}.tier-chart-head span{color:var(--muted);font-size:11px;text-align:right}.tier-chart svg{width:100%;height:auto;display:block;overflow:visible}.tier-chart .axis{stroke:#d8e0ea;stroke-width:1}.tier-chart .grid-line{stroke:#edf2f7;stroke-width:1}.tier-chart .curve{fill:none;stroke:#1f6feb;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.tier-chart .curve.b{stroke:#12b76a}.tier-chart .area{fill:rgba(31,111,235,.08)}.tier-chart .area.b{fill:rgba(18,183,106,.08)}.tier-chart .pool-split{stroke:#cbd5e1;stroke-width:1;stroke-dasharray:4 5}.tier-chart .tier-point{cursor:pointer}.tier-chart .tier-hit-area{fill:transparent;pointer-events:all}.tier-chart .point{fill:#1f6feb;stroke:#fff;stroke-width:2;transition:r .16s ease,filter .16s ease,stroke-width .16s ease}.tier-chart .point.b{fill:#12b76a}.tier-chart .hover-ring{fill:none;stroke:#f59e0b;stroke-width:2;opacity:0;transition:opacity .16s ease,r .16s ease}.tier-chart .tier-point:hover .point{r:6;stroke-width:3;filter:drop-shadow(0 2px 4px rgba(15,23,42,.28))}.tier-chart .tier-point:hover .hover-ring{opacity:.9;r:10}.tier-chart .key-point{fill:#fff7ed;stroke:#f59e0b;stroke-width:2}.tier-chart .key-label{font-size:10px;font-weight:800;fill:#92400e}.tier-chart .axis-label{font-size:10px;fill:#667085}.tier-chart .x-axis-tier-label{font-size:10px;font-weight:800;fill:#667085}.tier-chart-empty{display:flex;align-items:center;justify-content:center;min-height:120px;color:var(--muted);font-size:12px;text-align:center}
     .mini-table{min-width:680px;table-layout:auto;font-size:11.5px}.mini-table th,.mini-table td{padding:7px 8px;line-height:1.45;overflow:visible;text-overflow:clip}.mini-table th:nth-child(1),.mini-table td:nth-child(1){width:138px}.mini-table th:nth-child(2),.mini-table td:nth-child(2){width:128px}.mini-table th:nth-child(3),.mini-table td:nth-child(3){width:92px}.mini-table th:nth-child(4),.mini-table td:nth-child(4){width:118px}.mini-table th:nth-child(5),.mini-table td:nth-child(5){width:112px}.prediction-tier-table{width:100%;min-width:560px;table-layout:fixed;font-size:12px}.prediction-tier-table th,.prediction-tier-table td{padding:9px 12px;line-height:1.5}.prediction-tier-table th:nth-child(1),.prediction-tier-table td:nth-child(1){width:44%;text-align:left}.prediction-tier-table th:nth-child(2),.prediction-tier-table td:nth-child(2){width:24%;text-align:right}.prediction-tier-table th:nth-child(3),.prediction-tier-table td:nth-child(3){width:32%;text-align:right}.prediction-tier-table .tier-label{margin-left:8px}.split-table{min-width:900px}.split-table th,.split-table td{padding:8px}
     @media(max-width:1180px){.timeline-grid{grid-template-columns:repeat(2,minmax(120px,1fr))}.upcoming-table{min-width:900px}.upcoming-table td{height:128px}}
-    @media(max-width:980px){header{height:auto;padding:14px 16px;align-items:flex-start;flex-direction:column}.header-actions{width:100%;justify-content:space-between}.toolbar{display:block}.toolbar input{width:100%;margin-top:10px}.compare-grid{grid-template-columns:1fr}.pane.left{border-right:0;border-bottom:1px solid var(--line)}dialog{height:96vh}.info-grid,.broker-grid{grid-template-columns:1fr}}
+    @media(max-width:980px){header{height:auto;padding:14px 16px;align-items:flex-start;flex-direction:column}.header-actions{width:100%;justify-content:space-between}.toolbar{grid-template-columns:1fr}.quick-nav-row{grid-template-columns:1fr}.compare-grid{grid-template-columns:1fr}.pane.left{border-right:0;border-bottom:1px solid var(--line)}dialog{height:96vh}.info-grid,.broker-grid{grid-template-columns:1fr}}
+    @media(max-width:760px){.metric-tiles{grid-template-columns:repeat(2,minmax(0,1fr))}.profile-grid{grid-template-columns:1fr}}
+    @media(max-width:640px){.wrap{padding:10px}.toolbar{padding:10px}.hot-pill-group{overflow-x:auto;scrollbar-width:none}.hot-pill-group::-webkit-scrollbar{display:none}.segment-pill{flex:0 0 150px;justify-content:space-between}.search-card{grid-template-columns:1fr}.search-card span{display:none}}
+    @media(max-width:720px){.venue-row{grid-template-columns:minmax(64px,78px) minmax(0,1fr)}.gain-stack{grid-column:1 / -1;grid-template-columns:repeat(4,minmax(96px,1fr))}}
+    @media(max-width:560px){.venue-row{grid-template-columns:1fr}.gain-stack{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:480px){.metric-tiles{grid-template-columns:1fr}.gain-stack{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -66,6 +78,7 @@
         <button type="button" data-lang-option="sc">简体</button>
         <button type="button" data-lang-option="tc">繁体</button>
       </div>
+      <div class="header-status time-status" id="currentTime"></div>
       <div class="header-status" id="updated"></div>
     </div>
   </header>
@@ -74,15 +87,12 @@
   <div class="wrap">
     <section class="card">
       <div class="toolbar">
-        <div>
-          <h2>港股新股列表（2025-2026）</h2>
-          <div class="muted" id="coverage"></div>
-        </div>
-        <div class="filters">
+        <div class="segment-bar" id="activeFilterSummary"></div>
+        <label class="search-card">
+          <span>快速搜索</span>
           <input id="search" placeholder="搜索代码或名称">
-        </div>
+        </label>
       </div>
-      <div class="segment-bar" id="activeFilterSummary"></div>
       <div id="sectionsContainer" class="sections-container">
       <section class="section-block" id="sectionSubscribing">
         <div class="section-head">
@@ -175,7 +185,11 @@
       </section>
       <section class="section-block" id="sectionListed">
         <div class="section-head">
-          <h3>已上市新股</h3>
+          <div>
+            <div class="section-kicker">港股新股列表（2025-2026）</div>
+            <h3>已上市新股</h3>
+            <div class="muted" id="coverage"></div>
+          </div>
           <div class="section-tools">
             <div class="date-filter" aria-label="上市日期区间筛选">
               <span>上市</span>
@@ -219,6 +233,9 @@
           </table>
           <div class="section-empty" id="listedEmpty" style="display:none">当前筛选下暂无已上市新股。</div>
         </div>
+        <div class="listed-toggle-wrap">
+          <button id="toggleListedRows" class="listed-toggle" type="button">展开更多</button>
+        </div>
       </section>
       </div>
     </section>
@@ -234,16 +251,11 @@
     </div>
     <div class="compare-grid">
       <section class="pane left">
+        <div class="decision-panel" id="decisionPanel"></div>
+        <div id="companyProfilePanel"></div>
         <div class="pane-head">
-          <h3>官方真实数据</h3>
-          <span class="lock">官方字段优先；当前券商倍数单独标注</span>
+          <h3 id="officialTierTitle">实际各档位中签率</h3>
         </div>
-        <div class="info-grid" id="officialFacts"></div>
-        <h3>当前状态</h3>
-        <div class="info-grid" id="currentFacts"></div>
-        <h3>实际关键结果</h3>
-        <div class="info-grid" id="officialResults"></div>
-        <h3 id="officialTierTitle">实际各档位中签率</h3>
         <div id="officialTierChart"></div>
         <div class="table-wrap">
           <table class="mini-table" id="officialTierTable">
@@ -251,27 +263,41 @@
             <tbody id="officialTiers"></tbody>
           </table>
         </div>
+        <details class="detail-drawer">
+          <summary>官方资料与当前状态</summary>
+          <div class="detail-drawer-body">
+            <h3>实际关键结果</h3>
+            <div class="info-grid" id="officialResults"></div>
+            <h3>官方资料</h3>
+            <div class="info-grid" id="officialFacts"></div>
+            <h3>当前状态</h3>
+            <div class="info-grid" id="currentFacts"></div>
+          </div>
+        </details>
       </section>
 
       <section class="pane right">
-        <div class="pane-head">
-          <h3>暗盘 / 首日 / 当前股价</h3>
-          <span class="control-note">独立行情数据</span>
-        </div>
-        <div class="info-grid" id="marketStatus"></div>
         <h3 class="subsection-title">富途 / 辉立暗盘走势</h3>
         <div class="legend" id="darkMarketLegend"><span><i class="futu"></i>富途暗盘</span><span><i class="phillip"></i>辉立暗盘</span></div>
         <div class="market-chart" id="darkMarketChart"></div>
-        <div class="formula" id="marketChartNote">
-          暗盘、首日开收盘和当前价将独立接入行情数据或手工补丁；不会混入左侧官方配发数据。暗盘图用于展示 16:15 开始数小时内富途和辉立的价格走势。
-        </div>
         <h3 class="subsection-title">上市首日表现</h3>
         <div class="market-chart" id="firstDayChart"></div>
-        <div class="formula" id="firstDayChartNote">
-          首日表现将独立接入行情数据或手工补丁；有分钟K线时显示最高价时间，否则显示开高低收摘要。
-        </div>
-        <h3 style="margin-top:14px" id="marketTableTitle"></h3>
-        <div class="info-grid" id="marketExtra"></div>
+        <details class="detail-drawer">
+          <summary>行情来源与更多数据</summary>
+          <div class="detail-drawer-body">
+            <h3>暗盘券商摘要</h3>
+            <div class="info-grid" id="marketStatus"></div>
+            <h3>行情说明</h3>
+            <div class="formula" id="marketChartNote">
+              暗盘、首日开收盘和当前价将独立接入行情数据或手工补丁；不会混入左侧官方配发数据。暗盘图用于展示 16:15 开始数小时内富途和辉立的价格走势。
+            </div>
+            <div class="formula" id="firstDayChartNote">
+              首日表现将独立接入行情数据或手工补丁；优先显示开高低收和成交摘要。
+            </div>
+            <h3 id="marketTableTitle"></h3>
+            <div class="info-grid" id="marketExtra"></div>
+          </div>
+        </details>
       </section>
     </div>
   </dialog>
@@ -281,9 +307,12 @@
   <script src="data/ipo-history-2026.js"></script>
   <script src="data/latest-listed-2026.js"></script>
   <script src="data/official-updates-2026.js?v=20260516-0002"></script>
+  <script src="data/company-profiles-2026.js?v=20260602-company-profile"></script>
   <script src="data/market-performance-2026.js?v=20260515-2038"></script>
   <script src="vendor/lightweight-charts.standalone.production.js"></script>
   <script>
+    const COMPANY_PROFILE_DATA = window.COMPANY_PROFILES_2026 || { profiles: {} };
+    const COMPANY_PROFILES = COMPANY_PROFILE_DATA.profiles || {};
     const HARD_RULES = {
       "主板B": { initial: 10, final(m){ return 10; }, label: "10%" },
       "主板A": { initial: 5, final(m){ return m < 15 ? 5 : m < 50 ? 15 : m < 100 ? 25 : 35; }, label: "<15倍:5%；15-50倍:15%；50-100倍:25%；>=100倍:35%" },
@@ -503,6 +532,30 @@
       updateLanguageButtons();
       renderList();
       applyDisplayLanguage(document.body);
+      updateCurrentTime();
+    }
+    function formatCurrentTime(){
+      const parts = new Intl.DateTimeFormat("zh-CN", {
+        timeZone: "Asia/Hong_Kong",
+        month: "2-digit",
+        day: "2-digit",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+        hour12: false
+      }).formatToParts(new Date()).reduce((out, part) => {
+        out[part.type] = part.value;
+        return out;
+      }, {});
+      return `当前时间 ${parts.month}/${parts.day} ${parts.hour}:${parts.minute}:${parts.second}`;
+    }
+    function updateCurrentTime(){
+      const el = $("currentTime");
+      if (el) el.textContent = displayLangText(formatCurrentTime());
+    }
+    function startCurrentTimeClock(){
+      updateCurrentTime();
+      if (typeof setInterval === "function") setInterval(updateCurrentTime, 1000);
     }
     const hkMoney = n => {
       if (n == null || n === "") return "-";
@@ -606,6 +659,7 @@
     let sortState = { key:"listDate", dir:"desc" };
     let activeListMonthRange = { from:"", to:"" };
     let activeUpcomingFilter = "all";
+    let showAllListedRows = false;
     let current = null;
     let darkMarketChartApi = null;
     let backgroundScrollLock = null;
@@ -615,11 +669,13 @@
     let liveUpdatedMultipleCodes = new Set();
     let cutoffCountdownTimer = null;
     const HEAT_STORAGE_KEY = "ipoHeatStats.v1";
-    const HEAT_EVENT_WEIGHTS = { detail: 5, hot: 3, external: 3 };
+    const HEAT_EVENT_WEIGHTS = { detail: 6, search: 2, hot: 1, external: 3 };
     const LANGUAGE_STORAGE_KEY = "ipoDisplayLanguage.v1";
     const OFFICIAL_IPO_CUTOFF_TIME = "12:00";
     const BROKER_CUTOFF_NOTE = "券商通常 09:00-10:00";
+    const LISTED_PREVIEW_LIMIT = 10;
     let activeQuickSection = "";
+    let searchRecordTimer = null;
     const ACTIVE_LIFECYCLE_KEYS = ["subscribing", "pendingDark", "todayDark", "todayListing"];
     const MODULE_SECTIONS = [
       ["sectionSubscribing", "活跃新股", "active"],
@@ -1333,9 +1389,35 @@ ${mode === "prediction" ? "预测" : "实际"}中签率/手数：${tierCurveMetr
       stats[stockCode] = row;
       writeHeatStats(stats);
     }
-    function localHeatValue(stock){
+    function heatStatsFor(stock){
       const stats = readHeatStats();
-      return Number(stats[stock?.stockCode]?.total || 0);
+      return stats[stock?.stockCode] || null;
+    }
+    function localHeatValue(stock){
+      return Number(heatStatsFor(stock)?.total || 0);
+    }
+    function localHeatLastAt(stock){
+      const lastAt = heatStatsFor(stock)?.lastAt;
+      const time = lastAt ? Date.parse(lastAt) : NaN;
+      return Number.isFinite(time) ? time : 0;
+    }
+    function stockMatchesSearchIntent(stock, q){
+      const query = String(q || "").trim().toLowerCase();
+      if (query.length < 2) return false;
+      const haystack = `${stock.stockCode} ${stock.name || ""} ${displayStockName(stock)} ${zh(stock.name || "")} ${stock.englishName || ""}`.toLowerCase();
+      return haystack.includes(query);
+    }
+    function recordSearchInterest(){
+      const q = $("search").value.trim();
+      if (q.length < 2) return;
+      const matches = stocks.filter(stock => stockMatchesSearchIntent(stock, q)).slice(0, 6);
+      matches.forEach(stock => recordHeatEvent(stock.stockCode, "search"));
+      if (matches.length) refreshQuickNav();
+    }
+    function handleSearchInput(){
+      renderList();
+      clearTimeout(searchRecordTimer);
+      searchRecordTimer = setTimeout(recordSearchInterest, 450);
     }
     function upcomingFilterMatches(stock){
       return true;
@@ -1437,18 +1519,27 @@ ${mode === "prediction" ? "预测" : "实际"}中签率/手数：${tierCurveMetr
       return phaseWeight + multipleBoost + listingBoost + darkBoost;
     }
     function hotStocksForQuickNav(sourceRows){
+      const personalRows = sourceRows
+        .filter(stock => localHeatValue(stock) > 0)
+        .map(stock => ({ stock, heat: localHeatValue(stock), lastAt: localHeatLastAt(stock), score: hotScoreForQuickNav(stock) }))
+        .sort((a,b) => b.lastAt - a.lastAt || b.heat - a.heat || b.score - a.score || String(a.stock.stockCode).localeCompare(String(b.stock.stockCode)))
+        .slice(0, 4)
+        .map(item => item.stock);
+      if (personalRows.length) return personalRows;
       return sourceRows
         .filter(stock => ["subscribing", "pendingDark", "todayDark", "todayListing"].includes(lifecycleSection(stock)))
         .map(stock => ({ stock, score: hotScoreForQuickNav(stock), heat: localHeatValue(stock) }))
         .sort((a,b) => b.heat - a.heat || b.score - a.score || String(a.stock.stockCode).localeCompare(String(b.stock.stockCode)))
-        .slice(0, 6)
+        .slice(0, 4)
         .map(item => item.stock);
     }
-    function displayHeatValue(stock, index, hotStocks){
-      const heatValues = hotStocks.map(localHeatValue);
-      const maxHeat = Math.max(...heatValues, 0);
-      if (maxHeat > 0) return Math.max(1, Math.round(localHeatValue(stock) / maxHeat * 100));
-      return Math.max(1, Math.round(100 - index * 9));
+    function recentReasonLabel(stock, index){
+      const events = heatStatsFor(stock)?.events || {};
+      if (Number(events.detail || 0) > 0) return "看过";
+      if (Number(events.search || 0) > 0) return "搜过";
+      if (Number(events.external || 0) > 0) return "查过";
+      if (Number(events.hot || 0) > 0) return "点过";
+      return index === 0 ? "推荐" : "关注";
     }
     function refreshQuickNav(){
       renderActiveFilterSummary(baseFilteredStocks());
@@ -1520,11 +1611,14 @@ ${mode === "prediction" ? "预测" : "实际"}中签率/手数：${tierCurveMetr
     function renderActiveFilterSummary(baseRows, options={}){
       const hotStocks = hotStocksForQuickNav(baseRows);
       const hotButtons = hotStocks.map((stock, index) => {
-        const heat = displayHeatValue(stock, index, hotStocks);
-        return `<button type="button" class="segment-pill hot-pill" data-hot-stock="${stock.stockCode}"><span>${stock.stockCode} ${displayStockName(stock)}</span><span class="heat">热度 ${heat}</span></button>`;
-      }).join("") || `<span class="muted">暂无活跃热门股票</span>`;
+        const label = recentReasonLabel(stock, index);
+        return `<button type="button" class="segment-pill hot-pill" data-hot-stock="${stock.stockCode}"><span>${stock.stockCode} ${displayStockName(stock)}</span><span class="heat">${label}</span></button>`;
+      }).join("") || `<span class="muted">暂无最近关注，开始搜索或打开股票详情后会自动记录。</span>`;
       $("activeFilterSummary").innerHTML = `
-        <div class="quick-nav-row"><span class="quick-nav-title">热门关注</span>${hotButtons}</div>
+        <div class="quick-nav-row">
+          <div class="quick-nav-heading"><span class="quick-nav-title">最近关注</span><small>搜索 / 查看</small></div>
+          <div class="hot-pill-group">${hotButtons}</div>
+        </div>
       `;
       $("activeFilterSummary").querySelectorAll("[data-hot-stock]").forEach(button => {
         button.onclick = () => scrollToStock(button.dataset.hotStock);
@@ -1534,7 +1628,7 @@ ${mode === "prediction" ? "预测" : "实际"}中签率/手数：${tierCurveMetr
     function renderStockNameCell(s){
       const displayName = displayStockName(s);
       const fullName = tidyStockName(s.name || displayName);
-      return `<td class="stock-name-cell" data-full="${attr(`${s.stockCode} ${fullName} ${statusTagText(s)} ${subscriptionDeadlineText(s)}`)}"><span class="stock-name-wrap"><span class="stock-name-content"><b title="${attr(`${s.stockCode} ${fullName}`)}">${s.stockCode} ${displayName}</b>${subscriptionDeadlineMeta(s)}</span> ${statusTag(s)}</span></td>`;
+      return `<td class="stock-name-cell" data-full="${attr(`${s.stockCode} ${fullName} ${statusTagText(s)}`)}"><span class="stock-name-wrap"><span class="stock-name-content"><b title="${attr(`${s.stockCode} ${fullName}`)}">${s.stockCode} ${displayName}</b><span class="stock-status-line">${statusTag(s)}</span></span></span></td>`;
     }
     function scheduleCellHtml(stock){
       const text = upcomingScheduleText(stock);
@@ -1568,16 +1662,20 @@ ${mode === "prediction" ? "预测" : "实际"}中签率/手数：${tierCurveMetr
     function renderList(){
       const activeMonthRange = monthRangeLabel(activeListMonthRange.from, activeListMonthRange.to);
       const baseRows = baseFilteredStocks();
-      const activeRows = sortedStocks(baseRows.filter(stock => isActiveLifecycleKey(lifecycleSection(stock)) && upcomingFilterMatches(stock)));
+      const activeRows = sortActiveStocksNewestFirst(baseRows.filter(stock => isActiveLifecycleKey(lifecycleSection(stock)) && upcomingFilterMatches(stock)));
+      const listedRowsAll = sortedStocks(baseRows.filter(stock => lifecycleSection(stock) === "listed"))
+        .concat(sortedStocks(baseRows.filter(stock => lifecycleSection(stock) === "suspended")));
+      const searchActive = Boolean(($("search").value || "").trim());
+      const monthFilterActive = Boolean(activeListMonthRange.from || activeListMonthRange.to);
+      const listedShouldCollapse = !showAllListedRows && !searchActive && !monthFilterActive && listedRowsAll.length > LISTED_PREVIEW_LIMIT;
+      const listedRowsVisible = listedShouldCollapse ? listedRowsAll.slice(0, LISTED_PREVIEW_LIMIT) : listedRowsAll;
       const lifecycleRows = {
         subscribing: activeRows,
         pendingDark: [],
         todayDark: [],
         todayListing: [],
-        listed: sortedStocks(baseRows.filter(stock => lifecycleSection(stock) === "listed"))
-          .concat(sortedStocks(baseRows.filter(stock => lifecycleSection(stock) === "suspended"))),
+        listed: listedRowsVisible,
       };
-      const visibleCount = Object.values(lifecycleRows).reduce((sum, rows) => sum + rows.length, 0);
       const listedCount = stocks.filter(s=>lifecycleSection(s)==="listed").length;
       const todayListingCount = stocks.filter(s=>lifecycleSection(s)==="todayListing").length;
       const subscribingCount = stocks.filter(s=>statusPhase(s)==="招股中").length;
@@ -1585,14 +1683,20 @@ ${mode === "prediction" ? "预测" : "实际"}中签率/手数：${tierCurveMetr
       const todayDarkCount = stocks.filter(s=>lifecycleSection(s)==="todayDark").length;
       const pendingAllotmentCount = stocks.filter(s=>["待分配结果", "配发结果待补全"].includes(statusPhase(s))).length;
       const pendingListingCount = stocks.filter(s=>statusPhase(s)==="待上市").length;
-      $("coverage").textContent = `活跃新股 ${activeRows.length} 只（招股中 ${subscribingCount}；待暗盘 ${pendingDarkCount}；今天暗盘 ${todayDarkCount}；今日上市 ${todayListingCount}）；已正式上市 ${listedCount} 只；待分配 ${pendingAllotmentCount} 只；待上市 ${pendingListingCount} 只${activeMonthRange ? `；上市月份 ${activeMonthRange}` : ""}；当前显示 ${visibleCount} 只。`;
-      $("updated").textContent = `数据自动跟踪 · ${activeRefreshSummary()}`;
+      $("coverage").textContent = `已正式上市 ${listedCount} 只${activeMonthRange ? `；上市月份 ${activeMonthRange}` : ""}；当前显示 ${listedRowsVisible.length} 只。`;
+      $("updated").textContent = "";
       renderActiveFilterSummary(baseRows);
       renderSortMarks();
       $("subscribingSummary").textContent = lifecycleRows.subscribing.length ? `显示 ${lifecycleRows.subscribing.length} 只，用申购、中签、暗盘、上市四段高亮判断当前阶段` : "";
       $("pendingDarkSummary").textContent = "";
       $("todayDarkSummary").textContent = "";
       $("todayListingSummary").textContent = "";
+      const toggleListedRows = $("toggleListedRows");
+      if (toggleListedRows) {
+        const hasMoreListed = listedRowsAll.length > LISTED_PREVIEW_LIMIT && !searchActive && !monthFilterActive;
+        toggleListedRows.style.display = hasMoreListed ? "" : "none";
+        toggleListedRows.textContent = showAllListedRows ? `收起已上市新股` : `查看更多 ${listedRowsAll.length - LISTED_PREVIEW_LIMIT} 只`;
+      }
       $("subscribingRows").innerHTML = lifecycleRows.subscribing.map(renderUpcomingRow).join("");
       $("pendingDarkRows").innerHTML = lifecycleRows.pendingDark.map(renderUpcomingRow).join("");
       $("todayDarkRows").innerHTML = lifecycleRows.todayDark.map(renderUpcomingRow).join("");
@@ -1907,6 +2011,115 @@ ${mode === "prediction" ? "预测" : "实际"}中签率/手数：${tierCurveMetr
       if (!Number.isFinite(Number(averageClose)) && stock.status === "current") return darkMarketStartText(stock);
       return moneyOrPending(lotGainForPrice(stock, averageClose));
     }
+    function decisionPredictionRows(stock){
+      if (stock.status === "listed" && Array.isArray(stock.officialRows) && stock.officialRows.length) return stock.officialRows;
+      return predictedAllotmentRows(stock);
+    }
+    function decisionOneLotValue(stock){
+      if (stock.status === "listed" && Array.isArray(stock.officialRows) && stock.officialRows.length) return displayOneLotRate(stock);
+      const rows = decisionPredictionRows(stock);
+      const value = oneLotRate(rows);
+      return value == null ? "待补充" : pct(value);
+    }
+    function decisionATailValue(stock){
+      if (stock.status === "listed" && Array.isArray(stock.officialRows) && stock.officialRows.length) return `${num(stock.actualATailLots,2)}手`;
+      const rows = decisionPredictionRows(stock);
+      const value = aTailLots(rows, Number(stock.sharesPerLot));
+      return value == null ? "待补充" : `${num(value,2)}手`;
+    }
+    function decisionBHeadValue(stock){
+      if (stock.status === "listed" && Array.isArray(stock.officialRows) && stock.officialRows.length) return displayBHeadLots(stock);
+      const rows = decisionPredictionRows(stock);
+      const value = bHeadLots(rows, Number(stock.sharesPerLot));
+      return value == null ? "待补充" : `${num(value,2)}手`;
+    }
+    function subscriptionHeatLevel(stock){
+      const multiple = Number(subscriptionMultipleSortValue(stock));
+      if (!Number.isFinite(multiple)) return { label:"待观察", width:8 };
+      if (multiple >= 3000) return { label:"爆热", width:100 };
+      if (multiple >= 1000) return { label:"很热", width:82 };
+      if (multiple >= 300) return { label:"热门", width:62 };
+      if (multiple >= 50) return { label:"正常", width:38 };
+      return { label:"偏冷", width:18 };
+    }
+    function renderDecisionPanel(stock){
+      const heat = subscriptionHeatLevel(stock);
+      $("decisionPanel").innerHTML = `
+        <section class="decision-card">
+          <div class="hero-metric">
+            <span>认购热度</span>
+            <b>${heat.label}</b>
+            <div class="heat-meter" aria-hidden="true"><i style="width:${heat.width}%"></i></div>
+          </div>
+          <div class="metric-tiles">
+            <div class="metric-tile"><span>认购倍数</span><b>${displayMultiple(stock)}</b></div>
+            <div class="metric-tile"><span>一手中签率</span><b>${decisionOneLotValue(stock)}</b></div>
+            <div class="metric-tile"><span>暗盘一手赚</span><b>${displayGreyMarketLotGain(stock)}</b></div>
+            <div class="metric-tile"><span>总打新人数</span><b>${displayTotalApplications(stock)}</b></div>
+            <div class="metric-tile"><span>公开手数</span><b>${displayIssueLots(stock)}</b></div>
+          </div>
+        </section>`;
+    }
+    function companyProfileFor(stock){
+      const code = String(stock?.stockCode || "").padStart(5, "0");
+      return COMPANY_PROFILES[code] || null;
+    }
+    function cleanProfileText(value, fallback = "待补充"){
+      const text = String(value || "").replace(/\s+/g, " ").trim();
+      return text || fallback;
+    }
+    function renderProfilePoints(profile){
+      const highlights = Array.isArray(profile?.highlights) ? profile.highlights : [];
+      const risks = Array.isArray(profile?.risks) ? profile.risks.map(item => `留意：${item}`) : [];
+      const points = [...highlights, ...risks].slice(0, 4);
+      if (!points.length) return "";
+      return `<div class="profile-points">${points.map(point => `<span class="profile-point">${attr(cleanProfileText(point))}</span>`).join("")}</div>`;
+    }
+    function renderCompanyProfile(stock){
+      const profile = companyProfileFor(stock);
+      const panel = $("companyProfilePanel");
+      if (!panel) return;
+      if (!profile) {
+        panel.innerHTML = `
+          <section class="company-profile-card profile-empty">
+            <div class="profile-head">
+              <div>
+                <span class="profile-eyebrow">公司画像</span>
+                <h3>招股书解读待补充</h3>
+              </div>
+              <span class="profile-tag">官方资料</span>
+            </div>
+            <p class="profile-summary">当前股票暂无可用招股书文本画像；先展示发行、中签、暗盘和首日表现数据。</p>
+            <div class="profile-source">来源：官方文件抓取状态 · 后续可接入 AI 解读并缓存结果</div>
+          </section>`;
+        return;
+      }
+      const business = cleanProfileText(profile.business || profile.oneLine);
+      const observation = cleanProfileText(profile.financial || profile.industry || profile.useOfProceeds, "招股书已抓取，财务或行业摘要待补充。");
+      panel.innerHTML = `
+        <section class="company-profile-card">
+          <div class="profile-head">
+            <div>
+              <span class="profile-eyebrow">公司画像</span>
+              <h3>这家公司做什么</h3>
+            </div>
+            <span class="profile-tag">官方招股书</span>
+          </div>
+          <p class="profile-summary">${attr(cleanProfileText(profile.oneLine || business))}</p>
+          <div class="profile-grid">
+            <div class="profile-block">
+              <span>业务核心</span>
+              <p>${attr(business)}</p>
+            </div>
+            <div class="profile-block">
+              <span>财务 / 行业观察</span>
+              <p>${attr(observation)}</p>
+            </div>
+          </div>
+          ${renderProfilePoints(profile)}
+          <div class="profile-source">来源：官方招股书文本 · 机器提取，待人工或 AI 复核</div>
+        </section>`;
+    }
     function greyMarketAverageClose(stock){
       const performance = marketPerformanceFor(stock);
       const closes = [performance.greyMarket?.futu?.close, performance.greyMarket?.phillip?.close]
@@ -2177,8 +2390,11 @@ ${mode === "prediction" ? "预测" : "实际"}中签率/手数：${tierCurveMetr
       if (listingStart && now < listingStart) return "listing";
       return "";
     }
-    function timeCardHtml(main, source, note="", active=false){
-      return `<span class="time-card${active ? " active" : ""}"><span class="time-main">${main || "待确认"}</span><span class="time-source">${source}</span>${note ? `<span class="time-countdown">${note}</span>` : ""}</span>`;
+    function timeCardHtml(main, source, note="", active=false, past=false){
+      const classes = ["time-card"];
+      if (past && !active) classes.push("past");
+      if (active) classes.push("active");
+      return `<span class="${classes.join(" ")}"><span class="time-main">${main || "待确认"}</span><span class="time-source">${source}</span>${note ? `<span class="time-countdown">${note}</span>` : ""}</span>`;
     }
     function upcomingSubscriptionTimeText(stock){
       if (stock.status === "suspended") return "已延迟";
@@ -2195,7 +2411,7 @@ ${mode === "prediction" ? "预测" : "实际"}中签率/手数：${tierCurveMetr
       const main = match ? `${match[2]}/${match[3]} ${match[4]}` : zh(cutoff);
       const cutoffMs = hkDateTimeMs(cutoff);
       const passed = cutoffMs && nowHkMs() >= cutoffMs;
-      return passed ? timeCardHtml("已截止", `官方截止 ${main}`, BROKER_CUTOFF_NOTE, active) : timeCardHtml(main, "官方截止", BROKER_CUTOFF_NOTE, active);
+      return passed ? timeCardHtml("已截止", `官方截止 ${main}`, BROKER_CUTOFF_NOTE, active, true) : timeCardHtml(main, "官方截止", BROKER_CUTOFF_NOTE, active);
     }
     function upcomingDarkMarketText(stock){
       if (stock.status === "suspended") return "已延迟";
@@ -2208,7 +2424,9 @@ ${mode === "prediction" ? "预测" : "实际"}中签率/手数：${tierCurveMetr
       const active = activeTimeStep(stock) === "dark";
       if (text === "已延迟" || text === "不适用" || text === "待确认") return timeCardHtml(text, "暗盘开始", "", active);
       const countdown = countdownTextToDateTime(`${ymdDate(darkMarketDate(stock))} 16:15`, "暗盘");
-      return timeCardHtml(text, "暗盘开始", countdown, active);
+      const darkEnd = darkMarketEndMs(stock);
+      const past = Boolean(darkEnd && nowHkMs() > darkEnd);
+      return timeCardHtml(text, "暗盘开始", countdown, active, past);
     }
     function upcomingListingTimeText(stock){
       if (stock.status === "suspended") return "已延迟";
@@ -2220,7 +2438,9 @@ ${mode === "prediction" ? "预测" : "实际"}中签率/手数：${tierCurveMetr
       const active = activeTimeStep(stock) === "listing";
       if (text === "已延迟" || text === "不适用" || text === "待确认") return timeCardHtml(text, "上市开盘", "", active);
       const countdown = countdownTextToDateTime(`${ymdDate(stock.listDate)} 09:30`, "上市");
-      return timeCardHtml(text, "上市开盘", countdown, active);
+      const end = firstDayEndMs(stock);
+      const past = Boolean(end && nowHkMs() > end);
+      return timeCardHtml(text, "上市开盘", countdown, active, past);
     }
     function allotmentResultDate(stock){
       const brokerDate = brokerLotteryResultDate(stock);
@@ -2241,9 +2461,11 @@ ${mode === "prediction" ? "预测" : "实际"}中签率/手数：${tierCurveMetr
       const date = allotmentResultDate(stock);
       const days = daysUntilYmd(date);
       const main = shortDate(date);
-      const source = hasAllotmentResult(stock) || days < 0 ? "已公布" : "下午可查";
-      const countdown = days >= 0 ? countdownTextToDateTime(`${date} 14:00`, "中签") : "";
-      return timeCardHtml(main, `中签公布 · ${source}`, countdown, active);
+      const resultMs = hkDateAtTimeMs(date, "14:00");
+      const past = Boolean(hasAllotmentResult(stock) || (resultMs && nowHkMs() >= resultMs));
+      const source = past ? "已公布" : "下午可查";
+      const countdown = !past ? countdownTextToDateTime(`${date} 14:00`, "中签") : "";
+      return timeCardHtml(main, `中签公布 · ${source}`, countdown, active, past);
     }
     function upcomingTimelineText(stock){
       return [
@@ -2393,6 +2615,23 @@ ${mode === "prediction" ? "预测" : "实际"}中签率/手数：${tierCurveMetr
         return String(av || "").localeCompare(String(bv || "")) * dir || a.stockCode.localeCompare(b.stockCode);
       });
     }
+    function activeSortDateValue(stock){
+      const date = ymdDate(stock.listDate) || projectedListingSortDate(stock) || ymdDate(darkMarketDate(stock));
+      const ms = date ? hkDateAtTimeMs(date, "12:00") : NaN;
+      return Number.isFinite(ms) ? ms : 0;
+    }
+    function projectedListingSortDate(stock){
+      const subscriptionEnd = ymdDate(stock.subscriptionEnd);
+      if (!subscriptionEnd) return "";
+      return addBusinessDays(subscriptionEnd, 3);
+    }
+    function sortActiveStocksNewestFirst(rows){
+      return [...rows].sort((a,b)=>{
+        const dateDiff = activeSortDateValue(b) - activeSortDateValue(a);
+        if (dateDiff) return dateDiff;
+        return String(a.stockCode || "").localeCompare(String(b.stockCode || ""));
+      });
+    }
     function sortValue(stock,key){
       if (key === "offerPrice") return numericOrNull(stock.offerPrice);
       if (key === "sharesPerLot") return numericOrNull(stock.sharesPerLot);
@@ -2466,19 +2705,36 @@ ${mode === "prediction" ? "预测" : "实际"}中签率/手数：${tierCurveMetr
       if (!table) return;
       table.classList.toggle("prediction-tier-table", mode === "prediction");
     }
+    function resetCompareDetailDrawers(){
+      $("compareDialog").querySelectorAll(".detail-drawer[open]").forEach(drawer => {
+        drawer.removeAttribute("open");
+      });
+    }
+    function resetCompareScroll(){
+      const dialog = $("compareDialog");
+      dialog.scrollTop = 0;
+      dialog.querySelectorAll(".pane").forEach(pane => {
+        pane.scrollTop = 0;
+      });
+    }
     function openCompare(code, heatType="detail"){
       current = stocks.find(s=>s.stockCode===code);
       if (!current) return;
+      resetCompareDetailDrawers();
+      resetCompareScroll();
       if (heatType) recordHeatEvent(code, heatType);
       refreshQuickNav();
       $("modalTitle").textContent = `${current.stockCode} ${displayStockName(current)}`;
       $("modalTitle").title = `${current.stockCode} ${tidyStockName(current.name || displayStockName(current))}`;
       $("modalSub").textContent = `${zh(current.listDate || "-")} · ${zh(current.mechanism)}`;
+      renderDecisionPanel(current);
+      renderCompanyProfile(current);
       renderOfficial(current);
       renderCurrentFacts(current);
       $("compareDialog").showModal();
       lockBackgroundScroll();
       requestAnimationFrame(() => {
+        resetCompareScroll();
         renderMarketPerformance(current);
         if (currentDisplayLanguage === "tc") applyDisplayLanguage($("compareDialog"));
       });
@@ -2629,6 +2885,17 @@ ${mode === "prediction" ? "预测" : "实际"}中签率/手数：${tierCurveMetr
       } while (date.getDay() === 0 || date.getDay() === 6);
       return date.toISOString().slice(0, 10);
     }
+    function addBusinessDays(dateText, days){
+      if (!dateText) return "";
+      const date = new Date(`${dateText}T12:00:00`);
+      if (Number.isNaN(date.getTime())) return "";
+      let remaining = Math.max(0, Number(days) || 0);
+      while (remaining > 0) {
+        date.setDate(date.getDate() + 1);
+        if (date.getDay() !== 0 && date.getDay() !== 6) remaining -= 1;
+      }
+      return date.toISOString().slice(0, 10);
+    }
     function nextBusinessDay(dateText){
       if (!dateText) return "";
       const date = new Date(`${dateText}T12:00:00`);
@@ -2720,20 +2987,22 @@ ${mode === "prediction" ? "预测" : "实际"}中签率/手数：${tierCurveMetr
     }
     function renderFirstDayChart(stock, performance){
       const data = performance?.firstDay;
+      $("firstDayChart").classList.add("summary-mode");
       $("firstDayChart").innerHTML = marketSummaryHtml({
         title: `${stock.stockCode} 首日表现摘要`,
-        subtitle: "开高低收和最高价时间",
+        subtitle: "开高低收和成交摘要",
         date: data?.date || stock.listDate || "",
         schedule: firstDayScheduleText(),
         venues: [{ ...(data || {}), label: "上市首日", context: "首日" }],
-        foot: "灰点为开盘，黑点为收盘；彩色区间表示首日最低至最高。首日上市行情一般可从分钟K线补回最高价时间。",
+        foot: "灰点为开盘，黑点为收盘；彩色区间表示首日最低至最高。",
         empty: "暂无首日表现数据"
       });
       $("firstDayChartNote").textContent = hasMarketSummary(data)
-        ? "当前显示首日开高低收摘要；接入分钟K线后会补充最高价时间。"
+        ? "当前显示首日开高低收和成交摘要。"
         : "首日表现已按统一模板预留；接入开高低收或分钟K线后会自动补齐。";
     }
     function renderDarkMarketChart(stock, performance){
+      $("darkMarketChart").classList.remove("summary-mode");
       if (darkMarketChartApi) {
         darkMarketChartApi.remove();
         darkMarketChartApi = null;
@@ -2770,13 +3039,14 @@ ${mode === "prediction" ? "预测" : "实际"}中签率/手数：${tierCurveMetr
     }
     function renderDarkMarketSummary(stock, performance){
       const venues = [performance.greyMarket.futu, performance.greyMarket.phillip].filter(Boolean);
+      $("darkMarketChart").classList.add("summary-mode");
       $("darkMarketChart").innerHTML = marketSummaryHtml({
         title: `${stock.stockCode} 暗盘表现摘要`,
         subtitle: "公开报道仅提供开高低收；分钟走势图待接入",
         date: performance.greyMarketDate || "",
         schedule: darkMarketScheduleText(),
         venues,
-        foot: "灰点为开盘，黑点为收盘；彩色区间表示当日最低至最高。当前来源只披露高见价，未披露高见时间段；接入分钟K线或手工补录后，会显示开盘后第几分钟见高。",
+        foot: "灰点为开盘，黑点为收盘；彩色区间表示当日最低至最高。",
         empty: "暂无暗盘表现数据"
       });
       $("marketChartNote").textContent = "当前只有暗盘开高低收和成交摘要，所以先展示富途、辉立对比图；接入分钟K线后再启用可缩放股票图。";
@@ -2790,7 +3060,6 @@ ${mode === "prediction" ? "预测" : "实际"}中签率/手数：${tierCurveMetr
       const max = hasRange ? Math.max(...values) : 1;
       const range = Math.max(max - min, 1);
       const row = venue => {
-        const highWindow = highWindowInfo(venue);
         const hasVenueRange = [venue.low, venue.high].every(value => Number.isFinite(Number(value)));
         const left = hasVenueRange ? (Number(venue.low) - min) / range * 100 : 0;
         const width = hasVenueRange ? Math.max((Number(venue.high) - Number(venue.low)) / range * 100, 2) : 0;
@@ -2809,12 +3078,10 @@ ${mode === "prediction" ? "预测" : "实际"}中签率/手数：${tierCurveMetr
                 ${close == null ? "" : `<i class="marker close" style="left:${close}%" title="${Number.isFinite(Number(venue.close)) ? "收盘" : "现报"}：${num(venueClose,2)}港元"></i>`}
               </div>
               <div class="range-labels"><span>低 ${num(venue.low,2)}</span><span>高 ${num(venue.high,2)}</span></div>
-              <div class="high-time">最高价时间：<b>${highWindow.label}</b></div>
               <div class="venue-stats">
                 <div><span>开盘</span><b>${num(venue.open,2)}</b></div>
                 <div><span>最高</span><b>${num(venue.high,2)}</b></div>
                 <div><span>最低</span><b>${num(venue.low,2)}</b></div>
-                <div><span>最高价时间</span><b>${highWindow.label}</b></div>
                 <div><span>${Number.isFinite(Number(venue.close)) ? "收盘" : "现报"}</span><b>${num(venueClose,2)}</b></div>
                 <div><span>成交量</span><b>${shortNumber(venue.turnoverShares)}股</b></div>
                 <div><span>成交额</span><b>${moneyOrPending(venue.turnoverAmount)}</b></div>
@@ -3277,9 +3544,21 @@ ${mode === "prediction" ? "预测" : "实际"}中签率/手数：${tierCurveMetr
       return row.status || "待检查";
     }
 
-    $("search").oninput = renderList;
+    $("search").oninput = handleSearchInput;
     $("applyDateFilter").onclick = applyDateFilter;
     $("clearDateFilter").onclick = clearDateFilter;
+    $("toggleListedRows").onclick = () => {
+      showAllListedRows = !showAllListedRows;
+      renderList();
+    };
+    window.addEventListener("pagehide", () => {
+      showAllListedRows = false;
+    });
+    window.addEventListener("pageshow", event => {
+      if (!event.persisted) return;
+      showAllListedRows = false;
+      renderList();
+    });
     if ($("checkOfficialUpdates")) $("checkOfficialUpdates").onclick = checkOfficialUpdates;
     document.querySelectorAll("th.sortable").forEach(th => {
       th.onclick = () => {
@@ -3395,6 +3674,7 @@ ${mode === "prediction" ? "预测" : "实际"}中签率/手数：${tierCurveMetr
     document.addEventListener("click", hideTypePopover);
     renderList();
     applyDisplayLanguage(document.body);
+    startCurrentTimeClock();
     startCutoffCountdownRefresh();
     if (!window.__DISABLE_LIVE_REFRESH && typeof fetch === "function" && typeof setInterval === "function") {
       startLiveSubscriptionRefresh();

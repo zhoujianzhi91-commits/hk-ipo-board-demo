@@ -1,249 +1,4 @@
 window.MARKET_PERFORMANCE_2026 = {
-  "03388": {
-    "source": {
-      "title": "《新股》創想三維(03388.HK)暗盤收報32.08元 高上市價70.6%",
-      "url": "https://www.aastocks.com/tc/stocks/news/aafn-con/NOW.1526545/popular-news/AAFN"
-    },
-    "greyMarketDate": "2026-05-28",
-    "greyMarket": {
-      "futu": {
-        "label": "富途",
-        "open": 26.9,
-        "high": 40,
-        "low": 26.9,
-        "close": 32.08,
-        "changePct": 70.6,
-        "turnoverShares": 5320200,
-        "turnoverAmount": 176000000,
-        "lotGain": 1992,
-        "quoteUrl": "https://www.futunn.com/stock/03388-HK"
-      },
-      "phillip": {
-        "label": "辉立",
-        "open": 30,
-        "high": 36.1,
-        "low": 27.5,
-        "close": 30.24,
-        "changePct": 60.9,
-        "turnoverShares": 5150000,
-        "turnoverAmount": 161000000,
-        "lotGain": 1716,
-        "quoteUrl": "https://www.itiger.com/hans/stock/03388"
-      }
-    },
-    "firstDay": {
-      "label": "上市首日",
-      "date": "2026-05-29",
-      "source": {
-        "title": "《新股》創想三維(03388.HK)全日收22.8元 高上市價21.3%",
-        "url": "https://www.aastocks.com/tc/stocks/news/aafn-con/NOW.1526715/latest-news/AAFN"
-      },
-      "open": 33.88,
-      "high": 34,
-      "low": 20.88,
-      "close": 22.8,
-      "changePct": 21.3,
-      "turnoverShares": 36474800,
-      "turnoverAmount": 1014000000,
-      "lotGain": 600
-    }
-  },
-  "00901": {
-    "source": {
-      "title": "《新股》華曦達(00901.HK)暗盤收報63.5元 高上市價93.6%",
-      "url": "https://www.aastocks.com/tc/stocks/news/aafn-news/NOW.1526130/2"
-    },
-    "greyMarketDate": "2026-05-26",
-    "greyMarket": {
-      "futu": {
-        "label": "富途",
-        "open": 45,
-        "high": 64.1,
-        "low": 36.02,
-        "close": 63.5,
-        "changePct": 93.6,
-        "turnoverShares": 1425100,
-        "turnoverAmount": 75193600,
-        "lotGain": 3070,
-        "quoteUrl": "https://www.futunn.com/stock/00901-HK"
-      },
-      "phillip": {
-        "label": "辉立",
-        "open": 42,
-        "high": 64.15,
-        "low": 36,
-        "close": 63.5,
-        "changePct": 93.6,
-        "turnoverShares": 736000,
-        "turnoverAmount": 39800000,
-        "lotGain": 3070,
-        "quoteUrl": "https://www.itiger.com/hans/stock/00901"
-      }
-    },
-    "firstDay": {
-      "label": "上市首日",
-      "date": "2026-05-27",
-      "source": {
-        "title": "《新股》華曦達(00901.HK)全日收61.2元 高上市價86.6%",
-        "url": "https://www.aastocks.com/tc/stocks/news/aafn-con/NOW.1526298/ipo-news/AAFN"
-      },
-      "open": 65.8,
-      "high": 71.05,
-      "low": 57.3,
-      "close": 61.2,
-      "changePct": 86.6,
-      "turnoverShares": 4980900,
-      "turnoverAmount": 296000000,
-      "lotGain": 2840
-    }
-  },
-  "02723": {
-    "source": {
-      "title": "《新股》深演智能(02723.HK)暗盤收報149元 高上市價168.5%",
-      "url": "https://www.aastocks.com/tc/stocks/news/aafn-con/NOW.1526131/negative-news/AAFN"
-    },
-    "greyMarketDate": "2026-05-26",
-    "greyMarket": {
-      "futu": {
-        "label": "富途",
-        "open": 88,
-        "high": 149.5,
-        "low": 80,
-        "close": 149,
-        "changePct": 168.5,
-        "turnoverShares": 1034300,
-        "turnoverAmount": 132000000,
-        "lotGain": 9350,
-        "quoteUrl": "https://www.futunn.com/stock/02723-HK"
-      },
-      "phillip": {
-        "label": "辉立",
-        "open": 90,
-        "high": 152.2,
-        "low": 90,
-        "close": 149,
-        "changePct": 168.5,
-        "turnoverShares": 489000,
-        "turnoverAmount": 64700000,
-        "lotGain": 9350,
-        "quoteUrl": "https://www.itiger.com/hans/stock/02723"
-      }
-    },
-    "firstDay": {
-      "label": "上市首日",
-      "date": "2026-05-27",
-      "source": {
-        "title": "《新股》深演智能(02723.HK)全日收203元 高上市價265.8%",
-        "url": "https://www.aastocks.com/tc/stocks/news/aafn-con/NOW.1526299/latest-news/AAFN"
-      },
-      "open": 155,
-      "high": 230,
-      "low": 155,
-      "close": 203,
-      "changePct": 265.8,
-      "turnoverShares": 3460200,
-      "turnoverAmount": 571000000,
-      "lotGain": 14750
-    }
-  },
-  "03310": {
-    "source": {
-      "title": "《新股》雲英谷科技(03310.HK)暗盤收報25.14元 高上市價20.8%",
-      "url": "https://www.aastocks.com/tc/stocks/news/aafn-con/NOW.1526132/popular-news/AAFN"
-    },
-    "greyMarketDate": "2026-05-26",
-    "greyMarket": {
-      "futu": {
-        "label": "富途",
-        "open": 25.58,
-        "high": 28,
-        "low": 24,
-        "close": 25.14,
-        "changePct": 20.8,
-        "turnoverShares": 3001000,
-        "turnoverAmount": 77546600,
-        "lotGain": 866,
-        "quoteUrl": "https://www.futunn.com/stock/03310-HK"
-      },
-      "phillip": {
-        "label": "辉立",
-        "open": 28,
-        "high": 28.02,
-        "low": 23.02,
-        "close": 25.08,
-        "changePct": 20.5,
-        "turnoverShares": 1610000,
-        "turnoverAmount": 42000000,
-        "lotGain": 854,
-        "quoteUrl": "https://www.itiger.com/hans/stock/03310"
-      }
-    },
-    "firstDay": {
-      "label": "上市首日",
-      "date": "2026-05-27",
-      "source": {
-        "title": "《新股》雲英谷科技(03310.HK)全日收39.9元 高上市價91.7%",
-        "url": "https://www.aastocks.com/sc/stocks/news/aafn-news/NOW.1526300/2"
-      },
-      "open": 25.48,
-      "high": 39.9,
-      "low": 25.4,
-      "close": 39.9,
-      "changePct": 91.7,
-      "turnoverShares": 16812700,
-      "turnoverAmount": 535000000,
-      "lotGain": 3818
-    }
-  },
-  "06872": {
-    "source": {
-      "title": "《新股》丹諾醫藥－B(06872.HK)暗盤收報147.5元 高上市價94.8%",
-      "url": "https://www.aastocks.com/sc/stocks/news/aafn-con/NOW.1525692/industry-news/hk6"
-    },
-    "greyMarketDate": "2026-05-21",
-    "greyMarket": {
-      "futu": {
-        "label": "富途",
-        "open": 90,
-        "high": 159.1,
-        "low": 80.1,
-        "close": 147.5,
-        "changePct": 94.8,
-        "turnoverShares": 792600,
-        "turnoverAmount": 98944300,
-        "lotGain": 3590,
-        "quoteUrl": "https://www.futunn.com/stock/06872-HK"
-      },
-      "phillip": {
-        "label": "辉立",
-        "open": 89,
-        "high": 155,
-        "low": 88.85,
-        "close": 147,
-        "changePct": 94.2,
-        "turnoverShares": 552000,
-        "turnoverAmount": 70800000,
-        "lotGain": 3565,
-        "quoteUrl": "https://www.itiger.com/hans/stock/06872"
-      }
-    },
-    "firstDay": {
-      "label": "上市首日",
-      "date": "2026-05-22",
-      "source": {
-        "title": "《新股》丹諾醫藥－Ｂ(06872.HK)全日收211元 高上市價178.7%",
-        "url": "https://www.aastocks.com/tc/stocks/news/aafn-news/NOW.1525866/2"
-      },
-      "open": 150,
-      "high": 222.2,
-      "low": 145,
-      "close": 211,
-      "changePct": 178.7,
-      "turnoverShares": 2458600,
-      "turnoverAmount": 369000000,
-      "lotGain": 6765
-    }
-  },
   "01511": {
     "source": {
       "title": "《新股》馭勢科技(01511.HK)暗盤收報59.55元 低上市價1.2%",
@@ -340,10 +95,10 @@ window.MARKET_PERFORMANCE_2026 = {
   },
   "06871": {
     "source": {
-      "title": "《新股》翼菲科技暗盤收報54.65元 高上市價79.2%",
+      "title": "《新股》翼菲科技(06871.HK)暗盤收報54.65元 高上市價79.2%",
       "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/06871/AAFN/NOW.1524832/hk-stock-news"
     },
-    "greyMarketDate": "2026-05-15",
+    "greyMarketDate": "2026-05-18",
     "greyMarket": {
       "futu": {
         "label": "富途",
@@ -371,6 +126,21 @@ window.MARKET_PERFORMANCE_2026 = {
         "close": 53.55,
         "lotGain": 2305
       }
+    },
+    "firstDay": {
+      "label": "上市首日",
+      "source": {
+        "title": "《新股》翼菲科技(06871.HK)全日收53.75元 高上市價76.2%",
+        "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/06871/AAFN/NOW.1525024/hk-stock-news"
+      },
+      "open": 54.65,
+      "high": 59.65,
+      "low": 52,
+      "close": 53.75,
+      "turnoverShares": 12671500,
+      "turnoverAmount": 694000000,
+      "lotGain": 2325,
+      "date": "2026-05-18"
     }
   },
   "07666": {
@@ -2670,6 +2440,495 @@ window.MARKET_PERFORMANCE_2026 = {
         "title": "《新股》智谱(02513.HK)全日收131.5元 高上市价13.2%",
         "url": "https://www.aastocks.com/tc/stocks/news/aafn-con/NOW.1494751/ipo-news/AAFN"
       }
+    }
+  },
+  "01081": {
+    "source": {
+      "title": "《新股》大金重工(01081.HK)暗盤收報63.1元 低上市價5%",
+      "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/01081/AAFN/NOW.1527620/hk-stock-news"
+    },
+    "greyMarketDate": "2026-06-05",
+    "greyMarket": {
+      "futu": {
+        "label": "富途",
+        "open": 65,
+        "high": 66.4,
+        "low": 61.5,
+        "close": 63.1,
+        "changePct": -5,
+        "turnoverShares": 1490700,
+        "turnoverAmount": 94855400.00000001,
+        "lotGain": -330,
+        "quoteUrl": "https://www.futunn.com/stock/01081-HK"
+      },
+      "phillip": {
+        "label": "辉立",
+        "open": 66.45,
+        "high": 66.45,
+        "low": 60.1,
+        "close": 63.3,
+        "changePct": -4.7,
+        "turnoverShares": 993000,
+        "turnoverAmount": 63100000,
+        "lotGain": -310,
+        "quoteUrl": "https://www.itiger.com/hans/stock/01081"
+      }
+    },
+    "firstDay": {
+      "label": "上市首日",
+      "date": "2026-06-05",
+      "source": {
+        "title": "Yahoo Finance 日线 1081.HK",
+        "url": "https://finance.yahoo.com/quote/1081.HK/history"
+      },
+      "open": 66.4000015258789,
+      "high": 66.44999694824219,
+      "low": 59.04999923706055,
+      "close": 66.4000015258789,
+      "volume": 17946800
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 60.3,
+      "asOf": "2026-06-11T03:23:00.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 1081.HK",
+        "url": "https://finance.yahoo.com/quote/1081.HK"
+      },
+      "dayHigh": 62.35,
+      "dayLow": 59.9,
+      "volume": 577200,
+      "fiftyTwoWeekHigh": 66.45,
+      "fiftyTwoWeekLow": 59.05
+    }
+  },
+  "01779": {
+    "source": {
+      "title": "《新股》天辰生物－Ｂ(01779.HK)暗盤收報150.9元 高上市價57.1%",
+      "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/01779/AAFN/NOW.1527621/hk-stock-news"
+    },
+    "greyMarketDate": "2026-06-05",
+    "greyMarket": {
+      "futu": {
+        "label": "富途",
+        "open": 100,
+        "high": 235,
+        "low": 100,
+        "close": 150.9,
+        "changePct": 57.1,
+        "turnoverShares": 994400,
+        "turnoverAmount": 173000000,
+        "lotGain": 2742,
+        "quoteUrl": "https://www.futunn.com/stock/01779-HK"
+      },
+      "phillip": {
+        "label": "辉立",
+        "open": 180,
+        "high": 240,
+        "low": 140.6,
+        "close": 149.8,
+        "changePct": 55.9,
+        "turnoverShares": 675000,
+        "turnoverAmount": 110000000.00000001,
+        "lotGain": 2687,
+        "quoteUrl": "https://www.itiger.com/hans/stock/01779"
+      }
+    },
+    "firstDay": {
+      "label": "上市首日",
+      "source": {
+        "title": "《新股》天辰生物－Ｂ(01779.HK)全日收131.8元 高上市價37.2%",
+        "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/01779/AAFN/NOW.1527784/hk-stock-news"
+      },
+      "open": 144.3,
+      "high": 158,
+      "low": 126.4,
+      "close": 131.8,
+      "turnoverShares": 4011200,
+      "turnoverAmount": 618000000,
+      "lotGain": 1787,
+      "date": "2026-06-05",
+      "volume": 4011200
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 137.9,
+      "asOf": "2026-06-11T03:24:46.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 1779.HK",
+        "url": "https://finance.yahoo.com/quote/1779.HK"
+      },
+      "dayHigh": 140,
+      "dayLow": 136.5,
+      "volume": 24350,
+      "fiftyTwoWeekHigh": 158,
+      "fiftyTwoWeekLow": 116.1
+    }
+  },
+  "02553": {
+    "source": {
+      "title": "《新股》首鋼朗澤(02553.HK)暗盤收報36元 高上市價146.6%",
+      "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/02553/AAFN/NOW.1527214/hk-stock-news"
+    },
+    "greyMarketDate": "2026-06-03",
+    "greyMarket": {
+      "futu": {
+        "label": "富途",
+        "open": 14,
+        "high": 43,
+        "low": 14,
+        "close": 36,
+        "changePct": 146.6,
+        "turnoverShares": 6848800,
+        "turnoverAmount": 194000000,
+        "lotGain": 4280,
+        "quoteUrl": "https://www.futunn.com/stock/02553-HK"
+      },
+      "phillip": {
+        "label": "辉立",
+        "open": 15.2,
+        "high": 38.04,
+        "low": 15.16,
+        "close": 30.3,
+        "changePct": 107.5,
+        "turnoverShares": 6340000,
+        "turnoverAmount": 173000000,
+        "lotGain": 3140,
+        "quoteUrl": "https://www.itiger.com/hans/stock/02553"
+      }
+    },
+    "firstDay": {
+      "label": "上市首日",
+      "source": {
+        "title": "《新股》首鋼朗澤(02553.HK)全日收21.06元 高上市價44.2%",
+        "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/02553/AAFN/NOW.1527380/hk-stock-news"
+      },
+      "open": 28,
+      "high": 29.98,
+      "low": 18.02,
+      "close": 21.06,
+      "turnoverShares": 37023400,
+      "turnoverAmount": 919000000,
+      "lotGain": 1292,
+      "date": "2026-06-03",
+      "volume": 37023483
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 37.8,
+      "asOf": "2026-06-11T03:24:55.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 2553.HK",
+        "url": "https://finance.yahoo.com/quote/2553.HK"
+      },
+      "dayHigh": 38.38,
+      "dayLow": 32,
+      "volume": 3426082,
+      "fiftyTwoWeekHigh": 38.38,
+      "fiftyTwoWeekLow": 18.02
+    }
+  },
+  "02290": {
+    "firstDay": {
+      "label": "上市首日",
+      "date": "2026-06-05",
+      "source": {
+        "title": "《新股》龍豐集團(02290.HK)全日收2.81元 低上市價45.8%",
+        "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/02290/AAFN/NOW.1527785/hk-stock-news"
+      },
+      "open": 4.32,
+      "high": 4.6,
+      "low": 2.8,
+      "close": 2.81,
+      "volume": 85471206,
+      "turnoverShares": 85471200.00000001,
+      "turnoverAmount": 346000000,
+      "lotGain": -1185
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 2.82,
+      "asOf": "2026-06-11T03:22:20.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 2290.HK",
+        "url": "https://finance.yahoo.com/quote/2290.HK"
+      },
+      "dayHigh": 2.95,
+      "dayLow": 2.8,
+      "volume": 2324000,
+      "fiftyTwoWeekHigh": 4.6,
+      "fiftyTwoWeekLow": 2.36
+    },
+    "source": {
+      "title": "《新股》龍豐集團(02290.HK)暗盤收報5.1元 低上市價1.5%",
+      "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/02290/AAFN/NOW.1527622/hk-stock-news"
+    },
+    "greyMarketDate": "2026-06-05",
+    "greyMarket": {
+      "futu": {
+        "label": "富途",
+        "open": 5.88,
+        "high": 9,
+        "low": 4.81,
+        "close": 5.26,
+        "changePct": 1.5,
+        "turnoverShares": 10530500,
+        "turnoverAmount": 61626200,
+        "lotGain": 40,
+        "quoteUrl": "https://www.futunn.com/stock/02290-HK"
+      },
+      "phillip": {
+        "label": "辉立",
+        "open": 5.5,
+        "high": 6.3,
+        "low": 4.15,
+        "close": 5.1,
+        "changePct": -1.5,
+        "turnoverShares": 13800000,
+        "turnoverAmount": 73000000,
+        "lotGain": -40,
+        "quoteUrl": "https://www.itiger.com/hans/stock/02290"
+      }
+    }
+  },
+  "00901": {
+    "source": {
+      "title": "《新股》華曦達(00901.HK)暗盤收報63.5元 高上市價93.6%",
+      "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/00901/AAFN/NOW.1526130/hk-stock-news"
+    },
+    "greyMarketDate": "2026-05-27",
+    "greyMarket": {
+      "futu": {
+        "label": "富途",
+        "open": 45,
+        "high": 64.1,
+        "low": 36.02,
+        "close": 63.5,
+        "changePct": 93.6,
+        "turnoverShares": 1425100,
+        "turnoverAmount": 75193600,
+        "lotGain": 3070,
+        "quoteUrl": "https://www.futunn.com/stock/00901-HK"
+      },
+      "phillip": {
+        "label": "辉立",
+        "open": 42,
+        "high": 64.15,
+        "low": 36,
+        "close": 63.5,
+        "changePct": 93.6,
+        "turnoverShares": 736000,
+        "turnoverAmount": 39800000,
+        "lotGain": 3070,
+        "quoteUrl": "https://www.itiger.com/hans/stock/00901"
+      }
+    },
+    "firstDay": {
+      "label": "上市首日",
+      "source": {
+        "title": "《新股》華曦達(00901.HK)全日收61.2元 高上市價86.6%",
+        "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/00901/AAFN/NOW.1526298/hk-stock-news"
+      },
+      "open": 65.8,
+      "high": 71.05,
+      "low": 57.3,
+      "close": 61.2,
+      "turnoverShares": 4980900,
+      "turnoverAmount": 296000000,
+      "lotGain": 2840,
+      "date": "2026-05-27"
+    }
+  },
+  "02723": {
+    "source": {
+      "title": "《新股》深演智能(02723.HK)暗盤收報149元 高上市價168.5%",
+      "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/02723/AAFN/NOW.1526131/hk-stock-news"
+    },
+    "greyMarketDate": "2026-05-27",
+    "greyMarket": {
+      "futu": {
+        "label": "富途",
+        "open": 88,
+        "high": 149.5,
+        "low": 80,
+        "close": 149,
+        "changePct": 168.5,
+        "turnoverShares": 1034300.0000000001,
+        "turnoverAmount": 132000000,
+        "lotGain": 9350,
+        "quoteUrl": "https://www.futunn.com/stock/02723-HK"
+      },
+      "phillip": {
+        "label": "辉立",
+        "open": 90,
+        "high": 152.2,
+        "low": 90,
+        "close": 149,
+        "changePct": 168.5,
+        "turnoverShares": 489000,
+        "turnoverAmount": 64700000,
+        "lotGain": 9350,
+        "quoteUrl": "https://www.itiger.com/hans/stock/02723"
+      }
+    },
+    "firstDay": {
+      "label": "上市首日",
+      "source": {
+        "title": "《新股》深演智能(02723.HK)全日收203元 高上市價265.8%",
+        "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/02723/AAFN/NOW.1526299/hk-stock-news"
+      },
+      "open": 155,
+      "high": 230,
+      "low": 155,
+      "close": 203,
+      "turnoverShares": 3460200,
+      "turnoverAmount": 571000000,
+      "lotGain": 14750,
+      "date": "2026-05-27"
+    }
+  },
+  "03310": {
+    "source": {
+      "title": "《新股》雲英谷科技(03310.HK)暗盤收報25.14元 高上市價20.8%",
+      "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/03310/AAFN/NOW.1526132/hk-stock-news"
+    },
+    "greyMarketDate": "2026-05-27",
+    "greyMarket": {
+      "futu": {
+        "label": "富途",
+        "open": 25.58,
+        "high": 28,
+        "low": 24,
+        "close": 25.14,
+        "changePct": 20.8,
+        "turnoverShares": 3001000,
+        "turnoverAmount": 77546600,
+        "lotGain": 866,
+        "quoteUrl": "https://www.futunn.com/stock/03310-HK"
+      },
+      "phillip": {
+        "label": "辉立",
+        "open": 28,
+        "high": 28.02,
+        "low": 23.02,
+        "close": 25.08,
+        "changePct": 20.5,
+        "turnoverShares": 1610000,
+        "turnoverAmount": 42000000,
+        "lotGain": 854,
+        "quoteUrl": "https://www.itiger.com/hans/stock/03310"
+      }
+    },
+    "firstDay": {
+      "label": "上市首日",
+      "source": {
+        "title": "《新股》雲英谷科技(03310.HK)全日收39.9元 高上市價91.7%",
+        "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/03310/AAFN/NOW.1526300/hk-stock-news"
+      },
+      "open": 25.48,
+      "high": 39.9,
+      "low": 25.4,
+      "close": 39.9,
+      "turnoverShares": 16812700,
+      "turnoverAmount": 534999999.99999994,
+      "lotGain": 3818,
+      "date": "2026-05-27"
+    }
+  },
+  "03388": {
+    "source": {
+      "title": "《新股》創想三維(03388.HK)暗盤收報32.08元 高上市價70.6%",
+      "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/03388/AAFN/NOW.1526545/hk-stock-news"
+    },
+    "greyMarketDate": "2026-05-29",
+    "greyMarket": {
+      "futu": {
+        "label": "富途",
+        "open": 26.9,
+        "high": 40,
+        "low": 26.9,
+        "close": 32.08,
+        "changePct": 70.6,
+        "turnoverShares": 5320200,
+        "turnoverAmount": 176000000,
+        "lotGain": 1992,
+        "quoteUrl": "https://www.futunn.com/stock/03388-HK"
+      },
+      "phillip": {
+        "label": "辉立",
+        "open": 30,
+        "high": 36.1,
+        "low": 27.5,
+        "close": 30.24,
+        "changePct": 60.9,
+        "turnoverShares": 5150000,
+        "turnoverAmount": 161000000,
+        "lotGain": 1716,
+        "quoteUrl": "https://www.itiger.com/hans/stock/03388"
+      }
+    },
+    "firstDay": {
+      "label": "上市首日",
+      "source": {
+        "title": "《新股》創想三維(03388.HK)全日收22.8元 高上市價21.3%",
+        "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/03388/AAFN/NOW.1526715/hk-stock-news"
+      },
+      "open": 33.88,
+      "high": 34,
+      "low": 20.88,
+      "close": 22.8,
+      "turnoverShares": 36474800,
+      "turnoverAmount": 1014000000,
+      "lotGain": 600,
+      "date": "2026-05-29"
+    }
+  },
+  "06872": {
+    "source": {
+      "title": "《新股》丹諾醫藥－B(06872.HK)暗盤收報147.5元 高上市價94.8%",
+      "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/06872/AAFN/NOW.1525692/hk-stock-news"
+    },
+    "greyMarketDate": "2026-05-22",
+    "greyMarket": {
+      "futu": {
+        "label": "富途",
+        "open": 90,
+        "high": 159.1,
+        "low": 80.1,
+        "close": 147.5,
+        "changePct": 94.8,
+        "turnoverShares": 792600,
+        "turnoverAmount": 98944300,
+        "lotGain": 3590,
+        "quoteUrl": "https://www.futunn.com/stock/06872-HK"
+      },
+      "phillip": {
+        "label": "辉立",
+        "open": 89,
+        "high": 155,
+        "low": 88.85,
+        "close": 147,
+        "changePct": 94.2,
+        "turnoverShares": 552000,
+        "turnoverAmount": 70800000,
+        "lotGain": 3565,
+        "quoteUrl": "https://www.itiger.com/hans/stock/06872"
+      }
+    },
+    "firstDay": {
+      "label": "上市首日",
+      "source": {
+        "title": "《新股》丹諾醫藥－Ｂ(06872.HK)全日收211元 高上市價178.7%",
+        "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/06872/AAFN/NOW.1525866/hk-stock-news"
+      },
+      "open": 150,
+      "high": 222.2,
+      "low": 145,
+      "close": 211,
+      "turnoverShares": 2458600,
+      "turnoverAmount": 369000000,
+      "lotGain": 6765,
+      "date": "2026-05-22"
     }
   }
 };

@@ -369,7 +369,7 @@ def first_number_after_any(text, labels, max_chars=220):
 
 
 def parse_hk_date(text):
-    match = re.search(r"開始買賣日\s+(\d{4})年(\d{1,2})月(\d{1,2})日", text)
+    match = re.search(r"開始買賣日(?:期)?\s+(\d{4})\s*年\s*(\d{1,2})\s*月\s*(\d{1,2})\s*日", text)
     if not match:
         return None
     year, month, day = (int(part) for part in match.groups())
@@ -671,6 +671,21 @@ PRELISTING_TYPE_OVERRIDES = {
     "01511": ("18C", "18C 特专科技"),
 }
 
+PRELISTING_FIELD_OVERRIDES = {
+    "01392": {
+        "subscriptionStart": "2026-06-11 09:00",
+        "subscriptionEnd": "2026-06-16 12:00",
+        "listDate": "2026-06-22",
+        "offerPrice": 7.20,
+    },
+    "06675": {
+        "subscriptionStart": "2026-06-09 09:00",
+        "subscriptionEnd": "2026-06-12 12:00",
+        "listDate": "2026-06-17",
+        "offerPrice": 18.36,
+    },
+}
+
 
 def infer_prelisting_type(name, code=None):
     if code in PRELISTING_TYPE_OVERRIDES:
@@ -708,15 +723,19 @@ def extract_prelisting_record(row, text_path, text):
         or first_number_after(text, "全球發售的發售股份數目", 120)
     )
     mechanism, listing_type = infer_prelisting_type(row["name"], row["code"])
+    fallback_offer_price = None
+    if summary.get("minAmountHKD") and summary.get("minShares"):
+        fallback_offer_price = round(summary["minAmountHKD"] / summary["minShares"] / 1.010085, 2)
+    overrides = PRELISTING_FIELD_OVERRIDES.get(row["code"], {})
     record = {
         "stockCode": row["code"],
         "name": row["name"],
         "englishName": "",
         "status": "current",
-        "subscriptionStart": subscription_start,
-        "subscriptionEnd": subscription_end,
-        "listDate": parse_hk_date_time_date(listing_start) or "",
-        "offerPrice": parse_float(offer_price) if offer_price else None,
+        "subscriptionStart": subscription_start or overrides.get("subscriptionStart"),
+        "subscriptionEnd": subscription_end or overrides.get("subscriptionEnd"),
+        "listDate": parse_hk_date_time_date(listing_start) or overrides.get("listDate") or "",
+        "offerPrice": parse_float(offer_price) if offer_price else overrides.get("offerPrice") or fallback_offer_price,
         "sharesPerLot": summary.get("minShares"),
         "publicOfferSharesBefore": summary.get("publicOfferSharesBefore"),
         "publicOfferSharesFinal": None,
@@ -831,7 +850,7 @@ def parse_basis_entry_allocation(entry):
         }
 
     guaranteed_extra = re.search(
-        r"([\d,]+)\s*股(?:H?股)?(?:股份)?[，,]?(?:另加|加上)([\d,]+)\s*名(?:申請人)?(?:中|中的)(?:有)?([\d,]+)\s*名獲(?:分配|配發|發|得)額外([\d,]+)\s*股(?:H?股)?(?:股份)?",
+        r"([\d,]+)\s*股(?:H?股)?(?:股份)?[，,]?(?:另加|加上)([\d,]+)\s*名(?:申請人|申請者)?(?:當中|中|中的)?(?:有)?([\d,]+)\s*名獲(?:分配|配發|發|得)額外([\d,]+)\s*股(?:H?股)?(?:股份)?",
         basis,
     )
     if guaranteed_extra:
@@ -850,7 +869,7 @@ def parse_basis_entry_allocation(entry):
         }
 
     lottery = re.search(
-        r"([\d,]+)\s*名(?:申請人)?(?:中|中的)(?:有)?([\d,]+)\s*名(?:將)?獲(?:分配|配發|發|得)([\d,]+)\s*股(?:H?股)?(?:股份)?",
+        r"([\d,]+)\s*名(?:申請人|申請者)?(?:當中|中|中的)?(?:有)?([\d,]+)\s*名(?:將)?獲(?:分配|配發|發|得)([\d,]+)\s*股(?:H?股)?(?:股份)?",
         basis,
     )
     if lottery:
@@ -978,10 +997,10 @@ def parse_basis_rows(text, base_stock=None):
         segment = compact[start:end]
         matches = []
         simple_pattern = re.compile(
-            r"([\d,]+)\s+([\d,]+)\s+([\d,]+)\s*名(?:申請人)?(?:中|中的)(?:有)?\s*([\d,]+)\s*名(?:將)?獲(?:配發|分配|發|得)\s*([\d,]+)\s*股(?:H\s*股)?(?:股份)?\s+([\d.]+)%"
+            r"([\d,]+)\s+([\d,]+)\s+([\d,]+)\s*名(?:申請人|申請者)?(?:當中|中|中的)?(?:有)?\s*([\d,]+)\s*名(?:將)?獲(?:配發|分配|發|得)\s*([\d,]+)\s*股(?:H\s*股)?(?:股份)?\s+([\d.]+)%"
         )
         extra_pattern = re.compile(
-            r"([\d,]+)\s+([\d,]+)\s+([\d,]+)\s*股(?:H\s*股)?(?:股份)?[，,]?\s*(?:加上|另加)\s*([\d,]+)\s*名(?:申請人)?(?:中|中的)(?:有)?\s*([\d,]+)\s*名(?:將)?獲(?:配發|分配|發|得)\s*額外\s*([\d,]+)\s*股(?:H\s*股)?(?:股份)?\s+([\d.]+)%"
+            r"([\d,]+)\s+([\d,]+)\s+([\d,]+)\s*股(?:H\s*股)?(?:股份)?[，,]?\s*(?:加上|另加)\s*([\d,]+)\s*名(?:申請人|申請者)?(?:當中|中|中的)?(?:有)?\s*([\d,]+)\s*名(?:將)?獲(?:配發|分配|發|得)\s*額外\s*([\d,]+)\s*股(?:H\s*股)?(?:股份)?\s+([\d.]+)%"
         )
         guaranteed_pattern = re.compile(
             r"([\d,]+)\s+([\d,]+)\s+([\d,]+)\s*股(?:H\s*股)?(?:股份)?\s+([\d.]+)%"
@@ -1084,6 +1103,20 @@ def extract_minimal_allotment_record(base_stock, pdf_url, text_path, text):
     basis_rows = parse_basis_rows(text, base_stock)
     shares_per_lot = min((row["sharesApplied"] for row in basis_rows if row["group"] == "A"), default=None) or base_stock.get("sharesPerLot")
 
+    successful_applications = parse_int(first_number_after_any(text, [
+        "受理申請數目",
+        "獲接納申請數目",
+        "成功申請數目",
+        "獲分配股份的申請人數目",
+    ]) or "0") or None
+    group_totals = parse_group_totals(text)
+    if not successful_applications:
+        total_winners = sum(
+            positive_number(group.get("successfulApplications")) or 0
+            for group in group_totals.values()
+        )
+        successful_applications = total_winners or None
+
     record = {
         "stockCode": code,
         "name": base_stock.get("name") or "",
@@ -1099,11 +1132,11 @@ def extract_minimal_allotment_record(base_stock, pdf_url, text_path, text):
         "publicOfferSharesFinal": parse_int(public_final) if public_final else None,
         "publicOfferMultiple": parse_float(public_offer_multiple) if public_offer_multiple else None,
         "totalApplications": parse_int(first_number_after(text, "有效申請數目", 80) or "0") or None,
-        "successfulApplications": parse_int(first_number_after(text, "受理申請數目", 80) or "0") or None,
+        "successfulApplications": successful_applications,
         "finalPublicOfferPercent": final_percent,
         "mechanism": base_stock.get("mechanism") or "主板B",
         "listingType": base_stock.get("listingType") or "H股",
-        "groupTotals": parse_group_totals(text),
+        "groupTotals": group_totals,
         "source": {
             "pdf": pdf_url,
             "extractedText": text_path,

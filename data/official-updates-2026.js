@@ -1,5 +1,5 @@
 window.OFFICIAL_UPDATES_2026 = {
-  "generatedAt": "2026-05-30T00:52:52",
+  "generatedAt": "2026-06-11T23:46:31",
   "stocks": [
     {
       "stockCode": "00901",
@@ -814,16 +814,33 @@ window.OFFICIAL_UPDATES_2026 = {
       "stockCode": "01081",
       "name": "大金重工",
       "englishName": "",
-      "status": "current",
-      "subscriptionStart": "2026-05-28 09:00",
-      "subscriptionEnd": "2026-06-02 12:00",
-      "listDate": "",
+      "status": "listed",
+      "listDate": "2026-06-05",
       "offerPrice": 66.4,
       "sharesPerLot": 100,
+      "totalOfferShares": 100010600,
+      "marketCap": 48987260613.600006,
       "publicOfferSharesBefore": 8696600,
-      "totalOfferShares": 86965800,
+      "publicOfferMultiple": 134.39,
+      "totalApplications": 122627,
+      "successfulApplications": 28788,
       "mechanism": "主板B",
       "listingType": "H股",
+      "groupTotals": {
+        "A": {
+          "totalApplications": 118696,
+          "successfulApplications": 24857
+        },
+        "B": {
+          "totalApplications": 3931,
+          "successfulApplications": 3931
+        }
+      },
+      "source": {
+        "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0604/2026060402920_c.pdf",
+        "extractedText": "data/2026/txt/01081_allotment.txt",
+        "title": "官方配發結果 PDF"
+      },
       "applicationSummary": {
         "minShares": 100,
         "minLots": 1,
@@ -1060,19 +1077,665 @@ window.OFFICIAL_UPDATES_2026 = {
           "amountHKD": 291638933.0
         }
       ],
+      "basisOfAllocation": [
+        {
+          "group": "A",
+          "sharesApplied": 100,
+          "validApplications": 56672,
+          "baseAllottedShares": 100,
+          "baseSuccessfulApplications": 1701,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 1701,
+          "sharesAllotted": 100,
+          "guaranteedShares": 0,
+          "approxPercent": 3.0,
+          "rawBasis": "56,672名申請人中1,701名獲配發100股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 300,
+          "validApplications": 4380,
+          "baseAllottedShares": 100,
+          "baseSuccessfulApplications": 330,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 330,
+          "sharesAllotted": 100,
+          "guaranteedShares": 0,
+          "approxPercent": 2.51,
+          "rawBasis": "4,380名申請人中330名獲配發100股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 400,
+          "validApplications": 2710,
+          "baseAllottedShares": 100,
+          "baseSuccessfulApplications": 260,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 260,
+          "sharesAllotted": 100,
+          "guaranteedShares": 0,
+          "approxPercent": 2.4,
+          "rawBasis": "2,710名申請人中260名獲配發100股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 500,
+          "validApplications": 3477,
+          "baseAllottedShares": 100,
+          "baseSuccessfulApplications": 402,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 402,
+          "sharesAllotted": 100,
+          "guaranteedShares": 0,
+          "approxPercent": 2.31,
+          "rawBasis": "3,477名申請人中402名獲配發100股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 600,
+          "validApplications": 2115,
+          "baseAllottedShares": 100,
+          "baseSuccessfulApplications": 285,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 285,
+          "sharesAllotted": 100,
+          "guaranteedShares": 0,
+          "approxPercent": 2.25,
+          "rawBasis": "2,115名申請人中285名獲配發100股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 700,
+          "validApplications": 6016,
+          "baseAllottedShares": 100,
+          "baseSuccessfulApplications": 922,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 922,
+          "sharesAllotted": 100,
+          "guaranteedShares": 0,
+          "approxPercent": 2.19,
+          "rawBasis": "6,016名申請人中922名獲配發100股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 800,
+          "validApplications": 1521,
+          "baseAllottedShares": 100,
+          "baseSuccessfulApplications": 261,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 261,
+          "sharesAllotted": 100,
+          "guaranteedShares": 0,
+          "approxPercent": 2.14,
+          "rawBasis": "1,521名申請人中261名獲配發100股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 900,
+          "validApplications": 1696,
+          "baseAllottedShares": 100,
+          "baseSuccessfulApplications": 321,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 321,
+          "sharesAllotted": 100,
+          "guaranteedShares": 0,
+          "approxPercent": 2.1,
+          "rawBasis": "1,696名申請人中321名獲配發100股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 1000,
+          "validApplications": 7841,
+          "baseAllottedShares": 100,
+          "baseSuccessfulApplications": 1619,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 1619,
+          "sharesAllotted": 100,
+          "guaranteedShares": 0,
+          "approxPercent": 2.06,
+          "rawBasis": "7,841名申請人中1,619名獲配發100股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 1500,
+          "validApplications": 2692,
+          "baseAllottedShares": 100,
+          "baseSuccessfulApplications": 781,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 781,
+          "sharesAllotted": 100,
+          "guaranteedShares": 0,
+          "approxPercent": 1.93,
+          "rawBasis": "2,692名申請人中781名獲配發100股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 2000,
+          "validApplications": 2006,
+          "baseAllottedShares": 100,
+          "baseSuccessfulApplications": 741,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 741,
+          "sharesAllotted": 100,
+          "guaranteedShares": 0,
+          "approxPercent": 1.85,
+          "rawBasis": "2,006名申請人中741名獲配發100股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 2500,
+          "validApplications": 1332,
+          "baseAllottedShares": 100,
+          "baseSuccessfulApplications": 593,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 593,
+          "sharesAllotted": 100,
+          "guaranteedShares": 0,
+          "approxPercent": 1.78,
+          "rawBasis": "1,332名申請人中593名獲配發100股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 3000,
+          "validApplications": 1404,
+          "baseAllottedShares": 100,
+          "baseSuccessfulApplications": 736,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 736,
+          "sharesAllotted": 100,
+          "guaranteedShares": 0,
+          "approxPercent": 1.75,
+          "rawBasis": "1,404名申請人中736名獲配發100股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 3500,
+          "validApplications": 753,
+          "baseAllottedShares": 100,
+          "baseSuccessfulApplications": 458,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 458,
+          "sharesAllotted": 100,
+          "guaranteedShares": 0,
+          "approxPercent": 1.74,
+          "rawBasis": "753名申請人中458名獲配發100股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 4000,
+          "validApplications": 895,
+          "baseAllottedShares": 100,
+          "baseSuccessfulApplications": 619,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 619,
+          "sharesAllotted": 100,
+          "guaranteedShares": 0,
+          "approxPercent": 1.73,
+          "rawBasis": "895名申請人中619名獲配發100股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 4500,
+          "validApplications": 807,
+          "baseAllottedShares": 100,
+          "baseSuccessfulApplications": 624,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 624,
+          "sharesAllotted": 100,
+          "guaranteedShares": 0,
+          "approxPercent": 1.72,
+          "rawBasis": "807名申請人中624名獲配發100股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 5000,
+          "validApplications": 1445,
+          "baseAllottedShares": 100,
+          "baseSuccessfulApplications": 1221,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 1221,
+          "sharesAllotted": 100,
+          "guaranteedShares": 0,
+          "approxPercent": 1.69,
+          "rawBasis": "1,445名申請人中1,221名獲配發100股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 6000,
+          "validApplications": 975,
+          "baseAllottedShares": 100,
+          "baseSuccessfulApplications": 975,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 975,
+          "sharesAllotted": 100,
+          "guaranteedShares": 100,
+          "approxPercent": 1.67,
+          "rawBasis": "100股H股股份"
+        },
+        {
+          "group": "B",
+          "sharesApplied": 80000,
+          "validApplications": 1348,
+          "baseAllottedShares": 800,
+          "baseSuccessfulApplications": 1348,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 1348,
+          "sharesAllotted": 800,
+          "guaranteedShares": 800,
+          "approxPercent": 1.0,
+          "rawBasis": "800股H股股份"
+        },
+        {
+          "group": "B",
+          "sharesApplied": 400000,
+          "validApplications": 102,
+          "baseAllottedShares": 1700,
+          "baseSuccessfulApplications": 102,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 102,
+          "sharesAllotted": 1700,
+          "guaranteedShares": 1700,
+          "approxPercent": 0.43,
+          "rawBasis": "1,700股H股股份"
+        },
+        {
+          "group": "B",
+          "sharesApplied": 500000,
+          "validApplications": 71,
+          "baseAllottedShares": 2000,
+          "baseSuccessfulApplications": 71,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 71,
+          "sharesAllotted": 2000,
+          "guaranteedShares": 2000,
+          "approxPercent": 0.4,
+          "rawBasis": "2,000股H股股份"
+        },
+        {
+          "group": "B",
+          "sharesApplied": 600000,
+          "validApplications": 32,
+          "baseAllottedShares": 2300,
+          "baseSuccessfulApplications": 32,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 32,
+          "sharesAllotted": 2300,
+          "guaranteedShares": 2300,
+          "approxPercent": 0.38,
+          "rawBasis": "2,300股H股股份"
+        },
+        {
+          "group": "B",
+          "sharesApplied": 700000,
+          "validApplications": 23,
+          "baseAllottedShares": 2600,
+          "baseSuccessfulApplications": 23,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 23,
+          "sharesAllotted": 2600,
+          "guaranteedShares": 2600,
+          "approxPercent": 0.37,
+          "rawBasis": "2,600股H股股份"
+        },
+        {
+          "group": "B",
+          "sharesApplied": 800000,
+          "validApplications": 21,
+          "baseAllottedShares": 2900,
+          "baseSuccessfulApplications": 21,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 21,
+          "sharesAllotted": 2900,
+          "guaranteedShares": 2900,
+          "approxPercent": 0.36,
+          "rawBasis": "2,900股H股股份"
+        },
+        {
+          "group": "B",
+          "sharesApplied": 900000,
+          "validApplications": 18,
+          "baseAllottedShares": 3200,
+          "baseSuccessfulApplications": 18,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 18,
+          "sharesAllotted": 3200,
+          "guaranteedShares": 3200,
+          "approxPercent": 0.36,
+          "rawBasis": "3,200股H股股份"
+        },
+        {
+          "group": "B",
+          "sharesApplied": 1000000,
+          "validApplications": 69,
+          "baseAllottedShares": 3500,
+          "baseSuccessfulApplications": 69,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 69,
+          "sharesAllotted": 3500,
+          "guaranteedShares": 3500,
+          "approxPercent": 0.35,
+          "rawBasis": "3,500股H股股份"
+        },
+        {
+          "group": "B",
+          "sharesApplied": 2000000,
+          "validApplications": 23,
+          "baseAllottedShares": 4000,
+          "baseSuccessfulApplications": 23,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 23,
+          "sharesAllotted": 4000,
+          "guaranteedShares": 4000,
+          "approxPercent": 0.2,
+          "rawBasis": "4,000股H股股份"
+        },
+        {
+          "group": "B",
+          "sharesApplied": 3000000,
+          "validApplications": 15,
+          "baseAllottedShares": 4500,
+          "baseSuccessfulApplications": 15,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 15,
+          "sharesAllotted": 4500,
+          "guaranteedShares": 4500,
+          "approxPercent": 0.15,
+          "rawBasis": "4,500股H股股份"
+        },
+        {
+          "group": "B",
+          "sharesApplied": 4348300,
+          "validApplications": 33,
+          "baseAllottedShares": 5000,
+          "baseSuccessfulApplications": 33,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 33,
+          "sharesAllotted": 5000,
+          "guaranteedShares": 5000,
+          "approxPercent": 0.11,
+          "rawBasis": "5,000股H股股份"
+        }
+      ],
+      "subscriptionStart": "2026-05-28 09:00",
+      "subscriptionEnd": "2026-06-02 12:00",
+      "estimatedSubscriptionMultiple": 134.39,
+      "estimatedSubscriptionSource": "致富证券",
+      "estimatedSubscriptionSourceUrl": "https://www.chiefgroup.com.hk/cn/securities/hk-ipo-detail?symbol=1081",
+      "estimatedSubscriptionCapturedAt": "2026-06-11T11:19:26",
+      "estimatedSubscriptionStatus": "estimated",
+      "estimatedSubscriptionLastCheckedAt": "2026-06-11T11:15:45"
+    },
+    {
+      "stockCode": "01392",
+      "name": "海清智元",
+      "englishName": "",
+      "status": "current",
+      "listDate": "2026-06-22",
+      "sharesPerLot": 500,
+      "publicOfferSharesBefore": 8516000,
+      "mechanism": "主板B",
+      "listingType": "H股",
+      "applicationSummary": {
+        "minShares": 500,
+        "minLots": 1,
+        "minAmountHKD": 3636.31,
+        "aMaxShares": 600000,
+        "aMaxLots": 1200,
+        "aMaxAmountHKD": 4363567.2,
+        "bMinShares": 700000,
+        "bMinLots": 1400,
+        "bMinAmountHKD": 5090828.4,
+        "maxShares": 4258000,
+        "maxLots": 8516,
+        "maxAmountHKD": 30966781.9
+      },
+      "applicationTiers": [
+        {
+          "shares": 500,
+          "lots": 1,
+          "amountHKD": 3636.31
+        },
+        {
+          "shares": 1000,
+          "lots": 2,
+          "amountHKD": 7272.61
+        },
+        {
+          "shares": 1500,
+          "lots": 3,
+          "amountHKD": 10908.92
+        },
+        {
+          "shares": 2000,
+          "lots": 4,
+          "amountHKD": 14545.22
+        },
+        {
+          "shares": 2500,
+          "lots": 5,
+          "amountHKD": 18181.54
+        },
+        {
+          "shares": 3000,
+          "lots": 6,
+          "amountHKD": 21817.83
+        },
+        {
+          "shares": 3500,
+          "lots": 7,
+          "amountHKD": 25454.14
+        },
+        {
+          "shares": 4000,
+          "lots": 8,
+          "amountHKD": 29090.45
+        },
+        {
+          "shares": 4500,
+          "lots": 9,
+          "amountHKD": 32726.75
+        },
+        {
+          "shares": 5000,
+          "lots": 10,
+          "amountHKD": 36363.05
+        },
+        {
+          "shares": 6000,
+          "lots": 12,
+          "amountHKD": 43635.67
+        },
+        {
+          "shares": 7000,
+          "lots": 14,
+          "amountHKD": 50908.29
+        },
+        {
+          "shares": 8000,
+          "lots": 16,
+          "amountHKD": 58180.9
+        },
+        {
+          "shares": 9000,
+          "lots": 18,
+          "amountHKD": 65453.51
+        },
+        {
+          "shares": 10000,
+          "lots": 20,
+          "amountHKD": 72726.12
+        },
+        {
+          "shares": 15000,
+          "lots": 30,
+          "amountHKD": 109089.18
+        },
+        {
+          "shares": 20000,
+          "lots": 40,
+          "amountHKD": 145452.25
+        },
+        {
+          "shares": 25000,
+          "lots": 50,
+          "amountHKD": 181815.3
+        },
+        {
+          "shares": 30000,
+          "lots": 60,
+          "amountHKD": 218178.35
+        },
+        {
+          "shares": 35000,
+          "lots": 70,
+          "amountHKD": 254541.42
+        },
+        {
+          "shares": 40000,
+          "lots": 80,
+          "amountHKD": 290904.48
+        },
+        {
+          "shares": 45000,
+          "lots": 90,
+          "amountHKD": 327267.55
+        },
+        {
+          "shares": 50000,
+          "lots": 100,
+          "amountHKD": 363630.6
+        },
+        {
+          "shares": 60000,
+          "lots": 120,
+          "amountHKD": 436356.72
+        },
+        {
+          "shares": 70000,
+          "lots": 140,
+          "amountHKD": 509082.85
+        },
+        {
+          "shares": 80000,
+          "lots": 160,
+          "amountHKD": 581808.95
+        },
+        {
+          "shares": 90000,
+          "lots": 180,
+          "amountHKD": 654535.08
+        },
+        {
+          "shares": 100000,
+          "lots": 200,
+          "amountHKD": 727261.2
+        },
+        {
+          "shares": 200000,
+          "lots": 400,
+          "amountHKD": 1454522.4
+        },
+        {
+          "shares": 300000,
+          "lots": 600,
+          "amountHKD": 2181783.6
+        },
+        {
+          "shares": 400000,
+          "lots": 800,
+          "amountHKD": 2909044.8
+        },
+        {
+          "shares": 500000,
+          "lots": 1000,
+          "amountHKD": 3636306.0
+        },
+        {
+          "shares": 600000,
+          "lots": 1200,
+          "amountHKD": 4363567.2
+        },
+        {
+          "shares": 700000,
+          "lots": 1400,
+          "amountHKD": 5090828.4
+        },
+        {
+          "shares": 800000,
+          "lots": 1600,
+          "amountHKD": 5818089.6
+        },
+        {
+          "shares": 900000,
+          "lots": 1800,
+          "amountHKD": 6545350.8
+        },
+        {
+          "shares": 1000000,
+          "lots": 2000,
+          "amountHKD": 7272612.0
+        },
+        {
+          "shares": 2000000,
+          "lots": 4000,
+          "amountHKD": 14545224.0
+        },
+        {
+          "shares": 3000000,
+          "lots": 6000,
+          "amountHKD": 21817836.0
+        },
+        {
+          "shares": 4258000,
+          "lots": 8516,
+          "amountHKD": 30966781.9
+        }
+      ],
       "source": {
-        "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0528/2026052800008_c.pdf",
-        "prospectus": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0528/2026052800020_c.pdf",
-        "extractedText": "data/2026/txt/01081_prospectus.txt",
+        "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0611/2026061100006_c.pdf",
+        "prospectus": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0611/2026061100016_c.pdf",
+        "extractedText": "data/2026/txt/01392_prospectus.txt",
         "title": "官方新上市公告 PDF",
         "parserVersion": "2026-05-18-pymupdf-v2"
       },
       "basisOfAllocation": [],
-      "estimatedSubscriptionMultiple": 15.03,
+      "estimatedSubscriptionMultiple": 0.82,
       "estimatedSubscriptionSource": "致富证券",
-      "estimatedSubscriptionSourceUrl": "https://www.chiefgroup.com.hk/cn/securities/hk-ipo-detail?symbol=1081",
-      "estimatedSubscriptionCapturedAt": "2026-05-30T00:52:39",
-      "estimatedSubscriptionStatus": "estimated"
+      "estimatedSubscriptionSourceUrl": "https://www.chiefgroup.com.hk/cn/securities/hk-ipo-detail?symbol=1392",
+      "estimatedSubscriptionCapturedAt": "2026-06-11T11:22:51",
+      "estimatedSubscriptionStatus": "estimated",
+      "subscriptionStart": "2026-06-11 09:00",
+      "subscriptionEnd": "2026-06-16 12:00",
+      "offerPrice": 7.2
     },
     {
       "stockCode": "01511",
@@ -1674,16 +2337,33 @@ window.OFFICIAL_UPDATES_2026 = {
       "stockCode": "01779",
       "name": "天辰生物－Ｂ",
       "englishName": "",
-      "status": "current",
-      "subscriptionStart": "2026-05-28 09:00",
-      "subscriptionEnd": "2026-06-02 12:00",
-      "listDate": "",
+      "status": "listed",
+      "listDate": "2026-06-05",
       "offerPrice": 96.06,
       "sharesPerLot": 50,
-      "publicOfferSharesBefore": 1419300,
       "totalOfferShares": 14193150,
+      "marketCap": 7126993989.0,
+      "publicOfferSharesBefore": 1419300,
+      "publicOfferMultiple": 4762.58,
+      "totalApplications": 266377,
+      "successfulApplications": 28057,
       "mechanism": "主板B",
       "listingType": "H股",
+      "groupTotals": {
+        "A": {
+          "totalApplications": 231973,
+          "successfulApplications": 14194
+        },
+        "B": {
+          "totalApplications": 34404,
+          "successfulApplications": 13863
+        }
+      },
+      "source": {
+        "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0604/2026060402924_c.pdf",
+        "extractedText": "data/2026/txt/01779_allotment.txt",
+        "title": "官方配發結果 PDF"
+      },
       "applicationSummary": {
         "minShares": 50,
         "minLots": 1,
@@ -1915,34 +2595,622 @@ window.OFFICIAL_UPDATES_2026 = {
           "amountHKD": 68856463.15
         }
       ],
-      "source": {
-        "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0528/2026052800006_c.pdf",
-        "prospectus": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0528/2026052800024_c.pdf",
-        "extractedText": "data/2026/txt/01779_prospectus.txt",
-        "title": "官方新上市公告 PDF",
-        "parserVersion": "2026-05-18-pymupdf-v2"
-      },
-      "basisOfAllocation": [],
-      "estimatedSubscriptionMultiple": 191.23,
+      "basisOfAllocation": [
+        {
+          "group": "A",
+          "sharesApplied": 50,
+          "validApplications": 51154,
+          "baseAllottedShares": 50,
+          "baseSuccessfulApplications": 1024,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 1024,
+          "sharesAllotted": 50,
+          "guaranteedShares": 0,
+          "approxPercent": 2.0,
+          "rawBasis": "51,154名申請人中1,024名獲配發50股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 100,
+          "validApplications": 27227,
+          "baseAllottedShares": 50,
+          "baseSuccessfulApplications": 679,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 679,
+          "sharesAllotted": 50,
+          "guaranteedShares": 0,
+          "approxPercent": 1.25,
+          "rawBasis": "27,227名申請人中679名獲配發50股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 150,
+          "validApplications": 5797,
+          "baseAllottedShares": 50,
+          "baseSuccessfulApplications": 165,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 165,
+          "sharesAllotted": 50,
+          "guaranteedShares": 0,
+          "approxPercent": 0.95,
+          "rawBasis": "5,797名申請人中165名獲配發50股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 200,
+          "validApplications": 5425,
+          "baseAllottedShares": 50,
+          "baseSuccessfulApplications": 169,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 169,
+          "sharesAllotted": 50,
+          "guaranteedShares": 0,
+          "approxPercent": 0.78,
+          "rawBasis": "5,425名申請人中169名獲配發50股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 250,
+          "validApplications": 4451,
+          "baseAllottedShares": 50,
+          "baseSuccessfulApplications": 149,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 149,
+          "sharesAllotted": 50,
+          "guaranteedShares": 0,
+          "approxPercent": 0.67,
+          "rawBasis": "4,451名申請人中149名獲配發50股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 300,
+          "validApplications": 3614,
+          "baseAllottedShares": 50,
+          "baseSuccessfulApplications": 128,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 128,
+          "sharesAllotted": 50,
+          "guaranteedShares": 0,
+          "approxPercent": 0.59,
+          "rawBasis": "3,614名申請人中128名獲配發50股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 350,
+          "validApplications": 2817,
+          "baseAllottedShares": 50,
+          "baseSuccessfulApplications": 105,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 105,
+          "sharesAllotted": 50,
+          "guaranteedShares": 0,
+          "approxPercent": 0.53,
+          "rawBasis": "2,817名申請人中105名獲配發50股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 400,
+          "validApplications": 2587,
+          "baseAllottedShares": 50,
+          "baseSuccessfulApplications": 100,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 100,
+          "sharesAllotted": 50,
+          "guaranteedShares": 0,
+          "approxPercent": 0.48,
+          "rawBasis": "2,587名申請人中100名獲配發50股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 450,
+          "validApplications": 1718,
+          "baseAllottedShares": 50,
+          "baseSuccessfulApplications": 69,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 69,
+          "sharesAllotted": 50,
+          "guaranteedShares": 0,
+          "approxPercent": 0.45,
+          "rawBasis": "1,718名申請人中69名獲配發50股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 500,
+          "validApplications": 17860,
+          "baseAllottedShares": 50,
+          "baseSuccessfulApplications": 741,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 741,
+          "sharesAllotted": 50,
+          "guaranteedShares": 0,
+          "approxPercent": 0.41,
+          "rawBasis": "17,860名申請人中741名獲配發50股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 600,
+          "validApplications": 2605,
+          "baseAllottedShares": 50,
+          "baseSuccessfulApplications": 115,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 115,
+          "sharesAllotted": 50,
+          "guaranteedShares": 0,
+          "approxPercent": 0.37,
+          "rawBasis": "2,605名申請人中115名獲配發50股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 700,
+          "validApplications": 2131,
+          "baseAllottedShares": 50,
+          "baseSuccessfulApplications": 99,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 99,
+          "sharesAllotted": 50,
+          "guaranteedShares": 0,
+          "approxPercent": 0.33,
+          "rawBasis": "2,131名申請人中99名獲配發50股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 800,
+          "validApplications": 2255,
+          "baseAllottedShares": 50,
+          "baseSuccessfulApplications": 109,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 109,
+          "sharesAllotted": 50,
+          "guaranteedShares": 0,
+          "approxPercent": 0.3,
+          "rawBasis": "2,255名申請人中109名獲配發50股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 900,
+          "validApplications": 2417,
+          "baseAllottedShares": 50,
+          "baseSuccessfulApplications": 121,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 121,
+          "sharesAllotted": 50,
+          "guaranteedShares": 0,
+          "approxPercent": 0.28,
+          "rawBasis": "2,417名申請人中121名獲配發50股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 1000,
+          "validApplications": 12501,
+          "baseAllottedShares": 50,
+          "baseSuccessfulApplications": 647,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 647,
+          "sharesAllotted": 50,
+          "guaranteedShares": 0,
+          "approxPercent": 0.26,
+          "rawBasis": "12,501名申請人中647名獲配發50股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 1500,
+          "validApplications": 5728,
+          "baseAllottedShares": 50,
+          "baseSuccessfulApplications": 337,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 337,
+          "sharesAllotted": 50,
+          "guaranteedShares": 0,
+          "approxPercent": 0.2,
+          "rawBasis": "5,728名申請人中337名獲配發50股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 2000,
+          "validApplications": 5249,
+          "baseAllottedShares": 50,
+          "baseSuccessfulApplications": 338,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 338,
+          "sharesAllotted": 50,
+          "guaranteedShares": 0,
+          "approxPercent": 0.16,
+          "rawBasis": "5,249名申請人中338名獲配發50股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 2500,
+          "validApplications": 3749,
+          "baseAllottedShares": 50,
+          "baseSuccessfulApplications": 259,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 259,
+          "sharesAllotted": 50,
+          "guaranteedShares": 0,
+          "approxPercent": 0.14,
+          "rawBasis": "3,749名申請人中259名獲配發50股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 3000,
+          "validApplications": 3635,
+          "baseAllottedShares": 50,
+          "baseSuccessfulApplications": 267,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 267,
+          "sharesAllotted": 50,
+          "guaranteedShares": 0,
+          "approxPercent": 0.12,
+          "rawBasis": "3,635名申請人中267名獲配發50股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 3500,
+          "validApplications": 2555,
+          "baseAllottedShares": 50,
+          "baseSuccessfulApplications": 197,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 197,
+          "sharesAllotted": 50,
+          "guaranteedShares": 0,
+          "approxPercent": 0.11,
+          "rawBasis": "2,555名申請人中197名獲配發50股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 4000,
+          "validApplications": 2555,
+          "baseAllottedShares": 50,
+          "baseSuccessfulApplications": 205,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 205,
+          "sharesAllotted": 50,
+          "guaranteedShares": 0,
+          "approxPercent": 0.1,
+          "rawBasis": "2,555名申請人中205名獲配發50股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 4500,
+          "validApplications": 2094,
+          "baseAllottedShares": 50,
+          "baseSuccessfulApplications": 175,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 175,
+          "sharesAllotted": 50,
+          "guaranteedShares": 0,
+          "approxPercent": 0.09,
+          "rawBasis": "2,094名申請人中175名獲配發50股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 5000,
+          "validApplications": 4918,
+          "baseAllottedShares": 50,
+          "baseSuccessfulApplications": 424,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 424,
+          "sharesAllotted": 50,
+          "guaranteedShares": 0,
+          "approxPercent": 0.09,
+          "rawBasis": "4,918名申請人中424名獲配發50股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 6000,
+          "validApplications": 3647,
+          "baseAllottedShares": 50,
+          "baseSuccessfulApplications": 333,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 333,
+          "sharesAllotted": 50,
+          "guaranteedShares": 0,
+          "approxPercent": 0.08,
+          "rawBasis": "3,647名申請人中333名獲配發50股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 7000,
+          "validApplications": 2614,
+          "baseAllottedShares": 50,
+          "baseSuccessfulApplications": 251,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 251,
+          "sharesAllotted": 50,
+          "guaranteedShares": 0,
+          "approxPercent": 0.07,
+          "rawBasis": "2,614名申請人中251名獲配發50股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 8000,
+          "validApplications": 2314,
+          "baseAllottedShares": 50,
+          "baseSuccessfulApplications": 232,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 232,
+          "sharesAllotted": 50,
+          "guaranteedShares": 0,
+          "approxPercent": 0.06,
+          "rawBasis": "2,314名申請人中232名獲配發50股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 9000,
+          "validApplications": 2165,
+          "baseAllottedShares": 50,
+          "baseSuccessfulApplications": 225,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 225,
+          "sharesAllotted": 50,
+          "guaranteedShares": 0,
+          "approxPercent": 0.06,
+          "rawBasis": "2,165名申請人中225名獲配發50股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 10000,
+          "validApplications": 14544,
+          "baseAllottedShares": 50,
+          "baseSuccessfulApplications": 1559,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 1559,
+          "sharesAllotted": 50,
+          "guaranteedShares": 0,
+          "approxPercent": 0.05,
+          "rawBasis": "14,544名申請人中1,559名獲配發50股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 20000,
+          "validApplications": 9347,
+          "baseAllottedShares": 50,
+          "baseSuccessfulApplications": 1249,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 1249,
+          "sharesAllotted": 50,
+          "guaranteedShares": 0,
+          "approxPercent": 0.03,
+          "rawBasis": "9,347名申請人中1,249名獲配發50股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 30000,
+          "validApplications": 7263,
+          "baseAllottedShares": 50,
+          "baseSuccessfulApplications": 1103,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 1103,
+          "sharesAllotted": 50,
+          "guaranteedShares": 0,
+          "approxPercent": 0.03,
+          "rawBasis": "7,263名申請人中1,103名獲配發50股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 40000,
+          "validApplications": 5370,
+          "baseAllottedShares": 50,
+          "baseSuccessfulApplications": 894,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 894,
+          "sharesAllotted": 50,
+          "guaranteedShares": 0,
+          "approxPercent": 0.02,
+          "rawBasis": "5,370名申請人中894名獲配發50股H股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 50000,
+          "validApplications": 9667,
+          "baseAllottedShares": 50,
+          "baseSuccessfulApplications": 1726,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 1726,
+          "sharesAllotted": 50,
+          "guaranteedShares": 0,
+          "approxPercent": 0.02,
+          "rawBasis": "9,667名申請人中1,726名獲配發50股H股股份"
+        },
+        {
+          "group": "B",
+          "sharesApplied": 60000,
+          "validApplications": 8776,
+          "baseAllottedShares": 50,
+          "baseSuccessfulApplications": 2107,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 2107,
+          "sharesAllotted": 50,
+          "guaranteedShares": 0,
+          "approxPercent": 0.02,
+          "rawBasis": "8,776名申請人中2,107名獲配發50股H股股份"
+        },
+        {
+          "group": "B",
+          "sharesApplied": 70000,
+          "validApplications": 3101,
+          "baseAllottedShares": 50,
+          "baseSuccessfulApplications": 824,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 824,
+          "sharesAllotted": 50,
+          "guaranteedShares": 0,
+          "approxPercent": 0.02,
+          "rawBasis": "3,101名申請人中824名獲配發50股H股股份"
+        },
+        {
+          "group": "B",
+          "sharesApplied": 80000,
+          "validApplications": 2312,
+          "baseAllottedShares": 50,
+          "baseSuccessfulApplications": 671,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 671,
+          "sharesAllotted": 50,
+          "guaranteedShares": 0,
+          "approxPercent": 0.02,
+          "rawBasis": "2,312名申請人中671名獲配發50股H股股份"
+        },
+        {
+          "group": "B",
+          "sharesApplied": 90000,
+          "validApplications": 1923,
+          "baseAllottedShares": 50,
+          "baseSuccessfulApplications": 603,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 603,
+          "sharesAllotted": 50,
+          "guaranteedShares": 0,
+          "approxPercent": 0.02,
+          "rawBasis": "1,923名申請人中603名獲配發50股H股股份"
+        },
+        {
+          "group": "B",
+          "sharesApplied": 100000,
+          "validApplications": 8879,
+          "baseAllottedShares": 50,
+          "baseSuccessfulApplications": 2980,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 2980,
+          "sharesAllotted": 50,
+          "guaranteedShares": 0,
+          "approxPercent": 0.02,
+          "rawBasis": "8,879名申請人中2,980名獲配發50股H股股份"
+        },
+        {
+          "group": "B",
+          "sharesApplied": 200000,
+          "validApplications": 4254,
+          "baseAllottedShares": 50,
+          "baseSuccessfulApplications": 2249,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 2249,
+          "sharesAllotted": 50,
+          "guaranteedShares": 0,
+          "approxPercent": 0.01,
+          "rawBasis": "4,254名申請人中2,249名獲配發50股H股股份"
+        },
+        {
+          "group": "B",
+          "sharesApplied": 300000,
+          "validApplications": 1758,
+          "baseAllottedShares": 50,
+          "baseSuccessfulApplications": 1213,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 1213,
+          "sharesAllotted": 50,
+          "guaranteedShares": 0,
+          "approxPercent": 0.01,
+          "rawBasis": "1,758名申請人中1,213名獲配發50股H股股份"
+        },
+        {
+          "group": "B",
+          "sharesApplied": 400000,
+          "validApplications": 976,
+          "baseAllottedShares": 50,
+          "baseSuccessfulApplications": 813,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 813,
+          "sharesAllotted": 50,
+          "guaranteedShares": 0,
+          "approxPercent": 0.01,
+          "rawBasis": "976名申請人中813名獲配發50股H股股份"
+        },
+        {
+          "group": "B",
+          "sharesApplied": 500000,
+          "validApplications": 630,
+          "baseAllottedShares": 50,
+          "baseSuccessfulApplications": 608,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 608,
+          "sharesAllotted": 50,
+          "guaranteedShares": 0,
+          "approxPercent": 0.01,
+          "rawBasis": "630名申請人中608名獲配發50股H股股份"
+        }
+      ],
+      "subscriptionStart": "2026-05-28 09:00",
+      "subscriptionEnd": "2026-06-02 12:00",
+      "estimatedSubscriptionMultiple": 4762.58,
       "estimatedSubscriptionSource": "致富证券",
       "estimatedSubscriptionSourceUrl": "https://www.chiefgroup.com.hk/cn/securities/hk-ipo-detail?symbol=1779",
-      "estimatedSubscriptionCapturedAt": "2026-05-30T00:52:39",
-      "estimatedSubscriptionStatus": "estimated"
+      "estimatedSubscriptionCapturedAt": "2026-06-11T11:19:26",
+      "estimatedSubscriptionStatus": "estimated",
+      "estimatedSubscriptionLastCheckedAt": "2026-06-11T11:15:45"
     },
     {
       "stockCode": "02290",
       "name": "龍豐集團",
       "englishName": "",
-      "status": "current",
-      "subscriptionStart": "2026-05-28 09:00",
-      "subscriptionEnd": "2026-06-02 12:00",
-      "listDate": "",
-      "offerPrice": 6.38,
+      "status": "listed",
+      "listDate": "2026-06-05",
+      "offerPrice": 5.18,
       "sharesPerLot": 500,
-      "publicOfferSharesBefore": 12500000,
       "totalOfferShares": 125000000,
+      "publicOfferSharesBefore": 12500000,
+      "publicOfferSharesFinal": 12500000,
+      "publicOfferMultiple": 664.92,
+      "totalApplications": 133189,
+      "successfulApplications": 16359,
       "mechanism": "主板B",
       "listingType": "H股",
+      "groupTotals": {
+        "A": {
+          "totalApplications": 129330,
+          "successfulApplications": 12500
+        },
+        "B": {
+          "totalApplications": 3859,
+          "successfulApplications": 3859
+        }
+      },
+      "source": {
+        "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0604/2026060402522_c.pdf",
+        "extractedText": "data/2026/txt/02290_allotment.txt",
+        "title": "官方配發結果 PDF"
+      },
       "applicationSummary": {
         "minShares": 500,
         "minLots": 1,
@@ -2169,248 +3437,1155 @@ window.OFFICIAL_UPDATES_2026 = {
           "amountHKD": 40277139.38
         }
       ],
-      "source": {
-        "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0528/2026052800022_c.pdf",
-        "prospectus": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0528/2026052800032_c.pdf",
-        "extractedText": "data/2026/txt/02290_prospectus.txt",
-        "title": "官方新上市公告 PDF",
-        "parserVersion": "2026-05-18-pymupdf-v2"
-      },
-      "basisOfAllocation": [],
-      "estimatedSubscriptionMultiple": 15.85,
+      "basisOfAllocation": [
+        {
+          "group": "A",
+          "sharesApplied": 500,
+          "validApplications": 46124,
+          "baseAllottedShares": 500,
+          "baseSuccessfulApplications": 2307,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 2307,
+          "sharesAllotted": 500,
+          "guaranteedShares": 0,
+          "approxPercent": 5.0,
+          "rawBasis": "46,124名申請人中有2,307名獲發500股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 1000,
+          "validApplications": 9299,
+          "baseAllottedShares": 500,
+          "baseSuccessfulApplications": 576,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 576,
+          "sharesAllotted": 500,
+          "guaranteedShares": 0,
+          "approxPercent": 3.1,
+          "rawBasis": "9,299名申請人中有576名獲發500股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 1500,
+          "validApplications": 25001,
+          "baseAllottedShares": 500,
+          "baseSuccessfulApplications": 1753,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 1753,
+          "sharesAllotted": 500,
+          "guaranteedShares": 0,
+          "approxPercent": 2.34,
+          "rawBasis": "25,001名申請人中有1,753名獲發500股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 2000,
+          "validApplications": 3063,
+          "baseAllottedShares": 500,
+          "baseSuccessfulApplications": 235,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 235,
+          "sharesAllotted": 500,
+          "guaranteedShares": 0,
+          "approxPercent": 1.92,
+          "rawBasis": "3,063名申請人中有235名獲發500股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 2500,
+          "validApplications": 2111,
+          "baseAllottedShares": 500,
+          "baseSuccessfulApplications": 174,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 174,
+          "sharesAllotted": 500,
+          "guaranteedShares": 0,
+          "approxPercent": 1.65,
+          "rawBasis": "2,111名申請人中有174名獲發500股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 3000,
+          "validApplications": 1604,
+          "baseAllottedShares": 500,
+          "baseSuccessfulApplications": 140,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 140,
+          "sharesAllotted": 500,
+          "guaranteedShares": 0,
+          "approxPercent": 1.45,
+          "rawBasis": "1,604名申請人中有140名獲發500股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 3500,
+          "validApplications": 940,
+          "baseAllottedShares": 500,
+          "baseSuccessfulApplications": 86,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 86,
+          "sharesAllotted": 500,
+          "guaranteedShares": 0,
+          "approxPercent": 1.31,
+          "rawBasis": "940名申請人中有86名獲發500股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 4000,
+          "validApplications": 1002,
+          "baseAllottedShares": 500,
+          "baseSuccessfulApplications": 95,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 95,
+          "sharesAllotted": 500,
+          "guaranteedShares": 0,
+          "approxPercent": 1.19,
+          "rawBasis": "1,002名申請人中有95名獲發500股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 4500,
+          "validApplications": 806,
+          "baseAllottedShares": 500,
+          "baseSuccessfulApplications": 80,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 80,
+          "sharesAllotted": 500,
+          "guaranteedShares": 0,
+          "approxPercent": 1.1,
+          "rawBasis": "806名申請人中有80名獲發500股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 5000,
+          "validApplications": 4594,
+          "baseAllottedShares": 500,
+          "baseSuccessfulApplications": 467,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 467,
+          "sharesAllotted": 500,
+          "guaranteedShares": 0,
+          "approxPercent": 1.02,
+          "rawBasis": "4,594名申請人中有467名獲發500股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 6000,
+          "validApplications": 1330,
+          "baseAllottedShares": 500,
+          "baseSuccessfulApplications": 143,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 143,
+          "sharesAllotted": 500,
+          "guaranteedShares": 0,
+          "approxPercent": 0.9,
+          "rawBasis": "1,330名申請人中有143名獲發500股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 7000,
+          "validApplications": 9591,
+          "baseAllottedShares": 500,
+          "baseSuccessfulApplications": 1080,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 1080,
+          "sharesAllotted": 500,
+          "guaranteedShares": 0,
+          "approxPercent": 0.8,
+          "rawBasis": "9,591名申請人中有1,080名獲發500股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 8000,
+          "validApplications": 1014,
+          "baseAllottedShares": 500,
+          "baseSuccessfulApplications": 119,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 119,
+          "sharesAllotted": 500,
+          "guaranteedShares": 0,
+          "approxPercent": 0.73,
+          "rawBasis": "1,014名申請人中有119名獲發500股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 9000,
+          "validApplications": 672,
+          "baseAllottedShares": 500,
+          "baseSuccessfulApplications": 82,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 82,
+          "sharesAllotted": 500,
+          "guaranteedShares": 0,
+          "approxPercent": 0.68,
+          "rawBasis": "672名申請人中有82名獲發500股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 10000,
+          "validApplications": 2937,
+          "baseAllottedShares": 500,
+          "baseSuccessfulApplications": 369,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 369,
+          "sharesAllotted": 500,
+          "guaranteedShares": 0,
+          "approxPercent": 0.63,
+          "rawBasis": "2,937名申請人中有369名獲發500股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 15000,
+          "validApplications": 2287,
+          "baseAllottedShares": 500,
+          "baseSuccessfulApplications": 326,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 326,
+          "sharesAllotted": 500,
+          "guaranteedShares": 0,
+          "approxPercent": 0.48,
+          "rawBasis": "2,287名申請人中有326名獲發500股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 20000,
+          "validApplications": 1160,
+          "baseAllottedShares": 500,
+          "baseSuccessfulApplications": 181,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 181,
+          "sharesAllotted": 500,
+          "guaranteedShares": 0,
+          "approxPercent": 0.39,
+          "rawBasis": "1,160名申請人中有181名獲發500股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 25000,
+          "validApplications": 898,
+          "baseAllottedShares": 500,
+          "baseSuccessfulApplications": 150,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 150,
+          "sharesAllotted": 500,
+          "guaranteedShares": 0,
+          "approxPercent": 0.33,
+          "rawBasis": "898名申請人中有150名獲發500股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 30000,
+          "validApplications": 858,
+          "baseAllottedShares": 500,
+          "baseSuccessfulApplications": 152,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 152,
+          "sharesAllotted": 500,
+          "guaranteedShares": 0,
+          "approxPercent": 0.3,
+          "rawBasis": "858名申請人中有152名獲發500股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 35000,
+          "validApplications": 551,
+          "baseAllottedShares": 500,
+          "baseSuccessfulApplications": 102,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 102,
+          "sharesAllotted": 500,
+          "guaranteedShares": 0,
+          "approxPercent": 0.26,
+          "rawBasis": "551名申請人中有102名獲發500股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 40000,
+          "validApplications": 535,
+          "baseAllottedShares": 500,
+          "baseSuccessfulApplications": 103,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 103,
+          "sharesAllotted": 500,
+          "guaranteedShares": 0,
+          "approxPercent": 0.24,
+          "rawBasis": "535名申請人中有103名獲發500股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 45000,
+          "validApplications": 432,
+          "baseAllottedShares": 500,
+          "baseSuccessfulApplications": 87,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 87,
+          "sharesAllotted": 500,
+          "guaranteedShares": 0,
+          "approxPercent": 0.22,
+          "rawBasis": "432名申請人中有87名獲發500股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 50000,
+          "validApplications": 1223,
+          "baseAllottedShares": 500,
+          "baseSuccessfulApplications": 252,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 252,
+          "sharesAllotted": 500,
+          "guaranteedShares": 0,
+          "approxPercent": 0.21,
+          "rawBasis": "1,223名申請人中有252名獲發500股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 60000,
+          "validApplications": 745,
+          "baseAllottedShares": 500,
+          "baseSuccessfulApplications": 163,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 163,
+          "sharesAllotted": 500,
+          "guaranteedShares": 0,
+          "approxPercent": 0.18,
+          "rawBasis": "745名申請人中有163名獲發500股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 70000,
+          "validApplications": 750,
+          "baseAllottedShares": 500,
+          "baseSuccessfulApplications": 172,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 172,
+          "sharesAllotted": 500,
+          "guaranteedShares": 0,
+          "approxPercent": 0.16,
+          "rawBasis": "750名申請人中有172名獲發500股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 80000,
+          "validApplications": 755,
+          "baseAllottedShares": 500,
+          "baseSuccessfulApplications": 180,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 180,
+          "sharesAllotted": 500,
+          "guaranteedShares": 0,
+          "approxPercent": 0.15,
+          "rawBasis": "755名申請人中有180名獲發500股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 90000,
+          "validApplications": 604,
+          "baseAllottedShares": 500,
+          "baseSuccessfulApplications": 150,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 150,
+          "sharesAllotted": 500,
+          "guaranteedShares": 0,
+          "approxPercent": 0.14,
+          "rawBasis": "604名申請人中有150名獲發500股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 100000,
+          "validApplications": 3414,
+          "baseAllottedShares": 500,
+          "baseSuccessfulApplications": 871,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 871,
+          "sharesAllotted": 500,
+          "guaranteedShares": 0,
+          "approxPercent": 0.13,
+          "rawBasis": "3,414名申請人中有871名獲發500股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 200000,
+          "validApplications": 1545,
+          "baseAllottedShares": 500,
+          "baseSuccessfulApplications": 488,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 488,
+          "sharesAllotted": 500,
+          "guaranteedShares": 0,
+          "approxPercent": 0.08,
+          "rawBasis": "1,545名申請人中有488名獲發500股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 300000,
+          "validApplications": 1070,
+          "baseAllottedShares": 500,
+          "baseSuccessfulApplications": 383,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 383,
+          "sharesAllotted": 500,
+          "guaranteedShares": 0,
+          "approxPercent": 0.06,
+          "rawBasis": "1,070名申請人中有383名獲發500股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 400000,
+          "validApplications": 708,
+          "baseAllottedShares": 500,
+          "baseSuccessfulApplications": 277,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 277,
+          "sharesAllotted": 500,
+          "guaranteedShares": 0,
+          "approxPercent": 0.05,
+          "rawBasis": "708名申請人中有277名獲發500股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 500000,
+          "validApplications": 582,
+          "baseAllottedShares": 500,
+          "baseSuccessfulApplications": 244,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 244,
+          "sharesAllotted": 500,
+          "guaranteedShares": 0,
+          "approxPercent": 0.04,
+          "rawBasis": "582名申請人中有244名獲發500股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 600000,
+          "validApplications": 424,
+          "baseAllottedShares": 500,
+          "baseSuccessfulApplications": 188,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 188,
+          "sharesAllotted": 500,
+          "guaranteedShares": 0,
+          "approxPercent": 0.04,
+          "rawBasis": "424名申請人中有188名獲發500股股份"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 700000,
+          "validApplications": 701,
+          "baseAllottedShares": 500,
+          "baseSuccessfulApplications": 325,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 325,
+          "sharesAllotted": 500,
+          "guaranteedShares": 0,
+          "approxPercent": 0.03,
+          "rawBasis": "701名申請人中有325名獲發500股股份"
+        },
+        {
+          "group": "B",
+          "sharesApplied": 800000,
+          "validApplications": 1432,
+          "baseAllottedShares": 1000,
+          "baseSuccessfulApplications": 1432,
+          "extraLotteryShares": 500,
+          "extraLotteryWinners": 940,
+          "successfulApplications": 1432,
+          "sharesAllotted": 1000,
+          "guaranteedShares": 1000,
+          "approxPercent": 0.17,
+          "rawBasis": "1,000股股份，另加1,432名申請人中有940名獲發額外500股股份"
+        },
+        {
+          "group": "B",
+          "sharesApplied": 900000,
+          "validApplications": 538,
+          "baseAllottedShares": 1000,
+          "baseSuccessfulApplications": 538,
+          "extraLotteryShares": 500,
+          "extraLotteryWinners": 386,
+          "successfulApplications": 538,
+          "sharesAllotted": 1000,
+          "guaranteedShares": 1000,
+          "approxPercent": 0.15,
+          "rawBasis": "1,000股股份，另加538名申請人中有386名獲發額外500股股份"
+        },
+        {
+          "group": "B",
+          "sharesApplied": 1000000,
+          "validApplications": 1109,
+          "baseAllottedShares": 1000,
+          "baseSuccessfulApplications": 1109,
+          "extraLotteryShares": 500,
+          "extraLotteryWinners": 888,
+          "successfulApplications": 1109,
+          "sharesAllotted": 1000,
+          "guaranteedShares": 1000,
+          "approxPercent": 0.14,
+          "rawBasis": "1,000股股份，另加1,109名申請人中有888名獲發額外500股股份"
+        },
+        {
+          "group": "B",
+          "sharesApplied": 2000000,
+          "validApplications": 370,
+          "baseAllottedShares": 2000,
+          "baseSuccessfulApplications": 370,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 370,
+          "sharesAllotted": 2000,
+          "guaranteedShares": 2000,
+          "approxPercent": 0.1,
+          "rawBasis": "2,000股股份"
+        },
+        {
+          "group": "B",
+          "sharesApplied": 3000000,
+          "validApplications": 137,
+          "baseAllottedShares": 2500,
+          "baseSuccessfulApplications": 137,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 137,
+          "sharesAllotted": 2500,
+          "guaranteedShares": 2500,
+          "approxPercent": 0.08,
+          "rawBasis": "2,500股股份"
+        },
+        {
+          "group": "B",
+          "sharesApplied": 4000000,
+          "validApplications": 94,
+          "baseAllottedShares": 3000,
+          "baseSuccessfulApplications": 94,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 94,
+          "sharesAllotted": 3000,
+          "guaranteedShares": 3000,
+          "approxPercent": 0.08,
+          "rawBasis": "3,000股股份"
+        },
+        {
+          "group": "B",
+          "sharesApplied": 5000000,
+          "validApplications": 33,
+          "baseAllottedShares": 3500,
+          "baseSuccessfulApplications": 33,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 33,
+          "sharesAllotted": 3500,
+          "guaranteedShares": 3500,
+          "approxPercent": 0.07,
+          "rawBasis": "3,500股股份"
+        },
+        {
+          "group": "B",
+          "sharesApplied": 6250000,
+          "validApplications": 146,
+          "baseAllottedShares": 4000,
+          "baseSuccessfulApplications": 146,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 146,
+          "sharesAllotted": 4000,
+          "guaranteedShares": 4000,
+          "approxPercent": 0.06,
+          "rawBasis": "4,000股股份"
+        }
+      ],
+      "subscriptionStart": "2026-05-28 09:00",
+      "subscriptionEnd": "2026-06-02 12:00",
+      "estimatedSubscriptionMultiple": 664.92,
       "estimatedSubscriptionSource": "致富证券",
       "estimatedSubscriptionSourceUrl": "https://www.chiefgroup.com.hk/cn/securities/hk-ipo-detail?symbol=2290",
-      "estimatedSubscriptionCapturedAt": "2026-05-30T00:52:39",
-      "estimatedSubscriptionStatus": "estimated"
+      "estimatedSubscriptionCapturedAt": "2026-06-11T11:19:26",
+      "estimatedSubscriptionStatus": "estimated",
+      "estimatedSubscriptionLastCheckedAt": "2026-06-11T11:15:45"
     },
     {
       "stockCode": "02553",
       "name": "首鋼朗澤",
       "englishName": "",
-      "status": "current",
-      "subscriptionStart": "2026-05-26 09:00",
-      "subscriptionEnd": "2026-05-29 12:00",
+      "status": "listed",
       "listDate": "2026-06-03",
-      "offerPrice": 17.1,
+      "offerPrice": 14.6,
       "sharesPerLot": 200,
-      "publicOfferSharesBefore": 4000000,
       "totalOfferShares": 40000000,
+      "marketCap": 5840000000.0,
+      "publicOfferMultiple": 1421.54,
+      "totalApplications": 109125,
+      "successfulApplications": 21872,
       "mechanism": "主板B",
       "listingType": "H股",
-      "applicationSummary": {
-        "minShares": 200,
-        "minLots": 1,
-        "minAmountHKD": 3454.49,
-        "aMaxShares": 200000,
-        "aMaxLots": 1000,
-        "aMaxAmountHKD": 3454490.7,
-        "bMinShares": 300000,
-        "bMinLots": 1500,
-        "bMinAmountHKD": 5181736.06,
-        "maxShares": 2000000,
-        "maxLots": 10000,
-        "maxAmountHKD": 34544907.0
-      },
-      "applicationTiers": [
-        {
-          "shares": 200,
-          "lots": 1,
-          "amountHKD": 3454.49
+      "groupTotals": {
+        "A": {
+          "totalApplications": 101740,
+          "successfulApplications": 14487
         },
-        {
-          "shares": 400,
-          "lots": 2,
-          "amountHKD": 6908.98
-        },
-        {
-          "shares": 600,
-          "lots": 3,
-          "amountHKD": 10363.48
-        },
-        {
-          "shares": 800,
-          "lots": 4,
-          "amountHKD": 13817.96
-        },
-        {
-          "shares": 1000,
-          "lots": 5,
-          "amountHKD": 17272.46
-        },
-        {
-          "shares": 1200,
-          "lots": 6,
-          "amountHKD": 20726.94
-        },
-        {
-          "shares": 1400,
-          "lots": 7,
-          "amountHKD": 24181.44
-        },
-        {
-          "shares": 1600,
-          "lots": 8,
-          "amountHKD": 27635.93
-        },
-        {
-          "shares": 1800,
-          "lots": 9,
-          "amountHKD": 31090.42
-        },
-        {
-          "shares": 2000,
-          "lots": 10,
-          "amountHKD": 34544.9
-        },
-        {
-          "shares": 3000,
-          "lots": 15,
-          "amountHKD": 51817.37
-        },
-        {
-          "shares": 4000,
-          "lots": 20,
-          "amountHKD": 69089.81
-        },
-        {
-          "shares": 5000,
-          "lots": 25,
-          "amountHKD": 86362.27
-        },
-        {
-          "shares": 6000,
-          "lots": 30,
-          "amountHKD": 103634.72
-        },
-        {
-          "shares": 7000,
-          "lots": 35,
-          "amountHKD": 120907.17
-        },
-        {
-          "shares": 8000,
-          "lots": 40,
-          "amountHKD": 138179.63
-        },
-        {
-          "shares": 9000,
-          "lots": 45,
-          "amountHKD": 155452.09
-        },
-        {
-          "shares": 10000,
-          "lots": 50,
-          "amountHKD": 172724.54
-        },
-        {
-          "shares": 20000,
-          "lots": 100,
-          "amountHKD": 345449.06
-        },
-        {
-          "shares": 30000,
-          "lots": 150,
-          "amountHKD": 518173.6
-        },
-        {
-          "shares": 40000,
-          "lots": 200,
-          "amountHKD": 690898.15
-        },
-        {
-          "shares": 50000,
-          "lots": 250,
-          "amountHKD": 863622.68
-        },
-        {
-          "shares": 60000,
-          "lots": 300,
-          "amountHKD": 1036347.21
-        },
-        {
-          "shares": 70000,
-          "lots": 350,
-          "amountHKD": 1209071.75
-        },
-        {
-          "shares": 80000,
-          "lots": 400,
-          "amountHKD": 1381796.28
-        },
-        {
-          "shares": 90000,
-          "lots": 450,
-          "amountHKD": 1554520.81
-        },
-        {
-          "shares": 100000,
-          "lots": 500,
-          "amountHKD": 1727245.36
-        },
-        {
-          "shares": 200000,
-          "lots": 1000,
-          "amountHKD": 3454490.7
-        },
-        {
-          "shares": 300000,
-          "lots": 1500,
-          "amountHKD": 5181736.06
-        },
-        {
-          "shares": 400000,
-          "lots": 2000,
-          "amountHKD": 6908981.4
-        },
-        {
-          "shares": 500000,
-          "lots": 2500,
-          "amountHKD": 8636226.76
-        },
-        {
-          "shares": 600000,
-          "lots": 3000,
-          "amountHKD": 10363472.1
-        },
-        {
-          "shares": 700000,
-          "lots": 3500,
-          "amountHKD": 12090717.46
-        },
-        {
-          "shares": 800000,
-          "lots": 4000,
-          "amountHKD": 13817962.8
-        },
-        {
-          "shares": 900000,
-          "lots": 4500,
-          "amountHKD": 15545208.16
-        },
-        {
-          "shares": 1000000,
-          "lots": 5000,
-          "amountHKD": 17272453.5
-        },
-        {
-          "shares": 2000000,
-          "lots": 10000,
-          "amountHKD": 34544907.0
+        "B": {
+          "totalApplications": 7385,
+          "successfulApplications": 7385
         }
-      ],
-      "source": {
-        "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0526/2026052600038_c.pdf",
-        "prospectus": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0526/2026052600048_c.pdf",
-        "extractedText": "data/2026/txt/02553_prospectus.txt",
-        "title": "官方新上市公告 PDF",
-        "parserVersion": "2026-05-18-pymupdf-v2"
       },
-      "basisOfAllocation": [],
-      "estimatedSubscriptionMultiple": 1134.38,
-      "estimatedSubscriptionSource": "致富证券",
-      "estimatedSubscriptionSourceUrl": "https://www.chiefgroup.com.hk/cn/securities/hk-ipo-detail?symbol=2553",
-      "estimatedSubscriptionCapturedAt": "2026-05-30T00:52:39",
-      "estimatedSubscriptionStatus": "estimated"
+      "source": {
+        "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0602/2026060202645_c.pdf",
+        "extractedText": "data/2026/txt/02553_allotment.txt",
+        "title": "官方配發結果 PDF"
+      },
+      "basisOfAllocation": [
+        {
+          "group": "A",
+          "sharesApplied": 200,
+          "validApplications": 30809,
+          "baseAllottedShares": 200,
+          "baseSuccessfulApplications": 617,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 617,
+          "sharesAllotted": 200,
+          "guaranteedShares": 0,
+          "approxPercent": 2.0,
+          "rawBasis": "30,809名申請人中的617名獲發200股H股"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 400,
+          "validApplications": 16511,
+          "baseAllottedShares": 200,
+          "baseSuccessfulApplications": 569,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 569,
+          "sharesAllotted": 200,
+          "guaranteedShares": 0,
+          "approxPercent": 1.72,
+          "rawBasis": "16,511名申請人中的569名獲發200股H股"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 600,
+          "validApplications": 4754,
+          "baseAllottedShares": 200,
+          "baseSuccessfulApplications": 207,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 207,
+          "sharesAllotted": 200,
+          "guaranteedShares": 0,
+          "approxPercent": 1.45,
+          "rawBasis": "4,754名申請人中的207名獲發200股H股"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 800,
+          "validApplications": 2345,
+          "baseAllottedShares": 200,
+          "baseSuccessfulApplications": 120,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 120,
+          "sharesAllotted": 200,
+          "guaranteedShares": 0,
+          "approxPercent": 1.28,
+          "rawBasis": "2,345名申請人中的120名獲發200股H股"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 1000,
+          "validApplications": 3578,
+          "baseAllottedShares": 200,
+          "baseSuccessfulApplications": 208,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 208,
+          "sharesAllotted": 200,
+          "guaranteedShares": 0,
+          "approxPercent": 1.16,
+          "rawBasis": "3,578名申請人中的208名獲發200股H股"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 1200,
+          "validApplications": 1828,
+          "baseAllottedShares": 200,
+          "baseSuccessfulApplications": 118,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 118,
+          "sharesAllotted": 200,
+          "guaranteedShares": 0,
+          "approxPercent": 1.08,
+          "rawBasis": "1,828名申請人中的118名獲發200股H股"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 1400,
+          "validApplications": 991,
+          "baseAllottedShares": 200,
+          "baseSuccessfulApplications": 70,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 70,
+          "sharesAllotted": 200,
+          "guaranteedShares": 0,
+          "approxPercent": 1.01,
+          "rawBasis": "991名申請人中的70名獲發200股H股"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 1600,
+          "validApplications": 1195,
+          "baseAllottedShares": 200,
+          "baseSuccessfulApplications": 91,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 91,
+          "sharesAllotted": 200,
+          "guaranteedShares": 0,
+          "approxPercent": 0.95,
+          "rawBasis": "1,195名申請人中的91名獲發200股H股"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 1800,
+          "validApplications": 961,
+          "baseAllottedShares": 200,
+          "baseSuccessfulApplications": 78,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 78,
+          "sharesAllotted": 200,
+          "guaranteedShares": 0,
+          "approxPercent": 0.9,
+          "rawBasis": "961名申請人中的78名獲發200股H股"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 2000,
+          "validApplications": 10817,
+          "baseAllottedShares": 200,
+          "baseSuccessfulApplications": 930,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 930,
+          "sharesAllotted": 200,
+          "guaranteedShares": 0,
+          "approxPercent": 0.86,
+          "rawBasis": "10,817名申請人中的930名獲發200股H股"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 3000,
+          "validApplications": 2254,
+          "baseAllottedShares": 200,
+          "baseSuccessfulApplications": 244,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 244,
+          "sharesAllotted": 200,
+          "guaranteedShares": 0,
+          "approxPercent": 0.72,
+          "rawBasis": "2,254名申請人中的244名獲發200股H股"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 4000,
+          "validApplications": 1703,
+          "baseAllottedShares": 200,
+          "baseSuccessfulApplications": 218,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 218,
+          "sharesAllotted": 200,
+          "guaranteedShares": 0,
+          "approxPercent": 0.64,
+          "rawBasis": "1,703名申請人中的218名獲發200股H股"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 5000,
+          "validApplications": 2236,
+          "baseAllottedShares": 200,
+          "baseSuccessfulApplications": 324,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 324,
+          "sharesAllotted": 200,
+          "guaranteedShares": 0,
+          "approxPercent": 0.58,
+          "rawBasis": "2,236名申請人中的324名獲發200股H股"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 6000,
+          "validApplications": 1540,
+          "baseAllottedShares": 200,
+          "baseSuccessfulApplications": 248,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 248,
+          "sharesAllotted": 200,
+          "guaranteedShares": 0,
+          "approxPercent": 0.54,
+          "rawBasis": "1,540名申請人中的248名獲發200股H股"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 7000,
+          "validApplications": 771,
+          "baseAllottedShares": 200,
+          "baseSuccessfulApplications": 136,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 136,
+          "sharesAllotted": 200,
+          "guaranteedShares": 0,
+          "approxPercent": 0.5,
+          "rawBasis": "771名申請人中的136名獲發200股H股"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 8000,
+          "validApplications": 761,
+          "baseAllottedShares": 200,
+          "baseSuccessfulApplications": 144,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 144,
+          "sharesAllotted": 200,
+          "guaranteedShares": 0,
+          "approxPercent": 0.47,
+          "rawBasis": "761名申請人中的144名獲發200股H股"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 9000,
+          "validApplications": 574,
+          "baseAllottedShares": 200,
+          "baseSuccessfulApplications": 116,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 116,
+          "sharesAllotted": 200,
+          "guaranteedShares": 0,
+          "approxPercent": 0.45,
+          "rawBasis": "574名申請人中的116名獲發200股H股"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 10000,
+          "validApplications": 4121,
+          "baseAllottedShares": 200,
+          "baseSuccessfulApplications": 885,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 885,
+          "sharesAllotted": 200,
+          "guaranteedShares": 0,
+          "approxPercent": 0.43,
+          "rawBasis": "4,121名申請人中的885名獲發200股H股"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 20000,
+          "validApplications": 2378,
+          "baseAllottedShares": 200,
+          "baseSuccessfulApplications": 757,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 757,
+          "sharesAllotted": 200,
+          "guaranteedShares": 0,
+          "approxPercent": 0.32,
+          "rawBasis": "2,378名申請人中的757名獲發200股H股"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 30000,
+          "validApplications": 1498,
+          "baseAllottedShares": 200,
+          "baseSuccessfulApplications": 600,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 600,
+          "sharesAllotted": 200,
+          "guaranteedShares": 0,
+          "approxPercent": 0.27,
+          "rawBasis": "1,498名申請人中的600名獲發200股H股"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 40000,
+          "validApplications": 930,
+          "baseAllottedShares": 200,
+          "baseSuccessfulApplications": 439,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 439,
+          "sharesAllotted": 200,
+          "guaranteedShares": 0,
+          "approxPercent": 0.24,
+          "rawBasis": "930名申請人中的439名獲發200股H股"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 50000,
+          "validApplications": 872,
+          "baseAllottedShares": 200,
+          "baseSuccessfulApplications": 467,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 467,
+          "sharesAllotted": 200,
+          "guaranteedShares": 0,
+          "approxPercent": 0.21,
+          "rawBasis": "872名申請人中的467名獲發200股H股"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 60000,
+          "validApplications": 800,
+          "baseAllottedShares": 200,
+          "baseSuccessfulApplications": 476,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 476,
+          "sharesAllotted": 200,
+          "guaranteedShares": 0,
+          "approxPercent": 0.2,
+          "rawBasis": "800名申請人中的476名獲發200股H股"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 70000,
+          "validApplications": 528,
+          "baseAllottedShares": 200,
+          "baseSuccessfulApplications": 343,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 343,
+          "sharesAllotted": 200,
+          "guaranteedShares": 0,
+          "approxPercent": 0.19,
+          "rawBasis": "528名申請人中的343名獲發200股H股"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 80000,
+          "validApplications": 471,
+          "baseAllottedShares": 200,
+          "baseSuccessfulApplications": 330,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 330,
+          "sharesAllotted": 200,
+          "guaranteedShares": 0,
+          "approxPercent": 0.18,
+          "rawBasis": "471名申請人中的330名獲發200股H股"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 90000,
+          "validApplications": 388,
+          "baseAllottedShares": 200,
+          "baseSuccessfulApplications": 291,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 291,
+          "sharesAllotted": 200,
+          "guaranteedShares": 0,
+          "approxPercent": 0.17,
+          "rawBasis": "388名申請人中的291名獲發200股H股"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 100000,
+          "validApplications": 3229,
+          "baseAllottedShares": 200,
+          "baseSuccessfulApplications": 2564,
+          "extraLotteryShares": null,
+          "extraLotteryWinners": null,
+          "successfulApplications": 2564,
+          "sharesAllotted": 200,
+          "guaranteedShares": 0,
+          "approxPercent": 0.16,
+          "rawBasis": "3,229名申請人中的2,564名獲發200股H股"
+        },
+        {
+          "group": "A",
+          "sharesApplied": 200000,
+          "validApplications": 2897,
+          "baseAllottedShares": 200,
+          "baseSuccessfulApplications": 2897,
+          "extraLotteryShares": 200,
+          "extraLotteryWinners": 513,
+          "successfulApplications": 2897,
+          "sharesAllotted": null,
+          "guaranteedShares": 200,
+          "approxPercent": 0.12,
+          "rawBasis": "200股H股，另2,897名申請人中的513名獲發額外200股H股"
+        },
+        {
+          "group": "B",
+          "sharesApplied": 300000,
+          "validApplications": 3335,
+          "baseAllottedShares": 200,
+          "baseSuccessfulApplications": 3335,
+          "extraLotteryShares": 200,
+          "extraLotteryWinners": 667,
+          "successfulApplications": 3335,
+          "sharesAllotted": null,
+          "guaranteedShares": 200,
+          "approxPercent": 0.08,
+          "rawBasis": "200股H股，另3,335名申請人中的667名獲發額外200股H股"
+        },
+        {
+          "group": "B",
+          "sharesApplied": 400000,
+          "validApplications": 990,
+          "baseAllottedShares": 200,
+          "baseSuccessfulApplications": 990,
+          "extraLotteryShares": 200,
+          "extraLotteryWinners": 521,
+          "successfulApplications": 990,
+          "sharesAllotted": null,
+          "guaranteedShares": 200,
+          "approxPercent": 0.08,
+          "rawBasis": "200股H股，另990名申請人中的521名獲發額外200股H股"
+        },
+        {
+          "group": "B",
+          "sharesApplied": 500000,
+          "validApplications": 608,
+          "baseAllottedShares": 200,
+          "baseSuccessfulApplications": 608,
+          "extraLotteryShares": 200,
+          "extraLotteryWinners": 511,
+          "successfulApplications": 608,
+          "sharesAllotted": null,
+          "guaranteedShares": 200,
+          "approxPercent": 0.07,
+          "rawBasis": "200股H股，另608名申請人中的511名獲發額外200股H股"
+        },
+        {
+          "group": "B",
+          "sharesApplied": 600000,
+          "validApplications": 567,
+          "baseAllottedShares": 400,
+          "baseSuccessfulApplications": 567,
+          "extraLotteryShares": 200,
+          "extraLotteryWinners": 81,
+          "successfulApplications": 567,
+          "sharesAllotted": null,
+          "guaranteedShares": 400,
+          "approxPercent": 0.07,
+          "rawBasis": "400股H股，另567名申請人中的81名獲發額外200股H股"
+        },
+        {
+          "group": "B",
+          "sharesApplied": 700000,
+          "validApplications": 248,
+          "baseAllottedShares": 400,
+          "baseSuccessfulApplications": 248,
+          "extraLotteryShares": 200,
+          "extraLotteryWinners": 109,
+          "successfulApplications": 248,
+          "sharesAllotted": null,
+          "guaranteedShares": 400,
+          "approxPercent": 0.07,
+          "rawBasis": "400股H股，另248名申請人中的109名獲發額外200股H股"
+        },
+        {
+          "group": "B",
+          "sharesApplied": 800000,
+          "validApplications": 219,
+          "baseAllottedShares": 400,
+          "baseSuccessfulApplications": 219,
+          "extraLotteryShares": 200,
+          "extraLotteryWinners": 159,
+          "successfulApplications": 219,
+          "sharesAllotted": null,
+          "guaranteedShares": 400,
+          "approxPercent": 0.07,
+          "rawBasis": "400股H股，另219名申請人中的159名獲發額外200股H股"
+        },
+        {
+          "group": "B",
+          "sharesApplied": 900000,
+          "validApplications": 193,
+          "baseAllottedShares": 600,
+          "baseSuccessfulApplications": 193,
+          "extraLotteryShares": 200,
+          "extraLotteryWinners": 2,
+          "successfulApplications": 193,
+          "sharesAllotted": null,
+          "guaranteedShares": 600,
+          "approxPercent": 0.07,
+          "rawBasis": "600股H股，另193名申請人中的2名獲發額外200股H股"
+        },
+        {
+          "group": "B",
+          "sharesApplied": 1000000,
+          "validApplications": 702,
+          "baseAllottedShares": 600,
+          "baseSuccessfulApplications": 702,
+          "extraLotteryShares": 200,
+          "extraLotteryWinners": 199,
+          "successfulApplications": 702,
+          "sharesAllotted": null,
+          "guaranteedShares": 600,
+          "approxPercent": 0.07,
+          "rawBasis": "600股H股，另702名申請人中的199名獲發額外200股H股"
+        },
+        {
+          "group": "B",
+          "sharesApplied": 2000000,
+          "validApplications": 523,
+          "baseAllottedShares": 1000,
+          "baseSuccessfulApplications": 523,
+          "extraLotteryShares": 200,
+          "extraLotteryWinners": 450,
+          "successfulApplications": 523,
+          "sharesAllotted": null,
+          "guaranteedShares": 1000,
+          "approxPercent": 0.06,
+          "rawBasis": "1,000股H股，另523名申請人中的450名獲發額外200股H股"
+        }
+      ]
     },
     {
       "stockCode": "02723",
@@ -4884,6 +7059,488 @@ window.OFFICIAL_UPDATES_2026 = {
       "estimatedSubscriptionCapturedAt": "2026-05-21T14:37:14",
       "estimatedSubscriptionStatus": "estimated",
       "estimatedSubscriptionLastCheckedAt": "2026-05-20T13:57:53"
+    },
+    {
+      "stockCode": "06658",
+      "name": "溜溜梅",
+      "englishName": "",
+      "status": "current",
+      "subscriptionStart": "2026-06-05 09:00",
+      "subscriptionEnd": "2026-06-10 12:00",
+      "listDate": "2026-06-15",
+      "offerPrice": 43.58,
+      "sharesPerLot": 100,
+      "publicOfferSharesBefore": 1146400,
+      "totalOfferShares": 11464100,
+      "mechanism": "主板B",
+      "listingType": "H股",
+      "applicationSummary": {
+        "minShares": 100,
+        "minLots": 1,
+        "minAmountHKD": 4401.96,
+        "aMaxShares": 100000,
+        "aMaxLots": 1000,
+        "aMaxAmountHKD": 4401950.44,
+        "bMinShares": 150000,
+        "bMinLots": 1500,
+        "bMinAmountHKD": 6602925.65,
+        "maxShares": 573200,
+        "maxLots": 5732,
+        "maxAmountHKD": 25231979.86
+      },
+      "applicationTiers": [
+        {
+          "shares": 100,
+          "lots": 1,
+          "amountHKD": 4401.96
+        },
+        {
+          "shares": 200,
+          "lots": 2,
+          "amountHKD": 8803.9
+        },
+        {
+          "shares": 300,
+          "lots": 3,
+          "amountHKD": 13205.85
+        },
+        {
+          "shares": 400,
+          "lots": 4,
+          "amountHKD": 17607.8
+        },
+        {
+          "shares": 500,
+          "lots": 5,
+          "amountHKD": 22009.75
+        },
+        {
+          "shares": 600,
+          "lots": 6,
+          "amountHKD": 26411.71
+        },
+        {
+          "shares": 700,
+          "lots": 7,
+          "amountHKD": 30813.65
+        },
+        {
+          "shares": 800,
+          "lots": 8,
+          "amountHKD": 35215.6
+        },
+        {
+          "shares": 900,
+          "lots": 9,
+          "amountHKD": 39617.56
+        },
+        {
+          "shares": 1000,
+          "lots": 10,
+          "amountHKD": 44019.51
+        },
+        {
+          "shares": 1500,
+          "lots": 15,
+          "amountHKD": 66029.25
+        },
+        {
+          "shares": 2000,
+          "lots": 20,
+          "amountHKD": 88039.0
+        },
+        {
+          "shares": 2500,
+          "lots": 25,
+          "amountHKD": 110048.76
+        },
+        {
+          "shares": 3000,
+          "lots": 30,
+          "amountHKD": 132058.52
+        },
+        {
+          "shares": 3500,
+          "lots": 35,
+          "amountHKD": 154068.27
+        },
+        {
+          "shares": 4000,
+          "lots": 40,
+          "amountHKD": 176078.02
+        },
+        {
+          "shares": 4500,
+          "lots": 45,
+          "amountHKD": 198087.76
+        },
+        {
+          "shares": 5000,
+          "lots": 50,
+          "amountHKD": 220097.52
+        },
+        {
+          "shares": 6000,
+          "lots": 60,
+          "amountHKD": 264117.02
+        },
+        {
+          "shares": 7000,
+          "lots": 70,
+          "amountHKD": 308136.54
+        },
+        {
+          "shares": 8000,
+          "lots": 80,
+          "amountHKD": 352156.03
+        },
+        {
+          "shares": 9000,
+          "lots": 90,
+          "amountHKD": 396175.54
+        },
+        {
+          "shares": 10000,
+          "lots": 100,
+          "amountHKD": 440195.04
+        },
+        {
+          "shares": 20000,
+          "lots": 200,
+          "amountHKD": 880390.09
+        },
+        {
+          "shares": 30000,
+          "lots": 300,
+          "amountHKD": 1320585.13
+        },
+        {
+          "shares": 40000,
+          "lots": 400,
+          "amountHKD": 1760780.17
+        },
+        {
+          "shares": 50000,
+          "lots": 500,
+          "amountHKD": 2200975.21
+        },
+        {
+          "shares": 60000,
+          "lots": 600,
+          "amountHKD": 2641170.26
+        },
+        {
+          "shares": 70000,
+          "lots": 700,
+          "amountHKD": 3081365.31
+        },
+        {
+          "shares": 80000,
+          "lots": 800,
+          "amountHKD": 3521560.34
+        },
+        {
+          "shares": 90000,
+          "lots": 900,
+          "amountHKD": 3961755.38
+        },
+        {
+          "shares": 100000,
+          "lots": 1000,
+          "amountHKD": 4401950.44
+        },
+        {
+          "shares": 150000,
+          "lots": 1500,
+          "amountHKD": 6602925.65
+        },
+        {
+          "shares": 200000,
+          "lots": 2000,
+          "amountHKD": 8803900.85
+        },
+        {
+          "shares": 250000,
+          "lots": 2500,
+          "amountHKD": 11004876.08
+        },
+        {
+          "shares": 300000,
+          "lots": 3000,
+          "amountHKD": 13205851.29
+        },
+        {
+          "shares": 350000,
+          "lots": 3500,
+          "amountHKD": 15406826.5
+        },
+        {
+          "shares": 400000,
+          "lots": 4000,
+          "amountHKD": 17607801.72
+        },
+        {
+          "shares": 450000,
+          "lots": 4500,
+          "amountHKD": 19808776.94
+        },
+        {
+          "shares": 573200,
+          "lots": 5732,
+          "amountHKD": 25231979.86
+        }
+      ],
+      "source": {
+        "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0605/2026060500016_c.pdf",
+        "prospectus": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0605/2026060500024_c.pdf",
+        "extractedText": "data/2026/txt/06658_prospectus.txt",
+        "title": "官方新上市公告 PDF",
+        "parserVersion": "2026-05-18-pymupdf-v2"
+      },
+      "basisOfAllocation": [],
+      "estimatedSubscriptionMultiple": 4311.73,
+      "estimatedSubscriptionSource": "致富证券",
+      "estimatedSubscriptionSourceUrl": "https://www.chiefgroup.com.hk/cn/securities/hk-ipo-detail?symbol=6658",
+      "estimatedSubscriptionCapturedAt": "2026-06-11T11:22:51",
+      "estimatedSubscriptionStatus": "estimated"
+    },
+    {
+      "stockCode": "06675",
+      "name": "SENASIC",
+      "englishName": "",
+      "status": "current",
+      "listDate": "2026-06-17",
+      "sharesPerLot": 200,
+      "publicOfferSharesBefore": 5340800,
+      "mechanism": "主板B",
+      "listingType": "H股",
+      "applicationSummary": {
+        "minShares": 200,
+        "minLots": 1,
+        "minAmountHKD": 3709.04,
+        "aMaxShares": 200000,
+        "aMaxLots": 1000,
+        "aMaxAmountHKD": 3709032.12,
+        "bMinShares": 300000,
+        "bMinLots": 1500,
+        "bMinAmountHKD": 5563548.18,
+        "maxShares": 2670400,
+        "maxLots": 13352,
+        "maxAmountHKD": 49522996.86
+      },
+      "applicationTiers": [
+        {
+          "shares": 200,
+          "lots": 1,
+          "amountHKD": 3709.04
+        },
+        {
+          "shares": 400,
+          "lots": 2,
+          "amountHKD": 7418.06
+        },
+        {
+          "shares": 600,
+          "lots": 3,
+          "amountHKD": 11127.1
+        },
+        {
+          "shares": 800,
+          "lots": 4,
+          "amountHKD": 14836.13
+        },
+        {
+          "shares": 1000,
+          "lots": 5,
+          "amountHKD": 18545.17
+        },
+        {
+          "shares": 1200,
+          "lots": 6,
+          "amountHKD": 22254.18
+        },
+        {
+          "shares": 1400,
+          "lots": 7,
+          "amountHKD": 25963.22
+        },
+        {
+          "shares": 1600,
+          "lots": 8,
+          "amountHKD": 29672.25
+        },
+        {
+          "shares": 1800,
+          "lots": 9,
+          "amountHKD": 33381.29
+        },
+        {
+          "shares": 2000,
+          "lots": 10,
+          "amountHKD": 37090.32
+        },
+        {
+          "shares": 3000,
+          "lots": 15,
+          "amountHKD": 55635.48
+        },
+        {
+          "shares": 4000,
+          "lots": 20,
+          "amountHKD": 74180.64
+        },
+        {
+          "shares": 5000,
+          "lots": 25,
+          "amountHKD": 92725.81
+        },
+        {
+          "shares": 6000,
+          "lots": 30,
+          "amountHKD": 111270.96
+        },
+        {
+          "shares": 7000,
+          "lots": 35,
+          "amountHKD": 129816.12
+        },
+        {
+          "shares": 8000,
+          "lots": 40,
+          "amountHKD": 148361.29
+        },
+        {
+          "shares": 9000,
+          "lots": 45,
+          "amountHKD": 166906.45
+        },
+        {
+          "shares": 10000,
+          "lots": 50,
+          "amountHKD": 185451.61
+        },
+        {
+          "shares": 20000,
+          "lots": 100,
+          "amountHKD": 370903.21
+        },
+        {
+          "shares": 30000,
+          "lots": 150,
+          "amountHKD": 556354.82
+        },
+        {
+          "shares": 40000,
+          "lots": 200,
+          "amountHKD": 741806.42
+        },
+        {
+          "shares": 50000,
+          "lots": 250,
+          "amountHKD": 927258.04
+        },
+        {
+          "shares": 60000,
+          "lots": 300,
+          "amountHKD": 1112709.63
+        },
+        {
+          "shares": 70000,
+          "lots": 350,
+          "amountHKD": 1298161.24
+        },
+        {
+          "shares": 80000,
+          "lots": 400,
+          "amountHKD": 1483612.85
+        },
+        {
+          "shares": 90000,
+          "lots": 450,
+          "amountHKD": 1669064.45
+        },
+        {
+          "shares": 100000,
+          "lots": 500,
+          "amountHKD": 1854516.05
+        },
+        {
+          "shares": 200000,
+          "lots": 1000,
+          "amountHKD": 3709032.12
+        },
+        {
+          "shares": 300000,
+          "lots": 1500,
+          "amountHKD": 5563548.18
+        },
+        {
+          "shares": 400000,
+          "lots": 2000,
+          "amountHKD": 7418064.25
+        },
+        {
+          "shares": 500000,
+          "lots": 2500,
+          "amountHKD": 9272580.3
+        },
+        {
+          "shares": 600000,
+          "lots": 3000,
+          "amountHKD": 11127096.35
+        },
+        {
+          "shares": 700000,
+          "lots": 3500,
+          "amountHKD": 12981612.42
+        },
+        {
+          "shares": 800000,
+          "lots": 4000,
+          "amountHKD": 14836128.48
+        },
+        {
+          "shares": 900000,
+          "lots": 4500,
+          "amountHKD": 16690644.55
+        },
+        {
+          "shares": 1000000,
+          "lots": 5000,
+          "amountHKD": 18545160.6
+        },
+        {
+          "shares": 1500000,
+          "lots": 7500,
+          "amountHKD": 27817740.9
+        },
+        {
+          "shares": 2000000,
+          "lots": 10000,
+          "amountHKD": 37090321.2
+        },
+        {
+          "shares": 2670400,
+          "lots": 13352,
+          "amountHKD": 49522996.86
+        }
+      ],
+      "source": {
+        "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0609/2026060900010_c.pdf",
+        "prospectus": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0609/2026060900030_c.pdf",
+        "extractedText": "data/2026/txt/06675_prospectus.txt",
+        "title": "官方新上市公告 PDF",
+        "parserVersion": "2026-05-18-pymupdf-v2"
+      },
+      "basisOfAllocation": [],
+      "estimatedSubscriptionMultiple": 336.14,
+      "estimatedSubscriptionSource": "致富证券",
+      "estimatedSubscriptionSourceUrl": "https://www.chiefgroup.com.hk/cn/securities/hk-ipo-detail?symbol=6675",
+      "estimatedSubscriptionCapturedAt": "2026-06-11T11:22:51",
+      "estimatedSubscriptionStatus": "estimated",
+      "subscriptionStart": "2026-06-09 09:00",
+      "subscriptionEnd": "2026-06-12 12:00",
+      "offerPrice": 18.36
     },
     {
       "stockCode": "06871",

@@ -1,0 +1,2796 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>港股打新通 - 看板 Demo</title>
+  <style>
+    :root{
+      --bg:#f2e7db;
+      --surface:#fffaf5;
+      --surface-soft:#fbf1e7;
+      --surface-tint:#f4e6d8;
+      --line:#eadbca;
+      --line-soft:#f0e4d7;
+      --text:#243044;
+      --muted:#6e7787;
+      --blue:#c65637;
+      --green:#5f8f7d;
+      --amber:#b97832;
+      --red:#c65637;
+      --shadow:0 22px 48px rgba(108,78,54,.13);
+      --radius:12px;
+    }
+    *{box-sizing:border-box}
+    html{
+      width:100%;
+      max-width:100%;
+      height:100%;
+      overflow-x:clip;
+      overscroll-behavior-x:none;
+    }
+    body{
+      position:fixed;
+      inset:0;
+      width:100%;
+      max-width:100%;
+      margin:0;
+      height:100vh;
+      min-height:100vh;
+      overflow-x:clip;
+      overflow-y:hidden;
+      overscroll-behavior-x:none;
+      touch-action:pan-y;
+      background:
+        radial-gradient(circle at 15% 8%, rgba(219,176,145,.48), transparent 30%),
+        radial-gradient(circle at 82% 14%, rgba(229,215,180,.46), transparent 34%),
+        linear-gradient(135deg,#f3e1d5 0%,#eee3d7 48%,#f8efe6 100%);
+      color:var(--text);
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+      letter-spacing:0;
+      transition:background .28s ease,color .28s ease;
+    }
+    body.theme-live{
+      background:
+        radial-gradient(circle at 16% 8%, rgba(233,188,144,.55), transparent 32%),
+        radial-gradient(circle at 84% 14%, rgba(240,216,176,.52), transparent 35%),
+        linear-gradient(135deg,#f4dfcf 0%,#f1e3d3 48%,#fbf1e6 100%);
+    }
+    button,input{font:inherit}
+    button{cursor:pointer}
+    .page-shell{
+      width:min(100%, 1480px);
+      max-width:1480px;
+      margin:0 auto;
+      height:calc(100vh - 74px);
+      padding:16px 22px 20px;
+      display:flex;
+      flex-direction:column;
+      min-height:0;
+      overflow:hidden;
+    }
+    .topbar{
+      position:sticky;
+      top:0;
+      z-index:20;
+      overflow-x:clip;
+      background:rgba(247,238,228,.88);
+      backdrop-filter:blur(16px);
+      border-bottom:1px solid rgba(231,215,201,.92);
+      transition:background .28s ease,border-color .28s ease;
+    }
+    body.theme-live .topbar{
+      background:rgba(249,239,227,.9);
+      border-bottom-color:rgba(227,201,171,.96);
+    }
+    .topbar-inner{
+      width:min(100%, 1480px);
+      max-width:1480px;
+      margin:0 auto;
+      min-height:74px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:18px;
+      padding:12px 22px;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      min-width:0;
+    }
+    .brand-mark{
+      position:relative;
+      width:38px;
+      height:38px;
+      flex:0 0 auto;
+      border-radius:10px;
+      background:#243044;
+      box-shadow:0 12px 24px rgba(84,58,42,.16), inset 0 0 0 1px rgba(255,255,255,.16);
+    }
+    .brand-mark:before{
+      content:"";
+      position:absolute;
+      left:10px;
+      right:10px;
+      bottom:10px;
+      height:14px;
+      border-left:3px solid #8bc0a8;
+      border-bottom:3px solid #8bc0a8;
+      transform:skew(-16deg);
+    }
+    .brand-mark:after{
+      content:"";
+      position:absolute;
+      right:8px;
+      top:9px;
+      width:7px;
+      height:7px;
+      border-radius:999px;
+      background:#7fb29b;
+      box-shadow:-10px 11px 0 -2px #d99561;
+    }
+    h1,h2,h3,p{margin:0}
+    h1{
+      font-size:22px;
+      line-height:1.15;
+      font-weight:900;
+    }
+    .brand p{
+      margin-top:4px;
+      color:var(--muted);
+      font-size:13px;
+      font-weight:650;
+    }
+    .top-actions{
+      display:flex;
+      align-items:center;
+      justify-content:flex-end;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+    .status-pill{
+      min-height:30px;
+      display:inline-flex;
+      align-items:center;
+      padding:0 11px;
+      border:1px solid var(--line);
+      border-radius:999px;
+      background:var(--surface);
+      color:#3f4a5d;
+      font-size:12px;
+      font-weight:850;
+      box-shadow:0 1px 2px rgba(108,78,54,.04);
+    }
+    .board-layout{
+      display:grid;
+      grid-template-columns:minmax(300px, 360px) minmax(0, 1fr);
+      gap:18px;
+      align-items:stretch;
+      flex:1;
+      min-height:0;
+      min-width:0;
+      width:100%;
+      max-width:100%;
+      overflow-x:clip;
+    }
+    .panel{
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      background:var(--surface);
+      box-shadow:var(--shadow);
+      transition:border-color .28s ease,background .28s ease,box-shadow .28s ease;
+    }
+    body.theme-live .panel{
+      border-color:#e4cfb9;
+      background:#fff9f2;
+    }
+    .stock-rail{
+      height:100%;
+      min-height:0;
+      display:flex;
+      flex-direction:column;
+      overflow:hidden;
+    }
+    .rail-head{
+      padding:14px;
+      border-bottom:1px solid var(--line-soft);
+      background:linear-gradient(180deg,#fffaf5,#fbf1e7);
+      transition:background .28s ease,border-color .28s ease;
+    }
+    body.theme-live .rail-head{
+      border-bottom-color:#ecd7c1;
+      background:linear-gradient(180deg,#fff8f0,#faeddc);
+    }
+    .search-line{
+      position:relative;
+      margin-bottom:10px;
+    }
+    .search-line input{
+      width:100%;
+      height:42px;
+      padding:0 13px;
+      border:1px solid #dfcdbb;
+      border-radius:10px;
+      background:#fffdf9;
+      color:var(--text);
+      outline:none;
+      font-size:14px;
+      font-weight:700;
+    }
+    .search-line input:focus{
+      border-color:#d99a7e;
+      box-shadow:0 0 0 4px rgba(198,86,55,.10);
+    }
+    .filter-row{
+      display:flex;
+      gap:7px;
+      flex-wrap:nowrap;
+      align-items:center;
+      overflow:hidden;
+      padding-top:0;
+      margin-top:2px;
+    }
+    .chip{
+      min-height:30px;
+      flex:0 0 auto;
+      padding:0 10px;
+      border:1px solid var(--line);
+      border-radius:999px;
+      background:#fffdf9;
+      color:#3f4a5d;
+      font-size:12px;
+      font-weight:850;
+    }
+    .chip.mode-chip{
+      flex:1 1 0;
+      min-width:0;
+      min-height:32px;
+      justify-content:center;
+      text-align:center;
+      padding:0 8px;
+    }
+    .chip.active{
+      border-color:#c65637;
+      background:#c65637;
+      color:#fff;
+      box-shadow:0 0 0 3px rgba(198,86,55,.14);
+    }
+    .stock-list{
+      flex:1;
+      min-height:0;
+      overflow:auto;
+      padding:10px;
+      background:#fbf1e7;
+      transition:background .28s ease;
+    }
+    body.theme-live .stock-list{
+      background:#f9eddc;
+    }
+    .stock-card{
+      width:100%;
+      display:grid;
+      gap:10px;
+      padding:12px;
+      margin-bottom:9px;
+      border:1px solid transparent;
+      border-radius:10px;
+      background:#fffdf9;
+      text-align:left;
+      box-shadow:0 1px 2px rgba(108,78,54,.035);
+      transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease,background .18s ease;
+    }
+    .stock-card:hover{
+      transform:translateY(-1px);
+      border-color:#dcc9b8;
+      box-shadow:0 12px 28px rgba(108,78,54,.10);
+    }
+    .stock-card.selected{
+      border-color:#d99a7e;
+      background:#fff6ef;
+      box-shadow:0 0 0 3px rgba(198,86,55,.10),0 12px 28px rgba(108,78,54,.10);
+    }
+    .stock-card.is-active-stock{
+      border-width:2px;
+      border-color:#d28348;
+      background:linear-gradient(180deg,#fff0df 0%, #fff7ef 46%, #fffdf9 100%);
+      box-shadow:inset 0 0 0 1px rgba(230,164,110,.24),0 14px 28px rgba(182,128,76,.13);
+    }
+    .stock-card.is-active-stock:hover{
+      border-color:#c46d2f;
+      box-shadow:inset 0 0 0 1px rgba(230,164,110,.30),0 18px 34px rgba(182,128,76,.18);
+    }
+    .stock-card.is-active-stock.selected{
+      border-color:#bf6426;
+      background:linear-gradient(180deg,#ffe7d1 0%, #fff3e5 42%, #fffaf4 100%);
+      box-shadow:0 0 0 4px rgba(201,126,70,.14),inset 0 0 0 1px rgba(230,164,110,.34),0 18px 36px rgba(182,128,76,.18);
+    }
+    .stock-card-top{
+      display:flex;
+      justify-content:space-between;
+      gap:10px;
+    }
+    .stock-code{
+      color:#243044;
+      font-size:13px;
+      font-weight:950;
+      letter-spacing:.02em;
+    }
+    .stock-code-row{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      min-width:0;
+    }
+    .stock-code-row .stock-code{
+      flex:0 0 auto;
+    }
+    .stock-name{
+      margin-top:2px;
+      min-width:0;
+      color:#243044;
+      font-size:15px;
+      line-height:1.25;
+      font-weight:950;
+      overflow:hidden;
+      white-space:nowrap;
+      text-overflow:ellipsis;
+    }
+    .stock-name.short{
+      max-width:100%;
+    }
+    .stock-name-row{
+      margin-top:2px;
+      display:flex;
+      align-items:center;
+      min-width:0;
+    }
+    .stock-name-row .stock-name{
+      margin-top:0;
+      flex:1 1 auto;
+    }
+    .phase-badge{
+      flex:0 0 auto;
+      align-self:start;
+      min-height:23px;
+      display:inline-flex;
+      align-items:center;
+      padding:0 8px;
+      border-radius:999px;
+      background:#f2ece5;
+      color:#71645a;
+      font-size:11px;
+      font-weight:900;
+    }
+    .phase-badge.active{
+      background:#ffbf8c;
+      color:#8c3619;
+      box-shadow:inset 0 0 0 1px rgba(187,96,47,.18);
+    }
+    .phase-badge.wait{
+      background:#ffd3aa;
+      color:#955021;
+      box-shadow:inset 0 0 0 1px rgba(190,118,53,.15);
+    }
+    .phase-badge.listed{background:#f3eee7;color:#6d6b67}
+    .mini-metrics{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:7px;
+    }
+    .mini-metrics div{
+      min-width:0;
+    }
+    .mini-metrics span{
+      display:block;
+      color:var(--muted);
+      font-size:10px;
+      font-weight:850;
+    }
+    .mini-metrics b{
+      display:block;
+      margin-top:3px;
+      color:#243044;
+      font-size:11.5px;
+      font-weight:950;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+    .detail-panel{
+      display:flex;
+      flex-direction:column;
+      height:100%;
+      min-height:0;
+      min-width:0;
+      overflow:hidden;
+    }
+    .detail-hero{
+      flex:0 0 auto;
+      padding:20px 22px 18px;
+      border-bottom:1px solid var(--line);
+      background:
+        radial-gradient(circle at 96% 0%,rgba(217,154,126,.18),transparent 34%),
+        linear-gradient(180deg,#fffaf5,#fbf1e7);
+      transition:background .28s ease,border-color .28s ease;
+    }
+    body.theme-live .detail-hero{
+      border-bottom-color:#e0c3a3;
+      background:
+        radial-gradient(circle at 96% 0%,rgba(210,137,83,.20),transparent 34%),
+        linear-gradient(180deg,#fff6ec,#f6e7d5);
+    }
+    .detail-title-row{
+      display:grid;
+      grid-template-columns:minmax(0,1fr) auto;
+      gap:16px;
+      align-items:start;
+    }
+    .detail-title h2{
+      font-size:30px;
+      line-height:1.12;
+      font-weight:950;
+    }
+    .detail-title-main{
+      display:flex;
+      align-items:flex-start;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+    .detail-title p{
+      color:var(--muted);
+      font-size:13px;
+      font-weight:750;
+    }
+    .detail-subline{
+      margin-top:8px;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+    .session-ticket{
+      position:relative;
+      flex:0 0 auto;
+      display:inline-flex;
+      align-items:center;
+      min-height:28px;
+      padding:0 14px 0 16px;
+      color:#5d4a3b;
+      font-size:12px;
+      font-weight:950;
+      letter-spacing:.01em;
+      clip-path:polygon(0 0, calc(100% - 12px) 0, 100% 50%, calc(100% - 12px) 100%, 0 100%, 6px 50%);
+      box-shadow:0 6px 12px rgba(108,78,54,.08);
+      border:1px solid rgba(191,155,129,.45);
+      white-space:nowrap;
+    }
+    .session-ticket.compact{
+      min-height:22px;
+      padding:0 10px 0 12px;
+      font-size:10px;
+      box-shadow:none;
+      clip-path:polygon(0 0, calc(100% - 9px) 0, 100% 50%, calc(100% - 9px) 100%, 0 100%, 4px 50%);
+    }
+    .session-ticket.compact b{
+      font-size:10px;
+      margin-left:3px;
+    }
+    .session-ticket.up{
+      background:linear-gradient(135deg,#deefe4,#d1e8d8);
+      color:#246847;
+      border-color:rgba(71,132,89,.34);
+    }
+    .session-ticket.down{
+      background:linear-gradient(135deg,#f6dfdf,#f1d1d1);
+      color:#9a3c3c;
+      border-color:rgba(165,77,77,.28);
+    }
+    .session-ticket.upcoming{
+      background:linear-gradient(135deg,#efe4d8,#e8d9c8);
+      color:#7f593c;
+      border-color:rgba(154,117,86,.28);
+    }
+    .session-ticket b{
+      font-size:12px;
+      font-weight:950;
+      margin-left:4px;
+    }
+    .detail-actions{
+      display:flex;
+      gap:8px;
+      justify-content:flex-end;
+      flex-wrap:wrap;
+    }
+    .primary-btn,.ghost-btn{
+      min-height:36px;
+      padding:0 13px;
+      border-radius:9px;
+      font-size:13px;
+      font-weight:900;
+    }
+    .primary-btn{
+      border:1px solid var(--blue);
+      background:var(--blue);
+      color:#fff;
+      box-shadow:0 10px 20px rgba(198,86,55,.20);
+    }
+    .ghost-btn{
+      border:1px solid var(--line);
+      background:#fffdf9;
+      color:#3f4a5d;
+    }
+    .link-btn{
+      min-height:30px;
+      padding:0 10px;
+      border:1px solid var(--line);
+      border-radius:999px;
+      background:#fffdf9;
+      color:#7b523f;
+      font-size:12px;
+      font-weight:900;
+      white-space:nowrap;
+    }
+    .link-btn.primary-soft{
+      border-color:#e4b19e;
+      background:#fff1e9;
+      color:#a2432b;
+    }
+    .metric-grid{
+      display:grid;
+      grid-template-columns:repeat(5,minmax(120px,1fr));
+      gap:10px;
+      margin-top:18px;
+    }
+    .metric-card{
+      min-height:86px;
+      padding:12px;
+      border:1px solid #ebddcf;
+      border-radius:10px;
+      background:rgba(255,253,249,.9);
+    }
+    .metric-card span{
+      display:block;
+      color:var(--muted);
+      font-size:12px;
+      font-weight:850;
+    }
+    .metric-card b{
+      display:block;
+      margin-top:8px;
+      font-size:20px;
+      line-height:1.1;
+      font-weight:950;
+      overflow-wrap:anywhere;
+      font-variant-numeric:tabular-nums;
+    }
+    .metric-card small{
+      display:block;
+      margin-top:5px;
+      color:#9a8575;
+      font-size:11px;
+      font-weight:750;
+    }
+    .detail-body{
+      flex:1 1 auto;
+      min-height:0;
+      display:grid;
+      grid-template-columns:minmax(0,1.18fr) minmax(320px,.82fr);
+      gap:16px;
+      padding:16px;
+      background:#f8efe6;
+      overflow:hidden;
+    }
+    body.theme-live .detail-body{
+      background:#f5e7d6;
+    }
+    .content-card{
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      background:#fffdf9;
+      box-shadow:0 12px 28px rgba(108,78,54,.075);
+      overflow:hidden;
+    }
+    .content-head{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:12px;
+      padding:15px 16px 0;
+    }
+    .content-head h3{
+      font-size:18px;
+      line-height:1.25;
+      font-weight:950;
+    }
+    .content-head span{
+      color:var(--muted);
+      font-size:12px;
+      font-weight:800;
+      text-align:right;
+    }
+    .head-copy{
+      min-width:0;
+    }
+    .head-actions{
+      display:flex;
+      align-items:center;
+      justify-content:flex-end;
+      gap:7px;
+      flex-wrap:wrap;
+    }
+    .chart-wrap{
+      position:relative;
+      padding:8px 14px 14px;
+      overflow:hidden;
+    }
+    .chart-wrap svg{
+      display:block;
+      width:100%;
+      height:auto;
+      overflow:hidden;
+    }
+    .axis{stroke:#e5d7c9;stroke-width:1}
+    .grid-line{stroke:#f0e5dc;stroke-width:1}
+    .curve{fill:none;stroke:#426d9c;stroke-width:3.4;stroke-linecap:round;stroke-linejoin:round}
+    .curve.series-b{stroke:#5f8f7d}
+    .curve-area{fill:rgba(66,109,156,.09)}
+    .curve-area.series-b{fill:rgba(95,143,125,.10)}
+    .point{fill:#426d9c;stroke:#fffaf5;stroke-width:2}
+    .point.series-b{fill:#5f8f7d}
+    .key-point{fill:#fff1e8;stroke:#c65637;stroke-width:2.6}
+    .key-point.series-b{stroke:#5f8f7d}
+    .annotation-line{stroke:#b55a40;stroke-width:1.5;stroke-dasharray:3 3}
+    .annotation-arrow{fill:#b55a40}
+    .annotation-bg{fill:rgba(255,250,245,.94);stroke:#ead7c6;stroke-width:1}
+    .axis-label{fill:#7a6759;font-size:11px;font-weight:800}
+    .key-label{fill:#a2432b;font-size:17px;font-weight:950}
+    .key-value{fill:#243044;font-size:16px;font-weight:950}
+    .chart-hover{
+      fill:transparent;
+      cursor:pointer;
+    }
+    .chart-tooltip{
+      position:fixed;
+      z-index:50;
+      min-width:138px;
+      max-width:240px;
+      padding:9px 11px;
+      border:1px solid #dec7b5;
+      border-radius:12px;
+      background:rgba(255,251,247,.98);
+      box-shadow:0 14px 34px rgba(73,48,29,.16);
+      color:#263247;
+      font-size:12px;
+      line-height:1.55;
+      font-weight:800;
+      pointer-events:none;
+      opacity:0;
+      transition:opacity .12s ease;
+      white-space:pre-line;
+    }
+    .chart-tooltip.show{
+      opacity:1;
+    }
+    .chart-empty{
+      min-height:240px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:var(--muted);
+      font-size:14px;
+      font-weight:750;
+      text-align:center;
+      padding:22px;
+    }
+    .insight-grid{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:12px;
+      align-self:stretch;
+    }
+    .insight-grid .profile-card{
+      min-height:100%;
+    }
+    .profile-card{
+      padding:16px;
+    }
+    .profile-title-row{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:12px;
+      margin-bottom:10px;
+    }
+    .profile-card h3{
+      font-size:18px;
+      font-weight:950;
+    }
+    .profile-card p{
+      color:#3f4a5d;
+      font-size:14px;
+      line-height:1.78;
+      font-weight:650;
+    }
+    .profile-type{
+      margin-top:2px;
+      margin-left:auto;
+      flex:0 0 auto;
+      align-self:center;
+      padding:5px 9px;
+      border-radius:999px;
+      background:#ece2d8;
+      color:#715c4c;
+      font-size:12px;
+      font-weight:900;
+      white-space:nowrap;
+    }
+    .profile-tags{
+      display:flex;
+      gap:7px;
+      flex-wrap:wrap;
+      margin-top:12px;
+    }
+    .profile-tags span{
+      padding:5px 8px;
+      border-radius:999px;
+      background:#f3eadf;
+      color:#6f5c4e;
+      font-size:12px;
+      font-weight:850;
+    }
+    .profile-explain{
+      margin-top:10px;
+      display:flex;
+      flex-direction:column;
+      gap:5px;
+    }
+    .profile-explain span{
+      color:#7c695a;
+      font-size:12px;
+      line-height:1.55;
+      font-weight:700;
+    }
+    .market-summary{
+      padding:0 16px 16px;
+    }
+    .market-row{
+      display:grid;
+      grid-template-columns:96px minmax(0,1fr) 112px;
+      gap:12px;
+      align-items:center;
+      padding:14px 0;
+      border-top:1px solid var(--line-soft);
+    }
+    .market-row:first-child{border-top:0}
+    .venue{
+      font-weight:950;
+      line-height:1.2;
+    }
+    .venue small,
+    .market-period{
+      display:block;
+      margin-top:4px;
+      color:var(--muted);
+      font-size:12px;
+      font-weight:800;
+    }
+    .price-stack{
+      display:grid;
+      gap:2px;
+      margin-top:5px;
+      color:#243044;
+      font-size:12px;
+      font-weight:900;
+      font-variant-numeric:tabular-nums;
+    }
+    .range{
+      min-width:0;
+    }
+    .range-track{
+      position:relative;
+      height:10px;
+      border-radius:999px;
+      background:#eee3d8;
+      overflow:hidden;
+    }
+    .range-fill{
+      position:absolute;
+      top:0;
+      bottom:0;
+      left:0;
+      width:50%;
+      border-radius:inherit;
+      background:linear-gradient(90deg,#d7a286,#c65637);
+    }
+    .range-marker{
+      position:absolute;
+      top:50%;
+      width:14px;
+      height:14px;
+      border:3px solid #fffaf5;
+      border-radius:999px;
+      background:#243044;
+      box-shadow:0 0 0 2px rgba(36,48,68,.28), 0 4px 10px rgba(36,48,68,.16);
+      transform:translate(-50%,-50%);
+      z-index:2;
+    }
+    .close-marker{
+      background:#fffaf5;
+      box-shadow:0 0 0 2px #c65637, 0 4px 10px rgba(198,86,55,.18);
+    }
+    .range-meta{
+      display:flex;
+      justify-content:space-between;
+      gap:10px;
+      margin-top:7px;
+      color:var(--muted);
+      font-size:12px;
+      font-weight:800;
+    }
+    .gain-card{
+      min-height:58px;
+      display:grid;
+      align-content:center;
+      justify-items:center;
+      padding:8px;
+      border-radius:9px;
+      background:#edf6f1;
+      color:#427763;
+      text-align:center;
+      font-weight:950;
+    }
+    .gain-card.negative{
+      background:#fff0ec;
+      color:#b24b30;
+    }
+    .gain-card span{
+      display:block;
+      font-size:11px;
+      font-weight:850;
+    }
+    .gain-card b{
+      display:block;
+      margin-top:3px;
+      font-size:16px;
+      line-height:1.05;
+      font-variant-numeric:tabular-nums;
+    }
+    .remove-btn{
+      border:0;
+      background:transparent;
+      color:#a9907c;
+      font-size:12px;
+      font-weight:900;
+    }
+    .modal-root{
+      position:fixed;
+      inset:0;
+      z-index:80;
+      display:none;
+    }
+    .modal-root.show{
+      display:block;
+    }
+    .modal-backdrop{
+      position:absolute;
+      inset:0;
+      background:rgba(36,48,68,.28);
+      backdrop-filter:blur(8px);
+    }
+    .modal-panel{
+      position:absolute;
+      top:50%;
+      left:50%;
+      width:min(980px, calc(100vw - 32px));
+      max-height:min(760px, calc(100vh - 42px));
+      transform:translate(-50%,-50%);
+      display:flex;
+      flex-direction:column;
+      border:1px solid var(--line);
+      border-radius:16px;
+      background:#fffaf5;
+      box-shadow:0 32px 80px rgba(63,45,31,.26);
+      overflow:hidden;
+    }
+    .modal-head{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:14px;
+      padding:18px 20px 14px;
+      border-bottom:1px solid var(--line-soft);
+      background:linear-gradient(180deg,#fffaf5,#fbf1e7);
+    }
+    .modal-head h3{
+      font-size:22px;
+      line-height:1.2;
+      font-weight:950;
+    }
+    .modal-head p{
+      margin-top:5px;
+      color:var(--muted);
+      font-size:13px;
+      font-weight:750;
+    }
+    .modal-actions{
+      display:flex;
+      gap:8px;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+    }
+    .modal-body{
+      min-height:0;
+      overflow:auto;
+      padding:16px 20px 20px;
+    }
+    .tier-table{
+      width:100%;
+      border-collapse:collapse;
+      font-size:13px;
+    }
+    .tier-table th{
+      position:sticky;
+      top:0;
+      z-index:1;
+      padding:10px 8px;
+      background:#fffaf5;
+      color:#7a6759;
+      border-bottom:1px solid var(--line);
+      text-align:left;
+      font-weight:950;
+      white-space:nowrap;
+    }
+    .tier-table td{
+      padding:11px 8px;
+      border-bottom:1px solid var(--line-soft);
+      color:#243044;
+      font-weight:750;
+      vertical-align:middle;
+    }
+    .tier-table td:not(:first-child),
+    .tier-table th:not(:first-child){
+      text-align:right;
+    }
+    .tier-table tr.key-tier td{
+      background:#fff4ec;
+      color:#9b432d;
+      font-weight:950;
+    }
+    .tier-table tfoot td{
+      padding-top:14px;
+      border-bottom:0;
+      color:#243044;
+      font-weight:950;
+      background:#fffaf5;
+    }
+    .tier-summary-row td{
+      border-top:1px solid var(--line);
+      background:#fff7ef;
+      color:#243044;
+    }
+    .tier-note{
+      margin-bottom:12px;
+      color:#6e7787;
+      font-size:13px;
+      line-height:1.55;
+      font-weight:750;
+    }
+    .tier-table-caption{
+      margin:2px 0 10px;
+      color:#7a6759;
+      font-size:12px;
+      font-weight:850;
+    }
+    .tier-summary-line{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px 14px;
+      align-items:center;
+      margin-bottom:8px;
+      padding:8px 10px;
+      border:1px solid var(--line-soft);
+      border-radius:10px;
+      background:#fffdf9;
+      color:#4b596d;
+      font-size:12px;
+      font-weight:800;
+      line-height:1.35;
+    }
+    .tier-summary-title{
+      color:#243044;
+      font-weight:950;
+    }
+    .tier-summary-cards{
+      display:grid;
+      grid-template-columns:repeat(5,minmax(0,1fr));
+      gap:10px;
+      margin-bottom:10px;
+    }
+    .tier-summary-card{
+      padding:12px 12px 11px;
+      border:1px solid var(--line-soft);
+      border-radius:12px;
+      background:#fffdf9;
+      box-shadow:0 10px 22px rgba(36,48,68,.05);
+    }
+    .tier-summary-k{
+      color:#7a6759;
+      font-size:12px;
+      font-weight:850;
+      line-height:1.35;
+    }
+    .tier-summary-v{
+      margin-top:6px;
+      color:#243044;
+      font-size:18px;
+      font-weight:950;
+      line-height:1.1;
+    }
+    .tier-prediction-strip{
+      margin-bottom:8px;
+      padding:9px 12px;
+      border:1px solid var(--line-soft);
+      border-radius:10px;
+      background:#fffdf9;
+      color:#4b596d;
+      font-size:12px;
+      font-weight:800;
+      line-height:1.5;
+    }
+    .chart-empty.compact{
+      padding:12px 14px;
+      text-align:left;
+    }
+    @media (max-width: 960px){
+      .tier-summary-cards{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+      }
+    }
+    .empty-state{
+      padding:26px;
+      color:var(--muted);
+      font-size:14px;
+      font-weight:800;
+      text-align:center;
+    }
+    .intro-overlay{
+      position:fixed;
+      inset:0;
+      z-index:120;
+      display:none;
+      align-items:center;
+      justify-content:center;
+      padding:24px;
+      background:rgba(35,28,21,.40);
+      backdrop-filter:blur(10px);
+    }
+    .intro-overlay.show{
+      display:flex;
+    }
+    .intro-card{
+      width:min(860px,100%);
+      border:1px solid rgba(255,255,255,.18);
+      border-radius:24px;
+      background:
+        linear-gradient(180deg, rgba(255,249,242,.98), rgba(245,233,222,.98));
+      box-shadow:0 30px 80px rgba(38,24,16,.26);
+      overflow:hidden;
+      position:relative;
+    }
+    .intro-brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      margin-bottom:16px;
+    }
+    .intro-brand .brand-mark{
+      width:42px;
+      height:42px;
+      border-radius:12px;
+    }
+    .intro-brand h1{
+      font-size:24px;
+      line-height:1.08;
+      font-weight:980;
+    }
+    .intro-brand p{
+      margin-top:4px;
+      color:#607083;
+      font-size:12px;
+      font-weight:700;
+    }
+    .intro-hero{
+      padding:34px 32px 20px;
+      background:
+        radial-gradient(circle at 20% 24%, rgba(214,162,120,.20), transparent 30%),
+        radial-gradient(circle at 78% 18%, rgba(101,139,127,.16), transparent 28%),
+        radial-gradient(circle at 58% 76%, rgba(235,199,165,.16), transparent 30%),
+        linear-gradient(135deg, rgba(255,255,255,.42), rgba(255,255,255,.08));
+      border-bottom:1px solid rgba(223,205,188,.68);
+    }
+    .intro-badge{
+      display:inline-flex;
+      align-items:center;
+      padding:7px 11px;
+      border-radius:999px;
+      background:#243044;
+      color:#fff;
+      font-size:11px;
+      font-weight:950;
+      letter-spacing:0;
+      margin-bottom:18px;
+    }
+    .intro-copy{
+      margin-top:12px;
+      max-width:48ch;
+      color:#4b596d;
+      font-size:13px;
+      line-height:1.72;
+      font-weight:700;
+    }
+    .intro-grid{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:12px;
+      padding:16px 32px 6px;
+    }
+    .intro-item{
+      border:1px solid rgba(223,205,188,.9);
+      border-radius:18px;
+      padding:14px 14px 13px;
+      background:rgba(255,253,249,.88);
+      min-height:104px;
+      box-shadow:0 10px 22px rgba(108,78,54,.05);
+    }
+    .intro-item b{
+      display:block;
+      font-size:13px;
+      line-height:1.2;
+      font-weight:940;
+      margin-bottom:7px;
+    }
+    .intro-item p{
+      color:#5f6b7d;
+      font-size:11px;
+      line-height:1.55;
+      font-weight:700;
+    }
+    .intro-actions{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:12px;
+      padding:14px 32px 28px;
+    }
+    .intro-note{
+      color:#7e6b5a;
+      font-size:12px;
+      font-weight:700;
+    }
+    .intro-enter{
+      min-height:42px;
+      padding:0 18px;
+      border:0;
+      border-radius:999px;
+      background:#243044;
+      color:#fff;
+      font-size:13px;
+      font-weight:950;
+      box-shadow:0 10px 24px rgba(36,48,68,.26);
+    }
+    .intro-enter:hover{transform:translateY(-1px)}
+    body.intro-open .topbar,
+    body.intro-open .page-shell{
+      filter:blur(7px);
+      pointer-events:none;
+      user-select:none;
+    }
+    @media (max-width:1180px){
+      .metric-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+      .detail-body{grid-template-columns:1fr}
+      .intro-grid{grid-template-columns:1fr}
+    }
+    @media (max-width:920px){
+      body{overflow-x:clip;overflow-y:auto}
+      .page-shell{height:auto}
+      .topbar-inner{align-items:flex-start;flex-direction:column}
+      .board-layout{grid-template-columns:1fr}
+      .stock-rail{height:auto}
+      .stock-list{
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+        max-height:420px;
+      }
+      .metric-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    }
+    @media (max-width:680px){
+      .page-shell{padding:14px 12px 22px}
+      .topbar-inner{padding:12px}
+      .detail-title-row{grid-template-columns:1fr}
+      .detail-actions{justify-content:flex-start}
+      .metric-grid{grid-template-columns:1fr}
+      .insight-grid{grid-template-columns:1fr}
+      .market-row{grid-template-columns:1fr}
+      .intro-hero,.intro-grid,.intro-actions{padding-left:18px;padding-right:18px}
+      .intro-title{font-size:32px}
+    }
+  </style>
+</head>
+<body>
+  <div class="intro-overlay" id="introOverlay" aria-hidden="true">
+    <section class="intro-card" role="dialog" aria-modal="true" aria-labelledby="introTitle">
+      <div class="intro-hero">
+        <div class="intro-brand">
+          <div class="brand-mark" aria-hidden="true"></div>
+          <div>
+            <h1 id="introTitle">港股打新通</h1>
+            <p>一站看清港股 IPO：申购节奏、中签结果、暗盘与首日表现。</p>
+          </div>
+        </div>
+        <div class="intro-copy">看活跃新股、暗盘表现、中签曲线、历史走势和公司速读，把打新关键信息放在一页里看清楚。</div>
+      </div>
+      <div class="intro-grid">
+        <div class="intro-item">
+          <b>活跃新股</b>
+          <p>看当前能关注、待暗盘、待上市的新股。</p>
+        </div>
+        <div class="intro-item">
+          <b>暗盘与首日</b>
+          <p>直接看暗盘走势、首日表现和一手收益。</p>
+        </div>
+        <div class="intro-item">
+          <b>中签分析</b>
+          <p>看中签率曲线、档位分布和过往历史数据。</p>
+        </div>
+      </div>
+      <div class="intro-actions">
+        <div></div>
+        <button class="intro-enter" type="button" id="introEnter">进入看板</button>
+      </div>
+    </section>
+  </div>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div>
+          <h1>港股打新通</h1>
+          <p>一站看清港股 IPO：申购节奏、中签结果、暗盘与首日表现。</p>
+        </div>
+      </div>
+      <div class="top-actions">
+        <div class="status-pill" id="clockText">当前时间 --</div>
+        <div class="status-pill" id="dataStatus">数据载入中</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="board-layout">
+      <aside class="panel stock-rail">
+        <div class="rail-head">
+          <label class="search-line">
+            <input id="quickSearch" placeholder="搜索代码或名称">
+          </label>
+          <div class="filter-row" id="filterRow">
+            <button class="chip mode-chip active" data-mode="all" type="button">全部</button>
+            <button class="chip mode-chip" data-mode="grey_pct" type="button">暗盘涨幅</button>
+            <button class="chip mode-chip" data-mode="multiple" type="button">认购倍数</button>
+          </div>
+        </div>
+        <div class="stock-list" id="stockList"></div>
+      </aside>
+
+      <section class="panel detail-panel" id="detailPanel"></section>
+    </section>
+  </main>
+  <div class="modal-root" id="modalRoot" aria-hidden="true"></div>
+  <div class="chart-tooltip" id="chartTooltip" aria-hidden="true"></div>
+
+  <script src="data/ipo-history-2025.js"></script>
+  <script src="data/market-performance-2025.js"></script>
+  <script src="data/ipo-history-2026.js"></script>
+  <script src="data/latest-listed-2026.js"></script>
+  <script src="data/official-updates-2026.js"></script>
+  <script src="data/company-profiles-2026.js"></script>
+  <script src="data/market-performance-2026.js"></script>
+  <script>
+    const $ = (id) => document.getElementById(id);
+    const HK_NOW = () => new Date(new Date().toLocaleString("en-US", { timeZone: "Asia/Hong_Kong" }));
+    const MARKET = Object.assign({}, window.MARKET_PERFORMANCE_2025 || {}, window.MARKET_PERFORMANCE_2026 || {});
+    const PROFILES = (window.COMPANY_PROFILES_2026 && window.COMPANY_PROFILES_2026.profiles) || {};
+    const state = {
+      query: "",
+      mode: "all",
+      selected: "",
+      recent: readJson("hkIpoBoardRecent", []).slice(0, 6)
+    };
+
+    const RECENT_MAX = 6;
+
+    const stocks = buildStocks();
+
+    function readJson(key, fallback) {
+      try {
+        const raw = localStorage.getItem(key);
+        return raw ? JSON.parse(raw) : fallback;
+      } catch (_) {
+        return fallback;
+      }
+    }
+
+    function saveJson(key, value) {
+      try { localStorage.setItem(key, JSON.stringify(value)); } catch (_) {}
+    }
+
+    function normalizeCode(value) {
+      return String(value || "").replace(/\D/g, "").padStart(5, "0");
+    }
+
+    function normalizeText(value) {
+      return String(value || "").replace(/\s+/g, " ").trim();
+    }
+
+    function buildStocks() {
+      const sources = [
+        window.IPO_HISTORY_2025 || [],
+        window.IPO_HISTORY_2026 || [],
+        window.LATEST_LISTED_2026 || [],
+        (window.OFFICIAL_UPDATES_2026 && window.OFFICIAL_UPDATES_2026.stocks) || []
+      ];
+      const map = new Map();
+      for (const list of sources) {
+        for (const item of list) {
+          const code = normalizeCode(item.stockCode);
+          if (!code) continue;
+          const previous = map.get(code) || {};
+          map.set(code, mergeStockRecord(previous, item, code));
+        }
+      }
+      return Array.from(map.values()).map(enrichStock).sort((a, b) => {
+        const activeDelta = Number(isActive(b)) - Number(isActive(a));
+        if (activeDelta) return activeDelta;
+        return dateValue(b.listDate || b.subscriptionEnd) - dateValue(a.listDate || a.subscriptionEnd);
+      });
+    }
+
+    function mergeStockRecord(previous, item, code) {
+      const merged = Object.assign({}, previous);
+      for (const [key, value] of Object.entries(item || {})) {
+        if (key === "stockCode") continue;
+        if (value == null || value === "") continue;
+        if (Array.isArray(value) && value.length === 0) continue;
+        if (typeof value === "object" && !Array.isArray(value)) {
+          const prior = merged[key];
+          merged[key] = mergePlainObject(prior, value);
+          continue;
+        }
+        merged[key] = value;
+      }
+      merged.stockCode = code;
+      return merged;
+    }
+
+    function mergePlainObject(previous, next) {
+      if (!previous || typeof previous !== "object" || Array.isArray(previous)) {
+        return Object.assign({}, next);
+      }
+      const merged = Object.assign({}, previous);
+      for (const [key, value] of Object.entries(next || {})) {
+        if (value == null || value === "") continue;
+        if (Array.isArray(value) && value.length === 0) continue;
+        if (typeof value === "object" && !Array.isArray(value)) {
+          merged[key] = mergePlainObject(merged[key], value);
+        } else {
+          merged[key] = value;
+        }
+      }
+      return merged;
+    }
+
+    function enrichStock(stock) {
+      const code = normalizeCode(stock.stockCode);
+      const name = shortName(stock);
+      const offerPrice = finite(stock.offerPrice);
+      const sharesPerLot = finite(stock.sharesPerLot);
+      const fee = finite(stock.minApplicationAmount)
+        || finite(stock.applicationSummary && stock.applicationSummary.minApplicationAmount)
+        || finite(stock.applicationSummary && stock.applicationSummary.minAmountHKD)
+        || (offerPrice && sharesPerLot ? offerPrice * sharesPerLot * 1.0101 : NaN);
+      const publicShares = finite(stock.publicOfferSharesFinal) || finite(stock.publicOfferSharesBefore);
+      const publicLots = finite(stock.totalIssueLots) || (publicShares && sharesPerLot ? publicShares / sharesPerLot : NaN);
+      const officialMultiple = finite(stock.publicOfferMultiple);
+      const currentMultiple = finite(stock.estimatedSubscriptionMultiple);
+      const profile = PROFILES[code] || inferCompanyProfile(stock);
+      const performance = MARKET[code] || null;
+      return Object.assign({}, stock, {
+        stockCode: code,
+        displayName: name,
+        offerPrice,
+        sharesPerLot,
+        entryFee: fee,
+        publicLots,
+        officialMultiple,
+        currentMultiple,
+        totalApplicants: finite(stock.totalApplications) || finite(stock.applicationSummary && stock.applicationSummary.totalApplications),
+        oneLotRate: oneLotRate(stock),
+        greyLotGain: greyLotGain(stock, performance),
+        firstDayGain: firstDayGain(stock, performance),
+        profile,
+        performance
+      });
+    }
+
+    function shortName(stock) {
+      const raw = normalizeText(stock.shortName || stock.displayName || stock.name || stock.englishName || stock.stockCode);
+      const normalized = toSimple(raw)
+        .replace(/[（(].*?[）)]/g, "")
+        .replace(/\s*-\s*H股$/i, "")
+        .replace(/\s*H股$/i, "")
+        .replace(/\s*-\s*主板$/i, "")
+        .replace(/\s+/g, " ")
+        .trim();
+      const suffixMatch = normalized.match(/(?:\s*-\s*(?:B|W|P|WP))$/i);
+      const suffix = suffixMatch ? suffixMatch[0].replace(/\s+/g, "").toUpperCase() : "";
+      const base = normalized
+        .replace(/(?:\s*-\s*(?:B|W|P|WP))$/i, "")
+        .replace(/股份有限公司/g, "")
+        .replace(/有限公司/g, "")
+        .replace(/集團/g, "")
+        .replace(/集团/g, "")
+        .replace(/控股/g, "")
+        .replace(/国际/g, "")
+        .replace(/科技服务/g, "科技")
+        .replace(/人工智能科技/g, "科技")
+        .replace(/生物科技/g, "生物")
+        .replace(/医药科技/g, "医药")
+        .replace(/数字孪生科技/g, "数字孪生")
+        .replace(/－/g, "-")
+        .replace(/\s+/g, " ")
+        .trim();
+      const limit = suffix ? 10 : 12;
+      const compact = base.slice(0, limit).trim().replace(/[-\s]+$/g, "");
+      return `${compact}${suffix}`.trim();
+    }
+
+    function inferCompanyProfile(stock) {
+      const name = normalizeText(stock.displayName || stock.name || stock.shortName || stock.englishName || stock.stockCode);
+      const full = `${name} ${normalizeText(stock.englishName || "")}`.toLowerCase();
+      const tags = [];
+      let businessType = "公司";
+      let summary = "";
+      if (/自动驾驶|robot|robotics|智能驾驶|智駕|无人驾驶/.test(full)) {
+        businessType = "自动驾驶/机器人";
+        summary = `${name}主要提供自动驾驶、机器人或智能系统产品，服务无人化运营和工业应用。`;
+        tags.push("自动驾驶", "科技");
+      } else if (/生物|医药|药|医疗|health|pharma|器械|诊断/.test(full)) {
+        businessType = "生物医药";
+        summary = `${name}主要从事药物研发、医疗器械、诊断产品或健康服务，面向医疗需求。`;
+        tags.push("生物医药", "医药");
+      } else if (/新能源|风电|光伏|储能|电气|材料|能源|海工|塔筒|单桩/.test(full)) {
+        businessType = "新能源/制造";
+        summary = `${name}聚焦新能源装备、能源材料或配套制造，服务产业链设备和材料需求。`;
+        tags.push("新能源", "制造");
+      } else if (/科技|tech|ai|软件|智能|数字|云|芯片|半导体|晶片|显示|oled|soc/.test(full)) {
+        businessType = "科技公司";
+        summary = `${name}属于科技方向公司，主要围绕芯片、软件、AI、通信或智能硬件提供产品。`;
+        tags.push("科技", "成长");
+      } else if (/消费|餐饮|食品|茶|饮料|零售|家居|服饰/.test(full)) {
+        businessType = "消费公司";
+        summary = `${name}属于消费或零售方向公司，通过品牌、门店、电商或分销渠道触达消费者。`;
+        tags.push("消费", "品牌");
+      } else if (/工业|制造|装备|机床|工控|机械|重工|数控/.test(full)) {
+        businessType = "工业制造";
+        summary = `${name}主要做工业装备或制造业务，向企业客户提供设备、零部件或工程交付。`;
+        tags.push("工业", "制造");
+      } else if (/汽车|出行|mobility|auto/.test(full)) {
+        businessType = "汽车产业链";
+        summary = `${name}属于汽车产业链公司，向整车厂、出行平台或车主提供产品和服务。`;
+        tags.push("汽车", "科技");
+      } else {
+        summary = `${name}已纳入港股新股看板，后续会按主营业务、客户场景和上市资料补充速读。`;
+      }
+      return {
+        stockCode: stock.stockCode,
+        name,
+        sourceType: "inferred_fallback",
+        sourceTextPath: "",
+        sourceSections: [],
+        summary,
+        oneLine: summary,
+        business: summary,
+        industry: "",
+        highlights: [],
+        risks: [],
+        financial: "",
+        useOfProceeds: "",
+        tags: tags.length ? tags : ["新股"],
+        businessType,
+        tagDetails: (tags.length ? tags : ["新股"]).map((label) => ({
+          label,
+          description: inferTagDescription(label)
+        }))
+      };
+    }
+
+    function inferTagDescription(label) {
+      const tag = normalizeText(label);
+      if (/AI|智能|科技|芯片|半导体|软件|数字|云|通信/.test(tag)) return "偏科技业务，通常围绕软件、芯片、AI、通信或智能硬件。";
+      if (/医|药|医疗|生物|诊断|器械/.test(tag)) return "医疗健康方向，覆盖药物、器械、诊断或医疗服务。";
+      if (/消费|食品|餐饮|饮料|零售|品牌/.test(tag)) return "面向终端消费者，依赖品牌、渠道或门店触达用户。";
+      if (/新能源|储能|风电|光伏|能源/.test(tag)) return "新能源产业链方向，覆盖设备、材料、储能或低碳能源。";
+      if (/制造|工业|装备|机床|机械/.test(tag)) return "工业制造方向，重在产品交付、工艺和企业客户订单。";
+      if (/汽车|出行|驾驶/.test(tag)) return "汽车产业链方向，覆盖整车、零部件、智驾或出行服务。";
+      return `${tag}是该公司的主营业务或主要客户场景标签。`;
+    }
+
+    function toSimple(value) {
+      const map = {
+        "鋼":"钢","澤":"泽","龍":"龙","豐":"丰","創":"创","維":"维","諾":"诺","蘇":"苏","醫":"医","療":"疗","藥":"药","數":"数","電":"电","機":"机","實":"实","業":"业","國":"国","際":"际","華":"华","優":"优","樂":"乐","萬":"万","達":"达","學":"学","術":"术","淨":"净","發":"发","佈":"布","鵬":"鹏","鳴":"鸣","腦":"脑","動":"动","極":"极","鋁":"铝","資":"资","礦":"矿","匯":"汇","環":"环","適":"适","雲":"云","穀":"谷","聰":"聪","暉":"辉","潔":"洁","麗":"丽","軒":"轩","濟":"济","納":"纳","輕":"轻","鬆":"松","險":"险","財":"财","務":"务","錄":"录","顯":"显","當":"当","補":"补","開":"开","關":"关","認":"认","購":"购","簽":"签","團":"团","顧":"顾","問":"问","間":"间","價":"价","獲":"获","額":"额","總":"总","體":"体","質":"质","長":"长","廣":"广","視":"视","黃":"黄","銀":"银","風":"风","Ｂ":"B","Ａ":"A"
+      };
+      return String(value || "").replace(/[^\x00-\x7F]/g, (char) => map[char] || char);
+    }
+
+    function finite(value) {
+      if (value == null) return NaN;
+      const text = String(value).trim();
+      if (!text) return NaN;
+      const number = Number(text.replace(/,/g, ""));
+      return Number.isFinite(number) ? number : NaN;
+    }
+
+    function optionalNumber(value) {
+      if (value == null || value === "") return NaN;
+      return finite(value);
+    }
+
+    function firstFinite(...values) {
+      for (const value of values) {
+        if (Number.isFinite(value)) return value;
+      }
+      return NaN;
+    }
+
+    function dateValue(value) {
+      if (!value) return 0;
+      const date = new Date(String(value).replace(" ", "T"));
+      const time = date.getTime();
+      return Number.isFinite(time) ? time : 0;
+    }
+
+    function phase(stock) {
+      if (stock.status === "suspended" || /延迟|暫停|暂停/.test(String(stock.status || stock.name || ""))) return "延迟上市";
+      const now = HK_NOW().getTime();
+      const listTime = dateValue(stock.listDate);
+      const startTime = dateValue(stock.subscriptionStart);
+      const endTime = dateValue(stock.subscriptionEnd);
+      if (stock.status === "listed" || (listTime && listTime <= now)) return "已上市";
+      if (startTime && now < startTime) return "待招股";
+      if (endTime && now < endTime) return "招股中";
+      if (listTime && now < listTime) return "待暗盘";
+      if (stock.status === "current") {
+        if (endTime) return "待暗盘";
+        if (startTime) return "招股中";
+      }
+      return "待上市";
+    }
+
+    function isListed(stock) {
+      return phase(stock) === "已上市";
+    }
+
+    function isActive(stock) {
+      const currentPhase = phase(stock);
+      return currentPhase === "待招股" || currentPhase === "招股中" || currentPhase === "待暗盘" || currentPhase === "待上市";
+    }
+
+    function isLiveThemeStock(stock) {
+      const currentPhase = phase(stock);
+      return currentPhase !== "已上市" && currentPhase !== "延迟上市";
+    }
+
+    function activeSortWeight(stock) {
+      const currentPhase = phase(stock);
+      if (currentPhase === "招股中") return 4;
+      if (currentPhase === "待暗盘") return 3;
+      if (currentPhase === "待上市") return 2;
+      if (currentPhase === "待招股") return 1;
+      return 0;
+    }
+
+    function phaseClass(stock) {
+      const value = phase(stock);
+      if (value === "招股中") return "active";
+      if (value === "待招股" || value === "待暗盘" || value === "待上市") return "wait";
+      if (value === "已上市") return "listed";
+      return "";
+    }
+
+    function oneLotRate(stock) {
+      const official = finite(stock.actualOneLotHitRate);
+      if (official) return official;
+      const first = (stock.basisOfAllocation || [])[0];
+      if (first) {
+        const pct = finite(first.allotmentPercent) || finite(first.approxPercent);
+        if (pct) return pct;
+        const hit = finite(first.hitRate);
+        if (hit) return hit <= 1 ? hit * 100 : hit;
+      }
+      return predictedOneLotRate(stock);
+    }
+
+    function predictedOneLotRate(stock) {
+      const multiple = finite(stock.publicOfferMultiple) || finite(stock.estimatedSubscriptionMultiple);
+      if (!multiple) return NaN;
+      const lots = finite(stock.publicLots) || 20000;
+      const pressure = Math.log10(Math.max(1.2, multiple));
+      const supplyBoost = Math.min(1.8, Math.max(.75, Math.log10(Math.max(1000, lots)) / 4));
+      return Math.max(.04, Math.min(100, (18 / Math.pow(pressure + .9, 2.25)) * supplyBoost));
+    }
+
+    function greyLotGain(stock, performance) {
+      if (finite(stock.greyMarketLotGain)) return finite(stock.greyMarketLotGain);
+      const gains = [
+        performance && performance.greyMarket && performance.greyMarket.futu && finite(performance.greyMarket.futu.lotGain),
+        performance && performance.greyMarket && performance.greyMarket.phillip && finite(performance.greyMarket.phillip.lotGain)
+      ].filter(Number.isFinite);
+      if (gains.length) return gains.reduce((a, b) => a + b, 0) / gains.length;
+      const close = performance && performance.greyMarket && performance.greyMarket.futu && finite(performance.greyMarket.futu.close);
+      return close && stock.offerPrice && stock.sharesPerLot ? (close - stock.offerPrice) * stock.sharesPerLot : NaN;
+    }
+
+    function firstDayGain(stock, performance) {
+      const close = performance && performance.firstDay && finite(performance.firstDay.close);
+      const lotGain = performance && performance.firstDay && finite(performance.firstDay.lotGain);
+      if (lotGain) return lotGain;
+      return close && stock.offerPrice && stock.sharesPerLot ? (close - stock.offerPrice) * stock.sharesPerLot : NaN;
+    }
+
+    function money(value, unit = "港元") {
+      const number = finite(value);
+      if (!Number.isFinite(number)) return "-";
+      const sign = number < 0 ? "-" : "";
+      const abs = Math.abs(number);
+      if (abs >= 100000000) return `${sign}${(abs / 100000000).toFixed(2)}亿${unit}`;
+      if (abs >= 10000) return `${sign}${(abs / 10000).toFixed(2)}万${unit}`;
+      return `${sign}${abs.toLocaleString("zh-CN", { minimumFractionDigits: abs % 1 ? 2 : 0, maximumFractionDigits: 2 })}${unit}`;
+    }
+
+    function numberText(value, suffix = "") {
+      const number = finite(value);
+      if (!Number.isFinite(number)) return "-";
+      return `${number.toLocaleString("zh-CN", { maximumFractionDigits: 2 })}${suffix}`;
+    }
+
+    function pct(value) {
+      const number = finite(value);
+      if (!Number.isFinite(number)) return "-";
+      return `${number.toLocaleString("zh-CN", { minimumFractionDigits: number < 1 ? 2 : 0, maximumFractionDigits: 2 })}%`;
+    }
+
+    function multipleText(stock) {
+      const official = finite(stock.publicOfferMultiple);
+      const current = finite(stock.estimatedSubscriptionMultiple);
+      if (official) return numberText(official, "x");
+      if (current) return numberText(current, "x");
+      return "-";
+    }
+
+    function compactMultipleText(stock) {
+      const official = finite(stock.publicOfferMultiple);
+      const current = finite(stock.estimatedSubscriptionMultiple);
+      if (official) return numberText(official, "x");
+      if (current) return numberText(current, "x");
+      return "-";
+    }
+
+    function compactMultipleLabel(stock) {
+      if (finite(stock.publicOfferMultiple)) return "官方倍数";
+      if (finite(stock.estimatedSubscriptionMultiple)) return "当前倍数";
+      return "认购倍数";
+    }
+
+    function greyMarketClosePct(stock) {
+      const performance = stock.performance && stock.performance.greyMarket;
+      if (!performance) return NaN;
+      const sourcePcts = [
+        performance.futu && finite(performance.futu.changePct),
+        performance.phillip && finite(performance.phillip.changePct)
+      ].filter(Number.isFinite);
+      if (sourcePcts.length) {
+        return sourcePcts.reduce((sum, value) => sum + value, 0) / sourcePcts.length;
+      }
+      const offer = finite(stock.offerPrice);
+      if (!offer) return NaN;
+      const closes = [
+        performance.futu && finite(performance.futu.close),
+        performance.phillip && finite(performance.phillip.close)
+      ].filter(Number.isFinite);
+      if (!closes.length) return NaN;
+      const avgClose = closes.reduce((sum, value) => sum + value, 0) / closes.length;
+      return ((avgClose - offer) / offer) * 100;
+    }
+
+    function greyMarketTicket(stock) {
+      return marketPctTicket("暗盘", greyMarketClosePct(stock));
+    }
+
+    function firstDayClosePct(stock) {
+      const offer = finite(stock.offerPrice);
+      if (!offer) return NaN;
+      const first = stock.performance && stock.performance.firstDay;
+      if (!first) return NaN;
+      const close = finite(first.close);
+      if (!Number.isFinite(close)) return NaN;
+      return ((close - offer) / offer) * 100;
+    }
+
+    function firstDayTicket(stock) {
+      return marketPctTicket("首日", firstDayClosePct(stock));
+    }
+
+    function marketPctTicket(label, pctValue, compact = false) {
+      if (!Number.isFinite(pctValue)) return "";
+      const cls = pctValue >= 0 ? "up" : "down";
+      const sign = pctValue > 0 ? "+" : "";
+      const compactClass = compact ? " compact" : "";
+      return `<span class="session-ticket ${cls}${compactClass}">${label} <b>${sign}${trimNumber(pctValue)}%</b></span>`;
+    }
+
+    function formatMonthDayTime(value) {
+      const date = value instanceof Date ? new Date(value) : parseDateTime(value);
+      if (!date) return "";
+      const mm = String(date.getMonth() + 1).padStart(2, "0");
+      const dd = String(date.getDate()).padStart(2, "0");
+      const hh = String(date.getHours()).padStart(2, "0");
+      const min = String(date.getMinutes()).padStart(2, "0");
+      return `${mm}/${dd} ${hh}:${min}`;
+    }
+
+    function derivedGreyMarketStart(stock) {
+      const performanceDate = parseDateTime(stock.performance && stock.performance.greyMarketDate);
+      if (performanceDate) {
+        performanceDate.setHours(16, 15, 0, 0);
+        return performanceDate;
+      }
+      const listDate = parseDateTime(stock.listDate);
+      if (!listDate) return null;
+      const fallback = new Date(listDate);
+      fallback.setHours(16, 15, 0, 0);
+      do {
+        fallback.setDate(fallback.getDate() - 1);
+      } while (fallback.getDay() === 0 || fallback.getDay() === 6);
+      return fallback;
+    }
+
+    function upcomingMarketTicket(stock, compact = false) {
+      const start = derivedGreyMarketStart(stock);
+      if (!start) return "";
+      const compactClass = compact ? " compact" : "";
+      return `<span class="session-ticket upcoming${compactClass}">暗盘 <b>${formatMonthDayTime(start)}</b></span>`;
+    }
+
+    function listMarketTicket(stock) {
+      const pctTicket = marketPctTicket("暗盘", greyMarketClosePct(stock), true);
+      return pctTicket || "";
+    }
+
+    function bestGreyLotGain(stock) {
+      const performance = stock.performance || {};
+      const offer = finite(stock.offerPrice);
+      const lotSize = finite(stock.sharesPerLot);
+      if (!offer || !lotSize) return NaN;
+      const highs = [
+        performance.greyMarket && performance.greyMarket.futu && finite(performance.greyMarket.futu.high),
+        performance.greyMarket && performance.greyMarket.phillip && finite(performance.greyMarket.phillip.high)
+      ].filter(Number.isFinite);
+      if (!highs.length) return NaN;
+      return (Math.max(...highs) - offer) * lotSize;
+    }
+
+    function formatDate(value) {
+      if (!value) return "-";
+      const date = parseDateTime(value);
+      if (!date) {
+        const text = String(value);
+        const match = text.match(/(\d{4})-(\d{2})-(\d{2})(?:[ T](\d{2}):(\d{2}))?/);
+        if (!match) return text;
+        return match[4] ? `${match[2]}/${match[3]} ${match[4]}:${match[5]}` : `${match[2]}/${match[3]}`;
+      }
+      const mm = String(date.getMonth() + 1).padStart(2, "0");
+      const dd = String(date.getDate()).padStart(2, "0");
+      const hh = String(date.getHours()).padStart(2, "0");
+      const min = String(date.getMinutes()).padStart(2, "0");
+      return `${mm}/${dd} ${hh}:${min}`;
+    }
+
+    function formatDateOnlyYear(value) {
+      if (!value) return "-";
+      const date = value instanceof Date ? new Date(value) : parseDateTime(value);
+      if (!date) {
+        const text = String(value);
+        const match = text.match(/(\d{4})-(\d{2})-(\d{2})/);
+        return match ? `${match[1]}/${match[2]}/${match[3]}` : text;
+      }
+      const yyyy = String(date.getFullYear());
+      const mm = String(date.getMonth() + 1).padStart(2, "0");
+      const dd = String(date.getDate()).padStart(2, "0");
+      return `${yyyy}/${mm}/${dd}`;
+    }
+
+    function parseDateTime(value) {
+      if (!value) return null;
+      const text = String(value).trim();
+      if (!text) return null;
+      const normalized = text.includes("T") ? text : text.replace(" ", "T");
+      const date = new Date(normalized);
+      return Number.isFinite(date.getTime()) ? date : null;
+    }
+
+    function derivedSubscriptionEnd(stock) {
+      const direct = parseDateTime(stock.subscriptionEnd);
+      if (direct) return direct;
+      const listDate = parseDateTime(stock.listDate);
+      if (!listDate) return null;
+      const fallback = new Date(listDate);
+      fallback.setHours(12, 0, 0, 0);
+      let businessDays = 0;
+      while (businessDays < 3) {
+        fallback.setDate(fallback.getDate() - 1);
+        const day = fallback.getDay();
+        if (day !== 0 && day !== 6) businessDays += 1;
+      }
+      return fallback;
+    }
+
+    function subscriptionCutoffText(stock) {
+      const cutoff = derivedSubscriptionEnd(stock);
+      return cutoff ? formatDateOnlyYear(cutoff) : "-";
+    }
+
+    function filteredStocks() {
+      const query = state.query.trim().toLowerCase();
+      let list = stocks.filter((stock) => {
+        if (state.mode === "grey_pct" && !Number.isFinite(greyMarketClosePct(stock))) return false;
+        if (state.mode === "multiple" && !Number.isFinite(firstFinite(stock.officialMultiple, stock.currentMultiple))) return false;
+        if (!query) return true;
+        return `${stock.stockCode} ${stock.displayName} ${stock.name || ""} ${stock.englishName || ""}`.toLowerCase().includes(query);
+      });
+      list.sort((a, b) => compareStocks(a, b));
+      return list;
+    }
+
+    function compareStocks(a, b) {
+      if (state.mode === "all") {
+        const activeDelta = activeSortWeight(b) - activeSortWeight(a);
+        if (activeDelta) return activeDelta;
+      }
+      if (state.mode === "multiple") {
+        const delta = sortableNumber(firstFinite(b.officialMultiple, b.currentMultiple)) - sortableNumber(firstFinite(a.officialMultiple, a.currentMultiple));
+        if (delta) return delta;
+      } else if (state.mode === "grey_pct") {
+        const delta = sortableNumber(greyMarketClosePct(b)) - sortableNumber(greyMarketClosePct(a));
+        if (delta) return delta;
+      }
+      return dateValue(b.listDate || b.subscriptionEnd) - dateValue(a.listDate || a.subscriptionEnd);
+    }
+
+    function sortableNumber(value) {
+      return Number.isFinite(value) ? value : -Infinity;
+    }
+
+    function selectStock(code) {
+      state.selected = normalizeCode(code);
+      pushRecent(state.selected);
+      render();
+    }
+
+    function pushRecent(code) {
+      if (!code) return;
+      state.recent = [code].concat(state.recent.filter((item) => item !== code)).slice(0, RECENT_MAX);
+      saveJson("hkIpoBoardRecent", state.recent);
+    }
+
+    function render() {
+      ensureSelected();
+      syncTheme();
+      renderStatus();
+      renderList();
+      renderDetail();
+      scrollSelectedCardIntoView();
+      syncOpenTierModal();
+    }
+
+    function syncTheme() {
+      const stock = stocks.find((item) => item.stockCode === state.selected);
+      if (!document.body || !document.body.classList) return;
+      document.body.classList.toggle("theme-live", Boolean(stock && isLiveThemeStock(stock)));
+    }
+
+    function ensureSelected() {
+      if (stocks.some((stock) => stock.stockCode === state.selected)) return;
+      const firstActive = stocks.find(isActive);
+      state.selected = (firstActive || stocks[0] || {}).stockCode || "";
+    }
+
+    function renderStatus() {
+      $("dataStatus").textContent = `本地数据 ${stocks.length} 只`;
+    }
+
+    function renderList() {
+      const list = filteredStocks();
+      $("stockList").innerHTML = list.length ? list.map((stock) => {
+        const selected = stock.stockCode === state.selected ? " selected" : "";
+        const liveClass = isLiveThemeStock(stock) ? " is-active-stock" : "";
+        return `
+          <button class="stock-card${liveClass}${selected}" type="button" onclick="selectStock('${stock.stockCode}')">
+            <div class="stock-card-top">
+              <div>
+                <div class="stock-code-row">
+                  <div class="stock-code">${stock.stockCode}</div>
+                  ${listMarketTicket(stock)}
+                </div>
+                <div class="stock-name-row">
+                  <div class="stock-name short" title="${escapeHtml(stock.name || stock.displayName)}">${stock.displayName}</div>
+                </div>
+              </div>
+              <span class="phase-badge ${phaseClass(stock)}">${phase(stock)}</span>
+            </div>
+            <div class="mini-metrics">
+              <div><span>入场费</span><b>${money(stock.entryFee)}</b></div>
+              <div><span>${compactMultipleLabel(stock)}</span><b>${compactMultipleText(stock)}</b></div>
+              <div><span>申购截止</span><b>${subscriptionCutoffText(stock)}</b></div>
+            </div>
+          </button>
+        `;
+      }).join("") : `<div class="empty-state">没有匹配的股票</div>`;
+    }
+
+    function scrollSelectedCardIntoView() {
+      const card = document.querySelector(".stock-card.selected");
+      if (card && typeof card.scrollIntoView === "function") {
+        card.scrollIntoView({ block: "nearest" });
+      }
+    }
+
+    function renderDetail() {
+      const stock = stocks.find((item) => item.stockCode === state.selected);
+      if (!stock) {
+        $("detailPanel").innerHTML = `<div class="empty-state">请选择一只股票</div>`;
+        return;
+      }
+      $("detailPanel").innerHTML = `
+        <div class="detail-hero">
+          <div class="detail-title-row">
+            <div class="detail-title">
+              <div class="detail-title-main">
+                <h2>${stock.stockCode} ${stock.displayName}</h2>
+                ${greyMarketTicket(stock)}
+                ${firstDayTicket(stock)}
+              </div>
+              <div class="detail-subline">
+                <p>${phase(stock)} · 上市 ${stock.listDate || "待确认"} · ${stock.listingType || "主板"}</p>
+              </div>
+            </div>
+          </div>
+          <div class="metric-grid">
+            ${metric("招股价", money(stock.offerPrice), "每股")}
+            ${metric("每手股数", numberText(stock.sharesPerLot, "股"), "一手")}
+            ${metric("入场费", money(stock.entryFee), "一手申购")}
+            ${metric("公开手数", numberText(stock.publicLots, "手"), "公开发售")}
+            ${metric("暗盘最多一手赚", money(bestGreyLotGain(stock)), "按暗盘最高价")}
+          </div>
+        </div>
+        <div class="detail-body">
+          <div class="content-card">
+            <div class="content-head">
+              <div class="head-copy">
+                <h3>${stock.basisOfAllocation && stock.basisOfAllocation.length ? "实际各档位中签曲线" : "预计各档位中签曲线"}</h3>
+                <span>横轴按手数压缩显示，纵轴看预计/实际可获配手数</span>
+              </div>
+              <div class="head-actions">
+                <button class="link-btn primary-soft" type="button" onclick="openTierDetail('${stock.stockCode}')">查看详情</button>
+              </div>
+            </div>
+            <div class="chart-wrap">${tierChart(stock)}</div>
+          </div>
+          <div class="insight-grid">
+            ${profileHtml(stock)}
+          </div>
+          <div class="content-card">
+            <div class="content-head">
+              <h3>暗盘表现</h3>
+              <span>${stock.performance && stock.performance.greyMarketDate ? formatDateOnlyYear(stock.performance.greyMarketDate) : (derivedGreyMarketStart(stock) ? formatDateOnlyYear(derivedGreyMarketStart(stock)) : "待补充")}</span>
+            </div>
+            ${marketHtml(stock, "grey")}
+          </div>
+          <div class="content-card">
+            <div class="content-head">
+              <h3>上市首日表现</h3>
+              <span>${firstDayWindowText(stock)}</span>
+            </div>
+            ${marketHtml(stock, "first")}
+          </div>
+        </div>
+      `;
+    }
+
+    function metric(label, value, note) {
+      return `<div class="metric-card"><span>${label}</span><b>${value}</b><small>${note}</small></div>`;
+    }
+
+    function normalizedTierGroup(point) {
+      const value = String(point && point.group || "").toUpperCase();
+      return value.includes("B") || value.includes("乙") ? "B" : "A";
+    }
+
+    function formatTierYield(point) {
+      if (!point || !Number.isFinite(point.y)) return "-";
+      if (point.y >= 1) return `${trimNumber(point.y)}手`;
+      return pct(point.y * 100);
+    }
+
+    function trimNumber(value) {
+      const number = finite(value);
+      if (!Number.isFinite(number)) return "-";
+      return number.toLocaleString("zh-CN", { minimumFractionDigits: number < 10 ? 2 : 0, maximumFractionDigits: 2 });
+    }
+
+    function firstDayWindowText(stock) {
+      const first = stock.performance && stock.performance.firstDay;
+      const value = first && first.date ? first.date : stock.listDate;
+      if (!value) return "待补充";
+      return formatDateOnlyYear(value);
+    }
+
+    function sourceLink(stock) {
+      return allocationSourceLink(stock);
+    }
+
+    function allocationSourceLink(stock) {
+      const hasOfficialAllocation = Boolean(stock.allotmentPdf || (stock.basisOfAllocation && stock.basisOfAllocation.length));
+      if (!hasOfficialAllocation) return prospectusLink(stock);
+      return stock.allotmentPdf ||
+        stock.sourceUrl ||
+        (stock.source && (stock.source.allotment || stock.source.pdf || stock.source.url)) ||
+        hkexSearchLink(stock.stockCode);
+    }
+
+    function prospectusLink(stock) {
+      return stock.prospectusUrl ||
+        (stock.source && (stock.source.prospectus || stock.source.listingDocument || stock.source.pdf || stock.source.url)) ||
+        hkexSearchLink(stock.stockCode);
+    }
+
+    function hkexSearchLink(code) {
+      return `https://www1.hkexnews.hk/search/titlesearch.xhtml?lang=zh&market=SEHK&stockcode=${normalizeCode(code)}`;
+    }
+
+    function jsString(value) {
+      return JSON.stringify(String(value || ""));
+    }
+
+    function openExternal(url) {
+      if (!url) return;
+      window.open(url, "_blank", "noopener");
+    }
+
+    function moveSelection(delta) {
+      const list = filteredStocks();
+      if (!list.length) return;
+      const current = list.findIndex((stock) => stock.stockCode === state.selected);
+      const start = current >= 0 ? current : 0;
+      const next = list[Math.max(0, Math.min(list.length - 1, start + delta))];
+      if (next && next.stockCode !== state.selected) selectStock(next.stockCode);
+    }
+
+    function showChartTooltip(event, text) {
+      const tooltip = $("chartTooltip");
+      if (!tooltip) return;
+      tooltip.textContent = text || "";
+      tooltip.classList.add("show");
+      tooltip.setAttribute("aria-hidden", "false");
+      moveChartTooltip(event);
+    }
+
+    function moveChartTooltip(event) {
+      const tooltip = $("chartTooltip");
+      if (!tooltip || !tooltip.classList.contains("show")) return;
+      tooltip.style.left = `${event.clientX + 16}px`;
+      tooltip.style.top = `${event.clientY + 18}px`;
+    }
+
+    function hideChartTooltip() {
+      const tooltip = $("chartTooltip");
+      if (!tooltip) return;
+      tooltip.classList.remove("show");
+      tooltip.setAttribute("aria-hidden", "true");
+    }
+
+    function profileHtml(stock) {
+      const profile = stock.profile;
+      if (!profile) {
+        return `
+          <div class="content-card profile-card">
+            <div class="profile-title-row">
+              <h3>公司速读</h3>
+            </div>
+            <p>${escapeHtml(stock.displayName)}：暂未收录公司速读，后台需要补齐主营业务、业务标签和来源摘要。</p>
+          </div>
+        `;
+      }
+      const tagItems = ((profile.tagDetails && profile.tagDetails.length) ? profile.tagDetails : (profile.tags || []).map((label) => ({ label, description: "" }))).slice(0, 4);
+      const tags = tagItems.map((item) => `<span>${escapeHtml(cleanProfileText(item.label, 16))}</span>`).join("");
+      const explanations = tagItems
+        .filter((item) => item.description)
+        .slice(0, 3)
+        .map((item) => `<span>${escapeHtml(item.label)}：${escapeHtml(cleanProfileText(item.description, 40))}</span>`)
+        .join("");
+      const tagRail = tags ? `<div class="profile-tags">${tags}</div>` : "";
+      const summaryText = cleanProfileText(profile.summary || profile.oneLine || profile.business || "暂无摘要", 112);
+      const summaryLine = profileSummaryStartsWithName(stock, profile, summaryText)
+        ? summaryText
+        : `${stock.displayName}：${summaryText}`;
+      return `
+        <div class="content-card profile-card">
+          <div class="profile-title-row">
+            <h3>公司速读</h3>
+          </div>
+          <p>${escapeHtml(summaryLine)}</p>
+          ${tagRail}
+          ${explanations ? `<div class="profile-explain">${explanations}</div>` : ""}
+        </div>
+      `;
+    }
+
+    function profileSummaryStartsWithName(stock, profile, text) {
+      const compact = (value) => toSimple(value)
+        .replace(/[（(].*?[）)]/g, "")
+        .replace(/\s*-\s*H股$/i, "")
+        .replace(/\s*H股$/i, "")
+        .replace(/\s*-\s*主板$/i, "")
+        .replace(/(?:\s*[-－]\s*(?:B|W|P|WP))$/i, "")
+        .replace(/股份有限公司|有限公司|集团|集團|控股|国际|科技服务|人工智能科技|生物科技|医药科技|数字孪生科技/g, "")
+        .replace(/[\s·・（）()－-]/g, "")
+        .toLowerCase();
+      const summary = compact(text);
+      const candidates = [
+        stock.displayName,
+        stock.shortName,
+        stock.name,
+        stock.englishName,
+        profile && profile.name,
+        shortName(stock),
+      ]
+        .map(compact)
+        .filter((item, index, list) => item.length >= 2 && list.indexOf(item) === index);
+      return candidates.some((name) => summary.startsWith(name));
+    }
+
+    function cleanProfileText(value, max) {
+      const text = normalizeText(value).replace(/[；;。]$/,"");
+      return text.length > max ? `${text.slice(0, max)}...` : text;
+    }
+
+    function openTierDetail(code) {
+      const stock = stocks.find((item) => item.stockCode === normalizeCode(code));
+      if (!stock) return;
+      const isActual = Boolean(stock.basisOfAllocation && stock.basisOfAllocation.length);
+      $("modalRoot").innerHTML = tierDetailModalHtml(stock, isActual);
+      $("modalRoot").classList.add("show");
+      $("modalRoot").setAttribute("aria-hidden", "false");
+    }
+
+    function tierDetailModalHtml(stock, isActual) {
+      const summary = tierSummaryStats(stock);
+      const summaryBlock = isActual
+        ? (summary ? tierSummaryCardsHtml(summary) : `<div class="tier-prediction-strip">当前未收录完整配发汇总，先展示档位明细。</div>`)
+        : tierPredictionSummaryHtml(stock);
+      return `
+        <div class="modal-backdrop" onclick="closeModal()"></div>
+        <section class="modal-panel" role="dialog" aria-modal="true" aria-label="${escapeHtml(stock.displayName)}档位详情">
+          <div class="modal-head">
+            <div>
+              <h3>${stock.stockCode} ${stock.displayName} · ${isActual ? "实际各档位中签率" : "预计各档位中签率"}</h3>
+              <p>${isActual ? "来自官方配发结果，曲线和表格使用同一批档位数据。" : "暂无官方配发结果，先按申购档位、当前倍数和模型推算，后续用官方数据替换。"}</p>
+            </div>
+            <div class="modal-actions">
+              <button class="link-btn primary-soft" type="button" onclick="closeModal()">关闭</button>
+            </div>
+          </div>
+          <div class="modal-body">
+            ${summaryBlock}
+            <p class="tier-note">${isActual ? "一手、甲尾、乙头和顶头槌用于快速比较关键档位；低于一手显示中签率，高于一手显示获配手数。" : "预计表不预测中签人数，人数列留空；不同申购档位用于比较相对变化。"}</p>
+            ${tierDetailTable(stock)}
+          </div>
+        </section>
+      `;
+    }
+
+    function closeModal() {
+      $("modalRoot").classList.remove("show");
+      $("modalRoot").setAttribute("aria-hidden", "true");
+      $("modalRoot").innerHTML = "";
+    }
+
+    function syncOpenTierModal() {
+      const modal = $("modalRoot");
+      if (!modal || !modal.classList || !modal.classList.contains("show")) return;
+      const current = stocks.find((item) => item.stockCode === state.selected);
+      if (!current) return;
+      const isActual = Boolean(current.basisOfAllocation && current.basisOfAllocation.length);
+      modal.innerHTML = tierDetailModalHtml(current, isActual);
+    }
+
+    function tierDetailTable(stock) {
+      const rows = tierDetailRows(stock);
+      if (!rows.length) return `<div class="chart-empty">当前暂无可展示的档位数据</div>`;
+      const isActual = Array.isArray(stock.basisOfAllocation) && stock.basisOfAllocation.length;
+      const tableTitle = isActual ? "实际各档位中签详情" : "预计各档位中签详情";
+      return `
+        <div class="tier-table-caption">${tableTitle}${isActual ? "（来自官方配发结果）" : "（基于申购档位与现有数据推算）"}</div>
+        <table class="tier-table">
+          <thead>
+            <tr>
+              <th>档位</th>
+              <th>中签人数/有效申请</th>
+              <th>中签率/手数</th>
+              <th>该档资金</th>
+            </tr>
+          </thead>
+          <tbody>${rows.map(tierDetailRowHtml).join("")}</tbody>
+        </table>
+      `;
+    }
+
+    function tierSummaryCardsHtml(summary) {
+      const cards = [
+        ["总中签人数", summary.winners],
+        ["有效申请人数", summary.validApps],
+        ["合计中签率", summary.totalHitRate],
+        ["总投入资金", summary.grossFund],
+        ["最终成交金额", summary.finalFund],
+      ];
+      return `
+        <div class="tier-summary-cards">
+          ${cards.map(([label, value]) => `
+            <div class="tier-summary-card">
+              <div class="tier-summary-k">${label}</div>
+              <div class="tier-summary-v">${value}</div>
+            </div>
+          `).join("")}
+        </div>
+      `;
+    }
+
+    function tierPredictionSummaryHtml(stock) {
+      const rate = pct(oneLotRate(stock));
+      const publicLots = numberText(stock.publicLots, "手");
+      const multiple = compactMultipleText(stock);
+      return `
+        <div class="tier-prediction-strip">
+          <span class="tier-summary-title">当前倍数</span> ${multiple}
+          <span>，一手预测</span> ${rate}
+          <span>，公开手数</span> ${publicLots}
+          <span>，待官方配发结果公布后再替换为实际数据。</span>
+        </div>
+      `;
+    }
+
+    function tierSummaryStats(stock) {
+      const rows = Array.isArray(stock.basisOfAllocation) ? stock.basisOfAllocation : [];
+      if (!rows.length) return null;
+      let winners = 0;
+      let validApps = 0;
+      let grossFund = 0;
+      let finalFund = 0;
+      let totalHitRate = NaN;
+      let hasAny = false;
+      const lotSize = finite(stock.sharesPerLot) || 1;
+      const oneEntry = finite(stock.entryFee) || 0;
+      for (const row of rows) {
+        const valid = finite(row.validApplications);
+        const success = firstFinite(
+          finite(row.successfulApplications),
+          finite(row.baseSuccessfulApplications),
+          finite(row.extraLotteryWinners)
+        );
+        const lots = finite(row.lotsApplied) || (finite(row.sharesApplied) / lotSize) || 0;
+        const tierFund = oneEntry * lots;
+        if (Number.isFinite(valid)) {
+          validApps += valid;
+          grossFund += tierFund * valid;
+          hasAny = true;
+        }
+        if (Number.isFinite(success)) {
+          winners += success;
+          finalFund += tierFund * success;
+          hasAny = true;
+        }
+      }
+      if (!hasAny) return null;
+      if (validApps > 0) totalHitRate = (winners / validApps) * 100;
+      return {
+        winners: numberText(winners, "人"),
+        validApps: numberText(validApps, "人"),
+        grossFund: money(grossFund),
+        finalFund: money(finalFund),
+        totalHitRate: Number.isFinite(totalHitRate) ? pct(totalHitRate) : "-"
+      };
+    }
+
+    function tierDetailRows(stock) {
+      const lotSize = finite(stock.sharesPerLot) || 1;
+      const points = tierPoints(stock).filter((point) => Number.isFinite(point.lots));
+      const labels = tierLabelMap(points);
+      const basis = stock.basisOfAllocation || [];
+      if (basis.length) {
+        return basis.map((row, index) => {
+          const lots = finite(row.lotsApplied) || (finite(row.sharesApplied) / lotSize) || points[index]?.lots || index + 1;
+          const point = points[index] || { group: row.group || "A", lots, y: NaN };
+          return {
+            label: labels.get(index) || `${normalizedTierGroup(point) === "B" ? "乙" : "甲"} ${numberText(lots)}手 / ${numberText(lots * lotSize)}股`,
+            applicants: applicantsText(row),
+            yieldText: formatTierYield(point),
+            amount: money((finite(stock.entryFee) || 0) * lots),
+            key: labels.has(index)
+          };
+        });
+      }
+      return points.map((point, index) => ({
+        label: labels.get(index) || `${normalizedTierGroup(point) === "B" ? "乙" : "甲"} ${numberText(point.lots)}手 / ${numberText(point.lots * lotSize)}股`,
+        applicants: "",
+        yieldText: formatTierYield(point),
+        amount: money((finite(stock.entryFee) || 0) * point.lots),
+        key: labels.has(index)
+      }));
+    }
+
+    function tierDetailRowHtml(row) {
+      return `
+        <tr class="${row.key ? "key-tier" : ""}">
+          <td>${escapeHtml(row.label)}</td>
+          <td>${escapeHtml(row.applicants || "-")}</td>
+          <td>${escapeHtml(row.yieldText)}</td>
+          <td>${escapeHtml(row.amount)}</td>
+        </tr>
+      `;
+    }
+
+    function tierLabelMap(points) {
+      const labels = new Map();
+      if (!points.length) return labels;
+      labels.set(0, "一手党");
+      const aLast = points.map((point, index) => [point, index]).filter(([point]) => normalizedTierGroup(point) === "A").pop();
+      const bFirst = points.map((point, index) => [point, index]).find(([point]) => normalizedTierGroup(point) === "B");
+      const bLast = points.map((point, index) => [point, index]).filter(([point]) => normalizedTierGroup(point) === "B").pop();
+      if (aLast) labels.set(aLast[1], "甲尾");
+      if (bFirst) labels.set(bFirst[1], "乙头");
+      if (bLast) labels.set(bLast[1], "乙尾");
+      labels.set(points.length - 1, "顶头槌");
+      return labels;
+    }
+
+    function applicantsText(row) {
+      const successful = finite(row.successfulApplications) || finite(row.baseSuccessfulApplications) || finite(row.extraLotteryWinners);
+      const valid = finite(row.validApplications);
+      if (!successful && !valid) return "";
+      return `${successful ? numberText(successful) : "-"} / ${valid ? numberText(valid) : "-"}`;
+    }
+
+    function pointTooltipText(point) {
+      const parts = [
+        `${normalizedTierGroup(point) === "B" ? "乙组" : "甲组"} ${trimNumber(point.lots)}手`,
+        `中签率/手数：${formatTierYield(point)}`
+      ];
+      if (point.applicants) parts.push(`中签人数/有效申请：${point.applicants}`);
+      return parts.join("\n");
+    }
+
+    function tierChart(stock) {
+      const points = cleanChartPoints(tierPoints(stock));
+      if (points.length < 2) return `<div class="chart-empty">暂无可绘制的档位数据</div>`;
+      const width = 820;
+      const height = 320;
+      const pad = { left: 52, right: 28, top: 24, bottom: 42 };
+      const series = tierSeries(points);
+      const xs = points.map((point) => Math.log10(Math.max(1, point.lots)));
+      const yMax = Math.max(1, ...points.map((point) => point.y)) * 1.08;
+      const xMin = Math.min(...xs);
+      const xMax = Math.max(...xs);
+      const plotW = width - pad.left - pad.right;
+      const plotH = height - pad.top - pad.bottom;
+      const sx = (lots) => pad.left + ((Math.log10(Math.max(1, lots)) - xMin) / Math.max(.001, xMax - xMin)) * plotW;
+      const sy = (value) => pad.top + (1 - value / yMax) * plotH;
+      const keyPoints = keyPointMap(series);
+      const plottedPoints = [];
+      const segments = [];
+      const yTicks = [0, yMax * .25, yMax * .5, yMax].map((value) => `
+        <line class="grid-line" x1="${pad.left}" x2="${width - pad.right}" y1="${sy(value).toFixed(1)}" y2="${sy(value).toFixed(1)}"></line>
+        <text class="axis-label" x="${pad.left - 8}" y="${(sy(value) + 4).toFixed(1)}" text-anchor="end">${value >= 1 ? value.toFixed(1) + "手" : pct(value * 100)}</text>
+      `).join("");
+      const xLabels = [
+        { lots: 1, label: "1手" },
+        { lots: 10, label: "10手" },
+        { lots: 100, label: "100手" },
+        { lots: 1000, label: "1,000手" },
+        { lots: points[points.length - 1].lots, label: "顶头槌" }
+      ].filter((item, index, arr) => index === 0 || item.lots !== arr[index - 1].lots).map((item) => `
+        <text class="axis-label" x="${sx(item.lots).toFixed(1)}" y="${height - 13}" text-anchor="middle">${item.label}</text>
+      `).join("");
+      const keyCoords = [];
+      const seriesNodes = series.map((item) => {
+        const coords = item.points.map((point) => [sx(point.lots), sy(point.y), point]);
+        if (!coords.length) return "";
+        coords.forEach(([x, y, point], index) => {
+          plottedPoints.push({ x, y, point, seriesKey: item.key });
+          if (index) {
+            const [px, py] = coords[index - 1];
+            segments.push({ x1: px, y1: py, x2: x, y2: y, seriesKey: item.key });
+          }
+        });
+        const line = coords.map(([x, y], index) => `${index ? "L" : "M"}${x.toFixed(1)} ${y.toFixed(1)}`).join(" ");
+        const area = coords.length > 1 ? `${line} L${coords[coords.length - 1][0].toFixed(1)} ${height - pad.bottom} L${coords[0][0].toFixed(1)} ${height - pad.bottom} Z` : "";
+        const pointNodes = coords.map(([x, y, point]) => {
+          const key = keyPoints.get(point);
+          if (key) keyCoords.push({ label: key, point, x, y, seriesKey: item.key });
+          const tooltipText = pointTooltipText(point);
+          return `
+            <g>
+              <title>${escapeHtml(tooltipText)}</title>
+              <circle class="${key ? "key-point" : "point"} series-${item.key.toLowerCase()}" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${key ? 7.5 : 4}"></circle>
+              <circle class="chart-hover" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${key ? 14 : 11}"
+                onmouseenter="showChartTooltip(event, ${jsString(tooltipText)})"
+                onmousemove="moveChartTooltip(event)"
+                onmouseleave="hideChartTooltip()"></circle>
+            </g>
+          `;
+        }).join("");
+        return `
+          ${area ? `<path class="curve-area series-${item.key.toLowerCase()}" d="${area}"></path>` : ""}
+          <path class="curve series-${item.key.toLowerCase()}" d="${line}"></path>
+          ${pointNodes}
+        `;
+      }).join("");
+      const annotationNodes = chartAnnotations(keyCoords, width, height, pad, segments, plottedPoints);
+      return `
+        <svg viewBox="0 0 ${width} ${height}" role="img" aria-label="中签率曲线">
+          <defs>
+            <marker id="chart-arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+              <path class="annotation-arrow" d="M0,0 L8,4 L0,8 Z"></path>
+            </marker>
+          </defs>
+          ${yTicks}
+          <line class="axis" x1="${pad.left}" x2="${pad.left}" y1="${pad.top}" y2="${height - pad.bottom}"></line>
+          <line class="axis" x1="${pad.left}" x2="${width - pad.right}" y1="${height - pad.bottom}" y2="${height - pad.bottom}"></line>
+          ${seriesNodes}
+          ${annotationNodes}
+          ${xLabels}
+        </svg>
+      `;
+    }
+
+    function chartAnnotations(items, width, height, pad, segments, plottedPoints) {
+      const order = ["一手", "甲尾", "乙头", "顶头槌"];
+      const slots = {
+        "一手": 0.12,
+        "甲尾": 0.42,
+        "乙头": 0.68,
+        "顶头槌": 0.88
+      };
+      return items
+        .slice()
+        .sort((a, b) => order.indexOf(a.label) - order.indexOf(b.label))
+        .map((item) => chartAnnotation(item.label, item.point, item.x, item.y, width, height, pad, slots[item.label] || 0.5))
+        .join("");
+    }
+
+    function chartAnnotation(label, point, x, y, width, height, pad, slotRatio) {
+      const value = formatTierYield(point);
+      const layout = topRowAnnotationLayout(label, value, x, y, width, pad, slotRatio);
+      const { tx, ty, boxX, boxY, boxW, boxH, anchor, line } = layout;
+      return `
+        <line class="annotation-line" x1="${line.x1.toFixed(1)}" y1="${line.y1.toFixed(1)}" x2="${line.x2.toFixed(1)}" y2="${line.y2.toFixed(1)}" marker-end="url(#chart-arrow)"></line>
+        <rect class="annotation-bg" x="${boxX.toFixed(1)}" y="${boxY.toFixed(1)}" width="${boxW.toFixed(1)}" height="${boxH}" rx="9"></rect>
+        <text x="${tx.toFixed(1)}" y="${ty.toFixed(1)}" text-anchor="${anchor}">
+          <tspan class="key-label" x="${tx.toFixed(1)}">${label}</tspan>
+          <tspan class="key-value" x="${tx.toFixed(1)}" dy="17">${value}</tspan>
+        </text>
+      `;
+    }
+
+    function topRowAnnotationLayout(label, value, x, y, width, pad, slotRatio) {
+      const boxW = Math.max(label.length * 19, value.length * 11.4, 58) + 20;
+      const boxH = 44;
+      const minX = pad.left + 8;
+      const maxX = width - pad.right - 8;
+      const tx = Math.max(minX + boxW / 2, Math.min(maxX - boxW / 2, pad.left + (width - pad.left - pad.right) * slotRatio));
+      const boxY = Math.max(8, pad.top - 4);
+      const ty = boxY + 22;
+      const boxX = tx - boxW / 2;
+      const startX = tx;
+      const startY = boxY + boxH;
+      const endY = y - 9;
+      return {
+        tx, ty, boxX, boxY, boxW, boxH, anchor: "middle",
+        box: { x: boxX, y: boxY, width: boxW, height: boxH },
+        line: { x1: startX, y1: startY, x2: x, y2: endY },
+        distance: Math.hypot(startX - x, startY - endY)
+      };
+    }
+
+    function cleanChartPoints(points) {
+      const usable = points.filter((point) => Number.isFinite(point.lots) && Number.isFinite(point.y) && point.lots > 0);
+      const aLots = usable.filter((point) => normalizedTierGroup(point) === "A").map((point) => point.lots);
+      const aMax = aLots.length ? Math.max(...aLots) : 0;
+      const cleaned = usable.filter((point) => {
+        if (normalizedTierGroup(point) !== "B") return true;
+        return !aMax || point.lots > aMax;
+      });
+      return tierSeries(cleaned).flatMap((item) => item.points);
+    }
+
+    function tierSeries(points) {
+      return ["A", "B"].map((key) => ({
+        key,
+        points: points
+          .filter((point) => normalizedTierGroup(point) === key)
+          .slice()
+          .sort((a, b) => a.lots - b.lots)
+      })).filter((item) => item.points.length);
+    }
+
+    function keyPointMap(series) {
+      const map = new Map();
+      const a = (series.find((item) => item.key === "A") || {}).points || [];
+      const b = (series.find((item) => item.key === "B") || {}).points || [];
+      if (a.length) {
+        map.set(a[0], "一手");
+        if (a.length > 1) map.set(a[a.length - 1], "甲尾");
+      } else if (series[0] && series[0].points.length) {
+        map.set(series[0].points[0], "一手");
+      }
+      if (b.length) {
+        map.set(b[0], "乙头");
+        if (b.length > 1) map.set(b[b.length - 1], "顶头槌");
+      }
+      return map;
+    }
+
+    function enforceMonotonicTierPoints(points) {
+      const adjusted = new Map();
+      for (const group of tierSeries(points)) {
+        let runningMax = -Infinity;
+        for (const point of group.points) {
+          if (!Number.isFinite(point.y)) continue;
+          const y = point.y < runningMax ? runningMax : point.y;
+          runningMax = Math.max(runningMax, y);
+          adjusted.set(point, y);
+        }
+      }
+      return points.map((point) => adjusted.has(point)
+        ? { ...point, y: adjusted.get(point), adjusted: adjusted.get(point) !== point.y }
+        : point);
+    }
+
+    function tierPoints(stock) {
+      const lotSize = finite(stock.sharesPerLot) || 1;
+      const basis = stock.basisOfAllocation || [];
+      if (basis.length) {
+        return enforceMonotonicTierPoints(basis.map((row, index) => {
+          const lots = finite(row.lotsApplied) || (finite(row.sharesApplied) / lotSize) || index + 1;
+          const expected = expectedLotsFromBasis(row, lots, lotSize);
+          return { group: row.group || "A", lots, y: expected, applicants: applicantsText(row) };
+        }));
+      }
+      const tiers = stock.applicationTiers || [];
+      const oneLot = Math.max(.0004, predictedOneLotRate(stock) / 100);
+      return enforceMonotonicTierPoints(tiers.map((tier, index) => {
+        const lots = finite(tier.lots) || (finite(tier.shares) / lotSize) || index + 1;
+        const curve = Math.pow(Math.max(1, lots), .74);
+        const boost = lots > 1000 ? 1.18 : 1;
+        return { group: lots > 1000 ? "B" : "A", lots, y: Math.min(lots, oneLot * curve * boost) };
+      }));
+    }
+
+    function expectedLotsFromBasis(row, lots, lotSize) {
+      const explicitShares = optionalNumber(row.expectedShares);
+      if (Number.isFinite(explicitShares)) return explicitShares / lotSize;
+
+      const valid = optionalNumber(row.validApplications);
+      const successful = optionalNumber(row.successfulApplications);
+      const baseSuccessful = optionalNumber(row.baseSuccessfulApplications);
+      const extraShares = optionalNumber(row.extraLotteryShares);
+      const extraWinners = optionalNumber(row.extraLotteryWinners);
+      const explicitBaseShares = optionalNumber(row.baseAllottedShares);
+      const guaranteedShares = optionalNumber(row.guaranteedShares);
+      const rawBasis = String(row.rawBasis || "");
+      const rawHasExtraClause = /plus|additional|額外|额外|另|加/.test(rawBasis);
+      const hasExtraClause = extraShares > 0 && extraWinners > 0 && rawHasExtraClause;
+      const allApplicantsGotBase = valid > 0 && (successful === valid || baseSuccessful === valid);
+      const hasGuaranteedBase = rawHasExtraClause || allApplicantsGotBase;
+      const baseShares = firstFinite(
+        explicitBaseShares > 0 ? explicitBaseShares : NaN,
+        guaranteedShares > 0 ? guaranteedShares : NaN,
+        optionalNumber(row.sharesAllotted)
+      );
+      const fallbackBaseWinners = hasGuaranteedBase
+        ? valid
+        : successful;
+      const baseWinners = hasGuaranteedBase
+        ? fallbackBaseWinners
+        : firstFinite(baseSuccessful, fallbackBaseWinners);
+
+      let expectedShares = 0;
+      let hasExactBasis = false;
+      if (valid > 0 && baseShares > 0 && baseWinners > 0) {
+        expectedShares += baseShares * Math.min(baseWinners, valid) / valid;
+        hasExactBasis = true;
+      }
+      if (valid > 0 && hasExtraClause) {
+        expectedShares += extraShares * Math.min(extraWinners, valid) / valid;
+        hasExactBasis = true;
+      }
+      if (hasExactBasis) return expectedShares / lotSize;
+
+      const pctValue = firstFinite(optionalNumber(row.allotmentPercent), optionalNumber(row.approxPercent));
+      return pctValue ? lots * pctValue / 100 : NaN;
+    }
+
+    function marketHtml(stock, mode) {
+      if (mode === "first") {
+        const first = stock.performance && stock.performance.firstDay;
+        if (!first) {
+          const start = stock.listDate ? parseDateTime(stock.listDate) : null;
+          const startText = start ? `${formatDateOnlyYear(start)} 09:30` : "待确认";
+          return `<div class="chart-empty">将于 ${startText} 正式上市</div>`;
+        }
+        return `<div class="market-summary">${marketRow("上市首日", first, stock.offerPrice, stock.sharesPerLot)}</div>`;
+      }
+      const grey = stock.performance && stock.performance.greyMarket;
+      if (!grey) {
+        const upcoming = derivedGreyMarketStart(stock);
+        if (upcoming && !isListed(stock)) {
+          return `<div class="chart-empty">暗盘将于 ${formatDateOnlyYear(upcoming)} 16:15 开启</div>`;
+        }
+        return `<div class="chart-empty">暗盘数据待补充</div>`;
+      }
+      const rows = [
+        grey.futu && marketRow("富途暗盘", grey.futu, stock.offerPrice, stock.sharesPerLot),
+        grey.phillip && marketRow("辉立暗盘", grey.phillip, stock.offerPrice, stock.sharesPerLot)
+      ].filter(Boolean).join("");
+      return `<div class="market-summary">${rows}</div>`;
+    }
+
+    function marketRow(label, item, offerPrice, sharesPerLot) {
+      const quote = (value) => {
+        const number = finite(value);
+        return number > 0 ? number : NaN;
+      };
+      const open = quote(item.open);
+      const high = quote(item.high);
+      const low = quote(item.low);
+      const close = quote(item.close);
+      const hasRange = Number.isFinite(low) && Number.isFinite(high) && high > low;
+      const min = hasRange ? low : NaN;
+      const max = hasRange ? high : NaN;
+      const pctFromLow = (value) => {
+        if (!Number.isFinite(value) || max === min) return 0;
+        return ((value - min) / (max - min)) * 100;
+      };
+      const gain = finite(item.lotGain) || (Number.isFinite(close) && offerPrice && sharesPerLot ? (close - offerPrice) * sharesPerLot : NaN);
+      const fillLeft = hasRange ? pctFromLow(low) : 0;
+      const fillWidth = hasRange ? Math.max(3, pctFromLow(high) - fillLeft) : 0;
+      const closeLeft = hasRange && Number.isFinite(close) ? Math.max(0, Math.min(100, pctFromLow(close))) : NaN;
+      const rangeFill = hasRange ? `<div class="range-fill" style="left:${fillLeft}%;width:${fillWidth}%"></div>` : "";
+      const closeMarker = hasRange && Number.isFinite(close) ? `<span class="range-marker close-marker" style="left:${closeLeft}%" title="收盘 ${numberText(close)}"></span>` : "";
+      return `
+        <div class="market-row">
+          <div class="venue">
+            ${label}
+            <div class="price-stack">
+              <span>开 ${numberText(open)}</span>
+              <span>收 ${numberText(close)}</span>
+            </div>
+          </div>
+          <div class="range">
+            <div class="range-track">
+              ${rangeFill}
+              ${closeMarker}
+            </div>
+            <div class="range-meta"><span>低 ${numberText(low)}</span><span>高 ${numberText(high)}</span></div>
+          </div>
+          <div class="gain-card ${gain < 0 ? "negative" : ""}">
+            <span>收盘每手赚</span>
+            <b>${money(gain, "")}</b>
+          </div>
+        </div>
+      `;
+    }
+
+    function escapeHtml(value) {
+      return String(value || "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    function updateClock() {
+      const now = HK_NOW();
+      const text = now.toLocaleString("zh-CN", {
+        month:"2-digit",
+        day:"2-digit",
+        hour:"2-digit",
+        minute:"2-digit",
+        second:"2-digit",
+        hour12:false
+      });
+      $("clockText").textContent = `当前时间 ${text}`;
+    }
+
+    const INTRO_KEY = "hk-ipo-intro-seen-v4";
+
+    function openIntro() {
+      document.body.classList.add("intro-open");
+      const overlay = $("introOverlay");
+      if (!overlay) return;
+      overlay.classList.add("show");
+      overlay.setAttribute("aria-hidden", "false");
+    }
+
+    function closeIntro() {
+      const overlay = $("introOverlay");
+      if (overlay) {
+        overlay.classList.remove("show");
+        overlay.setAttribute("aria-hidden", "true");
+      }
+      document.body.classList.remove("intro-open");
+      try {
+        localStorage.setItem(INTRO_KEY, "1");
+      } catch (error) {}
+    }
+
+    $("quickSearch").addEventListener("input", (event) => {
+      state.query = event.target.value;
+      renderList();
+    });
+    $("filterRow").addEventListener("click", (event) => {
+      const button = event.target.closest("[data-mode]");
+      if (!button) return;
+      state.mode = button.dataset.mode;
+      document.querySelectorAll("[data-mode]").forEach((item) => item.classList.toggle("active", item === button));
+      renderList();
+    });
+    window.selectStock = selectStock;
+    window.openExternal = openExternal;
+    window.openTierDetail = openTierDetail;
+    window.closeModal = closeModal;
+    window.closeIntro = closeIntro;
+    window.addEventListener("keydown", (event) => {
+      const activeTag = (document.activeElement && document.activeElement.tagName || "").toLowerCase();
+      if (activeTag === "input" || activeTag === "textarea" || event.metaKey || event.ctrlKey || event.altKey) return;
+      if (event.key === "ArrowDown" || event.key === "ArrowRight") {
+        event.preventDefault();
+        moveSelection(1);
+      } else if (event.key === "ArrowUp" || event.key === "ArrowLeft") {
+        event.preventDefault();
+        moveSelection(-1);
+      }
+    });
+
+    $("introEnter").addEventListener("click", closeIntro);
+
+    updateClock();
+    setInterval(updateClock, 1000);
+    try {
+      if (!localStorage.getItem(INTRO_KEY)) openIntro();
+    } catch (error) {
+      openIntro();
+    }
+    render();
+  </script>
+</body>
+</html>

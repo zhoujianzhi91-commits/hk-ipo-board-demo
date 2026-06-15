@@ -1,5 +1,5 @@
 window.OFFICIAL_UPDATES_2026 = {
-  "generatedAt": "2026-06-15T13:42:19",
+  "generatedAt": "2026-06-15T18:16:15",
   "stocks": [
     {
       "stockCode": "00901",
@@ -1728,11 +1728,11 @@ window.OFFICIAL_UPDATES_2026 = {
         "parserVersion": "2026-05-18-pymupdf-v2"
       },
       "basisOfAllocation": [],
-      "estimatedSubscriptionMultiple": 529.18,
+      "estimatedSubscriptionMultiple": 2673.12,
       "estimatedSubscriptionSource": "致富证券",
       "estimatedSubscriptionSourceUrl": "https://www.chiefgroup.com.hk/cn/securities/hk-ipo-detail?symbol=1392",
-      "estimatedSubscriptionCapturedAt": "2026-06-15T07:37:18",
-      "estimatedSubscriptionStatus": "frozen_last_valid",
+      "estimatedSubscriptionCapturedAt": "2026-06-15T18:16:05",
+      "estimatedSubscriptionStatus": "estimated",
       "subscriptionStart": "2026-06-11 09:00",
       "subscriptionEnd": "2026-06-16 12:00",
       "offerPrice": 7.2,
@@ -4264,11 +4264,11 @@ window.OFFICIAL_UPDATES_2026 = {
         "parserVersion": "2026-05-18-pymupdf-v2"
       },
       "basisOfAllocation": [],
-      "estimatedSubscriptionMultiple": 0.41,
+      "estimatedSubscriptionMultiple": 5.27,
       "estimatedSubscriptionSource": "致富证券",
       "estimatedSubscriptionSourceUrl": "https://www.chiefgroup.com.hk/cn/securities/hk-ipo-detail?symbol=2335",
-      "estimatedSubscriptionCapturedAt": "2026-06-15T07:37:18",
-      "estimatedSubscriptionStatus": "frozen_last_valid",
+      "estimatedSubscriptionCapturedAt": "2026-06-15T18:16:05",
+      "estimatedSubscriptionStatus": "estimated",
       "estimatedSubscriptionLastCheckedAt": "2026-06-15T13:38:57"
     },
     {
@@ -7533,10 +7533,10 @@ window.OFFICIAL_UPDATES_2026 = {
         "parserVersion": "2026-05-18-pymupdf-v2"
       },
       "basisOfAllocation": [],
-      "estimatedSubscriptionMultiple": 109.2,
+      "estimatedSubscriptionMultiple": 129.8,
       "estimatedSubscriptionSource": "致富证券",
       "estimatedSubscriptionSourceUrl": "https://www.chiefgroup.com.hk/cn/securities/hk-ipo-detail?symbol=6067",
-      "estimatedSubscriptionCapturedAt": "2026-06-15T13:38:57",
+      "estimatedSubscriptionCapturedAt": "2026-06-15T18:16:05",
       "estimatedSubscriptionStatus": "estimated"
     },
     {
@@ -7777,11 +7777,11 @@ window.OFFICIAL_UPDATES_2026 = {
         "parserVersion": "2026-05-18-pymupdf-v2"
       },
       "basisOfAllocation": [],
-      "estimatedSubscriptionMultiple": 13.12,
+      "estimatedSubscriptionMultiple": 54.4,
       "estimatedSubscriptionSource": "致富证券",
       "estimatedSubscriptionSourceUrl": "https://www.chiefgroup.com.hk/cn/securities/hk-ipo-detail?symbol=6106",
-      "estimatedSubscriptionCapturedAt": "2026-06-15T07:37:18",
-      "estimatedSubscriptionStatus": "frozen_last_valid",
+      "estimatedSubscriptionCapturedAt": "2026-06-15T18:16:05",
+      "estimatedSubscriptionStatus": "estimated",
       "estimatedSubscriptionLastCheckedAt": "2026-06-15T13:38:57"
     },
     {
@@ -8032,11 +8032,11 @@ window.OFFICIAL_UPDATES_2026 = {
         "parserVersion": "2026-05-18-pymupdf-v2"
       },
       "basisOfAllocation": [],
-      "estimatedSubscriptionMultiple": 28.24,
+      "estimatedSubscriptionMultiple": 164.82,
       "estimatedSubscriptionSource": "致富证券",
       "estimatedSubscriptionSourceUrl": "https://www.chiefgroup.com.hk/cn/securities/hk-ipo-detail?symbol=6132",
-      "estimatedSubscriptionCapturedAt": "2026-06-15T07:37:18",
-      "estimatedSubscriptionStatus": "frozen_last_valid",
+      "estimatedSubscriptionCapturedAt": "2026-06-15T18:16:05",
+      "estimatedSubscriptionStatus": "estimated",
       "estimatedSubscriptionLastCheckedAt": "2026-06-15T13:38:57"
     },
     {
@@ -9087,8 +9087,8 @@ window.OFFICIAL_UPDATES_2026 = {
       "estimatedSubscriptionMultiple": 3967.68,
       "estimatedSubscriptionSource": "致富证券",
       "estimatedSubscriptionSourceUrl": "https://www.chiefgroup.com.hk/cn/securities/hk-ipo-detail?symbol=6675",
-      "estimatedSubscriptionCapturedAt": "2026-06-15T07:37:18",
-      "estimatedSubscriptionStatus": "frozen_last_valid",
+      "estimatedSubscriptionCapturedAt": "2026-06-15T18:16:05",
+      "estimatedSubscriptionStatus": "estimated",
       "subscriptionStart": "2026-06-09 09:00",
       "subscriptionEnd": "2026-06-12 12:00",
       "offerPrice": 18.36,

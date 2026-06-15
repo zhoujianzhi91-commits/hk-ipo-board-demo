@@ -1,5 +1,5 @@
 window.OFFICIAL_UPDATES_2026 = {
-  "generatedAt": "2026-06-14T14:38:33",
+  "generatedAt": "2026-06-15T02:04:31",
   "stocks": [
     {
       "stockCode": "00901",
@@ -1728,10 +1728,10 @@ window.OFFICIAL_UPDATES_2026 = {
         "parserVersion": "2026-05-18-pymupdf-v2"
       },
       "basisOfAllocation": [],
-      "estimatedSubscriptionMultiple": 292.21,
+      "estimatedSubscriptionMultiple": 334.11,
       "estimatedSubscriptionSource": "致富证券",
       "estimatedSubscriptionSourceUrl": "https://www.chiefgroup.com.hk/cn/securities/hk-ipo-detail?symbol=1392",
-      "estimatedSubscriptionCapturedAt": "2026-06-14T14:38:29",
+      "estimatedSubscriptionCapturedAt": "2026-06-15T02:04:24",
       "estimatedSubscriptionStatus": "estimated",
       "subscriptionStart": "2026-06-11 09:00",
       "subscriptionEnd": "2026-06-16 12:00",
@@ -4035,6 +4035,234 @@ window.OFFICIAL_UPDATES_2026 = {
       "estimatedSubscriptionCapturedAt": "2026-06-11T11:19:26",
       "estimatedSubscriptionStatus": "estimated",
       "estimatedSubscriptionLastCheckedAt": "2026-06-11T11:15:45"
+    },
+    {
+      "stockCode": "02335",
+      "name": "麥科醫藥－Ｂ",
+      "englishName": "",
+      "status": "current",
+      "subscriptionStart": "2026-06-15 09:00",
+      "subscriptionEnd": "2026-06-18 12:00",
+      "listDate": "",
+      "offerPrice": 21.0,
+      "sharesPerLot": 200,
+      "publicOfferSharesBefore": 5805600,
+      "mechanism": "主板B",
+      "listingType": "H股",
+      "applicationSummary": {
+        "minShares": 200,
+        "minLots": 1,
+        "minAmountHKD": 4242.36,
+        "aMaxShares": 200000,
+        "aMaxLots": 1000,
+        "aMaxAmountHKD": 4242357.0,
+        "bMinShares": 300000,
+        "bMinLots": 1500,
+        "bMinAmountHKD": 6363535.5,
+        "maxShares": 2902800,
+        "maxLots": 14514,
+        "maxAmountHKD": 61573569.5
+      },
+      "applicationTiers": [
+        {
+          "shares": 200,
+          "lots": 1,
+          "amountHKD": 4242.36
+        },
+        {
+          "shares": 400,
+          "lots": 2,
+          "amountHKD": 8484.71
+        },
+        {
+          "shares": 600,
+          "lots": 3,
+          "amountHKD": 12727.07
+        },
+        {
+          "shares": 800,
+          "lots": 4,
+          "amountHKD": 16969.43
+        },
+        {
+          "shares": 1000,
+          "lots": 5,
+          "amountHKD": 21211.79
+        },
+        {
+          "shares": 1200,
+          "lots": 6,
+          "amountHKD": 25454.14
+        },
+        {
+          "shares": 1400,
+          "lots": 7,
+          "amountHKD": 29696.49
+        },
+        {
+          "shares": 1600,
+          "lots": 8,
+          "amountHKD": 33938.86
+        },
+        {
+          "shares": 1800,
+          "lots": 9,
+          "amountHKD": 38181.22
+        },
+        {
+          "shares": 2000,
+          "lots": 10,
+          "amountHKD": 42423.56
+        },
+        {
+          "shares": 3000,
+          "lots": 15,
+          "amountHKD": 63635.35
+        },
+        {
+          "shares": 4000,
+          "lots": 20,
+          "amountHKD": 84847.15
+        },
+        {
+          "shares": 5000,
+          "lots": 25,
+          "amountHKD": 106058.93
+        },
+        {
+          "shares": 6000,
+          "lots": 30,
+          "amountHKD": 127270.71
+        },
+        {
+          "shares": 7000,
+          "lots": 35,
+          "amountHKD": 148482.5
+        },
+        {
+          "shares": 8000,
+          "lots": 40,
+          "amountHKD": 169694.28
+        },
+        {
+          "shares": 9000,
+          "lots": 45,
+          "amountHKD": 190906.06
+        },
+        {
+          "shares": 10000,
+          "lots": 50,
+          "amountHKD": 212117.86
+        },
+        {
+          "shares": 20000,
+          "lots": 100,
+          "amountHKD": 424235.7
+        },
+        {
+          "shares": 30000,
+          "lots": 150,
+          "amountHKD": 636353.56
+        },
+        {
+          "shares": 40000,
+          "lots": 200,
+          "amountHKD": 848471.4
+        },
+        {
+          "shares": 50000,
+          "lots": 250,
+          "amountHKD": 1060589.26
+        },
+        {
+          "shares": 60000,
+          "lots": 300,
+          "amountHKD": 1272707.1
+        },
+        {
+          "shares": 70000,
+          "lots": 350,
+          "amountHKD": 1484824.96
+        },
+        {
+          "shares": 80000,
+          "lots": 400,
+          "amountHKD": 1696942.8
+        },
+        {
+          "shares": 90000,
+          "lots": 450,
+          "amountHKD": 1909060.66
+        },
+        {
+          "shares": 100000,
+          "lots": 500,
+          "amountHKD": 2121178.5
+        },
+        {
+          "shares": 200000,
+          "lots": 1000,
+          "amountHKD": 4242357.0
+        },
+        {
+          "shares": 300000,
+          "lots": 1500,
+          "amountHKD": 6363535.5
+        },
+        {
+          "shares": 400000,
+          "lots": 2000,
+          "amountHKD": 8484714.0
+        },
+        {
+          "shares": 500000,
+          "lots": 2500,
+          "amountHKD": 10605892.5
+        },
+        {
+          "shares": 600000,
+          "lots": 3000,
+          "amountHKD": 12727071.0
+        },
+        {
+          "shares": 700000,
+          "lots": 3500,
+          "amountHKD": 14848249.5
+        },
+        {
+          "shares": 800000,
+          "lots": 4000,
+          "amountHKD": 16969428.0
+        },
+        {
+          "shares": 900000,
+          "lots": 4500,
+          "amountHKD": 19090606.5
+        },
+        {
+          "shares": 1000000,
+          "lots": 5000,
+          "amountHKD": 21211785.0
+        },
+        {
+          "shares": 2000000,
+          "lots": 10000,
+          "amountHKD": 42423570.0
+        },
+        {
+          "shares": 2902800,
+          "lots": 14514,
+          "amountHKD": 61573569.5
+        }
+      ],
+      "source": {
+        "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0615/2026061500008_c.pdf",
+        "prospectus": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0615/2026061500010_c.pdf",
+        "extractedText": "data/2026/txt/02335_prospectus.txt",
+        "title": "官方新上市公告 PDF",
+        "parserVersion": "2026-05-18-pymupdf-v2"
+      },
+      "basisOfAllocation": []
     },
     {
       "stockCode": "02553",
@@ -7298,11 +7526,250 @@ window.OFFICIAL_UPDATES_2026 = {
         "parserVersion": "2026-05-18-pymupdf-v2"
       },
       "basisOfAllocation": [],
-      "estimatedSubscriptionMultiple": 13.86,
+      "estimatedSubscriptionMultiple": 15.75,
       "estimatedSubscriptionSource": "致富证券",
       "estimatedSubscriptionSourceUrl": "https://www.chiefgroup.com.hk/cn/securities/hk-ipo-detail?symbol=6067",
-      "estimatedSubscriptionCapturedAt": "2026-06-14T14:38:29",
+      "estimatedSubscriptionCapturedAt": "2026-06-15T02:04:24",
       "estimatedSubscriptionStatus": "estimated"
+    },
+    {
+      "stockCode": "06106",
+      "name": "仙工智能",
+      "englishName": "",
+      "status": "current",
+      "subscriptionStart": "2026-06-15 09:00",
+      "subscriptionEnd": "2026-06-18 12:00",
+      "listDate": "",
+      "offerPrice": 101.6,
+      "sharesPerLot": 50,
+      "publicOfferSharesBefore": 524900,
+      "totalOfferShares": 10497300,
+      "mechanism": "主板B",
+      "listingType": "H股",
+      "applicationSummary": {
+        "minShares": 50,
+        "minLots": 1,
+        "minAmountHKD": 5131.24,
+        "aMaxShares": 40000,
+        "aMaxLots": 800,
+        "aMaxAmountHKD": 4104985.45,
+        "bMinShares": 50000,
+        "bMinLots": 1000,
+        "bMinAmountHKD": 5131231.8,
+        "maxShares": 262450,
+        "maxLots": 5249,
+        "maxAmountHKD": 26933835.72
+      },
+      "applicationTiers": [
+        {
+          "shares": 50,
+          "lots": 1,
+          "amountHKD": 5131.24
+        },
+        {
+          "shares": 100,
+          "lots": 2,
+          "amountHKD": 10262.46
+        },
+        {
+          "shares": 150,
+          "lots": 3,
+          "amountHKD": 15393.69
+        },
+        {
+          "shares": 200,
+          "lots": 4,
+          "amountHKD": 20524.93
+        },
+        {
+          "shares": 250,
+          "lots": 5,
+          "amountHKD": 25656.17
+        },
+        {
+          "shares": 300,
+          "lots": 6,
+          "amountHKD": 30787.39
+        },
+        {
+          "shares": 350,
+          "lots": 7,
+          "amountHKD": 35918.62
+        },
+        {
+          "shares": 400,
+          "lots": 8,
+          "amountHKD": 41049.86
+        },
+        {
+          "shares": 450,
+          "lots": 9,
+          "amountHKD": 46181.08
+        },
+        {
+          "shares": 500,
+          "lots": 10,
+          "amountHKD": 51312.32
+        },
+        {
+          "shares": 600,
+          "lots": 12,
+          "amountHKD": 61574.78
+        },
+        {
+          "shares": 700,
+          "lots": 14,
+          "amountHKD": 71837.25
+        },
+        {
+          "shares": 800,
+          "lots": 16,
+          "amountHKD": 82099.7
+        },
+        {
+          "shares": 900,
+          "lots": 18,
+          "amountHKD": 92362.18
+        },
+        {
+          "shares": 1000,
+          "lots": 20,
+          "amountHKD": 102624.63
+        },
+        {
+          "shares": 1500,
+          "lots": 30,
+          "amountHKD": 153936.95
+        },
+        {
+          "shares": 2000,
+          "lots": 40,
+          "amountHKD": 205249.27
+        },
+        {
+          "shares": 2500,
+          "lots": 50,
+          "amountHKD": 256561.59
+        },
+        {
+          "shares": 3000,
+          "lots": 60,
+          "amountHKD": 307873.91
+        },
+        {
+          "shares": 3500,
+          "lots": 70,
+          "amountHKD": 359186.22
+        },
+        {
+          "shares": 4000,
+          "lots": 80,
+          "amountHKD": 410498.54
+        },
+        {
+          "shares": 4500,
+          "lots": 90,
+          "amountHKD": 461810.86
+        },
+        {
+          "shares": 5000,
+          "lots": 100,
+          "amountHKD": 513123.18
+        },
+        {
+          "shares": 6000,
+          "lots": 120,
+          "amountHKD": 615747.81
+        },
+        {
+          "shares": 7000,
+          "lots": 140,
+          "amountHKD": 718372.45
+        },
+        {
+          "shares": 8000,
+          "lots": 160,
+          "amountHKD": 820997.09
+        },
+        {
+          "shares": 9000,
+          "lots": 180,
+          "amountHKD": 923621.72
+        },
+        {
+          "shares": 10000,
+          "lots": 200,
+          "amountHKD": 1026246.35
+        },
+        {
+          "shares": 20000,
+          "lots": 400,
+          "amountHKD": 2052492.72
+        },
+        {
+          "shares": 30000,
+          "lots": 600,
+          "amountHKD": 3078739.08
+        },
+        {
+          "shares": 40000,
+          "lots": 800,
+          "amountHKD": 4104985.45
+        },
+        {
+          "shares": 50000,
+          "lots": 1000,
+          "amountHKD": 5131231.8
+        },
+        {
+          "shares": 60000,
+          "lots": 1200,
+          "amountHKD": 6157478.15
+        },
+        {
+          "shares": 70000,
+          "lots": 1400,
+          "amountHKD": 7183724.52
+        },
+        {
+          "shares": 80000,
+          "lots": 1600,
+          "amountHKD": 8209970.88
+        },
+        {
+          "shares": 90000,
+          "lots": 1800,
+          "amountHKD": 9236217.25
+        },
+        {
+          "shares": 100000,
+          "lots": 2000,
+          "amountHKD": 10262463.6
+        },
+        {
+          "shares": 150000,
+          "lots": 3000,
+          "amountHKD": 15393695.4
+        },
+        {
+          "shares": 200000,
+          "lots": 4000,
+          "amountHKD": 20524927.2
+        },
+        {
+          "shares": 262450,
+          "lots": 5249,
+          "amountHKD": 26933835.72
+        }
+      ],
+      "source": {
+        "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0615/2026061500012_c.pdf",
+        "prospectus": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0615/2026061500014_c.pdf",
+        "extractedText": "data/2026/txt/06106_prospectus.txt",
+        "title": "官方新上市公告 PDF",
+        "parserVersion": "2026-05-18-pymupdf-v2"
+      },
+      "basisOfAllocation": []
     },
     {
       "stockCode": "06132",
@@ -7552,10 +8019,10 @@ window.OFFICIAL_UPDATES_2026 = {
         "parserVersion": "2026-05-18-pymupdf-v2"
       },
       "basisOfAllocation": [],
-      "estimatedSubscriptionMultiple": 15.99,
+      "estimatedSubscriptionMultiple": 17.11,
       "estimatedSubscriptionSource": "致富证券",
       "estimatedSubscriptionSourceUrl": "https://www.chiefgroup.com.hk/cn/securities/hk-ipo-detail?symbol=6132",
-      "estimatedSubscriptionCapturedAt": "2026-06-14T14:38:29",
+      "estimatedSubscriptionCapturedAt": "2026-06-15T02:04:24",
       "estimatedSubscriptionStatus": "estimated"
     },
     {
@@ -8606,7 +9073,7 @@ window.OFFICIAL_UPDATES_2026 = {
       "estimatedSubscriptionMultiple": 3967.68,
       "estimatedSubscriptionSource": "致富证券",
       "estimatedSubscriptionSourceUrl": "https://www.chiefgroup.com.hk/cn/securities/hk-ipo-detail?symbol=6675",
-      "estimatedSubscriptionCapturedAt": "2026-06-14T14:38:29",
+      "estimatedSubscriptionCapturedAt": "2026-06-15T02:04:24",
       "estimatedSubscriptionStatus": "estimated",
       "subscriptionStart": "2026-06-09 09:00",
       "subscriptionEnd": "2026-06-12 12:00",

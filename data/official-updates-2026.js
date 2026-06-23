@@ -1,6 +1,245 @@
 window.OFFICIAL_UPDATES_2026 = {
-  "generatedAt": "2026-06-22T16:10:40",
+  "generatedAt": "2026-06-23T01:30:37",
   "stocks": [
+    {
+      "stockCode": "00668",
+      "name": "安克創新",
+      "englishName": "",
+      "status": "current",
+      "subscriptionStart": "2026-06-23 09:00",
+      "subscriptionEnd": "2026-06-26 12:00",
+      "listDate": "",
+      "offerPrice": 99.32,
+      "sharesPerLot": 100,
+      "publicOfferSharesBefore": 4663200,
+      "totalOfferShares": 46632800,
+      "mechanism": "主板B",
+      "listingType": "H股",
+      "applicationSummary": {
+        "minShares": 100,
+        "minLots": 1,
+        "minAmountHKD": 10032.16,
+        "aMaxShares": 50000,
+        "aMaxLots": 500,
+        "aMaxAmountHKD": 5016082.11,
+        "bMinShares": 100000,
+        "bMinLots": 1000,
+        "bMinAmountHKD": 10032164.22,
+        "maxShares": 2331600,
+        "maxLots": 23316,
+        "maxAmountHKD": 233909940.95
+      },
+      "applicationTiers": [
+        {
+          "shares": 100,
+          "lots": 1,
+          "amountHKD": 10032.16
+        },
+        {
+          "shares": 200,
+          "lots": 2,
+          "amountHKD": 20064.33
+        },
+        {
+          "shares": 300,
+          "lots": 3,
+          "amountHKD": 30096.48
+        },
+        {
+          "shares": 400,
+          "lots": 4,
+          "amountHKD": 40128.65
+        },
+        {
+          "shares": 500,
+          "lots": 5,
+          "amountHKD": 50160.82
+        },
+        {
+          "shares": 600,
+          "lots": 6,
+          "amountHKD": 60192.99
+        },
+        {
+          "shares": 700,
+          "lots": 7,
+          "amountHKD": 70225.15
+        },
+        {
+          "shares": 800,
+          "lots": 8,
+          "amountHKD": 80257.32
+        },
+        {
+          "shares": 900,
+          "lots": 9,
+          "amountHKD": 90289.47
+        },
+        {
+          "shares": 1000,
+          "lots": 10,
+          "amountHKD": 100321.64
+        },
+        {
+          "shares": 1500,
+          "lots": 15,
+          "amountHKD": 150482.46
+        },
+        {
+          "shares": 2000,
+          "lots": 20,
+          "amountHKD": 200643.28
+        },
+        {
+          "shares": 2500,
+          "lots": 25,
+          "amountHKD": 250804.1
+        },
+        {
+          "shares": 3000,
+          "lots": 30,
+          "amountHKD": 300964.92
+        },
+        {
+          "shares": 3500,
+          "lots": 35,
+          "amountHKD": 351125.75
+        },
+        {
+          "shares": 4000,
+          "lots": 40,
+          "amountHKD": 401286.58
+        },
+        {
+          "shares": 4500,
+          "lots": 45,
+          "amountHKD": 451447.39
+        },
+        {
+          "shares": 5000,
+          "lots": 50,
+          "amountHKD": 501608.21
+        },
+        {
+          "shares": 6000,
+          "lots": 60,
+          "amountHKD": 601929.85
+        },
+        {
+          "shares": 7000,
+          "lots": 70,
+          "amountHKD": 702251.49
+        },
+        {
+          "shares": 8000,
+          "lots": 80,
+          "amountHKD": 802573.13
+        },
+        {
+          "shares": 9000,
+          "lots": 90,
+          "amountHKD": 902894.77
+        },
+        {
+          "shares": 10000,
+          "lots": 100,
+          "amountHKD": 1003216.43
+        },
+        {
+          "shares": 20000,
+          "lots": 200,
+          "amountHKD": 2006432.84
+        },
+        {
+          "shares": 30000,
+          "lots": 300,
+          "amountHKD": 3009649.27
+        },
+        {
+          "shares": 40000,
+          "lots": 400,
+          "amountHKD": 4012865.69
+        },
+        {
+          "shares": 50000,
+          "lots": 500,
+          "amountHKD": 5016082.11
+        },
+        {
+          "shares": 100000,
+          "lots": 1000,
+          "amountHKD": 10032164.22
+        },
+        {
+          "shares": 200000,
+          "lots": 2000,
+          "amountHKD": 20064328.45
+        },
+        {
+          "shares": 300000,
+          "lots": 3000,
+          "amountHKD": 30096492.65
+        },
+        {
+          "shares": 400000,
+          "lots": 4000,
+          "amountHKD": 40128656.88
+        },
+        {
+          "shares": 500000,
+          "lots": 5000,
+          "amountHKD": 50160821.1
+        },
+        {
+          "shares": 600000,
+          "lots": 6000,
+          "amountHKD": 60192985.32
+        },
+        {
+          "shares": 700000,
+          "lots": 7000,
+          "amountHKD": 70225149.55
+        },
+        {
+          "shares": 800000,
+          "lots": 8000,
+          "amountHKD": 80257313.75
+        },
+        {
+          "shares": 900000,
+          "lots": 9000,
+          "amountHKD": 90289477.98
+        },
+        {
+          "shares": 1000000,
+          "lots": 10000,
+          "amountHKD": 100321642.2
+        },
+        {
+          "shares": 1500000,
+          "lots": 15000,
+          "amountHKD": 150482463.3
+        },
+        {
+          "shares": 2000000,
+          "lots": 20000,
+          "amountHKD": 200643284.4
+        },
+        {
+          "shares": 2331600,
+          "lots": 23316,
+          "amountHKD": 233909940.95
+        }
+      ],
+      "source": {
+        "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0623/2026062300014_c.pdf",
+        "prospectus": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0623/2026062300038_c.pdf",
+        "extractedText": "data/2026/txt/00668_prospectus.txt",
+        "title": "官方新上市公告 PDF",
+        "parserVersion": "2026-05-18-pymupdf-v2"
+      },
+      "basisOfAllocation": []
+    },
     {
       "stockCode": "00901",
       "name": "華曦達",
@@ -1732,10 +1971,10 @@ window.OFFICIAL_UPDATES_2026 = {
         "parserVersion": "2026-05-18-pymupdf-v2"
       },
       "basisOfAllocation": [],
-      "estimatedSubscriptionMultiple": 161.45,
+      "estimatedSubscriptionMultiple": 262.02,
       "estimatedSubscriptionSource": "致富证券",
       "estimatedSubscriptionSourceUrl": "https://www.chiefgroup.com.hk/cn/securities/hk-ipo-detail?symbol=1191",
-      "estimatedSubscriptionCapturedAt": "2026-06-22T16:09:52",
+      "estimatedSubscriptionCapturedAt": "2026-06-23T01:28:47",
       "estimatedSubscriptionStatus": "estimated"
     },
     {
@@ -3382,10 +3621,10 @@ window.OFFICIAL_UPDATES_2026 = {
         "parserVersion": "2026-05-18-pymupdf-v2"
       },
       "basisOfAllocation": [],
-      "estimatedSubscriptionMultiple": 23.97,
+      "estimatedSubscriptionMultiple": 36.74,
       "estimatedSubscriptionSource": "致富证券",
       "estimatedSubscriptionSourceUrl": "https://www.chiefgroup.com.hk/cn/securities/hk-ipo-detail?symbol=1688",
-      "estimatedSubscriptionCapturedAt": "2026-06-22T16:09:52",
+      "estimatedSubscriptionCapturedAt": "2026-06-23T01:28:47",
       "estimatedSubscriptionStatus": "estimated"
     },
     {
@@ -4468,10 +4707,10 @@ window.OFFICIAL_UPDATES_2026 = {
         "parserVersion": "2026-05-18-pymupdf-v2"
       },
       "basisOfAllocation": [],
-      "estimatedSubscriptionMultiple": 2189.39,
+      "estimatedSubscriptionMultiple": 3441.75,
       "estimatedSubscriptionSource": "致富证券",
       "estimatedSubscriptionSourceUrl": "https://www.chiefgroup.com.hk/cn/securities/hk-ipo-detail?symbol=1956",
-      "estimatedSubscriptionCapturedAt": "2026-06-22T16:09:52",
+      "estimatedSubscriptionCapturedAt": "2026-06-23T01:28:47",
       "estimatedSubscriptionStatus": "estimated"
     },
     {
@@ -4493,10 +4732,10 @@ window.OFFICIAL_UPDATES_2026 = {
         "parserVersion": "2026-05-18-pymupdf-v2"
       },
       "basisOfAllocation": [],
-      "estimatedSubscriptionMultiple": 340.92,
+      "estimatedSubscriptionMultiple": 735.88,
       "estimatedSubscriptionSource": "致富证券",
       "estimatedSubscriptionSourceUrl": "https://www.chiefgroup.com.hk/cn/securities/hk-ipo-detail?symbol=2272",
-      "estimatedSubscriptionCapturedAt": "2026-06-22T16:09:52",
+      "estimatedSubscriptionCapturedAt": "2026-06-23T01:28:47",
       "estimatedSubscriptionStatus": "estimated"
     },
     {
@@ -5585,7 +5824,7 @@ window.OFFICIAL_UPDATES_2026 = {
       "estimatedSubscriptionMultiple": 663.28,
       "estimatedSubscriptionSource": "致富证券",
       "estimatedSubscriptionSourceUrl": "https://www.chiefgroup.com.hk/cn/securities/hk-ipo-detail?symbol=2335",
-      "estimatedSubscriptionCapturedAt": "2026-06-22T16:09:52",
+      "estimatedSubscriptionCapturedAt": "2026-06-23T01:28:47",
       "estimatedSubscriptionStatus": "estimated",
       "estimatedSubscriptionLastCheckedAt": "2026-06-15T13:38:57"
     },
@@ -6378,10 +6617,10 @@ window.OFFICIAL_UPDATES_2026 = {
         "parserVersion": "2026-05-18-pymupdf-v2"
       },
       "basisOfAllocation": [],
-      "estimatedSubscriptionMultiple": 15.7,
+      "estimatedSubscriptionMultiple": 18.75,
       "estimatedSubscriptionSource": "致富证券",
       "estimatedSubscriptionSourceUrl": "https://www.chiefgroup.com.hk/cn/securities/hk-ipo-detail?symbol=2672",
-      "estimatedSubscriptionCapturedAt": "2026-06-22T16:09:52",
+      "estimatedSubscriptionCapturedAt": "2026-06-23T01:28:47",
       "estimatedSubscriptionStatus": "estimated"
     },
     {
@@ -6405,10 +6644,10 @@ window.OFFICIAL_UPDATES_2026 = {
         "parserVersion": "2026-05-18-pymupdf-v2"
       },
       "basisOfAllocation": [],
-      "estimatedSubscriptionMultiple": 3.61,
+      "estimatedSubscriptionMultiple": 3.69,
       "estimatedSubscriptionSource": "致富证券",
       "estimatedSubscriptionSourceUrl": "https://www.chiefgroup.com.hk/cn/securities/hk-ipo-detail?symbol=2697",
-      "estimatedSubscriptionCapturedAt": "2026-06-22T16:09:52",
+      "estimatedSubscriptionCapturedAt": "2026-06-23T01:28:47",
       "estimatedSubscriptionStatus": "estimated"
     },
     {
@@ -9141,10 +9380,10 @@ window.OFFICIAL_UPDATES_2026 = {
         "parserVersion": "2026-05-18-pymupdf-v2"
       },
       "basisOfAllocation": [],
-      "estimatedSubscriptionMultiple": 52.23,
+      "estimatedSubscriptionMultiple": 91.15,
       "estimatedSubscriptionSource": "致富证券",
       "estimatedSubscriptionSourceUrl": "https://www.chiefgroup.com.hk/cn/securities/hk-ipo-detail?symbol=3661",
-      "estimatedSubscriptionCapturedAt": "2026-06-22T16:09:52",
+      "estimatedSubscriptionCapturedAt": "2026-06-23T01:28:47",
       "estimatedSubscriptionStatus": "estimated"
     },
     {
@@ -9373,7 +9612,8 @@ window.OFFICIAL_UPDATES_2026 = {
       "estimatedSubscriptionSource": "致富证券",
       "estimatedSubscriptionSourceUrl": "https://www.chiefgroup.com.hk/cn/securities/hk-ipo-detail?symbol=3952",
       "estimatedSubscriptionCapturedAt": "2026-06-22T16:09:52",
-      "estimatedSubscriptionStatus": "estimated"
+      "estimatedSubscriptionStatus": "frozen_last_valid",
+      "estimatedSubscriptionLastCheckedAt": "2026-06-23T01:28:47"
     },
     {
       "stockCode": "06067",
@@ -9863,7 +10103,7 @@ window.OFFICIAL_UPDATES_2026 = {
       "estimatedSubscriptionMultiple": 4572.65,
       "estimatedSubscriptionSource": "致富证券",
       "estimatedSubscriptionSourceUrl": "https://www.chiefgroup.com.hk/cn/securities/hk-ipo-detail?symbol=6106",
-      "estimatedSubscriptionCapturedAt": "2026-06-22T16:09:52",
+      "estimatedSubscriptionCapturedAt": "2026-06-23T01:28:47",
       "estimatedSubscriptionStatus": "estimated",
       "estimatedSubscriptionLastCheckedAt": "2026-06-15T13:38:57"
     },
@@ -10910,10 +11150,10 @@ window.OFFICIAL_UPDATES_2026 = {
         "parserVersion": "2026-05-18-pymupdf-v2"
       },
       "basisOfAllocation": [],
-      "estimatedSubscriptionMultiple": 2.55,
+      "estimatedSubscriptionMultiple": 2.77,
       "estimatedSubscriptionSource": "致富证券",
       "estimatedSubscriptionSourceUrl": "https://www.chiefgroup.com.hk/cn/securities/hk-ipo-detail?symbol=6228",
-      "estimatedSubscriptionCapturedAt": "2026-06-22T16:09:52",
+      "estimatedSubscriptionCapturedAt": "2026-06-23T01:28:47",
       "estimatedSubscriptionStatus": "estimated"
     },
     {
@@ -12763,10 +13003,10 @@ window.OFFICIAL_UPDATES_2026 = {
         "parserVersion": "2026-05-18-pymupdf-v2"
       },
       "basisOfAllocation": [],
-      "estimatedSubscriptionMultiple": 4.76,
+      "estimatedSubscriptionMultiple": 5.68,
       "estimatedSubscriptionSource": "致富证券",
       "estimatedSubscriptionSourceUrl": "https://www.chiefgroup.com.hk/cn/securities/hk-ipo-detail?symbol=6715",
-      "estimatedSubscriptionCapturedAt": "2026-06-22T16:09:52",
+      "estimatedSubscriptionCapturedAt": "2026-06-23T01:28:47",
       "estimatedSubscriptionStatus": "estimated"
     },
     {
@@ -14377,10 +14617,10 @@ window.OFFICIAL_UPDATES_2026 = {
         "parserVersion": "2026-05-18-pymupdf-v2"
       },
       "basisOfAllocation": [],
-      "estimatedSubscriptionMultiple": 4.87,
+      "estimatedSubscriptionMultiple": 4.97,
       "estimatedSubscriptionSource": "致富证券",
       "estimatedSubscriptionSourceUrl": "https://www.chiefgroup.com.hk/cn/securities/hk-ipo-detail?symbol=6915",
-      "estimatedSubscriptionCapturedAt": "2026-06-22T16:09:52",
+      "estimatedSubscriptionCapturedAt": "2026-06-23T01:28:47",
       "estimatedSubscriptionStatus": "estimated"
     },
     {
@@ -15265,10 +15505,10 @@ window.OFFICIAL_UPDATES_2026 = {
         "parserVersion": "2026-05-18-pymupdf-v2"
       },
       "basisOfAllocation": [],
-      "estimatedSubscriptionMultiple": 290.89,
+      "estimatedSubscriptionMultiple": 473.49,
       "estimatedSubscriptionSource": "致富证券",
       "estimatedSubscriptionSourceUrl": "https://www.chiefgroup.com.hk/cn/securities/hk-ipo-detail?symbol=9630",
-      "estimatedSubscriptionCapturedAt": "2026-06-22T16:09:52",
+      "estimatedSubscriptionCapturedAt": "2026-06-23T01:28:47",
       "estimatedSubscriptionStatus": "estimated"
     },
     {
@@ -15509,10 +15749,10 @@ window.OFFICIAL_UPDATES_2026 = {
         "parserVersion": "2026-05-18-pymupdf-v2"
       },
       "basisOfAllocation": [],
-      "estimatedSubscriptionMultiple": 85.96,
+      "estimatedSubscriptionMultiple": 139.3,
       "estimatedSubscriptionSource": "致富证券",
       "estimatedSubscriptionSourceUrl": "https://www.chiefgroup.com.hk/cn/securities/hk-ipo-detail?symbol=9637",
-      "estimatedSubscriptionCapturedAt": "2026-06-22T16:09:52",
+      "estimatedSubscriptionCapturedAt": "2026-06-23T01:28:47",
       "estimatedSubscriptionStatus": "estimated"
     }
   ]

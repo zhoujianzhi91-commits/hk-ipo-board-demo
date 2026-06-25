@@ -645,7 +645,6 @@ window.IPO_HISTORY_2026 = [
       {
         "group": "A",
         "sharesApplied": 50,
-        "lotsApplied": 1.0,
         "validApplications": 70566,
         "successfulApplications": 3528,
         "sharesAllotted": 50,
@@ -655,7 +654,6 @@ window.IPO_HISTORY_2026 = [
       {
         "group": "A",
         "sharesApplied": 100,
-        "lotsApplied": 2.0,
         "validApplications": 10449,
         "successfulApplications": 627,
         "sharesAllotted": 100,
@@ -665,7 +663,6 @@ window.IPO_HISTORY_2026 = [
       {
         "group": "A",
         "sharesApplied": 150,
-        "lotsApplied": 3.0,
         "validApplications": 5530,
         "successfulApplications": 373,
         "sharesAllotted": 150,
@@ -675,7 +672,6 @@ window.IPO_HISTORY_2026 = [
       {
         "group": "A",
         "sharesApplied": 200,
-        "lotsApplied": 4.0,
         "validApplications": 4371,
         "successfulApplications": 314,
         "sharesAllotted": 200,
@@ -685,7 +681,6 @@ window.IPO_HISTORY_2026 = [
       {
         "group": "A",
         "sharesApplied": 250,
-        "lotsApplied": 5.0,
         "validApplications": 3763,
         "successfulApplications": 287,
         "sharesAllotted": 250,
@@ -695,7 +690,6 @@ window.IPO_HISTORY_2026 = [
       {
         "group": "A",
         "sharesApplied": 300,
-        "lotsApplied": 6.0,
         "validApplications": 3298,
         "successfulApplications": 264,
         "sharesAllotted": 300,
@@ -705,7 +699,6 @@ window.IPO_HISTORY_2026 = [
       {
         "group": "A",
         "sharesApplied": 350,
-        "lotsApplied": 7.0,
         "validApplications": 3045,
         "successfulApplications": 254,
         "sharesAllotted": 350,
@@ -715,7 +708,6 @@ window.IPO_HISTORY_2026 = [
       {
         "group": "A",
         "sharesApplied": 400,
-        "lotsApplied": 8.0,
         "validApplications": 2617,
         "successfulApplications": 226,
         "sharesAllotted": 400,
@@ -725,7 +717,6 @@ window.IPO_HISTORY_2026 = [
       {
         "group": "A",
         "sharesApplied": 450,
-        "lotsApplied": 9.0,
         "validApplications": 14742,
         "successfulApplications": 1312,
         "sharesAllotted": 450,
@@ -735,7 +726,6 @@ window.IPO_HISTORY_2026 = [
       {
         "group": "A",
         "sharesApplied": 500,
-        "lotsApplied": 10.0,
         "validApplications": 7310,
         "successfulApplications": 669,
         "sharesAllotted": 500,
@@ -745,7 +735,6 @@ window.IPO_HISTORY_2026 = [
       {
         "group": "A",
         "sharesApplied": 600,
-        "lotsApplied": 12.0,
         "validApplications": 3410,
         "successfulApplications": 327,
         "sharesAllotted": 600,
@@ -755,7 +744,6 @@ window.IPO_HISTORY_2026 = [
       {
         "group": "A",
         "sharesApplied": 700,
-        "lotsApplied": 14.0,
         "validApplications": 2370,
         "successfulApplications": 237,
         "sharesAllotted": 700,
@@ -765,7 +753,6 @@ window.IPO_HISTORY_2026 = [
       {
         "group": "A",
         "sharesApplied": 800,
-        "lotsApplied": 16.0,
         "validApplications": 1765,
         "successfulApplications": 183,
         "sharesAllotted": 800,
@@ -775,7 +762,6 @@ window.IPO_HISTORY_2026 = [
       {
         "group": "A",
         "sharesApplied": 900,
-        "lotsApplied": 18.0,
         "validApplications": 3854,
         "successfulApplications": 411,
         "sharesAllotted": 900,

@@ -1989,7 +1989,7 @@ window.OFFICIAL_UPDATES_2026 = {
       "status": "listed",
       "listDate": "2026-06-22",
       "offerPrice": 7.2,
-      "sharesPerLot": 14,
+      "sharesPerLot": 500,
       "totalOfferShares": 85162500,
       "marketCap": 5574300624.0,
       "publicOfferSharesBefore": 8516000,

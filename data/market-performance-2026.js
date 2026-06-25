@@ -4078,5 +4078,196 @@ window.MARKET_PERFORMANCE_2026 = {
       "fiftyTwoWeekHigh": 7.5,
       "fiftyTwoWeekLow": 3.15
     }
+  },
+  "06106": {
+    "source": {
+      "title": "《新股》仙工智能(06106.HK)暗盤收報94.2元 低上市價7.3%",
+      "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/06106/AAFN/NOW.1530182/hk-stock-news"
+    },
+    "greyMarketDate": "2026-06-24",
+    "greyMarket": {
+      "futu": {
+        "label": "富途",
+        "open": 105,
+        "high": 130,
+        "low": 80,
+        "close": 94.2,
+        "changePct": -7.3,
+        "turnoverShares": 873500,
+        "turnoverAmount": 81097200,
+        "lotGain": -370,
+        "quoteUrl": "https://www.futunn.com/stock/06106-HK"
+      },
+      "phillip": {
+        "label": "辉立",
+        "open": 111.1,
+        "high": 112,
+        "low": 65.95,
+        "close": 95.1,
+        "changePct": -6.4,
+        "turnoverShares": 863000,
+        "turnoverAmount": 79200000,
+        "lotGain": -325,
+        "quoteUrl": "https://www.itiger.com/hans/stock/06106"
+      }
+    },
+    "firstDay": {
+      "label": "上市首日",
+      "source": {
+        "title": "《新股》仙工智能(06106.HK)全日收106元 高上市價4.3%",
+        "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/06106/AAFN/NOW.1530364/hk-stock-news"
+      },
+      "open": 101.6,
+      "high": 140.5,
+      "low": 101.6,
+      "close": 106,
+      "turnoverShares": 6299700,
+      "turnoverAmount": 673000000,
+      "lotGain": 220,
+      "date": "2026-06-24"
+    }
+  },
+  "06067": {
+    "source": {
+      "title": "《新股》星源材質(06067.HK)暗盤收報12.64元 高上市價40.8%",
+      "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/06067/AAFN/NOW.1529978/hk-stock-news"
+    },
+    "greyMarketDate": "2026-06-23",
+    "greyMarket": {
+      "futu": {
+        "label": "富途",
+        "open": 13.18,
+        "high": 14,
+        "low": 11.61,
+        "close": 12.64,
+        "changePct": 40.8,
+        "turnoverShares": 8145000,
+        "turnoverAmount": 101000000,
+        "lotGain": 1830,
+        "quoteUrl": "https://www.futunn.com/stock/06067-HK"
+      },
+      "phillip": {
+        "label": "辉立",
+        "open": 15,
+        "high": 15,
+        "low": 11.79,
+        "close": 12.68,
+        "changePct": 41.2,
+        "turnoverShares": 4770000,
+        "turnoverAmount": 60000000,
+        "lotGain": 1850,
+        "quoteUrl": "https://www.itiger.com/hans/stock/06067"
+      }
+    },
+    "firstDay": {
+      "label": "上市首日",
+      "source": {
+        "title": "《新股》星源材質(06067.HK)全日收11元 高上市價22.5%",
+        "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/06067/AAFN/NOW.1530141/hk-stock-news"
+      },
+      "open": 12.43,
+      "high": 13.41,
+      "low": 11,
+      "close": 11,
+      "turnoverShares": 66432100,
+      "turnoverAmount": 811999999.9999999,
+      "lotGain": 1010,
+      "date": "2026-06-23"
+    }
+  },
+  "06132": {
+    "source": {
+      "title": "《新股》華健未來－Ｂ(06132.HK)暗盤收報81.8元 平上市價",
+      "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/06132/AAFN/NOW.1529979/hk-stock-news"
+    },
+    "greyMarketDate": "2026-06-23",
+    "greyMarket": {
+      "futu": {
+        "label": "富途",
+        "open": 100.8,
+        "high": 159.6,
+        "low": 73.85,
+        "close": 79.1,
+        "changePct": -3.3,
+        "turnoverShares": 1263700,
+        "turnoverAmount": 132000000,
+        "lotGain": -270,
+        "quoteUrl": "https://www.futunn.com/stock/06132-HK"
+      },
+      "phillip": {
+        "label": "辉立",
+        "open": 150,
+        "high": 150,
+        "low": 71.5,
+        "close": 81.8,
+        "changePct": 0,
+        "turnoverShares": 1770000,
+        "turnoverAmount": 172000000,
+        "quoteUrl": "https://www.itiger.com/hans/stock/06132"
+      }
+    },
+    "firstDay": {
+      "label": "上市首日",
+      "source": {
+        "title": "《新股》華健未來－Ｂ(06132.HK)全日收35.26元 低上市價56.9%",
+        "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/06132/AAFN/NOW.1530142/hk-stock-news"
+      },
+      "open": 81.8,
+      "high": 82,
+      "low": 35.26,
+      "close": 35.26,
+      "turnoverShares": 8250599.999999999,
+      "turnoverAmount": 602000000,
+      "lotGain": -4654,
+      "date": "2026-06-23"
+    }
+  },
+  "02335": {
+    "source": {
+      "title": "《新股》麥科醫藥－Ｂ(02335.HK)暗盤收報35.5元 高上市價95.1%",
+      "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/02335/AAFN/NOW.1530181/hk-stock-news"
+    },
+    "greyMarketDate": "2026-06-24",
+    "greyMarket": {
+      "futu": {
+        "label": "富途",
+        "open": 20,
+        "high": 36,
+        "low": 20,
+        "close": 35.5,
+        "changePct": 95.1,
+        "turnoverShares": 3914400,
+        "turnoverAmount": 123000000,
+        "lotGain": 3460,
+        "quoteUrl": "https://www.futunn.com/stock/02335-HK"
+      },
+      "phillip": {
+        "label": "辉立",
+        "open": 34,
+        "high": 36.18,
+        "low": 27.5,
+        "close": 35.6,
+        "changePct": 95.6,
+        "turnoverShares": 2390000,
+        "turnoverAmount": 78400000,
+        "lotGain": 3480,
+        "quoteUrl": "https://www.itiger.com/hans/stock/02335"
+      }
+    },
+    "firstDay": {
+      "label": "上市首日",
+      "source": {
+        "title": "《新股》麥科醫藥－Ｂ(02335.HK)全日收36.9元 高上市價102.7%",
+        "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/02335/AAFN/NOW.1530363/hk-stock-news"
+      },
+      "open": 34.02,
+      "high": 37.1,
+      "low": 32.2,
+      "close": 36.9,
+      "turnoverShares": 11330500,
+      "turnoverAmount": 379000000,
+      "lotGain": 3740,
+      "date": ""
+    }
   }
 };

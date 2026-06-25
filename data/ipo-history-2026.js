@@ -645,362 +645,142 @@ window.IPO_HISTORY_2026 = [
       {
         "group": "A",
         "sharesApplied": 50,
+        "lotsApplied": 1.0,
         "validApplications": 70566,
         "successfulApplications": 3528,
         "sharesAllotted": 50,
-        "hitRate": 0.049996,
         "approxPercent": 4.9996,
-        "rawBasis": "70,566名申請人中3,528名取得50股"
+        "hitRate": 0.049996
       },
       {
         "group": "A",
-        "sharesApplied": 50,
+        "sharesApplied": 100,
+        "lotsApplied": 2.0,
         "validApplications": 10449,
         "successfulApplications": 627,
-        "sharesAllotted": 50,
-        "hitRate": 0.060006000000000004,
+        "sharesAllotted": 100,
         "approxPercent": 6.0006,
-        "rawBasis": "10,449名申請人中627名取得50股"
+        "hitRate": 0.060006000000000004
       },
       {
         "group": "A",
-        "sharesApplied": 50,
+        "sharesApplied": 150,
+        "lotsApplied": 3.0,
         "validApplications": 5530,
         "successfulApplications": 373,
-        "sharesAllotted": 50,
-        "hitRate": 0.06745,
+        "sharesAllotted": 150,
         "approxPercent": 6.745,
-        "rawBasis": "5,530名申請人中373名取得50股"
+        "hitRate": 0.06745
       },
       {
         "group": "A",
-        "sharesApplied": 50,
+        "sharesApplied": 200,
+        "lotsApplied": 4.0,
         "validApplications": 4371,
         "successfulApplications": 314,
-        "sharesAllotted": 50,
-        "hitRate": 0.071837,
+        "sharesAllotted": 200,
         "approxPercent": 7.1837,
-        "rawBasis": "4,371名申請人中314名取得50股"
+        "hitRate": 0.071837
       },
       {
         "group": "A",
-        "sharesApplied": 50,
+        "sharesApplied": 250,
+        "lotsApplied": 5.0,
         "validApplications": 3763,
         "successfulApplications": 287,
-        "sharesAllotted": 50,
-        "hitRate": 0.076269,
+        "sharesAllotted": 250,
         "approxPercent": 7.6269,
-        "rawBasis": "3,763名申請人中287名取得50股"
+        "hitRate": 0.076269
       },
       {
         "group": "A",
-        "sharesApplied": 50,
+        "sharesApplied": 300,
+        "lotsApplied": 6.0,
         "validApplications": 3298,
         "successfulApplications": 264,
-        "sharesAllotted": 50,
-        "hitRate": 0.080049,
+        "sharesAllotted": 300,
         "approxPercent": 8.0049,
-        "rawBasis": "3,298名申請人中264名取得50股"
+        "hitRate": 0.080049
       },
       {
         "group": "A",
-        "sharesApplied": 50,
+        "sharesApplied": 350,
+        "lotsApplied": 7.0,
         "validApplications": 3045,
         "successfulApplications": 254,
-        "sharesAllotted": 50,
-        "hitRate": 0.083415,
+        "sharesAllotted": 350,
         "approxPercent": 8.3415,
-        "rawBasis": "3,045名申請人中254名取得50股"
+        "hitRate": 0.083415
       },
       {
         "group": "A",
-        "sharesApplied": 50,
+        "sharesApplied": 400,
+        "lotsApplied": 8.0,
         "validApplications": 2617,
         "successfulApplications": 226,
-        "sharesAllotted": 50,
-        "hitRate": 0.08635799999999999,
+        "sharesAllotted": 400,
         "approxPercent": 8.6358,
-        "rawBasis": "2,617名申請人中226名取得50股"
+        "hitRate": 0.08635799999999999
       },
       {
         "group": "A",
-        "sharesApplied": 50,
+        "sharesApplied": 450,
+        "lotsApplied": 9.0,
         "validApplications": 14742,
         "successfulApplications": 1312,
-        "sharesAllotted": 50,
-        "hitRate": 0.08899699999999999,
+        "sharesAllotted": 450,
         "approxPercent": 8.8997,
-        "rawBasis": "14,742名申請人中1,312名取得50股"
+        "hitRate": 0.08899699999999999
       },
       {
         "group": "A",
-        "sharesApplied": 50,
+        "sharesApplied": 500,
+        "lotsApplied": 10.0,
         "validApplications": 7310,
         "successfulApplications": 669,
-        "sharesAllotted": 50,
-        "hitRate": 0.091518,
+        "sharesAllotted": 500,
         "approxPercent": 9.1518,
-        "rawBasis": "7,310名申請人中669名取得50股"
+        "hitRate": 0.091518
       },
       {
         "group": "A",
-        "sharesApplied": 50,
+        "sharesApplied": 600,
+        "lotsApplied": 12.0,
         "validApplications": 3410,
         "successfulApplications": 327,
-        "sharesAllotted": 50,
-        "hitRate": 0.095894,
+        "sharesAllotted": 600,
         "approxPercent": 9.5894,
-        "rawBasis": "3,410名申請人中327名取得50股"
+        "hitRate": 0.095894
       },
       {
         "group": "A",
-        "sharesApplied": 50,
+        "sharesApplied": 700,
+        "lotsApplied": 14.0,
         "validApplications": 2370,
         "successfulApplications": 237,
-        "sharesAllotted": 50,
-        "hitRate": 0.1,
+        "sharesAllotted": 700,
         "approxPercent": 10.0,
-        "rawBasis": "2,370名申請人中237名取得50股"
+        "hitRate": 0.1
       },
       {
         "group": "A",
-        "sharesApplied": 50,
+        "sharesApplied": 800,
+        "lotsApplied": 16.0,
         "validApplications": 1765,
         "successfulApplications": 183,
-        "sharesAllotted": 50,
-        "hitRate": 0.103683,
+        "sharesAllotted": 800,
         "approxPercent": 10.3683,
-        "rawBasis": "1,765名申請人中183名取得50股"
+        "hitRate": 0.103683
       },
       {
         "group": "A",
-        "sharesApplied": 50,
+        "sharesApplied": 900,
+        "lotsApplied": 18.0,
         "validApplications": 3854,
         "successfulApplications": 411,
-        "sharesAllotted": 50,
-        "hitRate": 0.10664199999999999,
+        "sharesAllotted": 900,
         "approxPercent": 10.6642,
-        "rawBasis": "3,854名申請人中411名取得50股"
-      },
-      {
-        "group": "A",
-        "sharesApplied": 50,
-        "validApplications": 6394,
-        "successfulApplications": 701,
-        "sharesAllotted": 50,
-        "hitRate": 0.109634,
-        "approxPercent": 10.9634,
-        "rawBasis": "6,394名申請人中701名取得50股"
-      },
-      {
-        "group": "A",
-        "sharesApplied": 50,
-        "validApplications": 4303,
-        "successfulApplications": 525,
-        "sharesAllotted": 50,
-        "hitRate": 0.12200799999999999,
-        "approxPercent": 12.2008,
-        "rawBasis": "4,303名申請人中525名取得50股"
-      },
-      {
-        "group": "A",
-        "sharesApplied": 50,
-        "validApplications": 3327,
-        "successfulApplications": 438,
-        "sharesAllotted": 50,
-        "hitRate": 0.13165,
-        "approxPercent": 13.165,
-        "rawBasis": "3,327名申請人中438名取得50股"
-      },
-      {
-        "group": "A",
-        "sharesApplied": 50,
-        "validApplications": 2527,
-        "successfulApplications": 352,
-        "sharesAllotted": 50,
-        "hitRate": 0.139296,
-        "approxPercent": 13.9296,
-        "rawBasis": "2,527名申請人中352名取得50股"
-      },
-      {
-        "group": "A",
-        "sharesApplied": 50,
-        "validApplications": 2395,
-        "successfulApplications": 350,
-        "sharesAllotted": 50,
-        "hitRate": 0.146138,
-        "approxPercent": 14.6138,
-        "rawBasis": "2,395名申請人中350名取得50股"
-      },
-      {
-        "group": "A",
-        "sharesApplied": 50,
-        "validApplications": 1832,
-        "successfulApplications": 279,
-        "sharesAllotted": 50,
-        "hitRate": 0.152293,
-        "approxPercent": 15.2293,
-        "rawBasis": "1,832名申請人中279名取得50股"
-      },
-      {
-        "group": "A",
-        "sharesApplied": 50,
-        "validApplications": 1780,
-        "successfulApplications": 281,
-        "sharesAllotted": 50,
-        "hitRate": 0.157865,
-        "approxPercent": 15.7865,
-        "rawBasis": "1,780名申請人中281名取得50股"
-      },
-      {
-        "group": "A",
-        "sharesApplied": 50,
-        "validApplications": 1450,
-        "successfulApplications": 236,
-        "sharesAllotted": 50,
-        "hitRate": 0.162759,
-        "approxPercent": 16.2759,
-        "rawBasis": "1,450名申請人中236名取得50股"
-      },
-      {
-        "group": "A",
-        "sharesApplied": 50,
-        "validApplications": 3436,
-        "successfulApplications": 575,
-        "sharesAllotted": 50,
-        "hitRate": 0.167346,
-        "approxPercent": 16.7346,
-        "rawBasis": "3,436名申請人中575名取得50股"
-      },
-      {
-        "group": "A",
-        "sharesApplied": 50,
-        "validApplications": 2496,
-        "successfulApplications": 438,
-        "sharesAllotted": 50,
-        "hitRate": 0.17548100000000003,
-        "approxPercent": 17.5481,
-        "rawBasis": "2,496名申請人中438名取得50股"
-      },
-      {
-        "group": "B",
-        "sharesApplied": 50,
-        "validApplications": 3053,
-        "successfulApplications": 558,
-        "sharesAllotted": 50,
-        "hitRate": 0.18277100000000002,
-        "approxPercent": 18.2771,
-        "rawBasis": "3,053名申請人中558名取得50股"
-      },
-      {
-        "group": "B",
-        "sharesApplied": 50,
-        "validApplications": 1672,
-        "successfulApplications": 316,
-        "sharesAllotted": 50,
-        "hitRate": 0.188995,
-        "approxPercent": 18.8995,
-        "rawBasis": "1,672名申請人中316名取得50股"
-      },
-      {
-        "group": "B",
-        "sharesApplied": 50,
-        "validApplications": 1424,
-        "successfulApplications": 278,
-        "sharesAllotted": 50,
-        "hitRate": 0.195225,
-        "approxPercent": 19.5225,
-        "rawBasis": "1,424名申請人中278名取得50股"
-      },
-      {
-        "group": "B",
-        "sharesApplied": 50,
-        "validApplications": 8958,
-        "successfulApplications": 1797,
-        "sharesAllotted": 50,
-        "hitRate": 0.200603,
-        "approxPercent": 20.0603,
-        "rawBasis": "8,958名申請人中1,797名取得50股"
-      },
-      {
-        "group": "B",
-        "sharesApplied": 50,
-        "validApplications": 6846,
-        "successfulApplications": 1648,
-        "sharesAllotted": 50,
-        "hitRate": 0.24072500000000002,
-        "approxPercent": 24.0725,
-        "rawBasis": "6,846名申請人中1,648名取得50股"
-      },
-      {
-        "group": "B",
-        "sharesApplied": 50,
-        "validApplications": 4268,
-        "successfulApplications": 1143,
-        "sharesAllotted": 50,
-        "hitRate": 0.267807,
-        "approxPercent": 26.7807,
-        "rawBasis": "4,268名申請人中1,143名取得50股"
-      },
-      {
-        "group": "B",
-        "sharesApplied": 50,
-        "validApplications": 7179,
-        "successfulApplications": 2068,
-        "sharesAllotted": 50,
-        "hitRate": 0.288062,
-        "approxPercent": 28.8062,
-        "rawBasis": "7,179名申請人中2,068名取得50股"
-      },
-      {
-        "group": "B",
-        "sharesApplied": 50,
-        "validApplications": 7560,
-        "successfulApplications": 4443,
-        "sharesAllotted": 50,
-        "hitRate": 0.5876979999999999,
-        "approxPercent": 58.7698,
-        "rawBasis": "7,560名申請人中4,443名取得50股"
-      },
-      {
-        "group": "B",
-        "sharesApplied": 50,
-        "validApplications": 2376,
-        "successfulApplications": 1583,
-        "sharesAllotted": 50,
-        "hitRate": 0.666246,
-        "approxPercent": 66.6246,
-        "rawBasis": "2,376名申請人中1,583名取得50股"
-      },
-      {
-        "group": "B",
-        "sharesApplied": 50,
-        "validApplications": 2373,
-        "successfulApplications": 1759,
-        "sharesAllotted": 50,
-        "hitRate": 0.741256,
-        "approxPercent": 74.1256,
-        "rawBasis": "2,373名申請人中1,759名取得50股"
-      },
-      {
-        "group": "B",
-        "sharesApplied": 50,
-        "validApplications": 1249,
-        "successfulApplications": 1015,
-        "sharesAllotted": 50,
-        "hitRate": 0.81265,
-        "approxPercent": 81.265,
-        "rawBasis": "1,249名申請人中1,015名取得50股"
-      },
-      {
-        "group": "B",
-        "sharesApplied": 50,
-        "validApplications": 725,
-        "successfulApplications": 639,
-        "sharesAllotted": 50,
-        "hitRate": 0.881379,
-        "approxPercent": 88.1379,
-        "rawBasis": "725名申請人中639名取得50股"
+        "hitRate": 0.10664199999999999
       }
     ],
     "finalPublicOfferPercent": null,

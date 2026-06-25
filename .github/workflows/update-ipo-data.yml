@@ -7,25 +7,23 @@ on:
   workflow_dispatch:
     inputs:
       force_deploy:
-        description: "Deploy to Vercel even when no data file changed"
+        description: "Deploy even when no changes"
         required: false
         default: false
         type: boolean
   schedule:
-    # Run every 15 minutes. The updater only processes active IPO candidates;
-    # listed history and suspended/特殊情况 stocks are left untouched unless edited manually.
+    # Every 15 minutes: fetch HKEX data, auto-fix everything, deploy live
     - cron: "*/15 * * * *"
 
 permissions:
   contents: write
 
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
-  VERCEL_TELEMETRY_DISABLED: "1"
-
 concurrency:
   group: ipo-data-update
   cancel-in-progress: false
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
 
 jobs:
   update:
@@ -45,40 +43,14 @@ jobs:
       - name: Install dependencies
         run: python -m pip install -r requirements.txt
 
-      - name: Run official update
+      - name: 🔄 Step 1 — Fetch new HKEX data (认购倍数/配售结果)
         run: python scripts/run_official_update.py
 
-      - name: Commit data changes
-        id: auto-commit
+      - name: 🔄 Step 2 — Auto-fix all stock data (入场费/每手股数/中签率/清洗覆盖字段)
+        run: python scripts/auto_fix_data.py
+
+      - name: Commit all changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Update IPO data snapshot"
-          file_pattern: "data/*.js"
-
-      - name: Install Vercel CLI
-        if: github.event_name == 'push' || steps.auto-commit.outputs.changes_detected == 'true' || inputs.force_deploy == true
-        run: npm install -g vercel@54.6.1
-
-      - name: Pull Vercel project settings
-        if: github.event_name == 'push' || steps.auto-commit.outputs.changes_detected == 'true' || inputs.force_deploy == true
-        env:
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
-        run: vercel pull --yes --environment=production --token="$VERCEL_TOKEN"
-
-      - name: Build Vercel output
-        if: github.event_name == 'push' || steps.auto-commit.outputs.changes_detected == 'true' || inputs.force_deploy == true
-        env:
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
-        run: vercel build --prod --token="$VERCEL_TOKEN"
-
-      - name: Deploy to Vercel
-        if: github.event_name == 'push' || steps.auto-commit.outputs.changes_detected == 'true' || inputs.force_deploy == true
-        env:
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
-        run: vercel deploy --prebuilt --prod --yes --no-wait --token="$VERCEL_TOKEN"
+          commit_message: "auto: data snapshot + fix"
+          file_pattern: "data/*.js scripts/*.py"

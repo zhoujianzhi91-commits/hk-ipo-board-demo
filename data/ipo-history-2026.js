@@ -1,5 +1,38 @@
 window.IPO_HISTORY_2026 = [
   {
+    "stockCode": "02697",
+    "name": "真健康医疗-B",
+    "englishName": "",
+    "status": "current",
+    "listDate": "2026-06-30",
+    "offerPrice": 135.4,
+    "sharesPerLot": 20,
+    "totalOfferShares": 3564700,
+    "marketCap": null,
+    "listingMarketCap": null,
+    "publicOfferSharesBefore": 356500,
+    "publicOfferSharesFinal": 356500,
+    "publicOfferMultiple": null,
+    "totalApplications": null,
+    "successfulApplications": null,
+    "mechanism": "主板B",
+    "listingType": "18A 生物科技-B",
+    "groupTotals": {},
+    "source": {
+      "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0622/2026062200018_c.pdf",
+      "extractedText": "",
+      "title": "配發結果 PDF"
+    },
+    "applicationSummary": {
+      "minShares": 20,
+      "minLots": 1,
+      "minAmountHKD": 2735.3
+    },
+    "basisOfAllocation": [],
+    "finalPublicOfferPercent": null,
+    "actualOneLotHitRate": null
+  },
+  {
     "stockCode": "02272",
     "name": "科拓股份",
     "englishName": "",

@@ -643,130 +643,139 @@ window.IPO_HISTORY_2026 = [
     },
     "basisOfAllocation": [
       {
-        "group": "A",
         "sharesApplied": 50,
         "validApplications": 70566,
         "successfulApplications": 3528,
         "sharesAllotted": 50,
         "approxPercent": 4.9996,
-        "hitRate": 0.049996
+        "hitRate": 0.049996,
+        "group": "A"
       },
       {
-        "group": "A",
         "sharesApplied": 100,
         "validApplications": 10449,
         "successfulApplications": 627,
-        "sharesAllotted": 100,
+        "sharesAllotted": 50,
         "approxPercent": 6.0006,
-        "hitRate": 0.060006000000000004
+        "hitRate": 0.060006000000000004,
+        "group": "A"
       },
       {
-        "group": "A",
         "sharesApplied": 150,
         "validApplications": 5530,
         "successfulApplications": 373,
-        "sharesAllotted": 150,
+        "sharesAllotted": 50,
         "approxPercent": 6.745,
-        "hitRate": 0.06745
+        "hitRate": 0.06745,
+        "group": "A"
       },
       {
-        "group": "A",
         "sharesApplied": 200,
         "validApplications": 4371,
         "successfulApplications": 314,
-        "sharesAllotted": 200,
+        "sharesAllotted": 50,
         "approxPercent": 7.1837,
-        "hitRate": 0.071837
+        "hitRate": 0.071837,
+        "group": "A"
       },
       {
-        "group": "A",
         "sharesApplied": 250,
         "validApplications": 3763,
         "successfulApplications": 287,
-        "sharesAllotted": 250,
+        "sharesAllotted": 50,
         "approxPercent": 7.6269,
-        "hitRate": 0.076269
+        "hitRate": 0.076269,
+        "group": "A"
       },
       {
-        "group": "A",
         "sharesApplied": 300,
         "validApplications": 3298,
         "successfulApplications": 264,
-        "sharesAllotted": 300,
+        "sharesAllotted": 50,
         "approxPercent": 8.0049,
-        "hitRate": 0.080049
+        "hitRate": 0.080049,
+        "group": "A"
       },
       {
-        "group": "A",
         "sharesApplied": 350,
         "validApplications": 3045,
         "successfulApplications": 254,
-        "sharesAllotted": 350,
+        "sharesAllotted": 50,
         "approxPercent": 8.3415,
-        "hitRate": 0.083415
+        "hitRate": 0.083415,
+        "group": "A"
       },
       {
-        "group": "A",
         "sharesApplied": 400,
         "validApplications": 2617,
         "successfulApplications": 226,
-        "sharesAllotted": 400,
+        "sharesAllotted": 50,
         "approxPercent": 8.6358,
-        "hitRate": 0.08635799999999999
+        "hitRate": 0.08635799999999999,
+        "group": "A"
       },
       {
-        "group": "A",
         "sharesApplied": 450,
         "validApplications": 14742,
         "successfulApplications": 1312,
-        "sharesAllotted": 450,
+        "sharesAllotted": 50,
         "approxPercent": 8.8997,
-        "hitRate": 0.08899699999999999
+        "hitRate": 0.08899699999999999,
+        "group": "A"
       },
       {
-        "group": "A",
         "sharesApplied": 500,
         "validApplications": 7310,
         "successfulApplications": 669,
-        "sharesAllotted": 500,
+        "sharesAllotted": 50,
         "approxPercent": 9.1518,
-        "hitRate": 0.091518
+        "hitRate": 0.091518,
+        "group": "A"
       },
       {
-        "group": "A",
         "sharesApplied": 600,
         "validApplications": 3410,
         "successfulApplications": 327,
-        "sharesAllotted": 600,
+        "sharesAllotted": 50,
         "approxPercent": 9.5894,
-        "hitRate": 0.095894
+        "hitRate": 0.095894,
+        "group": "A"
       },
       {
-        "group": "A",
         "sharesApplied": 700,
         "validApplications": 2370,
         "successfulApplications": 237,
-        "sharesAllotted": 700,
+        "sharesAllotted": 50,
         "approxPercent": 10.0,
-        "hitRate": 0.1
+        "hitRate": 0.1,
+        "group": "A"
       },
       {
-        "group": "A",
         "sharesApplied": 800,
         "validApplications": 1765,
         "successfulApplications": 183,
-        "sharesAllotted": 800,
+        "sharesAllotted": 50,
         "approxPercent": 10.3683,
-        "hitRate": 0.103683
+        "hitRate": 0.103683,
+        "group": "A"
       },
       {
-        "group": "A",
         "sharesApplied": 900,
         "validApplications": 3854,
         "successfulApplications": 411,
-        "sharesAllotted": 900,
+        "sharesAllotted": 50,
         "approxPercent": 10.6642,
-        "hitRate": 0.10664199999999999
+        "hitRate": 0.10664199999999999,
+        "group": "A"
+      },
+      {
+        "sharesApplied": 725,
+        "validApplications": 725,
+        "successfulApplications": 639,
+        "sharesAllotted": 50,
+        "approxPercent": 88.1379,
+        "hitRate": 0.881379,
+        "group": "B"
       }
     ],
     "finalPublicOfferPercent": null,

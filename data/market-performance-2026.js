@@ -3866,14 +3866,17 @@ window.MARKET_PERFORMANCE_2026 = {
       "label": "上市首日",
       "date": "2026-06-22",
       "source": {
-        "title": "Yahoo Finance 日线 1392.HK",
-        "url": "https://finance.yahoo.com/quote/1392.HK/history"
+        "title": "《新股》海清智元(01392.HK)全日收26.7元 高上市價270.8%",
+        "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/01392/AAFN/NOW.1529940/hk-stock-news"
       },
       "open": 29,
       "high": 30,
       "low": 25,
-      "close": 26.700000762939453,
-      "volume": 27583246
+      "close": 26.7,
+      "volume": 27583246,
+      "turnoverShares": 27583200,
+      "turnoverAmount": 708000000,
+      "lotGain": 9750
     },
     "currentQuote": {
       "label": "当前股价",
@@ -3888,6 +3891,37 @@ window.MARKET_PERFORMANCE_2026 = {
       "volume": 3075000,
       "fiftyTwoWeekHigh": 30,
       "fiftyTwoWeekLow": 16.28
+    },
+    "source": {
+      "title": "《新股》海清智元(01392.HK)暗盤收報26.2元 高上市價263.9%",
+      "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/01392/AAFN/NOW.1529756/hk-stock-news"
+    },
+    "greyMarketDate": "2026-06-22",
+    "greyMarket": {
+      "futu": {
+        "label": "富途",
+        "open": 20,
+        "high": 27,
+        "low": 19.5,
+        "close": 26.2,
+        "changePct": 263.9,
+        "turnoverShares": 7704500,
+        "turnoverAmount": 189000000,
+        "lotGain": 9500,
+        "quoteUrl": "https://www.futunn.com/stock/01392-HK"
+      },
+      "phillip": {
+        "label": "辉立",
+        "open": 18,
+        "high": 26.4,
+        "low": 18,
+        "close": 26.08,
+        "changePct": 262.2,
+        "turnoverShares": 4920000,
+        "turnoverAmount": 117000000,
+        "lotGain": 9440,
+        "quoteUrl": "https://www.itiger.com/hans/stock/01392"
+      }
     }
   },
   "06658": {
@@ -3895,14 +3929,17 @@ window.MARKET_PERFORMANCE_2026 = {
       "label": "上市首日",
       "date": "2026-06-15",
       "source": {
-        "title": "Yahoo Finance 日线 6658.HK",
-        "url": "https://finance.yahoo.com/quote/6658.HK/history"
+        "title": "《新股》溜溜梅(06658.HK)全日收128元 高上市價193.7%",
+        "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/06658/AAFN/NOW.1529084/hk-stock-news"
       },
       "open": 95,
-      "high": 130.10000610351562,
+      "high": 130.1,
       "low": 91,
       "close": 128,
-      "volume": 4304020
+      "volume": 4304020,
+      "turnoverShares": 4304000,
+      "turnoverAmount": 450000000,
+      "lotGain": 8442
     },
     "currentQuote": {
       "label": "当前股价",
@@ -3917,6 +3954,37 @@ window.MARKET_PERFORMANCE_2026 = {
       "volume": 171800,
       "fiftyTwoWeekHigh": 165,
       "fiftyTwoWeekLow": 91
+    },
+    "source": {
+      "title": "《新股》溜溜梅(06658.HK)暗盤收報99.25元 高上市價127.7%",
+      "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/06658/AAFN/NOW.1528921/hk-stock-news"
+    },
+    "greyMarketDate": "2026-06-15",
+    "greyMarket": {
+      "futu": {
+        "label": "富途",
+        "open": 87,
+        "high": 113,
+        "low": 75,
+        "close": 99.25,
+        "changePct": 127.7,
+        "turnoverShares": 1584700,
+        "turnoverAmount": 151000000,
+        "lotGain": 5567,
+        "quoteUrl": "https://www.futunn.com/stock/06658-HK"
+      },
+      "phillip": {
+        "label": "辉立",
+        "open": 60,
+        "high": 113.8,
+        "low": 60,
+        "close": 100,
+        "changePct": 129.5,
+        "turnoverShares": 965000,
+        "turnoverAmount": 92300000,
+        "lotGain": 5642,
+        "quoteUrl": "https://www.itiger.com/hans/stock/06658"
+      }
     }
   },
   "06675": {
@@ -3924,14 +3992,17 @@ window.MARKET_PERFORMANCE_2026 = {
       "label": "上市首日",
       "date": "2026-06-17",
       "source": {
-        "title": "Yahoo Finance 日线 6675.HK",
-        "url": "https://finance.yahoo.com/quote/6675.HK/history"
+        "title": "《新股》SENASIC(06675.HK)全日收41.7元 高上市價127.1%",
+        "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/06675/AAFN/NOW.1529478/hk-stock-news"
       },
-      "open": 31.600000381469727,
-      "high": 41.900001525878906,
-      "low": 31.579999923706055,
-      "close": 41.70000076293945,
-      "volume": 16473920
+      "open": 31.6,
+      "high": 41.9,
+      "low": 31.58,
+      "close": 41.7,
+      "volume": 16473920,
+      "turnoverShares": 16473900.000000002,
+      "turnoverAmount": 587000000,
+      "lotGain": 4668
     },
     "currentQuote": {
       "label": "当前股价",
@@ -3946,6 +4017,37 @@ window.MARKET_PERFORMANCE_2026 = {
       "volume": 1169798,
       "fiftyTwoWeekHigh": 45.48,
       "fiftyTwoWeekLow": 30.1
+    },
+    "source": {
+      "title": "《新股》Senasic(06675.HK)暗盤收報31.4元 高上市價71%",
+      "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/06675/AAFN/NOW.1529317/hk-stock-news"
+    },
+    "greyMarketDate": "2026-06-17",
+    "greyMarket": {
+      "futu": {
+        "label": "富途",
+        "open": 35.1,
+        "high": 39.5,
+        "low": 30.4,
+        "close": 31.4,
+        "changePct": 71,
+        "turnoverShares": 3890000,
+        "turnoverAmount": 128000000,
+        "lotGain": 2608,
+        "quoteUrl": "https://www.futunn.com/stock/06675-HK"
+      },
+      "phillip": {
+        "label": "辉立",
+        "open": 27,
+        "high": 39.86,
+        "low": 27,
+        "close": 31.58,
+        "changePct": 72,
+        "turnoverShares": 2400000,
+        "turnoverAmount": 78400000,
+        "lotGain": 2644,
+        "quoteUrl": "https://www.itiger.com/hans/stock/06675"
+      }
     }
   },
   "07489": {

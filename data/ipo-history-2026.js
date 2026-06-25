@@ -5,13 +5,13 @@ window.IPO_HISTORY_2026 = [
     "englishName": "",
     "status": "current",
     "listDate": "2026-06-26",
-    "offerPrice": 39.0,
-    "sharesPerLot": null,
-    "totalOfferShares": null,
+    "offerPrice": 39.55,
+    "sharesPerLot": 60,
+    "totalOfferShares": 10112300,
     "marketCap": null,
     "listingMarketCap": null,
-    "publicOfferSharesBefore": null,
-    "publicOfferSharesFinal": null,
+    "publicOfferSharesBefore": 1011200,
+    "publicOfferSharesFinal": 1011200,
     "publicOfferMultiple": null,
     "totalApplications": null,
     "successfulApplications": null,
@@ -25,7 +25,11 @@ window.IPO_HISTORY_2026 = [
       "title": "官方新上市公告 PDF",
       "parserVersion": "2026-05-18-pymupdf-v2"
     },
-    "applicationSummary": {},
+    "applicationSummary": {
+      "minShares": 60,
+      "minLots": 1,
+      "minAmountHKD": 2418.15
+    },
     "basisOfAllocation": [],
     "finalPublicOfferPercent": null,
     "actualOneLotHitRate": null

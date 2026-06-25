@@ -1,5 +1,5 @@
 window.COMPANY_PROFILES_2026 = {
-  "generatedAt": "2026-06-12T00:19:56.483Z",
+  "generatedAt": "2026-06-25T07:14:51.696Z",
   "profiles": {
     "00068": {
       "stockCode": "00068",

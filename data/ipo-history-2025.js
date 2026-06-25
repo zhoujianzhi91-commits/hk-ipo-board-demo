@@ -750,7 +750,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 10,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 53443,
+        "successfulApplications": 2808
+      },
+      "B": {
+        "totalApplications": 214,
+        "successfulApplications": 214
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/1229/2025122902216_c.pdf",
       "extractedText": "data/2025/txt/02671_allotment.txt",
@@ -4119,12 +4128,21 @@ window.IPO_HISTORY_2025 = [
     "publicOfferSharesFinal": 2654000,
     "publicOfferMultiple": 1421.47,
     "totalApplications": 111894,
-    "successfulApplications": null,
+    "successfulApplications": 12338,
     "actualOneLotHitRate": 5.9988,
     "finalPublicOfferPercent": 10,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 106191,
+        "successfulApplications": 6635
+      },
+      "B": {
+        "totalApplications": 5703,
+        "successfulApplications": 5703
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/1222/2025122201717_c.pdf",
       "extractedText": "data/2025/txt/02661_allotment.txt",
@@ -6116,7 +6134,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 10,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 9275,
+        "successfulApplications": 5337
+      },
+      "B": {
+        "totalApplications": 16,
+        "successfulApplications": 16
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/1219/2025121901604_c.pdf",
       "extractedText": "data/2025/txt/02581_allotment.txt",
@@ -6753,12 +6780,21 @@ window.IPO_HISTORY_2025 = [
     "publicOfferSharesFinal": 16148500,
     "publicOfferMultiple": 1.91,
     "totalApplications": 7479,
-    "successfulApplications": null,
+    "successfulApplications": 6043,
     "actualOneLotHitRate": 74.6424,
     "finalPublicOfferPercent": 15,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 7474,
+        "successfulApplications": 6038
+      },
+      "B": {
+        "totalApplications": 5,
+        "successfulApplications": 5
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/1219/2025121902018_c.pdf",
       "extractedText": "data/2025/txt/02691_allotment.txt",
@@ -7336,7 +7372,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 10,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 109770,
+        "successfulApplications": 1805
+      },
+      "B": {
+        "totalApplications": 4840,
+        "successfulApplications": 1805
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/1219/2025121901142_c.pdf",
       "extractedText": "data/2025/txt/02695_allotment.txt",
@@ -8978,7 +9023,7 @@ window.IPO_HISTORY_2025 = [
     "publicOfferSharesFinal": 24057200,
     "publicOfferMultiple": 393.71,
     "totalApplications": 88592,
-    "successfulApplications": null,
+    "successfulApplications": 29791,
     "actualOneLotHitRate": 10.0031,
     "finalPublicOfferPercent": 10,
     "mechanism": "主板B",
@@ -10475,7 +10520,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 10,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 71515,
+        "successfulApplications": 38453
+      },
+      "B": {
+        "totalApplications": 719,
+        "successfulApplications": 719
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/1210/2025121001475_c.pdf",
       "extractedText": "data/2025/txt/07618_allotment.txt",
@@ -14018,7 +14072,7 @@ window.IPO_HISTORY_2025 = [
     "publicOfferSharesFinal": 3007050,
     "publicOfferMultiple": 60.63,
     "totalApplications": 45511,
-    "successfulApplications": null,
+    "successfulApplications": 15389,
     "actualOneLotHitRate": 10.0016,
     "finalPublicOfferPercent": 10,
     "mechanism": "主板B",
@@ -18279,7 +18333,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 10,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 92791,
+        "successfulApplications": 15510
+      },
+      "B": {
+        "totalApplications": 1862,
+        "successfulApplications": 1862
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/1105/2025110502029_c.pdf",
       "extractedText": "data/2025/txt/00699_allotment.txt",
@@ -18953,7 +19016,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 20,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 64546,
+        "successfulApplications": 19206
+      },
+      "B": {
+        "totalApplications": 403,
+        "successfulApplications": 403
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/1105/2025110502015_c.pdf",
       "extractedText": "data/2025/txt/00800_allotment.txt",
@@ -19862,7 +19934,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 10,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 244283,
+        "successfulApplications": 4400
+      },
+      "B": {
+        "totalApplications": 20905,
+        "successfulApplications": 4399
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/1105/2025110502007_c.pdf",
       "extractedText": "data/2025/txt/02630_allotment.txt",
@@ -21390,7 +21471,7 @@ window.IPO_HISTORY_2025 = [
     "publicOfferSharesFinal": 721920,
     "publicOfferMultiple": 4452.86,
     "totalApplications": 283629,
-    "successfulApplications": null,
+    "successfulApplications": 18048,
     "actualOneLotHitRate": 1.0003,
     "finalPublicOfferPercent": 10,
     "mechanism": "主板B",
@@ -22073,7 +22154,7 @@ window.IPO_HISTORY_2025 = [
     "publicOfferSharesFinal": 5326400,
     "publicOfferMultiple": 7569.83,
     "totalApplications": 236934,
-    "successfulApplications": null,
+    "successfulApplications": 25192,
     "actualOneLotHitRate": 3.0005,
     "finalPublicOfferPercent": 20,
     "mechanism": "主板B",
@@ -22683,12 +22764,21 @@ window.IPO_HISTORY_2025 = [
     "publicOfferSharesFinal": 58042600,
     "publicOfferMultiple": 52.93,
     "totalApplications": 115863,
-    "successfulApplications": null,
+    "successfulApplications": 81769,
     "actualOneLotHitRate": 50.0011,
     "finalPublicOfferPercent": 9.19,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 113392,
+        "successfulApplications": 79298
+      },
+      "B": {
+        "totalApplications": 2471,
+        "successfulApplications": 2471
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/1027/2025102701587_c.pdf",
       "extractedText": "data/2025/txt/06031_allotment.txt",
@@ -24269,7 +24359,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 10,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 162764,
+        "successfulApplications": 4500
+      },
+      "B": {
+        "totalApplications": 5263,
+        "successfulApplications": 3920
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/1027/2025102701733_c.pdf",
       "extractedText": "data/2025/txt/06980_allotment.txt",
@@ -24879,7 +24978,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 10,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 184378,
+        "successfulApplications": 23320
+      },
+      "B": {
+        "totalApplications": 6778,
+        "successfulApplications": 6778
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/1021/2025102101037_c.pdf",
       "extractedText": "data/2025/txt/00638_allotment.txt",
@@ -26307,7 +26415,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 10,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 298721,
+        "successfulApplications": 11500
+      },
+      "B": {
+        "totalApplications": 17418,
+        "successfulApplications": 10066
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/1017/2025101701655_c.pdf",
       "extractedText": "data/2025/txt/02637_allotment.txt",
@@ -27696,7 +27813,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 10,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 356505,
+        "successfulApplications": 6734
+      },
+      "B": {
+        "totalApplications": 19516,
+        "successfulApplications": 6733
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/1014/2025101401223_c.pdf",
       "extractedText": "data/2025/txt/02575_allotment.txt",
@@ -28370,7 +28496,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 10,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 184313,
+        "successfulApplications": 5979
+      },
+      "B": {
+        "totalApplications": 17494,
+        "successfulApplications": 5979
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/1009/2025100901253_c.pdf",
       "extractedText": "data/2025/txt/02650_allotment.txt",
@@ -29108,7 +29243,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 10,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 242915,
+        "successfulApplications": 4120
+      },
+      "B": {
+        "totalApplications": 21294,
+        "successfulApplications": 4120
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/1006/2025100601431_c.pdf",
       "extractedText": "data/2025/txt/02652_allotment.txt",
@@ -29766,7 +29910,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 10,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 326642,
+        "successfulApplications": 174496
+      },
+      "B": {
+        "totalApplications": 24133,
+        "successfulApplications": 24133
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0929/2025092903789_c.pdf",
       "extractedText": "data/2025/txt/02259_allotment.txt",
@@ -31187,7 +31340,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 10,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 105110,
+        "successfulApplications": 14773
+      },
+      "B": {
+        "totalApplications": 3258,
+        "successfulApplications": 3258
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0929/2025092903623_c.pdf",
       "extractedText": "data/2025/txt/02889_allotment.txt",
@@ -31856,12 +32018,21 @@ window.IPO_HISTORY_2025 = [
     "publicOfferSharesFinal": 29739700,
     "publicOfferMultiple": 308.18,
     "totalApplications": 207928,
-    "successfulApplications": null,
+    "successfulApplications": 68717,
     "actualOneLotHitRate": 0.6743,
     "finalPublicOfferPercent": 9.5,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 194695,
+        "successfulApplications": 55484
+      },
+      "B": {
+        "totalApplications": 13233,
+        "successfulApplications": 13233
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0924/2025092401263_c.pdf",
       "extractedText": "data/2025/txt/09973_allotment.txt",
@@ -32583,7 +32754,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 10,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 141789,
+        "successfulApplications": 5491
+      },
+      "B": {
+        "totalApplications": 12611,
+        "successfulApplications": 5490
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0922/2025092201985_c.pdf",
       "extractedText": "data/2025/txt/06090_allotment.txt",
@@ -33257,7 +33437,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 8.7,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 235959,
+        "successfulApplications": 19400
+      },
+      "B": {
+        "totalApplications": 21917,
+        "successfulApplications": 13505
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0918/2025091801758_c.pdf",
       "extractedText": "data/2025/txt/02595_allotment.txt",
@@ -34011,7 +34200,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 10,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 67433,
+        "successfulApplications": 6730
+      },
+      "B": {
+        "totalApplications": 2117,
+        "successfulApplications": 2117
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0916/2025091601473_c.pdf",
       "extractedText": "data/2025/txt/02656_allotment.txt",
@@ -35407,7 +35605,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 10,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 206523,
+        "successfulApplications": 3960
+      },
+      "B": {
+        "totalApplications": 17386,
+        "successfulApplications": 3960
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0908/2025090801335_c.pdf",
       "extractedText": "data/2025/txt/02543_allotment.txt",
@@ -36092,7 +36299,7 @@ window.IPO_HISTORY_2025 = [
     "publicOfferSharesFinal": 83382400,
     "publicOfferMultiple": 557.2,
     "totalApplications": 153533,
-    "successfulApplications": null,
+    "successfulApplications": 77936,
     "actualOneLotHitRate": 10.0012,
     "finalPublicOfferPercent": 35,
     "mechanism": "主板B",
@@ -36371,7 +36578,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 10,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 149942,
+        "successfulApplications": 13727
+      },
+      "B": {
+        "totalApplications": 14504,
+        "successfulApplications": 11178
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0827/2025082702294_c.pdf",
       "extractedText": "data/2025/txt/03858_allotment.txt",
@@ -37109,7 +37325,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 10,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 197912,
+        "successfulApplications": 5856
+      },
+      "B": {
+        "totalApplications": 20078,
+        "successfulApplications": 5856
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0825/2025082502152_c.pdf",
       "extractedText": "data/2025/txt/06960_allotment.txt",
@@ -37783,7 +38008,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 35,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 204270,
+        "successfulApplications": 79553
+      },
+      "B": {
+        "totalApplications": 11249,
+        "successfulApplications": 11249
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0819/2025081901729_c.pdf",
       "extractedText": "data/2025/txt/02631_allotment.txt",
@@ -39140,7 +39374,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 11.95,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 180161,
+        "successfulApplications": 9990
+      },
+      "B": {
+        "totalApplications": 11718,
+        "successfulApplications": 8958
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0808/2025080801369_c.pdf",
       "extractedText": "data/2025/txt/02627_allotment.txt",
@@ -39798,7 +40041,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 43.48,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 303298,
+        "successfulApplications": 52998
+      },
+      "B": {
+        "totalApplications": 20408,
+        "successfulApplications": 20408
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0724/2025072401813_c.pdf",
       "extractedText": "data/2025/txt/09887_allotment.txt",
@@ -41171,7 +41423,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 43.48,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 92816,
+        "successfulApplications": 38005
+      },
+      "B": {
+        "totalApplications": 1476,
+        "successfulApplications": 1476
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0708/2025070801127_c.pdf",
       "extractedText": "data/2025/txt/02590_allotment.txt",
@@ -42204,6 +42465,134 @@ window.IPO_HISTORY_2025 = [
       },
       {
         "group": "A",
+        "sharesApplied": 25000,
+        "lotsApplied": 50,
+        "validApplications": 51,
+        "successfulApplications": 51,
+        "guaranteedShares": 500,
+        "extraLotteryShares": 500,
+        "extraLotteryWinners": 7,
+        "extraLotteryRate": 0.13725490196078433,
+        "sharesAllotted": null,
+        "allotmentPercent": 2.27,
+        "hitRate": 1,
+        "expectedShares": 568.6274509803922,
+        "rawBasis": "500股H股股份加上51名申請人中7名獲配發額外500股H股股份"
+      },
+      {
+        "group": "A",
+        "sharesApplied": 30000,
+        "lotsApplied": 60,
+        "validApplications": 34,
+        "successfulApplications": 34,
+        "guaranteedShares": 500,
+        "extraLotteryShares": 500,
+        "extraLotteryWinners": 8,
+        "extraLotteryRate": 0.23529411764705882,
+        "sharesAllotted": null,
+        "allotmentPercent": 2.06,
+        "hitRate": 1,
+        "expectedShares": 617.6470588235294,
+        "rawBasis": "500股H股股份加上34名申請人中8名獲配發額外500股H股股份"
+      },
+      {
+        "group": "A",
+        "sharesApplied": 35000,
+        "lotsApplied": 70,
+        "validApplications": 21,
+        "successfulApplications": 21,
+        "guaranteedShares": 500,
+        "extraLotteryShares": 500,
+        "extraLotteryWinners": 7,
+        "extraLotteryRate": 0.3333333333333333,
+        "sharesAllotted": null,
+        "allotmentPercent": 1.9,
+        "hitRate": 1,
+        "expectedShares": 666.6666666666666,
+        "rawBasis": "500股H股股份加上21名申請人中7名獲配發額外500股H股股份"
+      },
+      {
+        "group": "A",
+        "sharesApplied": 40000,
+        "lotsApplied": 80,
+        "validApplications": 17,
+        "successfulApplications": 17,
+        "guaranteedShares": 500,
+        "extraLotteryShares": 500,
+        "extraLotteryWinners": 7,
+        "extraLotteryRate": 0.4117647058823529,
+        "sharesAllotted": null,
+        "allotmentPercent": 1.76,
+        "hitRate": 1,
+        "expectedShares": 705.8823529411765,
+        "rawBasis": "500股H股股份加上17名申請人中7名獲配發額外500股H股股份"
+      },
+      {
+        "group": "A",
+        "sharesApplied": 45000,
+        "lotsApplied": 90,
+        "validApplications": 11,
+        "successfulApplications": 11,
+        "guaranteedShares": 500,
+        "extraLotteryShares": 500,
+        "extraLotteryWinners": 6,
+        "extraLotteryRate": 0.5454545454545454,
+        "sharesAllotted": null,
+        "allotmentPercent": 1.72,
+        "hitRate": 1,
+        "expectedShares": 772.7272727272727,
+        "rawBasis": "500股H股股份加上11名申請人中6名獲配發額外500股H股股份"
+      },
+      {
+        "group": "A",
+        "sharesApplied": 50000,
+        "lotsApplied": 100,
+        "validApplications": 31,
+        "successfulApplications": 31,
+        "guaranteedShares": 500,
+        "extraLotteryShares": 500,
+        "extraLotteryWinners": 17,
+        "extraLotteryRate": 0.5483870967741935,
+        "sharesAllotted": null,
+        "allotmentPercent": 1.55,
+        "hitRate": 1,
+        "expectedShares": 774.1935483870968,
+        "rawBasis": "500股H股股份加上31名申請人中17名獲配發額外500股H股股份"
+      },
+      {
+        "group": "A",
+        "sharesApplied": 60000,
+        "lotsApplied": 120,
+        "validApplications": 11,
+        "successfulApplications": 11,
+        "guaranteedShares": 500,
+        "extraLotteryShares": 500,
+        "extraLotteryWinners": 8,
+        "extraLotteryRate": 0.7272727272727273,
+        "sharesAllotted": null,
+        "allotmentPercent": 1.44,
+        "hitRate": 1,
+        "expectedShares": 863.6363636363636,
+        "rawBasis": "500股H股股份加上11名申請人中8名獲配發額外500股H股股份"
+      },
+      {
+        "group": "A",
+        "sharesApplied": 70000,
+        "lotsApplied": 140,
+        "validApplications": 19,
+        "successfulApplications": 19,
+        "guaranteedShares": 500,
+        "extraLotteryShares": 500,
+        "extraLotteryWinners": 15,
+        "extraLotteryRate": 0.7894736842105263,
+        "sharesAllotted": null,
+        "allotmentPercent": 1.28,
+        "hitRate": 1,
+        "expectedShares": 894.7368421052631,
+        "rawBasis": "500股H股股份加上19名申請人中15名獲配發額外500股H股股份"
+      },
+      {
+        "group": "A",
         "sharesApplied": 80000,
         "lotsApplied": 160,
         "validApplications": 3,
@@ -42220,6 +42609,70 @@ window.IPO_HISTORY_2025 = [
       },
       {
         "group": "A",
+        "sharesApplied": 90000,
+        "lotsApplied": 180,
+        "validApplications": 6,
+        "successfulApplications": 6,
+        "guaranteedShares": 1000,
+        "extraLotteryShares": 500,
+        "extraLotteryWinners": 1,
+        "extraLotteryRate": 0.16666666666666666,
+        "sharesAllotted": null,
+        "allotmentPercent": 1.2,
+        "hitRate": 1,
+        "expectedShares": 1083.3333333333333,
+        "rawBasis": "1,000股H股股份加上6名申請人中1名獲配發額外500股H股股份"
+      },
+      {
+        "group": "A",
+        "sharesApplied": 100000,
+        "lotsApplied": 200,
+        "validApplications": 19,
+        "successfulApplications": 19,
+        "guaranteedShares": 1000,
+        "extraLotteryShares": 500,
+        "extraLotteryWinners": 4,
+        "extraLotteryRate": 0.21052631578947367,
+        "sharesAllotted": null,
+        "allotmentPercent": 1.11,
+        "hitRate": 1,
+        "expectedShares": 1105.2631578947369,
+        "rawBasis": "1,000股H股股份加上19名申請人中4名獲配發額外500股H股股份"
+      },
+      {
+        "group": "A",
+        "sharesApplied": 150000,
+        "lotsApplied": 300,
+        "validApplications": 12,
+        "successfulApplications": 12,
+        "guaranteedShares": 1000,
+        "extraLotteryShares": 500,
+        "extraLotteryWinners": 7,
+        "extraLotteryRate": 0.5833333333333334,
+        "sharesAllotted": null,
+        "allotmentPercent": 0.86,
+        "hitRate": 1,
+        "expectedShares": 1291.6666666666667,
+        "rawBasis": "1,000股H股股份加上12名申請人中7名獲配發額外500股H股股份"
+      },
+      {
+        "group": "A",
+        "sharesApplied": 200000,
+        "lotsApplied": 400,
+        "validApplications": 6,
+        "successfulApplications": 6,
+        "guaranteedShares": 1000,
+        "extraLotteryShares": 500,
+        "extraLotteryWinners": 4,
+        "extraLotteryRate": 0.6666666666666666,
+        "sharesAllotted": null,
+        "allotmentPercent": 0.67,
+        "hitRate": 1,
+        "expectedShares": 1333.3333333333333,
+        "rawBasis": "1,000股H股股份加上6名申請人中4名獲配發額外500股H股股份"
+      },
+      {
+        "group": "A",
         "sharesApplied": 250000,
         "lotsApplied": 500,
         "validApplications": 2,
@@ -42233,6 +42686,38 @@ window.IPO_HISTORY_2025 = [
         "hitRate": 1,
         "expectedShares": 1500,
         "rawBasis": "1,500股H股股份"
+      },
+      {
+        "group": "A",
+        "sharesApplied": 300000,
+        "lotsApplied": 600,
+        "validApplications": 2,
+        "successfulApplications": 2,
+        "guaranteedShares": 1500,
+        "extraLotteryShares": 500,
+        "extraLotteryWinners": 1,
+        "extraLotteryRate": 0.5,
+        "sharesAllotted": null,
+        "allotmentPercent": 0.58,
+        "hitRate": 1,
+        "expectedShares": 1750,
+        "rawBasis": "1,500股H股股份加上2名申請人中1名獲配發額外500股H股股份"
+      },
+      {
+        "group": "B",
+        "sharesApplied": 350000,
+        "lotsApplied": 700,
+        "validApplications": 8,
+        "successfulApplications": 8,
+        "guaranteedShares": 68500,
+        "extraLotteryShares": 500,
+        "extraLotteryWinners": 4,
+        "extraLotteryRate": 0.5,
+        "sharesAllotted": null,
+        "allotmentPercent": 19.64,
+        "hitRate": 1,
+        "expectedShares": 68750,
+        "rawBasis": "68,500股H股股份加上8名申請人中4名獲配發額外500股H股股份"
       },
       {
         "group": "B",
@@ -45678,7 +46163,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 12.41,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 69673,
+        "successfulApplications": 38020
+      },
+      "B": {
+        "totalApplications": 665,
+        "successfulApplications": 665
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0627/2025062703093_c.pdf",
       "extractedText": "data/2025/txt/03880_allotment.txt",
@@ -46400,7 +46894,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 50,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 215863,
+        "successfulApplications": 51730
+      },
+      "B": {
+        "totalApplications": 20215,
+        "successfulApplications": 20215
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0627/2025062703891_c.pdf",
       "extractedText": "data/2025/txt/06603_allotment.txt",
@@ -47725,7 +48228,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 43.48,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 51796,
+        "successfulApplications": 13911
+      },
+      "B": {
+        "totalApplications": 668,
+        "successfulApplications": 668
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0625/2025062502267_c.pdf",
       "extractedText": "data/2025/txt/02508_allotment.txt",
@@ -49571,7 +50083,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 30,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 25174,
+        "successfulApplications": 19310
+      },
+      "B": {
+        "totalApplications": 89,
+        "successfulApplications": 89
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0624/2025062401323_c.pdf",
       "extractedText": "data/2025/txt/02643_allotment.txt",
@@ -53617,7 +54138,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 50,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 31844,
+        "successfulApplications": 15418
+      },
+      "B": {
+        "totalApplications": 332,
+        "successfulApplications": 332
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0609/2025060901377_c.pdf",
       "extractedText": "data/2025/txt/02605_allotment.txt",
@@ -54942,7 +55472,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 50,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 48276,
+        "successfulApplications": 9045
+      },
+      "B": {
+        "totalApplications": 1351,
+        "successfulApplications": 1351
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0526/2025052601320_c.pdf",
       "extractedText": "data/2025/txt/02565_allotment.txt",
@@ -55680,7 +56219,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 70,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 18304,
+        "successfulApplications": 11720
+      },
+      "B": {
+        "totalApplications": 217,
+        "successfulApplications": 217
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0526/2025052601654_c.pdf",
       "extractedText": "data/2025/txt/02603_allotment.txt",
@@ -57085,7 +57633,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 12.6,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 21436,
+        "successfulApplications": 20920
+      },
+      "B": {
+        "totalApplications": 105,
+        "successfulApplications": 105
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0522/2025052201536_c.pdf",
       "extractedText": "data/2025/txt/02629_allotment.txt",
@@ -58417,7 +58974,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 50,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 95708,
+        "successfulApplications": 68977
+      },
+      "B": {
+        "totalApplications": 2774,
+        "successfulApplications": 2774
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0515/2025051501490_c.pdf",
       "extractedText": "data/2025/txt/06831_allotment.txt",
@@ -59059,7 +59625,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 50,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 119494,
+        "successfulApplications": 20095
+      },
+      "B": {
+        "totalApplications": 8143,
+        "successfulApplications": 8143
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0507/2025050702205_c.pdf",
       "extractedText": "data/2025/txt/02589_allotment.txt",
@@ -59765,7 +60340,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 10,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 9137,
+        "successfulApplications": 4974
+      },
+      "B": {
+        "totalApplications": 14,
+        "successfulApplications": 14
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0507/2025050702203_c.pdf",
       "extractedText": "data/2025/txt/02865_allotment.txt",
@@ -60391,7 +60975,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 20,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 30391,
+        "successfulApplications": 4690
+      },
+      "B": {
+        "totalApplications": 247,
+        "successfulApplications": 247
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0506/2025050602876_c.pdf",
       "extractedText": "data/2025/txt/01333_allotment.txt",
@@ -61065,7 +61658,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 43.48,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 25720,
+        "successfulApplications": 23664
+      },
+      "B": {
+        "totalApplications": 1137,
+        "successfulApplications": 1137
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0414/2025041401385_c.pdf",
       "extractedText": "data/2025/txt/09606_allotment.txt",
@@ -61787,7 +62389,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 10,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 5992,
+        "successfulApplications": 5992
+      },
+      "B": {
+        "totalApplications": 6,
+        "successfulApplications": 6
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0411/2025041101646_c.pdf",
       "extractedText": "data/2025/txt/03677_allotment.txt",
@@ -62349,7 +62960,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 16.6,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 9077,
+        "successfulApplications": 2484
+      },
+      "B": {
+        "totalApplications": 7,
+        "successfulApplications": 7
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0328/2025032802387_c.pdf",
       "extractedText": "data/2025/txt/02625_allotment.txt",
@@ -63178,7 +63798,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 10,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 12760,
+        "successfulApplications": 12760
+      },
+      "B": {
+        "totalApplications": 31,
+        "successfulApplications": 31
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0324/2025032401217_c.pdf",
       "extractedText": "data/2025/txt/02610_allotment.txt",
@@ -64313,7 +64942,7 @@ window.IPO_HISTORY_2025 = [
     "publicOfferSharesFinal": 20565200,
     "publicOfferMultiple": 9.53,
     "totalApplications": 29964,
-    "successfulApplications": null,
+    "successfulApplications": 19625,
     "actualOneLotHitRate": 28.0003,
     "finalPublicOfferPercent": 8.7,
     "mechanism": "主板B",
@@ -64944,7 +65573,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 50,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 226091,
+        "successfulApplications": 42650
+      },
+      "B": {
+        "totalApplications": 38901,
+        "successfulApplications": 27562
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0228/2025022801728_c.pdf",
       "extractedText": "data/2025/txt/02097_allotment.txt",
@@ -65645,7 +66283,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 10,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 4561,
+        "successfulApplications": 4561
+      },
+      "B": {
+        "totalApplications": 4,
+        "successfulApplications": 4
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0114/2025011400899_c.pdf",
       "extractedText": "data/2025/txt/02571_allotment.txt",
@@ -66968,7 +67615,16 @@ window.IPO_HISTORY_2025 = [
     "finalPublicOfferPercent": 43.5,
     "mechanism": "主板B",
     "listingType": "H股",
-    "groupTotals": {},
+    "groupTotals": {
+      "A": {
+        "totalApplications": 98721,
+        "successfulApplications": 20101
+      },
+      "B": {
+        "totalApplications": 28120,
+        "successfulApplications": 20100
+      }
+    },
     "source": {
       "pdf": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0109/2025010900830_c.pdf",
       "extractedText": "data/2025/txt/00325_allotment.txt",
@@ -68795,7 +69451,7 @@ window.IPO_HISTORY_2025 = [
     "publicOfferSharesFinal": 1894200,
     "publicOfferMultiple": 55.33,
     "totalApplications": 12389,
-    "successfulApplications": null,
+    "successfulApplications": 7755,
     "actualOneLotHitRate": 40.0143,
     "finalPublicOfferPercent": 18.94,
     "mechanism": "主板B",
@@ -68990,6 +69646,278 @@ window.IPO_HISTORY_2025 = [
       },
       {
         "group": "A",
+        "sharesApplied": 2000,
+        "lotsApplied": 20,
+        "validApplications": 445,
+        "successfulApplications": 445,
+        "guaranteedShares": 100,
+        "extraLotteryShares": 100,
+        "extraLotteryWinners": 2,
+        "extraLotteryRate": 0.0044943820224719105,
+        "sharesAllotted": null,
+        "allotmentPercent": 5.02,
+        "hitRate": 1,
+        "expectedShares": 100.4494382022472,
+        "rawBasis": "100股H股股份加上445名申請人中2名獲配發額外100股H股股份"
+      },
+      {
+        "group": "A",
+        "sharesApplied": 2500,
+        "lotsApplied": 25,
+        "validApplications": 177,
+        "successfulApplications": 177,
+        "guaranteedShares": 100,
+        "extraLotteryShares": 100,
+        "extraLotteryWinners": 14,
+        "extraLotteryRate": 0.07909604519774012,
+        "sharesAllotted": null,
+        "allotmentPercent": 4.32,
+        "hitRate": 1,
+        "expectedShares": 107.909604519774,
+        "rawBasis": "100股H股股份加上177名申請人中14名獲配發額外100股H股股份"
+      },
+      {
+        "group": "A",
+        "sharesApplied": 3000,
+        "lotsApplied": 30,
+        "validApplications": 187,
+        "successfulApplications": 187,
+        "guaranteedShares": 100,
+        "extraLotteryShares": 100,
+        "extraLotteryWinners": 26,
+        "extraLotteryRate": 0.13903743315508021,
+        "sharesAllotted": null,
+        "allotmentPercent": 3.8,
+        "hitRate": 1,
+        "expectedShares": 113.90374331550802,
+        "rawBasis": "100股H股股份加上187名申請人中26名獲配發額外100股H股股份"
+      },
+      {
+        "group": "A",
+        "sharesApplied": 3500,
+        "lotsApplied": 35,
+        "validApplications": 85,
+        "successfulApplications": 85,
+        "guaranteedShares": 100,
+        "extraLotteryShares": 100,
+        "extraLotteryWinners": 17,
+        "extraLotteryRate": 0.2,
+        "sharesAllotted": null,
+        "allotmentPercent": 3.43,
+        "hitRate": 1,
+        "expectedShares": 120,
+        "rawBasis": "100股H股股份加上85名申請人中17名獲配發額外100股H股股份"
+      },
+      {
+        "group": "A",
+        "sharesApplied": 4000,
+        "lotsApplied": 40,
+        "validApplications": 132,
+        "successfulApplications": 132,
+        "guaranteedShares": 100,
+        "extraLotteryShares": 100,
+        "extraLotteryWinners": 32,
+        "extraLotteryRate": 0.24242424242424243,
+        "sharesAllotted": null,
+        "allotmentPercent": 3.11,
+        "hitRate": 1,
+        "expectedShares": 124.24242424242425,
+        "rawBasis": "100股H股股份加上132名申請人中32名獲配發額外100股H股股份"
+      },
+      {
+        "group": "A",
+        "sharesApplied": 4500,
+        "lotsApplied": 45,
+        "validApplications": 118,
+        "successfulApplications": 118,
+        "guaranteedShares": 100,
+        "extraLotteryShares": 100,
+        "extraLotteryWinners": 34,
+        "extraLotteryRate": 0.288135593220339,
+        "sharesAllotted": null,
+        "allotmentPercent": 2.86,
+        "hitRate": 1,
+        "expectedShares": 128.8135593220339,
+        "rawBasis": "100股H股股份加上118名申請人中34名獲配發額外100股H股股份"
+      },
+      {
+        "group": "A",
+        "sharesApplied": 5000,
+        "lotsApplied": 50,
+        "validApplications": 408,
+        "successfulApplications": 408,
+        "guaranteedShares": 100,
+        "extraLotteryShares": 100,
+        "extraLotteryWinners": 135,
+        "extraLotteryRate": 0.33088235294117646,
+        "sharesAllotted": null,
+        "allotmentPercent": 2.66,
+        "hitRate": 1,
+        "expectedShares": 133.08823529411765,
+        "rawBasis": "100股H股股份加上408名申請人中135名獲配發額外100股H股股份"
+      },
+      {
+        "group": "A",
+        "sharesApplied": 6000,
+        "lotsApplied": 60,
+        "validApplications": 199,
+        "successfulApplications": 199,
+        "guaranteedShares": 100,
+        "extraLotteryShares": 100,
+        "extraLotteryWinners": 81,
+        "extraLotteryRate": 0.40703517587939697,
+        "sharesAllotted": null,
+        "allotmentPercent": 2.35,
+        "hitRate": 1,
+        "expectedShares": 140.7035175879397,
+        "rawBasis": "100股H股股份加上199名申請人中81名獲配發額外100股H股股份"
+      },
+      {
+        "group": "A",
+        "sharesApplied": 7000,
+        "lotsApplied": 70,
+        "validApplications": 80,
+        "successfulApplications": 80,
+        "guaranteedShares": 100,
+        "extraLotteryShares": 100,
+        "extraLotteryWinners": 39,
+        "extraLotteryRate": 0.4875,
+        "sharesAllotted": null,
+        "allotmentPercent": 2.13,
+        "hitRate": 1,
+        "expectedShares": 148.75,
+        "rawBasis": "100股H股股份加上80名申請人中39名獲配發額外100股H股股份"
+      },
+      {
+        "group": "A",
+        "sharesApplied": 8000,
+        "lotsApplied": 80,
+        "validApplications": 98,
+        "successfulApplications": 98,
+        "guaranteedShares": 100,
+        "extraLotteryShares": 100,
+        "extraLotteryWinners": 53,
+        "extraLotteryRate": 0.5408163265306123,
+        "sharesAllotted": null,
+        "allotmentPercent": 1.93,
+        "hitRate": 1,
+        "expectedShares": 154.08163265306123,
+        "rawBasis": "100股H股股份加上98名申請人中53名獲配發額外100股H股股份"
+      },
+      {
+        "group": "A",
+        "sharesApplied": 9000,
+        "lotsApplied": 90,
+        "validApplications": 40,
+        "successfulApplications": 40,
+        "guaranteedShares": 100,
+        "extraLotteryShares": 100,
+        "extraLotteryWinners": 24,
+        "extraLotteryRate": 0.6,
+        "sharesAllotted": null,
+        "allotmentPercent": 1.78,
+        "hitRate": 1,
+        "expectedShares": 160,
+        "rawBasis": "100股H股股份加上40名申請人中24名獲配發額外100股H股股份"
+      },
+      {
+        "group": "A",
+        "sharesApplied": 10000,
+        "lotsApplied": 100,
+        "validApplications": 505,
+        "successfulApplications": 505,
+        "guaranteedShares": 100,
+        "extraLotteryShares": 100,
+        "extraLotteryWinners": 327,
+        "extraLotteryRate": 0.6475247524752475,
+        "sharesAllotted": null,
+        "allotmentPercent": 1.65,
+        "hitRate": 1,
+        "expectedShares": 164.75247524752476,
+        "rawBasis": "100股H股股份加上505名申請人中327名獲配發額外100股H股股份"
+      },
+      {
+        "group": "A",
+        "sharesApplied": 20000,
+        "lotsApplied": 200,
+        "validApplications": 256,
+        "successfulApplications": 256,
+        "guaranteedShares": 200,
+        "extraLotteryShares": 100,
+        "extraLotteryWinners": 10,
+        "extraLotteryRate": 0.0390625,
+        "sharesAllotted": null,
+        "allotmentPercent": 1.02,
+        "hitRate": 1,
+        "expectedShares": 203.90625,
+        "rawBasis": "200股H股股份加上256名申請人中10名獲配發額外100股H股股份"
+      },
+      {
+        "group": "A",
+        "sharesApplied": 30000,
+        "lotsApplied": 300,
+        "validApplications": 88,
+        "successfulApplications": 88,
+        "guaranteedShares": 200,
+        "extraLotteryShares": 100,
+        "extraLotteryWinners": 28,
+        "extraLotteryRate": 0.3181818181818182,
+        "sharesAllotted": null,
+        "allotmentPercent": 0.77,
+        "hitRate": 1,
+        "expectedShares": 231.8181818181818,
+        "rawBasis": "200股H股股份加上88名申請人中28名獲配發額外100股H股股份"
+      },
+      {
+        "group": "A",
+        "sharesApplied": 40000,
+        "lotsApplied": 400,
+        "validApplications": 31,
+        "successfulApplications": 31,
+        "guaranteedShares": 200,
+        "extraLotteryShares": 100,
+        "extraLotteryWinners": 17,
+        "extraLotteryRate": 0.5483870967741935,
+        "sharesAllotted": null,
+        "allotmentPercent": 0.64,
+        "hitRate": 1,
+        "expectedShares": 254.83870967741936,
+        "rawBasis": "200股H股股份加上31名申請人中17名獲配發額外100股H股股份"
+      },
+      {
+        "group": "A",
+        "sharesApplied": 50000,
+        "lotsApplied": 500,
+        "validApplications": 55,
+        "successfulApplications": 55,
+        "guaranteedShares": 200,
+        "extraLotteryShares": 100,
+        "extraLotteryWinners": 39,
+        "extraLotteryRate": 0.7090909090909091,
+        "sharesAllotted": null,
+        "allotmentPercent": 0.54,
+        "hitRate": 1,
+        "expectedShares": 270.9090909090909,
+        "rawBasis": "200股H股股份加上55名申請人中39名獲配發額外100股H股股份"
+      },
+      {
+        "group": "A",
+        "sharesApplied": 60000,
+        "lotsApplied": 600,
+        "validApplications": 26,
+        "successfulApplications": 26,
+        "guaranteedShares": 200,
+        "extraLotteryShares": 100,
+        "extraLotteryWinners": 23,
+        "extraLotteryRate": 0.8846153846153846,
+        "sharesAllotted": null,
+        "allotmentPercent": 0.48,
+        "hitRate": 1,
+        "expectedShares": 288.46153846153845,
+        "rawBasis": "200股H股股份加上26名申請人中23名獲配發額外100股H股股份"
+      },
+      {
+        "group": "A",
         "sharesApplied": 70000,
         "lotsApplied": 700,
         "validApplications": 15,
@@ -69003,6 +69931,70 @@ window.IPO_HISTORY_2025 = [
         "hitRate": 1,
         "expectedShares": 300,
         "rawBasis": "300股H股股份"
+      },
+      {
+        "group": "A",
+        "sharesApplied": 80000,
+        "lotsApplied": 800,
+        "validApplications": 11,
+        "successfulApplications": 11,
+        "guaranteedShares": 300,
+        "extraLotteryShares": 100,
+        "extraLotteryWinners": 2,
+        "extraLotteryRate": 0.18181818181818182,
+        "sharesAllotted": null,
+        "allotmentPercent": 0.4,
+        "hitRate": 1,
+        "expectedShares": 318.1818181818182,
+        "rawBasis": "300股H股股份加上11名申請人中2名獲配發額外100股H股股份"
+      },
+      {
+        "group": "A",
+        "sharesApplied": 90000,
+        "lotsApplied": 900,
+        "validApplications": 22,
+        "successfulApplications": 22,
+        "guaranteedShares": 300,
+        "extraLotteryShares": 100,
+        "extraLotteryWinners": 6,
+        "extraLotteryRate": 0.2727272727272727,
+        "sharesAllotted": null,
+        "allotmentPercent": 0.36,
+        "hitRate": 1,
+        "expectedShares": 327.27272727272725,
+        "rawBasis": "300股H股股份加上22名申請人中6名獲配發額外100股H股股份"
+      },
+      {
+        "group": "A",
+        "sharesApplied": 100000,
+        "lotsApplied": 1000,
+        "validApplications": 125,
+        "successfulApplications": 125,
+        "guaranteedShares": 300,
+        "extraLotteryShares": 100,
+        "extraLotteryWinners": 43,
+        "extraLotteryRate": 0.344,
+        "sharesAllotted": null,
+        "allotmentPercent": 0.33,
+        "hitRate": 1,
+        "expectedShares": 334.4,
+        "rawBasis": "300股H股股份加上125名申請人中43名獲配發額外100股H股股份"
+      },
+      {
+        "group": "B",
+        "sharesApplied": 200000,
+        "lotsApplied": 2000,
+        "validApplications": 27,
+        "successfulApplications": 27,
+        "guaranteedShares": 19500,
+        "extraLotteryShares": 100,
+        "extraLotteryWinners": 17,
+        "extraLotteryRate": 0.6296296296296297,
+        "sharesAllotted": null,
+        "allotmentPercent": 9.78,
+        "hitRate": 1,
+        "expectedShares": 19562.962962962964,
+        "rawBasis": "19,500股H股股份加上27名申請人中17名獲配發額外100股H股股份"
       },
       {
         "group": "B",

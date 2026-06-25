@@ -42,7 +42,22 @@ window.MARKET_PERFORMANCE_2026 = {
       "turnoverShares": 6291000,
       "turnoverAmount": 374000000,
       "lotGain": -140,
-      "date": "2026-05-20"
+      "date": "2026-05-20",
+      "volume": 6291050
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 94.4,
+      "asOf": "2026-06-25T06:59:21.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 1511.HK",
+        "url": "https://finance.yahoo.com/quote/1511.HK"
+      },
+      "dayHigh": 98.85,
+      "dayLow": 92.1,
+      "volume": 332200,
+      "fiftyTwoWeekHigh": 102.3,
+      "fiftyTwoWeekLow": 50
     }
   },
   "07688": {
@@ -90,7 +105,22 @@ window.MARKET_PERFORMANCE_2026 = {
       "turnoverShares": 40537100,
       "turnoverAmount": 1607000000,
       "lotGain": 2111,
-      "date": "2026-05-20"
+      "date": "2026-05-20",
+      "volume": 40537134
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 24.66,
+      "asOf": "2026-06-25T07:00:03.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 7688.HK",
+        "url": "https://finance.yahoo.com/quote/7688.HK"
+      },
+      "dayHigh": 29.46,
+      "dayLow": 24.36,
+      "volume": 658300,
+      "fiftyTwoWeekHigh": 49.98,
+      "fiftyTwoWeekLow": 24.36
     }
   },
   "06871": {
@@ -140,7 +170,22 @@ window.MARKET_PERFORMANCE_2026 = {
       "turnoverShares": 12671500,
       "turnoverAmount": 694000000,
       "lotGain": 2325,
-      "date": "2026-05-18"
+      "date": "2026-05-18",
+      "volume": 12671555
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 23.74,
+      "asOf": "2026-06-25T06:58:38.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 6871.HK",
+        "url": "https://finance.yahoo.com/quote/6871.HK"
+      },
+      "dayHigh": 23.78,
+      "dayLow": 19,
+      "volume": 818240,
+      "fiftyTwoWeekHigh": 59.65,
+      "fiftyTwoWeekLow": 17
     }
   },
   "07666": {
@@ -189,7 +234,22 @@ window.MARKET_PERFORMANCE_2026 = {
       "source": {
         "title": "《新股》劑泰科技－Ｐ(07666.HK)全日收23.8元 高上市價126.7%",
         "url": "https://www.aastocks.com/tc/stocks/news/aafn-con/NOW.1524341/ipo-news/AAFN"
-      }
+      },
+      "volume": 84545162
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 14.04,
+      "asOf": "2026-06-25T06:58:26.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 7666.HK",
+        "url": "https://finance.yahoo.com/quote/7666.HK"
+      },
+      "dayHigh": 14.99,
+      "dayLow": 13.98,
+      "volume": 1253000,
+      "fiftyTwoWeekHigh": 29.98,
+      "fiftyTwoWeekLow": 11.53
     }
   },
   "01187": {
@@ -205,7 +265,8 @@ window.MARKET_PERFORMANCE_2026 = {
       "low": 35.5,
       "close": 38.9,
       "turnoverShares": 11185400,
-      "turnoverAmount": 428000000
+      "turnoverAmount": 428000000,
+      "volume": 11185498
     },
     "source": {
       "title": "《新股》可孚醫療暗盤收報40.2元 高上市價2.2%",
@@ -237,6 +298,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "turnoverAmount": 41800000,
         "lotGain": 69
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 27.62,
+      "asOf": "2026-06-25T06:59:58.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 1187.HK",
+        "url": "https://finance.yahoo.com/quote/1187.HK"
+      },
+      "dayHigh": 28.3,
+      "dayLow": 25.88,
+      "volume": 252900,
+      "fiftyTwoWeekHigh": 41,
+      "fiftyTwoWeekLow": 25.88
     }
   },
   "01609": {
@@ -253,7 +328,8 @@ window.MARKET_PERFORMANCE_2026 = {
       "close": 215,
       "turnoverShares": 3241700,
       "turnoverAmount": 917000000,
-      "lotGain": 5825
+      "lotGain": 5825,
+      "volume": 3241729
     },
     "source": {
       "title": "《新股》天星醫療暗盤收報309.2元 高上市價213.9%",
@@ -285,6 +361,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "turnoverAmount": 157000000,
         "lotGain": 9575
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 166,
+      "asOf": "2026-06-25T06:41:11.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 1609.HK",
+        "url": "https://finance.yahoo.com/quote/1609.HK"
+      },
+      "dayHigh": 170.1,
+      "dayLow": 163.9,
+      "volume": 9850,
+      "fiftyTwoWeekHigh": 299,
+      "fiftyTwoWeekLow": 160
     }
   },
   "06810": {
@@ -301,7 +391,8 @@ window.MARKET_PERFORMANCE_2026 = {
       "close": 84.8,
       "turnoverShares": 11753300,
       "turnoverAmount": 1092000000,
-      "lotGain": 5994
+      "lotGain": 5994,
+      "volume": 11753398
     },
     "source": {
       "title": "《新股》商米科技－Ｗ暗盤收報95元 高上市價282.1%",
@@ -333,6 +424,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "turnoverAmount": 183000000,
         "lotGain": 6879
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 70.8,
+      "asOf": "2026-06-25T06:58:45.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 6810.HK",
+        "url": "https://finance.yahoo.com/quote/6810.HK"
+      },
+      "dayHigh": 74.45,
+      "dayLow": 68.4,
+      "volume": 415800,
+      "fiftyTwoWeekHigh": 99.8,
+      "fiftyTwoWeekLow": 66.05
     }
   },
   "01879": {
@@ -349,7 +454,8 @@ window.MARKET_PERFORMANCE_2026 = {
       "close": 886,
       "turnoverShares": 9260300,
       "turnoverAmount": 7870999999.999999,
-      "lotGain": 10542
+      "lotGain": 10542,
+      "volume": 9260310
     },
     "source": {
       "title": "《新股》曦智科技－Ｐ暗盤收報826元 高上市價350.9%",
@@ -380,6 +486,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "turnoverShares": 1040000,
         "turnoverAmount": 798000000
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 404.8,
+      "asOf": "2026-06-25T07:00:35.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 1879.HK",
+        "url": "https://finance.yahoo.com/quote/1879.HK"
+      },
+      "dayHigh": 430.8,
+      "dayLow": 380.2,
+      "volume": 335581,
+      "fiftyTwoWeekHigh": 1050,
+      "fiftyTwoWeekLow": 380.2
     }
   },
   "02493": {
@@ -444,7 +564,8 @@ window.MARKET_PERFORMANCE_2026 = {
       "close": 88,
       "turnoverShares": 24599300,
       "turnoverAmount": 2148000000,
-      "lotGain": 1030
+      "lotGain": 1030,
+      "volume": 34439157
     },
     "source": {
       "title": "《新股》華勤技術暗盤收報91.15元 高上市價17.3%",
@@ -476,6 +597,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "turnoverAmount": 276000000,
         "lotGain": 1630
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 70.35,
+      "asOf": "2026-06-25T07:00:08.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 3296.HK",
+        "url": "https://finance.yahoo.com/quote/3296.HK"
+      },
+      "dayHigh": 71.8,
+      "dayLow": 67.25,
+      "volume": 2069670,
+      "fiftyTwoWeekHigh": 101,
+      "fiftyTwoWeekLow": 59.714
     }
   },
   "02476": {
@@ -493,7 +628,8 @@ window.MARKET_PERFORMANCE_2026 = {
       "changePct": 50.1,
       "turnoverShares": 33822300,
       "turnoverAmount": 10784000000,
-      "lotGain": 10512
+      "lotGain": 10512,
+      "volume": 33822392
     },
     "source": {
       "title": "《新股》勝宏科技暗盤收報333元 高上市價58.7%",
@@ -526,6 +662,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "lotGain": 12312,
         "last": 334.2
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 371.2,
+      "asOf": "2026-06-25T07:00:43.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 2476.HK",
+        "url": "https://finance.yahoo.com/quote/2476.HK"
+      },
+      "dayHigh": 387,
+      "dayLow": 367.8,
+      "volume": 4332112,
+      "fiftyTwoWeekHigh": 475,
+      "fiftyTwoWeekLow": 290
     }
   },
   "00068": {
@@ -538,7 +688,10 @@ window.MARKET_PERFORMANCE_2026 = {
       },
       "close": 18.6,
       "open": 20.7,
-      "turnoverShares": 42250000
+      "turnoverShares": 42250000,
+      "high": 21.860000610351562,
+      "low": 16.5,
+      "volume": 134488211
     },
     "source": {
       "title": "《新股》Manycore Tech暗盤收報20.52元 高上市價169.3%",
@@ -571,6 +724,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "lotGain": 5990,
         "last": 19.14
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 11.84,
+      "asOf": "2026-06-25T06:59:49.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 0068.HK",
+        "url": "https://finance.yahoo.com/quote/0068.HK"
+      },
+      "dayHigh": 12.25,
+      "dayLow": 11.58,
+      "volume": 2133878,
+      "fiftyTwoWeekHigh": 48.5,
+      "fiftyTwoWeekLow": 11.58
     }
   },
   "03277": {
@@ -581,7 +748,11 @@ window.MARKET_PERFORMANCE_2026 = {
         "title": "《新股》長光辰芯全日收70元 高上市價75.5%",
         "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/03277/AAFN/NOW.1518467/hk-stock-news"
       },
-      "close": 70
+      "close": 70,
+      "open": 72,
+      "high": 85,
+      "low": 66.6500015258789,
+      "volume": 28022939
     },
     "source": {
       "title": "《新股》長光辰芯暗盤收報68.3元 高上市價71.3%",
@@ -613,6 +784,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "turnoverAmount": 314000000,
         "lotGain": 2842
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 94,
+      "asOf": "2026-06-25T06:59:05.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 3277.HK",
+        "url": "https://finance.yahoo.com/quote/3277.HK"
+      },
+      "dayHigh": 98.1,
+      "dayLow": 92.5,
+      "volume": 253600,
+      "fiftyTwoWeekHigh": 117,
+      "fiftyTwoWeekLow": 66.65
     }
   },
   "06656": {
@@ -629,7 +814,8 @@ window.MARKET_PERFORMANCE_2026 = {
       "close": 659.5,
       "turnoverShares": 7713800,
       "turnoverAmount": 4596000000,
-      "lotGain": 33530
+      "lotGain": 33530,
+      "volume": 7713823
     },
     "source": {
       "title": "《新股》思格新能暗盤收報578元 高上市價78.3%",
@@ -661,6 +847,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "turnoverAmount": 701000000,
         "lotGain": 25380
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 351,
+      "asOf": "2026-06-25T07:00:28.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 6656.HK",
+        "url": "https://finance.yahoo.com/quote/6656.HK"
+      },
+      "dayHigh": 357.6,
+      "dayLow": 339.2,
+      "volume": 177020,
+      "fiftyTwoWeekHigh": 669,
+      "fiftyTwoWeekLow": 339
     }
   },
   "00664": {
@@ -676,7 +876,8 @@ window.MARKET_PERFORMANCE_2026 = {
       "low": 30.26,
       "close": 30.5,
       "turnoverShares": 2897000,
-      "turnoverAmount": 111000000.00000001
+      "turnoverAmount": 111000000.00000001,
+      "volume": 2897000
     },
     "source": {
       "title": "《新股》銅師傅暗盤收報41.96元 低上市價30.1%",
@@ -703,6 +904,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "turnoverShares": 329000,
         "turnoverAmount": 15000000
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 17.04,
+      "asOf": "2026-06-25T06:16:19.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 0664.HK",
+        "url": "https://finance.yahoo.com/quote/0664.HK"
+      },
+      "dayHigh": 17.69,
+      "dayLow": 17,
+      "volume": 45700,
+      "fiftyTwoWeekHigh": 42,
+      "fiftyTwoWeekLow": 17
     }
   },
   "03625": {
@@ -719,7 +934,8 @@ window.MARKET_PERFORMANCE_2026 = {
       "close": 80,
       "turnoverShares": 4894400,
       "turnoverAmount": 400000000,
-      "lotGain": 4000
+      "lotGain": 4000,
+      "volume": 4894400
     },
     "source": {
       "title": "《新股》傅里葉暗盤收報83.5元 高上市價108.8%",
@@ -749,6 +965,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "turnoverAmount": 69300000,
         "lotGain": 4460
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 97.8,
+      "asOf": "2026-06-25T07:00:26.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 3625.HK",
+        "url": "https://finance.yahoo.com/quote/3625.HK"
+      },
+      "dayHigh": 103.8,
+      "dayLow": 97.3,
+      "volume": 105700,
+      "fiftyTwoWeekHigh": 153,
+      "fiftyTwoWeekLow": 74
     }
   },
   "01021": {
@@ -765,7 +995,8 @@ window.MARKET_PERFORMANCE_2026 = {
       "close": 18.4,
       "turnoverShares": 44789300,
       "turnoverAmount": 842000000,
-      "lotGain": 280
+      "lotGain": 280,
+      "volume": 44789300
     },
     "source": {
       "title": "《新股》華沿機器人暗盤收報18.77元 高上市價10.4%",
@@ -797,6 +1028,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "turnoverAmount": 109000000.00000001,
         "lotGain": 182
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 18.68,
+      "asOf": "2026-06-25T07:00:23.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 1021.HK",
+        "url": "https://finance.yahoo.com/quote/1021.HK"
+      },
+      "dayHigh": 20.28,
+      "dayLow": 18.64,
+      "volume": 1828800,
+      "fiftyTwoWeekHigh": 25.12,
+      "fiftyTwoWeekLow": 16.2
     }
   },
   "02526": {
@@ -813,7 +1058,8 @@ window.MARKET_PERFORMANCE_2026 = {
       "close": 209.6,
       "turnoverShares": 2240300,
       "turnoverAmount": 446000000,
-      "lotGain": 5530
+      "lotGain": 5530,
+      "volume": 2240320
     },
     "source": {
       "title": "《新股》德適－Ｂ暗盤收報199.5元 高上市價101.5%",
@@ -845,6 +1091,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "turnoverAmount": 76200000,
         "lotGain": 4730
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 306.4,
+      "asOf": "2026-06-25T06:59:48.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 2526.HK",
+        "url": "https://finance.yahoo.com/quote/2526.HK"
+      },
+      "dayHigh": 309.4,
+      "dayLow": 299.2,
+      "volume": 65650,
+      "fiftyTwoWeekHigh": 428,
+      "fiftyTwoWeekLow": 178
     }
   },
   "02726": {
@@ -861,7 +1121,8 @@ window.MARKET_PERFORMANCE_2026 = {
       "close": 103,
       "turnoverShares": 2471700,
       "turnoverAmount": 258000000,
-      "lotGain": 1337
+      "lotGain": 1337,
+      "volume": 2471710
     },
     "source": {
       "title": "《新股》瀚天天成暗盤收報105元 高上市價37.7%",
@@ -893,6 +1154,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "lotGain": 1422,
         "open": 68
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 113.1,
+      "asOf": "2026-06-25T06:59:47.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 2726.HK",
+        "url": "https://finance.yahoo.com/quote/2726.HK"
+      },
+      "dayHigh": 118,
+      "dayLow": 112,
+      "volume": 177100,
+      "fiftyTwoWeekHigh": 141,
+      "fiftyTwoWeekLow": 92.3
     }
   },
   "06636": {
@@ -909,7 +1184,8 @@ window.MARKET_PERFORMANCE_2026 = {
       "close": 100,
       "turnoverShares": 8025900,
       "turnoverAmount": 579000000,
-      "lotGain": 3000
+      "lotGain": 3000,
+      "volume": 8025925
     },
     "source": {
       "title": "《新股》極視角暗盤收報61.8元 高上市價54.5%",
@@ -941,6 +1217,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "turnoverAmount": 68400000,
         "lotGain": 1110
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 86.35,
+      "asOf": "2026-06-25T06:58:48.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 6636.HK",
+        "url": "https://finance.yahoo.com/quote/6636.HK"
+      },
+      "dayHigh": 87,
+      "dayLow": 82,
+      "volume": 100850,
+      "fiftyTwoWeekHigh": 131.1,
+      "fiftyTwoWeekLow": 56
     }
   },
   "02632": {
@@ -956,7 +1246,8 @@ window.MARKET_PERFORMANCE_2026 = {
       "low": 27.7,
       "close": 27.88,
       "turnoverShares": 5219299.999999999,
-      "turnoverAmount": 229999999.99999997
+      "turnoverAmount": 229999999.99999997,
+      "volume": 5219350
     },
     "source": {
       "title": "《新股》澤景股份暗盤收報44.66元 高上市價1%",
@@ -984,6 +1275,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "turnoverAmount": 95200000,
         "lotGain": 23
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 122.8,
+      "asOf": "2026-06-25T06:58:41.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 2632.HK",
+        "url": "https://finance.yahoo.com/quote/2632.HK"
+      },
+      "dayHigh": 127.9,
+      "dayLow": 121,
+      "volume": 44200,
+      "fiftyTwoWeekHigh": 137.5,
+      "fiftyTwoWeekLow": 27.7
     }
   },
   "02729": {
@@ -1000,7 +1305,8 @@ window.MARKET_PERFORMANCE_2026 = {
       "close": 30.7,
       "turnoverShares": 11298599.999999998,
       "turnoverAmount": 334000000,
-      "lotGain": 2808
+      "lotGain": 2808,
+      "volume": 11298600
     },
     "source": {
       "title": "《新股》凱樂士科技暗盤收報30.52元 高上市價83.2%",
@@ -1032,6 +1338,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "turnoverAmount": 54800000,
         "lotGain": 2752
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 31.1,
+      "asOf": "2026-06-25T07:01:01.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 2729.HK",
+        "url": "https://finance.yahoo.com/quote/2729.HK"
+      },
+      "dayHigh": 34,
+      "dayLow": 30.56,
+      "volume": 451800,
+      "fiftyTwoWeekHigh": 43,
+      "fiftyTwoWeekLow": 25.9
     }
   },
   "02701": {
@@ -1042,7 +1362,11 @@ window.MARKET_PERFORMANCE_2026 = {
         "title": "《新股》國民技術全日收11.25元 高上市價4.2%",
         "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/02701/AAFN/NOW.1511476/hk-stock-news"
       },
-      "close": 11.25
+      "close": 11.25,
+      "open": 14.300000190734863,
+      "high": 16.5,
+      "low": 10.899999618530273,
+      "volume": 58692800
     },
     "source": {
       "title": "《新股》國民技術暗盤收報11.7元 高上市價8.3%",
@@ -1074,6 +1398,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "turnoverAmount": 31200000,
         "lotGain": 198
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 12.89,
+      "asOf": "2026-06-25T07:01:07.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 2701.HK",
+        "url": "https://finance.yahoo.com/quote/2701.HK"
+      },
+      "dayHigh": 13.49,
+      "dayLow": 11.59,
+      "volume": 37552000,
+      "fiftyTwoWeekHigh": 17.14,
+      "fiftyTwoWeekLow": 10.48
     }
   },
   "03355": {
@@ -1084,7 +1422,11 @@ window.MARKET_PERFORMANCE_2026 = {
         "title": "《新股》飛速創新全日收47.2元 高上市價13.5%",
         "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/03355/AAFN/NOW.1511478/hk-stock-news"
       },
-      "close": 47.2
+      "close": 47.2,
+      "open": 56,
+      "high": 57,
+      "low": 43.29999923706055,
+      "volume": 13032960
     },
     "source": {
       "title": "《新股》飛速創新暗盤收報60.9元 高上市價46.4%",
@@ -1116,6 +1458,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "turnoverAmount": 118000000,
         "lotGain": 1850
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 36.76,
+      "asOf": "2026-06-25T07:00:12.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 3355.HK",
+        "url": "https://finance.yahoo.com/quote/3355.HK"
+      },
+      "dayHigh": 37.36,
+      "dayLow": 33.28,
+      "volume": 285300,
+      "fiftyTwoWeekHigh": 57,
+      "fiftyTwoWeekLow": 27.96
     }
   },
   "01989": {
@@ -1126,7 +1482,11 @@ window.MARKET_PERFORMANCE_2026 = {
         "title": "《新股》廣合科技全日收96元 高上市價33.6%",
         "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/01989/AAFN/NOW.1510949/hk-stock-news"
       },
-      "close": 96
+      "close": 96,
+      "open": 95.05000305175781,
+      "high": 147.89999389648438,
+      "low": 95,
+      "volume": 26811648
     },
     "source": {
       "title": "《新股》廣合科技暗盤收報95元 高上市價32.2%",
@@ -1158,6 +1518,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "turnoverAmount": 243000000.00000003,
         "lotGain": 2522
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 187.2,
+      "asOf": "2026-06-25T07:01:09.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 1989.HK",
+        "url": "https://finance.yahoo.com/quote/1989.HK"
+      },
+      "dayHigh": 191,
+      "dayLow": 171.9,
+      "volume": 1730952,
+      "fiftyTwoWeekHigh": 222,
+      "fiftyTwoWeekLow": 79.95
     }
   },
   "03268": {
@@ -1168,7 +1542,11 @@ window.MARKET_PERFORMANCE_2026 = {
         "title": "《新股》美格智能全日收29.3元 高上市價1.5%",
         "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/03268/AAFN/NOW.1507985/hk-stock-news"
       },
-      "close": 29.3
+      "close": 29.3,
+      "open": 29.040000915527344,
+      "high": 30.65999984741211,
+      "low": 28.420000076293945,
+      "volume": 9834700
     },
     "source": {
       "title": "《新股》美格智能暗盤收報29.4元 高上市價1.9%",
@@ -1200,6 +1578,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "turnoverAmount": 25600000,
         "lotGain": 4
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 17.93,
+      "asOf": "2026-06-25T06:58:49.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 3268.HK",
+        "url": "https://finance.yahoo.com/quote/3268.HK"
+      },
+      "dayHigh": 18.9,
+      "dayLow": 17.68,
+      "volume": 608900,
+      "fiftyTwoWeekHigh": 34.3,
+      "fiftyTwoWeekLow": 17.68
     }
   },
   "02649": {
@@ -1210,7 +1602,11 @@ window.MARKET_PERFORMANCE_2026 = {
         "title": "《新股》優樂賽共享全日收6.2元 低上市價43.6%",
         "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/02649/AAFN/NOW.1507639/hk-stock-news"
       },
-      "close": 6.2
+      "close": 6.2,
+      "open": 7.5,
+      "high": 7.900000095367432,
+      "low": 6,
+      "volume": 18761400
     },
     "source": {
       "title": "《新股》優樂賽共享暗盤收報10.9元 低上市價0.9%",
@@ -1241,6 +1637,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "turnoverShares": 6770000,
         "turnoverAmount": 78500000
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 3.9,
+      "asOf": "2026-03-30T03:59:35.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 2649.HK",
+        "url": "https://finance.yahoo.com/quote/2649.HK"
+      },
+      "dayHigh": 3.94,
+      "dayLow": 3.5,
+      "volume": 238500,
+      "fiftyTwoWeekHigh": 7.9,
+      "fiftyTwoWeekLow": 3.5
     }
   },
   "02692": {
@@ -1251,7 +1661,11 @@ window.MARKET_PERFORMANCE_2026 = {
         "title": "《新股》兆威機電全日收73元 高上市價2.4%",
         "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/02692/AAFN/NOW.1507640/hk-stock-news"
       },
-      "close": 73
+      "close": 73,
+      "open": 78,
+      "high": 79.80000305175781,
+      "low": 71.5999984741211,
+      "volume": 5117000
     },
     "source": {
       "title": "《新股》兆威機電暗盤收報82.8元 高上市價16.2%",
@@ -1283,6 +1697,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "turnoverAmount": 78700000,
         "lotGain": 1152
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 51.8,
+      "asOf": "2026-06-25T07:01:13.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 2692.HK",
+        "url": "https://finance.yahoo.com/quote/2692.HK"
+      },
+      "dayHigh": 57.7,
+      "dayLow": 51.55,
+      "volume": 930900,
+      "fiftyTwoWeekHigh": 94.8,
+      "fiftyTwoWeekLow": 51.55
     }
   },
   "02715": {
@@ -1293,7 +1721,11 @@ window.MARKET_PERFORMANCE_2026 = {
         "title": "《新股》埃斯頓全日收12.9元 低上市價16%",
         "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/02715/AAFN/NOW.1507641/hk-stock-news"
       },
-      "close": 12.9
+      "close": 12.9,
+      "open": 15.359999656677246,
+      "high": 15.359999656677246,
+      "low": 12.5,
+      "volume": 20582460
     },
     "source": {
       "title": "《新股》埃斯頓暗盤收報14.1元 低上市價8.2%",
@@ -1323,6 +1755,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "turnoverShares": 974000,
         "turnoverAmount": 13700000
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 18.35,
+      "asOf": "2026-06-25T07:01:01.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 2715.HK",
+        "url": "https://finance.yahoo.com/quote/2715.HK"
+      },
+      "dayHigh": 20.46,
+      "dayLow": 18.17,
+      "volume": 15063775,
+      "fiftyTwoWeekHigh": 22.54,
+      "fiftyTwoWeekLow": 11.22
     }
   },
   "02706": {
@@ -1333,7 +1779,11 @@ window.MARKET_PERFORMANCE_2026 = {
         "title": "《新股》海致科技集團全日收92.6元 高上市價242.2%",
         "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/02706/AAFN/NOW.1503315/hk-stock-news"
       },
-      "close": 92.6
+      "close": 92.6,
+      "open": 82.30000305175781,
+      "high": 99.5999984741211,
+      "low": 82.30000305175781,
+      "volume": 9807072
     },
     "source": {
       "title": "《新股》海致科技集團暗盤收報84元 高上市價210.4%",
@@ -1365,6 +1815,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "turnoverAmount": 110000000.00000001,
         "lotGain": 11388
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 58.8,
+      "asOf": "2026-06-25T07:01:12.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 2706.HK",
+        "url": "https://finance.yahoo.com/quote/2706.HK"
+      },
+      "dayHigh": 62.6,
+      "dayLow": 58,
+      "volume": 897720,
+      "fiftyTwoWeekHigh": 161.6,
+      "fiftyTwoWeekLow": 43
     }
   },
   "09981": {
@@ -1375,7 +1839,11 @@ window.MARKET_PERFORMANCE_2026 = {
         "title": "《新股》沃爾核材全日收20.68元 高上市價2.9%",
         "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/09981/AAFN/NOW.1503316/hk-stock-news"
       },
-      "close": 20.68
+      "close": 20.68,
+      "open": 20.100000381469727,
+      "high": 21.799999237060547,
+      "low": 20.100000381469727,
+      "volume": 31940320
     },
     "source": {
       "title": "《新股》沃爾核材暗盤收報21.08元 高上市價4.9%",
@@ -1408,6 +1876,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "lotGain": 182,
         "last": 21.24
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 11.24,
+      "asOf": "2026-06-25T07:01:07.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 9981.HK",
+        "url": "https://finance.yahoo.com/quote/9981.HK"
+      },
+      "dayHigh": 11.74,
+      "dayLow": 11.04,
+      "volume": 2837400,
+      "fiftyTwoWeekHigh": 23.48,
+      "fiftyTwoWeekLow": 11.04
     }
   },
   "00470": {
@@ -1418,7 +1900,11 @@ window.MARKET_PERFORMANCE_2026 = {
         "title": "《新股》先導智能全日收45.8元",
         "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/00470/AAFN/NOW.1502690/hk-stock-news"
       },
-      "close": 45.8
+      "close": 45.8,
+      "open": 46.2599983215332,
+      "high": 46.540000915527344,
+      "low": 45.040000915527344,
+      "volume": 26371151
     },
     "source": {
       "title": "《新股》先導智能暗盤收報46.66元 高上市價1.9%",
@@ -1451,6 +1937,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "lotGain": 86,
         "last": 46.72
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 33.78,
+      "asOf": "2026-06-25T07:01:16.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 0470.HK",
+        "url": "https://finance.yahoo.com/quote/0470.HK"
+      },
+      "dayHigh": 35.54,
+      "dayLow": 33.36,
+      "volume": 1652600,
+      "fiftyTwoWeekHigh": 61.85,
+      "fiftyTwoWeekLow": 33.36
     }
   },
   "00600": {
@@ -1461,7 +1961,11 @@ window.MARKET_PERFORMANCE_2026 = {
         "title": "《新股》愛芯元智全日收28.2元",
         "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/00600/AAFN/NOW.1502361/hk-stock-news"
       },
-      "close": 28.2
+      "close": 28.2,
+      "open": 28.200000762939453,
+      "high": 29.18000030517578,
+      "low": 28.200000762939453,
+      "volume": 22587400
     },
     "source": {
       "title": "《新股》愛芯元智暗盤收報27元 低上市價4.3%",
@@ -1484,6 +1988,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "turnoverShares": 2610000,
         "turnoverAmount": 71200000
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 14.26,
+      "asOf": "2026-06-25T07:01:12.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 0600.HK",
+        "url": "https://finance.yahoo.com/quote/0600.HK"
+      },
+      "dayHigh": 14.81,
+      "dayLow": 13.75,
+      "volume": 648800,
+      "fiftyTwoWeekHigh": 36.9,
+      "fiftyTwoWeekLow": 13.75
     }
   },
   "02720": {
@@ -1500,7 +2018,8 @@ window.MARKET_PERFORMANCE_2026 = {
       "close": 24.78,
       "turnoverShares": 6228000,
       "turnoverAmount": 147000000,
-      "lotGain": 6265
+      "lotGain": 6265,
+      "volume": 6228020
     },
     "source": {
       "title": "《新股》樂欣戶外暗盤收報24.48元 高上市價99.8%",
@@ -1532,6 +2051,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "turnoverAmount": 25900000,
         "lotGain": 6175
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 20,
+      "asOf": "2026-06-25T06:56:05.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 2720.HK",
+        "url": "https://finance.yahoo.com/quote/2720.HK"
+      },
+      "dayHigh": 20.82,
+      "dayLow": 19.91,
+      "volume": 9000,
+      "fiftyTwoWeekHigh": 39.5,
+      "fiftyTwoWeekLow": 19
     }
   },
   "02677": {
@@ -1542,7 +2075,11 @@ window.MARKET_PERFORMANCE_2026 = {
         "title": "《新股》卓正醫療全日收67.9元 高上市價13.4%",
         "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/02677/AAFN/NOW.1501699/hk-stock-news"
       },
-      "close": 67.9
+      "close": 67.9,
+      "open": 81,
+      "high": 90.8499984741211,
+      "low": 65.1500015258789,
+      "volume": 2417400
     },
     "source": {
       "title": "《新股》卓正醫療暗盤收報88.8元 高上市價48.2%",
@@ -1573,6 +2110,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "turnoverAmount": 32900000,
         "lotGain": 1445
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 29.28,
+      "asOf": "2026-06-25T06:33:17.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 2677.HK",
+        "url": "https://finance.yahoo.com/quote/2677.HK"
+      },
+      "dayHigh": 29.5,
+      "dayLow": 28.52,
+      "volume": 6250,
+      "fiftyTwoWeekHigh": 90.85,
+      "fiftyTwoWeekLow": 20
     }
   },
   "03200": {
@@ -1583,7 +2134,11 @@ window.MARKET_PERFORMANCE_2026 = {
         "title": "《新股》大族數控全日收110元 高上市價14.8%",
         "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/03200/AAFN/NOW.1501701/hk-stock-news"
       },
-      "close": 110
+      "close": 110,
+      "open": 106,
+      "high": 116,
+      "low": 105.0999984741211,
+      "volume": 13100659
     },
     "source": {
       "title": "《新股》大族數控暗盤收報118.2元 高上市價23.4%",
@@ -1615,6 +2170,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "turnoverAmount": 264000000,
         "lotGain": 2240
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 196.1,
+      "asOf": "2026-06-25T07:01:31.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 3200.HK",
+        "url": "https://finance.yahoo.com/quote/3200.HK"
+      },
+      "dayHigh": 203.8,
+      "dayLow": 179.9,
+      "volume": 3441950,
+      "fiftyTwoWeekHigh": 205.8,
+      "fiftyTwoWeekLow": 93.25
     }
   },
   "02768": {
@@ -1625,7 +2194,11 @@ window.MARKET_PERFORMANCE_2026 = {
         "title": "《新股》國恩科技全日收40.16元 高上市價11.6%",
         "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/02768/AAFN/NOW.1501070/hk-stock-news"
       },
-      "close": 40.16
+      "close": 40.16,
+      "open": 30.405405044555664,
+      "high": 34.32432556152344,
+      "low": 26.891891479492188,
+      "volume": 37617752
     },
     "source": {
       "title": "《新股》國恩科技暗盤收報47.2元 高上市價31.1%",
@@ -1658,6 +2231,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "lotGain": 2240,
         "last": 45.78
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 47.58,
+      "asOf": "2026-06-25T06:57:22.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 2768.HK",
+        "url": "https://finance.yahoo.com/quote/2768.HK"
+      },
+      "dayHigh": 50.25,
+      "dayLow": 45.8,
+      "volume": 487000,
+      "fiftyTwoWeekHigh": 58.7,
+      "fiftyTwoWeekLow": 25.081
     }
   },
   "01768": {
@@ -1668,7 +2255,11 @@ window.MARKET_PERFORMANCE_2026 = {
         "title": "《新股》鳴鳴很忙全日收400元 高上市價69.1%",
         "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/01768/AAFN/NOW.1499377/hk-stock-news"
       },
-      "close": 400
+      "close": 400,
+      "open": 445,
+      "high": 445,
+      "low": 399.20001220703125,
+      "volume": 7881401
     },
     "source": {
       "title": "《新股》鳴鳴很忙暗盤收報408元 高上市價72.4%",
@@ -1701,6 +2292,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "lotGain": 17140,
         "last": 437.6
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 305.2,
+      "asOf": "2026-06-25T07:01:20.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 1768.HK",
+        "url": "https://finance.yahoo.com/quote/1768.HK"
+      },
+      "dayHigh": 318.2,
+      "dayLow": 301.4,
+      "volume": 145906,
+      "fiftyTwoWeekHigh": 465.6,
+      "fiftyTwoWeekLow": 301
     }
   },
   "09611": {
@@ -1711,7 +2316,11 @@ window.MARKET_PERFORMANCE_2026 = {
         "title": "《新股》龍旗科技全日收32.1元 高上市價3.5%",
         "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/09611/AAFN/NOW.1498019/hk-stock-news"
       },
-      "close": 32.1
+      "close": 32.1,
+      "open": 35,
+      "high": 36.86000061035156,
+      "low": 31.219999313354492,
+      "volume": 24635488
     },
     "source": {
       "title": "《新股》龍旗科技暗盤收報36.22元 高上市價16.8%",
@@ -1743,6 +2352,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "turnoverAmount": 102000000,
         "lotGain": 522
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 25.2,
+      "asOf": "2026-06-25T07:01:36.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 9611.HK",
+        "url": "https://finance.yahoo.com/quote/9611.HK"
+      },
+      "dayHigh": 25.8,
+      "dayLow": 24.26,
+      "volume": 1122000,
+      "fiftyTwoWeekHigh": 36.86,
+      "fiftyTwoWeekLow": 20.7
     }
   },
   "01641": {
@@ -1759,7 +2382,8 @@ window.MARKET_PERFORMANCE_2026 = {
       "close": 12.3,
       "turnoverShares": 13868000,
       "turnoverAmount": 212000000,
-      "lotGain": 20
+      "lotGain": 20,
+      "volume": 13868000
     },
     "source": {
       "title": "《新股》紅星冷鏈暗盤收報18.07元 高上市價47.4%",
@@ -1791,6 +2415,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "turnoverAmount": 25200000,
         "lotGain": 2210
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 4.99,
+      "asOf": "2026-06-25T02:48:57.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 1641.HK",
+        "url": "https://finance.yahoo.com/quote/1641.HK"
+      },
+      "dayHigh": 5,
+      "dayLow": 5,
+      "volume": 12500,
+      "fiftyTwoWeekHigh": 19.7,
+      "fiftyTwoWeekLow": 4.92
     }
   },
   "00501": {
@@ -1831,6 +2469,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "turnoverAmount": 36500000,
         "lotGain": 330
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 72.85,
+      "asOf": "2026-06-25T07:01:36.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 0501.HK",
+        "url": "https://finance.yahoo.com/quote/0501.HK"
+      },
+      "dayHigh": 76.4,
+      "dayLow": 72.25,
+      "volume": 892100,
+      "fiftyTwoWeekHigh": 76.4,
+      "fiftyTwoWeekLow": 72.25
     }
   },
   "03636": {
@@ -1848,7 +2500,8 @@ window.MARKET_PERFORMANCE_2026 = {
       "changePct": 26,
       "turnoverShares": 12900800,
       "turnoverAmount": 483000000,
-      "lotGain": 1560
+      "lotGain": 1560,
+      "volume": 12900893
     },
     "source": {
       "title": "《新股》金潯資源暗盤收報38.7元 高上市價29%",
@@ -1880,6 +2533,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "turnoverAmount": 67300000,
         "lotGain": 2124
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 14.29,
+      "asOf": "2026-06-25T06:51:09.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 3636.HK",
+        "url": "https://finance.yahoo.com/quote/3636.HK"
+      },
+      "dayHigh": 14.87,
+      "dayLow": 13.8,
+      "volume": 395200,
+      "fiftyTwoWeekHigh": 51.8,
+      "fiftyTwoWeekLow": 13.8
     }
   },
   "02675": {
@@ -1890,7 +2557,11 @@ window.MARKET_PERFORMANCE_2026 = {
         "title": "《新股》精鋒醫療－Ｂ全日收56.6元 高上市價30.9%",
         "url": "https://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/02675/AAFN/NOW.1494752/hk-stock-news"
       },
-      "close": 56.6
+      "close": 56.6,
+      "open": 59,
+      "high": 60,
+      "low": 48,
+      "volume": 12673990
     },
     "source": {
       "title": "《新股》精鋒醫療－Ｂ暗盤收報60.15元 高上市價39.1%",
@@ -1922,6 +2593,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "turnoverAmount": 61300000,
         "lotGain": 1636
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 35.04,
+      "asOf": "2026-06-25T06:59:35.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 2675.HK",
+        "url": "https://finance.yahoo.com/quote/2675.HK"
+      },
+      "dayHigh": 40.46,
+      "dayLow": 34.88,
+      "volume": 585000,
+      "fiftyTwoWeekHigh": 73.7,
+      "fiftyTwoWeekLow": 33.62
     }
   },
   "01236": {
@@ -1938,7 +2623,8 @@ window.MARKET_PERFORMANCE_2026 = {
       "close": 60,
       "turnoverShares": 14659200,
       "turnoverAmount": 891000000,
-      "lotGain": 6728
+      "lotGain": 6728,
+      "volume": 14659225
     },
     "source": {
       "title": "《新股》樂動機器人暗盤收報49.8元 高上市價88.9%",
@@ -1970,6 +2656,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "turnoverAmount": 162000000,
         "lotGain": 4688
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 34.8,
+      "asOf": "2026-06-25T06:56:41.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 1236.HK",
+        "url": "https://finance.yahoo.com/quote/1236.HK"
+      },
+      "dayHigh": 35.64,
+      "dayLow": 34.04,
+      "volume": 62200,
+      "fiftyTwoWeekHigh": 66,
+      "fiftyTwoWeekLow": 33
     }
   },
   "07630": {
@@ -1986,7 +2686,8 @@ window.MARKET_PERFORMANCE_2026 = {
       "close": 41.86,
       "turnoverShares": 15134900,
       "turnoverAmount": 544000000,
-      "lotGain": 4352
+      "lotGain": 4352,
+      "volume": 15134972
     },
     "source": {
       "title": "《新股》英派藥業－Ｂ暗盤收報32.16元 高上市價60%",
@@ -2018,6 +2719,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "turnoverAmount": 79800000,
         "lotGain": 2440
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 34.56,
+      "asOf": "2026-06-25T06:59:21.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 7630.HK",
+        "url": "https://finance.yahoo.com/quote/7630.HK"
+      },
+      "dayHigh": 35.8,
+      "dayLow": 34.54,
+      "volume": 277200,
+      "fiftyTwoWeekHigh": 47.98,
+      "fiftyTwoWeekLow": 28.2
     }
   },
   "02714": {
@@ -2033,7 +2748,9 @@ window.MARKET_PERFORMANCE_2026 = {
       "close": 40.52,
       "turnoverShares": 15691600,
       "turnoverAmount": 1630000000,
-      "lotGain": 152
+      "lotGain": 152,
+      "date": "2026-02-06",
+      "volume": 40589241
     },
     "source": {
       "title": "《新股》牧原股份暗盤收報41元 高上市價5.1%",
@@ -2066,6 +2783,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "lotGain": 200,
         "last": 40.82
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 27.78,
+      "asOf": "2026-06-25T07:01:32.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 2714.HK",
+        "url": "https://finance.yahoo.com/quote/2714.HK"
+      },
+      "dayHigh": 28.42,
+      "dayLow": 27.02,
+      "volume": 3971702,
+      "fiftyTwoWeekHigh": 50.7,
+      "fiftyTwoWeekLow": 27.02
     }
   },
   "09980": {
@@ -2081,7 +2812,9 @@ window.MARKET_PERFORMANCE_2026 = {
       "close": 251.8,
       "turnoverShares": 2031399.9999999998,
       "turnoverAmount": 1377000000,
-      "lotGain": 380
+      "lotGain": 380,
+      "date": "2026-02-03",
+      "volume": 7197893
     },
     "source": {
       "title": "《新股》東鵬飲料暗盤收報250元 高上市價0.8%",
@@ -2113,6 +2846,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "lotGain": 200,
         "last": 245.4
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 105.5,
+      "asOf": "2026-06-25T07:01:36.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 9980.HK",
+        "url": "https://finance.yahoo.com/quote/9980.HK"
+      },
+      "dayHigh": 107.8,
+      "dayLow": 104.8,
+      "volume": 335000,
+      "fiftyTwoWeekHigh": 227.692,
+      "fiftyTwoWeekLow": 104.8
     }
   },
   "03986": {
@@ -2128,7 +2875,9 @@ window.MARKET_PERFORMANCE_2026 = {
       "close": 222.8,
       "turnoverShares": 4258600,
       "turnoverAmount": 2393000000,
-      "lotGain": 6080
+      "lotGain": 6080,
+      "date": "2026-01-13",
+      "volume": 10433965
     },
     "source": {
       "title": "《新股》兆易創新暗盤收報226.8元 高上市價40%",
@@ -2161,6 +2910,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "lotGain": 6480,
         "last": 222
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 1092,
+      "asOf": "2026-06-25T07:01:46.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 3986.HK",
+        "url": "https://finance.yahoo.com/quote/3986.HK"
+      },
+      "dayHigh": 1119,
+      "dayLow": 1034,
+      "volume": 2501477,
+      "fiftyTwoWeekHigh": 1119,
+      "fiftyTwoWeekLow": 220
     }
   },
   "06938": {
@@ -2209,7 +2972,22 @@ window.MARKET_PERFORMANCE_2026 = {
       "source": {
         "title": "瑞博生物-B(06938)1月9日首日收报82.1元",
         "url": "https://4g.stockstar.com/detail/RB2026010900028863"
-      }
+      },
+      "volume": 14151773
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 47.88,
+      "asOf": "2026-06-25T07:00:56.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 6938.HK",
+        "url": "https://finance.yahoo.com/quote/6938.HK"
+      },
+      "dayHigh": 49.8,
+      "dayLow": 47.88,
+      "volume": 116200,
+      "fiftyTwoWeekHigh": 95.8,
+      "fiftyTwoWeekLow": 46.54
     }
   },
   "06809": {
@@ -2225,7 +3003,9 @@ window.MARKET_PERFORMANCE_2026 = {
       "close": 175,
       "turnoverShares": 8169200,
       "turnoverAmount": 3396000000,
-      "lotGain": 6811
+      "lotGain": 6811,
+      "date": "2026-02-09",
+      "volume": 21167253
     },
     "source": {
       "title": "《新股》瀾起科技暗盤收報149.4元 高上市價39.8%",
@@ -2258,6 +3038,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "lotGain": 4471,
         "last": 152.5
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 459.8,
+      "asOf": "2026-06-25T07:01:26.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 6809.HK",
+        "url": "https://finance.yahoo.com/quote/6809.HK"
+      },
+      "dayHigh": 465,
+      "dayLow": 434.6,
+      "volume": 3498091,
+      "fiftyTwoWeekHigh": 543,
+      "fiftyTwoWeekLow": 152.7
     }
   },
   "09903": {
@@ -2273,7 +3067,9 @@ window.MARKET_PERFORMANCE_2026 = {
       "close": 156.8,
       "turnoverShares": 2497200,
       "turnoverAmount": 1404000000,
-      "lotGain": 1220
+      "lotGain": 1220,
+      "date": "2026-01-08",
+      "volume": 8228204
     },
     "source": {
       "title": "《新股》天數智芯暗盤收報198元 高上市價36.9%",
@@ -2306,6 +3102,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "lotGain": 5340,
         "last": 175.9
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 814,
+      "asOf": "2026-06-25T07:02:00.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 9903.HK",
+        "url": "https://finance.yahoo.com/quote/9903.HK"
+      },
+      "dayHigh": 887.5,
+      "dayLow": 777,
+      "volume": 1483673,
+      "fiftyTwoWeekHigh": 887.5,
+      "fiftyTwoWeekLow": 148.9
     }
   },
   "06082": {
@@ -2321,7 +3131,9 @@ window.MARKET_PERFORMANCE_2026 = {
       "close": 34.46,
       "turnoverAmount": 5521000000,
       "lotGain": 2972,
-      "turnoverShares": 47672200
+      "turnoverShares": 47672200,
+      "date": "2026-01-02",
+      "volume": 150709945
     },
     "source": {
       "title": "《新股》壁仞科技(06082.HK)暗盤收報35.08元 高上市價79%",
@@ -2354,6 +3166,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "lotGain": 3116,
         "last": 35.28
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 68.15,
+      "asOf": "2026-06-25T07:02:08.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 6082.HK",
+        "url": "https://finance.yahoo.com/quote/6082.HK"
+      },
+      "dayHigh": 68.15,
+      "dayLow": 59.5,
+      "volume": 16915299,
+      "fiftyTwoWeekHigh": 68.15,
+      "fiftyTwoWeekLow": 27.32
     }
   },
   "00100": {
@@ -2398,6 +3224,20 @@ window.MARKET_PERFORMANCE_2026 = {
         "title": "《新股》MINIMAX-WP(00100.HK)全日收345元 高上市价109.1%",
         "url": "https://pchome.megatime.com.tw/m/news/cat6/20260109/9900100000001495071.html"
       }
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 456.4,
+      "asOf": "2026-06-25T07:01:38.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 0100.HK",
+        "url": "https://finance.yahoo.com/quote/0100.HK"
+      },
+      "dayHigh": 503,
+      "dayLow": 446.2,
+      "volume": 1282050,
+      "fiftyTwoWeekHigh": 503,
+      "fiftyTwoWeekLow": 446.2
     }
   },
   "02513": {
@@ -2439,7 +3279,22 @@ window.MARKET_PERFORMANCE_2026 = {
       "source": {
         "title": "《新股》智谱(02513.HK)全日收131.5元 高上市价13.2%",
         "url": "https://www.aastocks.com/tc/stocks/news/aafn-con/NOW.1494751/ipo-news/AAFN"
-      }
+      },
+      "volume": 17518159
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 2376,
+      "asOf": "2026-06-25T07:01:51.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 2513.HK",
+        "url": "https://finance.yahoo.com/quote/2513.HK"
+      },
+      "dayHigh": 2418,
+      "dayLow": 2180,
+      "volume": 1766925,
+      "fiftyTwoWeekHigh": 2980,
+      "fiftyTwoWeekLow": 116.1
     }
   },
   "01081": {
@@ -2736,7 +3591,22 @@ window.MARKET_PERFORMANCE_2026 = {
       "turnoverShares": 4980900,
       "turnoverAmount": 296000000,
       "lotGain": 2840,
-      "date": "2026-05-27"
+      "date": "2026-05-27",
+      "volume": 4980964
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 70.4,
+      "asOf": "2026-06-25T07:00:20.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 0901.HK",
+        "url": "https://finance.yahoo.com/quote/0901.HK"
+      },
+      "dayHigh": 73.8,
+      "dayLow": 67.55,
+      "volume": 634700,
+      "fiftyTwoWeekHigh": 84,
+      "fiftyTwoWeekLow": 52
     }
   },
   "02723": {
@@ -2784,7 +3654,22 @@ window.MARKET_PERFORMANCE_2026 = {
       "turnoverShares": 3460200,
       "turnoverAmount": 571000000,
       "lotGain": 14750,
-      "date": "2026-05-27"
+      "date": "2026-05-27",
+      "volume": 3460200
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 343.2,
+      "asOf": "2026-06-25T07:01:35.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 2723.HK",
+        "url": "https://finance.yahoo.com/quote/2723.HK"
+      },
+      "dayHigh": 393.2,
+      "dayLow": 325.8,
+      "volume": 145588,
+      "fiftyTwoWeekHigh": 506,
+      "fiftyTwoWeekLow": 155
     }
   },
   "03310": {
@@ -2832,7 +3717,22 @@ window.MARKET_PERFORMANCE_2026 = {
       "turnoverShares": 16812700,
       "turnoverAmount": 534999999.99999994,
       "lotGain": 3818,
-      "date": "2026-05-27"
+      "date": "2026-05-27",
+      "volume": 16812743
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 37.16,
+      "asOf": "2026-06-25T06:59:39.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 3310.HK",
+        "url": "https://finance.yahoo.com/quote/3310.HK"
+      },
+      "dayHigh": 39.9,
+      "dayLow": 37.04,
+      "volume": 437800,
+      "fiftyTwoWeekHigh": 44.38,
+      "fiftyTwoWeekLow": 25.4
     }
   },
   "03388": {
@@ -2880,7 +3780,22 @@ window.MARKET_PERFORMANCE_2026 = {
       "turnoverShares": 36474800,
       "turnoverAmount": 1014000000,
       "lotGain": 600,
-      "date": "2026-05-29"
+      "date": "2026-05-29",
+      "volume": 36474808
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 25.38,
+      "asOf": "2026-06-25T06:59:23.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 3388.HK",
+        "url": "https://finance.yahoo.com/quote/3388.HK"
+      },
+      "dayHigh": 25.92,
+      "dayLow": 24.54,
+      "volume": 469048,
+      "fiftyTwoWeekHigh": 34,
+      "fiftyTwoWeekLow": 19.1
     }
   },
   "06872": {
@@ -2928,7 +3843,138 @@ window.MARKET_PERFORMANCE_2026 = {
       "turnoverShares": 2458600,
       "turnoverAmount": 369000000,
       "lotGain": 6765,
-      "date": "2026-05-22"
+      "date": "2026-05-22",
+      "volume": 2458654
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 253.6,
+      "asOf": "2026-06-25T06:59:56.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 6872.HK",
+        "url": "https://finance.yahoo.com/quote/6872.HK"
+      },
+      "dayHigh": 264,
+      "dayLow": 235,
+      "volume": 61650,
+      "fiftyTwoWeekHigh": 287,
+      "fiftyTwoWeekLow": 145
+    }
+  },
+  "01392": {
+    "firstDay": {
+      "label": "上市首日",
+      "date": "2026-06-22",
+      "source": {
+        "title": "Yahoo Finance 日线 1392.HK",
+        "url": "https://finance.yahoo.com/quote/1392.HK/history"
+      },
+      "open": 29,
+      "high": 30,
+      "low": 25,
+      "close": 26.700000762939453,
+      "volume": 27583246
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 18.02,
+      "asOf": "2026-06-25T07:01:50.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 1392.HK",
+        "url": "https://finance.yahoo.com/quote/1392.HK"
+      },
+      "dayHigh": 20.5,
+      "dayLow": 18.02,
+      "volume": 3075000,
+      "fiftyTwoWeekHigh": 30,
+      "fiftyTwoWeekLow": 16.28
+    }
+  },
+  "06658": {
+    "firstDay": {
+      "label": "上市首日",
+      "date": "2026-06-15",
+      "source": {
+        "title": "Yahoo Finance 日线 6658.HK",
+        "url": "https://finance.yahoo.com/quote/6658.HK/history"
+      },
+      "open": 95,
+      "high": 130.10000610351562,
+      "low": 91,
+      "close": 128,
+      "volume": 4304020
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 153,
+      "asOf": "2026-06-25T07:00:56.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 6658.HK",
+        "url": "https://finance.yahoo.com/quote/6658.HK"
+      },
+      "dayHigh": 158.9,
+      "dayLow": 143.7,
+      "volume": 171800,
+      "fiftyTwoWeekHigh": 165,
+      "fiftyTwoWeekLow": 91
+    }
+  },
+  "06675": {
+    "firstDay": {
+      "label": "上市首日",
+      "date": "2026-06-17",
+      "source": {
+        "title": "Yahoo Finance 日线 6675.HK",
+        "url": "https://finance.yahoo.com/quote/6675.HK/history"
+      },
+      "open": 31.600000381469727,
+      "high": 41.900001525878906,
+      "low": 31.579999923706055,
+      "close": 41.70000076293945,
+      "volume": 16473920
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 37.1,
+      "asOf": "2026-06-25T07:01:53.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 6675.HK",
+        "url": "https://finance.yahoo.com/quote/6675.HK"
+      },
+      "dayHigh": 39.92,
+      "dayLow": 33,
+      "volume": 1169798,
+      "fiftyTwoWeekHigh": 45.48,
+      "fiftyTwoWeekLow": 30.1
+    }
+  },
+  "07489": {
+    "firstDay": {
+      "label": "上市首日",
+      "date": "2026-03-19",
+      "source": {
+        "title": "Yahoo Finance 日线 7489.HK",
+        "url": "https://finance.yahoo.com/quote/7489.HK/history"
+      },
+      "open": 7.5,
+      "high": 7.5,
+      "low": 6.25,
+      "close": 6.510000228881836,
+      "volume": 98203679
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 3.2,
+      "asOf": "2026-06-25T07:00:56.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 7489.HK",
+        "url": "https://finance.yahoo.com/quote/7489.HK"
+      },
+      "dayHigh": 3.43,
+      "dayLow": 3.15,
+      "volume": 7052295,
+      "fiftyTwoWeekHigh": 7.5,
+      "fiftyTwoWeekLow": 3.15
     }
   }
 };

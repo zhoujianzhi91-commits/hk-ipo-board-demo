@@ -117,11 +117,13 @@ def fix_stock_fields(s, updates_data, latest_data):
     if not src:
         return False
     
+    # 只补 null 字段，不覆盖已有的值
     for key in ["offerPrice", "sharesPerLot", "totalOfferShares", 
                  "publicOfferSharesBefore", "publicOfferSharesFinal", 
                  "publicOfferMultiple", "totalApplications", "successfulApplications",
                  "finalPublicOfferPercent", "status", "listDate", "mechanism",
-                 "listingType", "groupTotals", "englishName"]:
+                 "listingType", "groupTotals", "englishName",
+                 "estimatedSubscriptionMultiple", "subscriptionStart", "subscriptionEnd"]:
         if s.get(key) is None and src.get(key) is not None:
             s[key] = src[key]
             changed = True
@@ -201,6 +203,9 @@ def build_new_stock(code, updates_data, latest_data):
         "publicOfferSharesBefore": src.get("publicOfferSharesBefore") or src.get("publicOfferSharesFinal"),
         "publicOfferSharesFinal": src.get("publicOfferSharesFinal") or src.get("publicOfferSharesBefore"),
         "publicOfferMultiple": src.get("publicOfferMultiple"),
+        "estimatedSubscriptionMultiple": src.get("estimatedSubscriptionMultiple"),
+        "subscriptionStart": src.get("subscriptionStart", ""),
+        "subscriptionEnd": src.get("subscriptionEnd", ""),
         "totalApplications": src.get("totalApplications"),
         "successfulApplications": src.get("successfulApplications"),
         "mechanism": src.get("mechanism", "主板B"),

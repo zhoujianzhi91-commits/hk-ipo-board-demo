@@ -16642,7 +16642,7 @@ window.IPO_HISTORY_2026 = [
     "publicOfferMultiple": 431.15,
     "totalApplications": 250606,
     "successfulApplications": 57137,
-    "actualOneLotHitRate": 0.0018,
+    "actualOneLotHitRate": 0.7139,
     "finalPublicOfferPercent": 8.19,
     "mechanism": "主板B",
     "listingType": "H股",
@@ -16660,342 +16660,219 @@ window.IPO_HISTORY_2026 = [
     "basisOfAllocation": [
       {
         "group": "A",
-        "sharesApplied": 28,
-        "lotsApplied": 1,
-        "validApplications": 45002549,
+        "sharesApplied": 100,
+        "validApplications": 77460,
+        "successfulApplications": 553,
+        "sharesAllotted": 100,
+        "approxPercent": 0.7139,
+        "hitRate": 0.0071389999999999995
+      },
+      {
+        "group": "A",
+        "sharesApplied": 200,
+        "validApplications": 22437,
+        "successfulApplications": 320,
+        "sharesAllotted": 100,
+        "approxPercent": 1.4262,
+        "hitRate": 0.014261999999999999
+      },
+      {
+        "group": "A",
+        "sharesApplied": 300,
+        "validApplications": 7527,
+        "successfulApplications": 161,
+        "sharesAllotted": 100,
+        "approxPercent": 2.139,
+        "hitRate": 0.02139
+      },
+      {
+        "group": "A",
+        "sharesApplied": 400,
+        "validApplications": 9223,
+        "successfulApplications": 263,
+        "sharesAllotted": 100,
+        "approxPercent": 2.8516,
+        "hitRate": 0.028516
+      },
+      {
+        "group": "A",
+        "sharesApplied": 500,
+        "validApplications": 7281,
+        "successfulApplications": 260,
+        "sharesAllotted": 100,
+        "approxPercent": 3.5709,
+        "hitRate": 0.035709
+      },
+      {
+        "group": "A",
+        "sharesApplied": 600,
+        "validApplications": 3720,
+        "successfulApplications": 159,
+        "sharesAllotted": 100,
+        "approxPercent": 4.2742,
+        "hitRate": 0.042742
+      },
+      {
+        "group": "A",
+        "sharesApplied": 700,
+        "validApplications": 3178,
+        "successfulApplications": 159,
+        "sharesAllotted": 100,
+        "approxPercent": 5.0031,
+        "hitRate": 0.050031
+      },
+      {
+        "group": "A",
+        "sharesApplied": 800,
+        "validApplications": 2839,
+        "successfulApplications": 162,
+        "sharesAllotted": 100,
+        "approxPercent": 5.7062,
+        "hitRate": 0.057062
+      },
+      {
+        "group": "A",
+        "sharesApplied": 900,
+        "validApplications": 3787,
+        "successfulApplications": 243,
+        "sharesAllotted": 100,
+        "approxPercent": 6.4167,
+        "hitRate": 0.064167
+      },
+      {
+        "group": "A",
+        "sharesApplied": 1500,
+        "validApplications": 7563,
+        "successfulApplications": 809,
+        "sharesAllotted": 100,
+        "approxPercent": 10.6968,
+        "hitRate": 0.106968
+      },
+      {
+        "group": "A",
+        "sharesApplied": 2000,
+        "validApplications": 6427,
+        "successfulApplications": 917,
+        "sharesAllotted": 100,
+        "approxPercent": 14.2679,
+        "hitRate": 0.142679
+      },
+      {
+        "group": "A",
+        "sharesApplied": 2500,
+        "validApplications": 4150,
+        "successfulApplications": 740,
+        "sharesAllotted": 100,
+        "approxPercent": 17.8313,
+        "hitRate": 0.178313
+      },
+      {
+        "group": "A",
+        "sharesApplied": 3000,
+        "validApplications": 4046,
+        "successfulApplications": 866,
+        "sharesAllotted": 100,
+        "approxPercent": 21.4039,
+        "hitRate": 0.214039
+      },
+      {
+        "group": "A",
+        "sharesApplied": 3500,
+        "validApplications": 2628,
+        "successfulApplications": 656,
+        "sharesAllotted": 100,
+        "approxPercent": 24.9619,
+        "hitRate": 0.249619
+      },
+      {
+        "group": "A",
+        "sharesApplied": 4000,
+        "validApplications": 2867,
         "successfulApplications": 818,
-        "guaranteedShares": null,
-        "extraLotteryShares": null,
-        "extraLotteryWinners": null,
-        "extraLotteryRate": null,
         "sharesAllotted": 100,
-        "allotmentPercent": 0.71,
-        "hitRate": 1.817674816597611e-05,
-        "expectedShares": 0.001817674816597611,
-        "rawBasis": "2,549 名申請人中的 818 名獲得 100 股股份"
+        "approxPercent": 28.5316,
+        "hitRate": 0.285316
       },
       {
         "group": "A",
-        "sharesApplied": 1000,
-        "lotsApplied": 35.714285714285715,
-        "validApplications": 14124,
-        "successfulApplications": 1008,
-        "guaranteedShares": null,
-        "extraLotteryShares": null,
-        "extraLotteryWinners": null,
-        "extraLotteryRate": null,
+        "sharesApplied": 4500,
+        "validApplications": 2549,
+        "successfulApplications": 818,
         "sharesAllotted": 100,
-        "allotmentPercent": 0.71,
-        "hitRate": 0.0713678844519966,
-        "expectedShares": 7.1367884451996595,
-        "rawBasis": "14,124名申請人中1,008名獲配發100股H股股份"
+        "approxPercent": 32.091,
+        "hitRate": 0.32091000000000003
       },
       {
         "group": "A",
-        "sharesApplied": 10000,
-        "lotsApplied": 357.14285714285717,
-        "validApplications": 13030,
-        "successfulApplications": 9295,
-        "guaranteedShares": null,
-        "extraLotteryShares": null,
-        "extraLotteryWinners": null,
-        "extraLotteryRate": null,
+        "sharesApplied": 5000,
+        "validApplications": 4691,
+        "successfulApplications": 1673,
         "sharesAllotted": 100,
-        "allotmentPercent": 0.71,
-        "hitRate": 0.7133537989255564,
-        "expectedShares": 71.33537989255564,
-        "rawBasis": "13,030名申請人中9,295名獲配發100股H股股份"
+        "approxPercent": 35.664,
+        "hitRate": 0.35664
       },
       {
-        "group": "B",
-        "sharesApplied": 30000,
-        "lotsApplied": 1071.4285714285713,
-        "validApplications": 10843,
-        "successfulApplications": 4759,
-        "guaranteedShares": null,
-        "extraLotteryShares": null,
-        "extraLotteryWinners": null,
-        "extraLotteryRate": null,
+        "group": "A",
+        "sharesApplied": 6000,
+        "validApplications": 3029,
+        "successfulApplications": 1296,
         "sharesAllotted": 100,
-        "allotmentPercent": 0.15,
-        "hitRate": 0.43890067324541177,
-        "expectedShares": 43.89006732454118,
-        "rawBasis": "10,843名申請人中4,759名獲配發100股H股股份"
-      }
-    ],
-    "applicationTiers": [
-      {
-        "lots": 1,
-        "shares": 100,
-        "group": "A",
-        "expectedLots": 0.0,
-        "oneLotHitRate": 0.0018
+        "approxPercent": 42.7864,
+        "hitRate": 0.427864
       },
       {
-        "lots": 2,
-        "shares": 200,
         "group": "A",
-        "expectedLots": 0.0,
-        "oneLotHitRate": 0.0018
+        "sharesApplied": 7000,
+        "validApplications": 2679,
+        "successfulApplications": 1338,
+        "sharesAllotted": 100,
+        "approxPercent": 49.944,
+        "hitRate": 0.49944000000000005
       },
       {
-        "lots": 3,
-        "shares": 300,
         "group": "A",
-        "expectedLots": 0.0,
-        "oneLotHitRate": 0.0018
+        "sharesApplied": 8000,
+        "validApplications": 2121,
+        "successfulApplications": 1210,
+        "sharesAllotted": 100,
+        "approxPercent": 57.0486,
+        "hitRate": 0.570486
       },
       {
-        "lots": 4,
-        "shares": 400,
         "group": "A",
-        "expectedLots": 0.0001,
-        "oneLotHitRate": 0.0018
+        "sharesApplied": 9000,
+        "validApplications": 2177,
+        "successfulApplications": 1398,
+        "sharesAllotted": 100,
+        "approxPercent": 64.2168,
+        "hitRate": 0.6421680000000001
       },
       {
-        "lots": 5,
-        "shares": 500,
-        "group": "A",
-        "expectedLots": 0.0001,
-        "oneLotHitRate": 0.0018
-      },
-      {
-        "lots": 6,
-        "shares": 600,
-        "group": "A",
-        "expectedLots": 0.0001,
-        "oneLotHitRate": 0.0018
-      },
-      {
-        "lots": 7,
-        "shares": 700,
-        "group": "A",
-        "expectedLots": 0.0001,
-        "oneLotHitRate": 0.0018
-      },
-      {
-        "lots": 8,
-        "shares": 800,
-        "group": "A",
-        "expectedLots": 0.0001,
-        "oneLotHitRate": 0.0018
-      },
-      {
-        "lots": 9,
-        "shares": 900,
-        "group": "A",
-        "expectedLots": 0.0001,
-        "oneLotHitRate": 0.0018
-      },
-      {
-        "lots": 10,
-        "shares": 1000,
-        "group": "A",
-        "expectedLots": 0.0001,
-        "oneLotHitRate": 0.0018
-      },
-      {
-        "lots": 15,
-        "shares": 1500,
-        "group": "A",
-        "expectedLots": 0.0001,
-        "oneLotHitRate": 0.0018
-      },
-      {
-        "lots": 20,
-        "shares": 2000,
-        "group": "A",
-        "expectedLots": 0.0002,
-        "oneLotHitRate": 0.0018
-      },
-      {
-        "lots": 25,
-        "shares": 2500,
-        "group": "A",
-        "expectedLots": 0.0002,
-        "oneLotHitRate": 0.0018
-      },
-      {
-        "lots": 30,
-        "shares": 3000,
-        "group": "A",
-        "expectedLots": 0.0002,
-        "oneLotHitRate": 0.0018
-      },
-      {
-        "lots": 35,
-        "shares": 3500,
-        "group": "A",
-        "expectedLots": 0.0002,
-        "oneLotHitRate": 0.0018
-      },
-      {
-        "lots": 40,
-        "shares": 4000,
-        "group": "A",
-        "expectedLots": 0.0003,
-        "oneLotHitRate": 0.0018
-      },
-      {
-        "lots": 45,
-        "shares": 4500,
-        "group": "A",
-        "expectedLots": 0.0003,
-        "oneLotHitRate": 0.0018
-      },
-      {
-        "lots": 50,
-        "shares": 5000,
-        "group": "A",
-        "expectedLots": 0.0003,
-        "oneLotHitRate": 0.0018
-      },
-      {
-        "lots": 60,
-        "shares": 6000,
-        "group": "A",
-        "expectedLots": 0.0004,
-        "oneLotHitRate": 0.0018
-      },
-      {
-        "lots": 70,
-        "shares": 7000,
-        "group": "A",
-        "expectedLots": 0.0004,
-        "oneLotHitRate": 0.0018
-      },
-      {
-        "lots": 80,
-        "shares": 8000,
-        "group": "A",
-        "expectedLots": 0.0005,
-        "oneLotHitRate": 0.0018
-      },
-      {
-        "lots": 90,
-        "shares": 9000,
-        "group": "A",
-        "expectedLots": 0.0005,
-        "oneLotHitRate": 0.0018
-      },
-      {
-        "lots": 100,
-        "shares": 10000,
-        "group": "A",
-        "expectedLots": 0.0005,
-        "oneLotHitRate": 0.0018
-      },
-      {
-        "lots": 150,
-        "shares": 15000,
-        "group": "A",
-        "expectedLots": 0.0007,
-        "oneLotHitRate": 0.0018
-      },
-      {
-        "lots": 200,
-        "shares": 20000,
-        "group": "A",
-        "expectedLots": 0.0009,
-        "oneLotHitRate": 0.0018
-      },
-      {
-        "lots": 250,
-        "shares": 25000,
-        "group": "A",
-        "expectedLots": 0.0011,
-        "oneLotHitRate": 0.0018
-      },
-      {
-        "lots": 300,
-        "shares": 30000,
-        "group": "A",
-        "expectedLots": 0.0012,
-        "oneLotHitRate": 0.0018
-      },
-      {
-        "lots": 400,
-        "shares": 40000,
-        "group": "A",
-        "expectedLots": 0.0015,
-        "oneLotHitRate": 0.0018
-      },
-      {
-        "lots": 500,
-        "shares": 50000,
-        "group": "A",
-        "expectedLots": 0.0018,
-        "oneLotHitRate": 0.0018
-      },
-      {
-        "lots": 600,
-        "shares": 60000,
-        "group": "A",
-        "expectedLots": 0.002,
-        "oneLotHitRate": 0.0018
-      },
-      {
-        "lots": 700,
-        "shares": 70000,
-        "group": "A",
-        "expectedLots": 0.0023,
-        "oneLotHitRate": 0.0018
-      },
-      {
-        "lots": 800,
-        "shares": 80000,
-        "group": "A",
-        "expectedLots": 0.0025,
-        "oneLotHitRate": 0.0018
-      },
-      {
-        "lots": 900,
-        "shares": 90000,
-        "group": "A",
-        "expectedLots": 0.0028,
-        "oneLotHitRate": 0.0018
-      },
-      {
-        "lots": 1000,
-        "shares": 100000,
-        "group": "A",
-        "expectedLots": 0.003,
-        "oneLotHitRate": 0.0018
-      },
-      {
-        "lots": 1500,
-        "shares": 150000,
         "group": "B",
-        "expectedLots": 0.0048,
-        "oneLotHitRate": 0.0018
+        "sharesApplied": 40000,
+        "validApplications": 4543,
+        "successfulApplications": 2659,
+        "sharesAllotted": 100,
+        "approxPercent": 58.5296,
+        "hitRate": 0.585296
       },
       {
-        "lots": 2000,
-        "shares": 200000,
         "group": "B",
-        "expectedLots": 0.0059,
-        "oneLotHitRate": 0.0018
+        "sharesApplied": 50000,
+        "validApplications": 3098,
+        "successfulApplications": 2266,
+        "sharesAllotted": 100,
+        "approxPercent": 73.144,
+        "hitRate": 0.7314400000000001
       },
       {
-        "lots": 2500,
-        "shares": 250000,
         "group": "B",
-        "expectedLots": 0.0069,
-        "oneLotHitRate": 0.0018
-      },
-      {
-        "lots": 3000,
-        "shares": 300000,
-        "group": "B",
-        "expectedLots": 0.0079,
-        "oneLotHitRate": 0.0018
-      },
-      {
-        "lots": 5000,
-        "shares": 500000,
-        "group": "B",
-        "expectedLots": 0.0116,
-        "oneLotHitRate": 0.0018
+        "sharesApplied": 60000,
+        "validApplications": 2114,
+        "successfulApplications": 1856,
+        "sharesAllotted": 100,
+        "approxPercent": 87.7956,
+        "hitRate": 0.877956
       }
     ]
   },

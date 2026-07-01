@@ -1870,8 +1870,14 @@
 
     function compareStocks(a, b) {
       if (state.mode === "all") {
-        const activeDelta = activeSortWeight(b) - activeSortWeight(a);
-        if (activeDelta) return activeDelta;
+        const aIsActive = isActive(a);
+        const bIsActive = isActive(b);
+        if (aIsActive !== bIsActive) return aIsActive ? -1 : 1;
+        if (aIsActive && bIsActive) {
+          const endA = dateValue(a.subscriptionEnd || a.listDate);
+          const endB = dateValue(b.subscriptionEnd || b.listDate);
+          if (endA !== endB) return endB - endA;
+        }
       }
       if (state.mode === "multiple") {
         const delta = sortableNumber(firstFinite(b.officialMultiple, b.currentMultiple)) - sortableNumber(firstFinite(a.officialMultiple, a.currentMultiple));

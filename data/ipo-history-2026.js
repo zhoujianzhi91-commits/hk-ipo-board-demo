@@ -3,7 +3,7 @@ window.IPO_HISTORY_2026 = [
     "stockCode": "02697",
     "name": "真健康医疗-B",
     "englishName": "",
-    "status": "current",
+    "status": "listed",
     "listDate": "2026-06-30",
     "offerPrice": 135.4,
     "sharesPerLot": 20,
@@ -306,7 +306,7 @@ window.IPO_HISTORY_2026 = [
     "stockCode": "03952",
     "name": "來福諧波",
     "englishName": "",
-    "status": "current",
+    "status": "listed",
     "listDate": "2026-06-30",
     "offerPrice": 85.5,
     "sharesPerLot": 100,
@@ -347,13 +347,260 @@ window.IPO_HISTORY_2026 = [
     "actualOneLotHitRate": null,
     "subscriptionStart": "",
     "subscriptionEnd": "2026-06-25 12:00",
-    "estimatedSubscriptionMultiple": 4571.99
+    "estimatedSubscriptionMultiple": 4571.99,
+    "applicationTiers": [
+      {
+        "lots": 1,
+        "shares": 100,
+        "group": "A",
+        "expectedLots": 0.0057,
+        "oneLotHitRate": 0.5668
+      },
+      {
+        "lots": 2,
+        "shares": 200,
+        "group": "A",
+        "expectedLots": 0.0095,
+        "oneLotHitRate": 0.5668
+      },
+      {
+        "lots": 3,
+        "shares": 300,
+        "group": "A",
+        "expectedLots": 0.0128,
+        "oneLotHitRate": 0.5668
+      },
+      {
+        "lots": 4,
+        "shares": 400,
+        "group": "A",
+        "expectedLots": 0.0158,
+        "oneLotHitRate": 0.5668
+      },
+      {
+        "lots": 5,
+        "shares": 500,
+        "group": "A",
+        "expectedLots": 0.0186,
+        "oneLotHitRate": 0.5668
+      },
+      {
+        "lots": 6,
+        "shares": 600,
+        "group": "A",
+        "expectedLots": 0.0213,
+        "oneLotHitRate": 0.5668
+      },
+      {
+        "lots": 7,
+        "shares": 700,
+        "group": "A",
+        "expectedLots": 0.0239,
+        "oneLotHitRate": 0.5668
+      },
+      {
+        "lots": 8,
+        "shares": 800,
+        "group": "A",
+        "expectedLots": 0.0264,
+        "oneLotHitRate": 0.5668
+      },
+      {
+        "lots": 9,
+        "shares": 900,
+        "group": "A",
+        "expectedLots": 0.0288,
+        "oneLotHitRate": 0.5668
+      },
+      {
+        "lots": 10,
+        "shares": 1000,
+        "group": "A",
+        "expectedLots": 0.0311,
+        "oneLotHitRate": 0.5668
+      },
+      {
+        "lots": 15,
+        "shares": 1500,
+        "group": "A",
+        "expectedLots": 0.042,
+        "oneLotHitRate": 0.5668
+      },
+      {
+        "lots": 20,
+        "shares": 2000,
+        "group": "A",
+        "expectedLots": 0.052,
+        "oneLotHitRate": 0.5668
+      },
+      {
+        "lots": 25,
+        "shares": 2500,
+        "group": "A",
+        "expectedLots": 0.0614,
+        "oneLotHitRate": 0.5668
+      },
+      {
+        "lots": 30,
+        "shares": 3000,
+        "group": "A",
+        "expectedLots": 0.0702,
+        "oneLotHitRate": 0.5668
+      },
+      {
+        "lots": 35,
+        "shares": 3500,
+        "group": "A",
+        "expectedLots": 0.0787,
+        "oneLotHitRate": 0.5668
+      },
+      {
+        "lots": 40,
+        "shares": 4000,
+        "group": "A",
+        "expectedLots": 0.0869,
+        "oneLotHitRate": 0.5668
+      },
+      {
+        "lots": 45,
+        "shares": 4500,
+        "group": "A",
+        "expectedLots": 0.0948,
+        "oneLotHitRate": 0.5668
+      },
+      {
+        "lots": 50,
+        "shares": 5000,
+        "group": "A",
+        "expectedLots": 0.1025,
+        "oneLotHitRate": 0.5668
+      },
+      {
+        "lots": 60,
+        "shares": 6000,
+        "group": "A",
+        "expectedLots": 0.1173,
+        "oneLotHitRate": 0.5668
+      },
+      {
+        "lots": 70,
+        "shares": 7000,
+        "group": "A",
+        "expectedLots": 0.1315,
+        "oneLotHitRate": 0.5668
+      },
+      {
+        "lots": 80,
+        "shares": 8000,
+        "group": "A",
+        "expectedLots": 0.1451,
+        "oneLotHitRate": 0.5668
+      },
+      {
+        "lots": 90,
+        "shares": 9000,
+        "group": "A",
+        "expectedLots": 0.1583,
+        "oneLotHitRate": 0.5668
+      },
+      {
+        "lots": 100,
+        "shares": 10000,
+        "group": "A",
+        "expectedLots": 0.1712,
+        "oneLotHitRate": 0.5668
+      },
+      {
+        "lots": 150,
+        "shares": 15000,
+        "group": "A",
+        "expectedLots": 0.2311,
+        "oneLotHitRate": 0.5668
+      },
+      {
+        "lots": 200,
+        "shares": 20000,
+        "group": "A",
+        "expectedLots": 0.2859,
+        "oneLotHitRate": 0.5668
+      },
+      {
+        "lots": 250,
+        "shares": 25000,
+        "group": "A",
+        "expectedLots": 0.3372,
+        "oneLotHitRate": 0.5668
+      },
+      {
+        "lots": 300,
+        "shares": 30000,
+        "group": "A",
+        "expectedLots": 0.3859,
+        "oneLotHitRate": 0.5668
+      },
+      {
+        "lots": 400,
+        "shares": 40000,
+        "group": "A",
+        "expectedLots": 0.4775,
+        "oneLotHitRate": 0.5668
+      },
+      {
+        "lots": 500,
+        "shares": 50000,
+        "group": "A",
+        "expectedLots": 0.5632,
+        "oneLotHitRate": 0.5668
+      },
+      {
+        "lots": 600,
+        "shares": 60000,
+        "group": "A",
+        "expectedLots": 0.6445,
+        "oneLotHitRate": 0.5668
+      },
+      {
+        "lots": 700,
+        "shares": 70000,
+        "group": "A",
+        "expectedLots": 0.7224,
+        "oneLotHitRate": 0.5668
+      },
+      {
+        "lots": 800,
+        "shares": 80000,
+        "group": "A",
+        "expectedLots": 0.7975,
+        "oneLotHitRate": 0.5668
+      },
+      {
+        "lots": 900,
+        "shares": 90000,
+        "group": "A",
+        "expectedLots": 0.8701,
+        "oneLotHitRate": 0.5668
+      },
+      {
+        "lots": 1000,
+        "shares": 100000,
+        "group": "A",
+        "expectedLots": 0.9406,
+        "oneLotHitRate": 0.5668
+      },
+      {
+        "lots": 1008,
+        "shares": 100800,
+        "group": "B",
+        "expectedLots": 1.1165,
+        "oneLotHitRate": 0.5668
+      }
+    ]
   },
   {
     "stockCode": "06715",
     "name": "鱘龍科技",
     "englishName": "",
-    "status": "current",
+    "status": "listed",
     "listDate": "2026-06-30",
     "offerPrice": 75.5,
     "sharesPerLot": 100,
@@ -394,13 +641,274 @@ window.IPO_HISTORY_2026 = [
     "actualOneLotHitRate": null,
     "subscriptionStart": "",
     "subscriptionEnd": "2026-06-25 12:00",
-    "estimatedSubscriptionMultiple": 2134.81
+    "estimatedSubscriptionMultiple": 2134.81,
+    "applicationTiers": [
+      {
+        "lots": 1,
+        "shares": 100,
+        "group": "A",
+        "expectedLots": 0.0074,
+        "oneLotHitRate": 0.7391
+      },
+      {
+        "lots": 2,
+        "shares": 200,
+        "group": "A",
+        "expectedLots": 0.0123,
+        "oneLotHitRate": 0.7391
+      },
+      {
+        "lots": 3,
+        "shares": 300,
+        "group": "A",
+        "expectedLots": 0.0167,
+        "oneLotHitRate": 0.7391
+      },
+      {
+        "lots": 4,
+        "shares": 400,
+        "group": "A",
+        "expectedLots": 0.0206,
+        "oneLotHitRate": 0.7391
+      },
+      {
+        "lots": 5,
+        "shares": 500,
+        "group": "A",
+        "expectedLots": 0.0243,
+        "oneLotHitRate": 0.7391
+      },
+      {
+        "lots": 6,
+        "shares": 600,
+        "group": "A",
+        "expectedLots": 0.0278,
+        "oneLotHitRate": 0.7391
+      },
+      {
+        "lots": 7,
+        "shares": 700,
+        "group": "A",
+        "expectedLots": 0.0312,
+        "oneLotHitRate": 0.7391
+      },
+      {
+        "lots": 8,
+        "shares": 800,
+        "group": "A",
+        "expectedLots": 0.0344,
+        "oneLotHitRate": 0.7391
+      },
+      {
+        "lots": 9,
+        "shares": 900,
+        "group": "A",
+        "expectedLots": 0.0376,
+        "oneLotHitRate": 0.7391
+      },
+      {
+        "lots": 10,
+        "shares": 1000,
+        "group": "A",
+        "expectedLots": 0.0406,
+        "oneLotHitRate": 0.7391
+      },
+      {
+        "lots": 15,
+        "shares": 1500,
+        "group": "A",
+        "expectedLots": 0.0548,
+        "oneLotHitRate": 0.7391
+      },
+      {
+        "lots": 20,
+        "shares": 2000,
+        "group": "A",
+        "expectedLots": 0.0678,
+        "oneLotHitRate": 0.7391
+      },
+      {
+        "lots": 25,
+        "shares": 2500,
+        "group": "A",
+        "expectedLots": 0.08,
+        "oneLotHitRate": 0.7391
+      },
+      {
+        "lots": 30,
+        "shares": 3000,
+        "group": "A",
+        "expectedLots": 0.0916,
+        "oneLotHitRate": 0.7391
+      },
+      {
+        "lots": 35,
+        "shares": 3500,
+        "group": "A",
+        "expectedLots": 0.1026,
+        "oneLotHitRate": 0.7391
+      },
+      {
+        "lots": 40,
+        "shares": 4000,
+        "group": "A",
+        "expectedLots": 0.1133,
+        "oneLotHitRate": 0.7391
+      },
+      {
+        "lots": 45,
+        "shares": 4500,
+        "group": "A",
+        "expectedLots": 0.1236,
+        "oneLotHitRate": 0.7391
+      },
+      {
+        "lots": 50,
+        "shares": 5000,
+        "group": "A",
+        "expectedLots": 0.1336,
+        "oneLotHitRate": 0.7391
+      },
+      {
+        "lots": 60,
+        "shares": 6000,
+        "group": "A",
+        "expectedLots": 0.1529,
+        "oneLotHitRate": 0.7391
+      },
+      {
+        "lots": 70,
+        "shares": 7000,
+        "group": "A",
+        "expectedLots": 0.1714,
+        "oneLotHitRate": 0.7391
+      },
+      {
+        "lots": 80,
+        "shares": 8000,
+        "group": "A",
+        "expectedLots": 0.1892,
+        "oneLotHitRate": 0.7391
+      },
+      {
+        "lots": 90,
+        "shares": 9000,
+        "group": "A",
+        "expectedLots": 0.2065,
+        "oneLotHitRate": 0.7391
+      },
+      {
+        "lots": 100,
+        "shares": 10000,
+        "group": "A",
+        "expectedLots": 0.2232,
+        "oneLotHitRate": 0.7391
+      },
+      {
+        "lots": 150,
+        "shares": 15000,
+        "group": "A",
+        "expectedLots": 0.3013,
+        "oneLotHitRate": 0.7391
+      },
+      {
+        "lots": 200,
+        "shares": 20000,
+        "group": "A",
+        "expectedLots": 0.3728,
+        "oneLotHitRate": 0.7391
+      },
+      {
+        "lots": 250,
+        "shares": 25000,
+        "group": "A",
+        "expectedLots": 0.4397,
+        "oneLotHitRate": 0.7391
+      },
+      {
+        "lots": 300,
+        "shares": 30000,
+        "group": "A",
+        "expectedLots": 0.5032,
+        "oneLotHitRate": 0.7391
+      },
+      {
+        "lots": 400,
+        "shares": 40000,
+        "group": "A",
+        "expectedLots": 0.6226,
+        "oneLotHitRate": 0.7391
+      },
+      {
+        "lots": 500,
+        "shares": 50000,
+        "group": "A",
+        "expectedLots": 0.7344,
+        "oneLotHitRate": 0.7391
+      },
+      {
+        "lots": 600,
+        "shares": 60000,
+        "group": "A",
+        "expectedLots": 0.8405,
+        "oneLotHitRate": 0.7391
+      },
+      {
+        "lots": 700,
+        "shares": 70000,
+        "group": "A",
+        "expectedLots": 0.942,
+        "oneLotHitRate": 0.7391
+      },
+      {
+        "lots": 800,
+        "shares": 80000,
+        "group": "A",
+        "expectedLots": 1.0399,
+        "oneLotHitRate": 0.7391
+      },
+      {
+        "lots": 900,
+        "shares": 90000,
+        "group": "A",
+        "expectedLots": 1.1346,
+        "oneLotHitRate": 0.7391
+      },
+      {
+        "lots": 1000,
+        "shares": 100000,
+        "group": "A",
+        "expectedLots": 1.2266,
+        "oneLotHitRate": 0.7391
+      },
+      {
+        "lots": 1500,
+        "shares": 150000,
+        "group": "B",
+        "expectedLots": 1.9538,
+        "oneLotHitRate": 0.7391
+      },
+      {
+        "lots": 2000,
+        "shares": 200000,
+        "group": "B",
+        "expectedLots": 2.4173,
+        "oneLotHitRate": 0.7391
+      },
+      {
+        "lots": 2449,
+        "shares": 244900,
+        "group": "B",
+        "expectedLots": 2.8082,
+        "oneLotHitRate": 0.7391
+      }
+    ]
   },
   {
     "stockCode": "09637",
     "name": "禮邦醫藥－Ｂ",
     "englishName": "",
-    "status": "current",
+    "status": "listed",
     "listDate": "2026-06-30",
     "offerPrice": 22.6,
     "sharesPerLot": 100,
@@ -441,13 +949,288 @@ window.IPO_HISTORY_2026 = [
     "actualOneLotHitRate": null,
     "subscriptionStart": "",
     "subscriptionEnd": "2026-06-24 12:00",
-    "estimatedSubscriptionMultiple": 963.56
+    "estimatedSubscriptionMultiple": 963.56,
+    "applicationTiers": [
+      {
+        "lots": 1,
+        "shares": 100,
+        "group": "A",
+        "expectedLots": 0.0101,
+        "oneLotHitRate": 1.0102
+      },
+      {
+        "lots": 2,
+        "shares": 200,
+        "group": "A",
+        "expectedLots": 0.0169,
+        "oneLotHitRate": 1.0102
+      },
+      {
+        "lots": 3,
+        "shares": 300,
+        "group": "A",
+        "expectedLots": 0.0228,
+        "oneLotHitRate": 1.0102
+      },
+      {
+        "lots": 4,
+        "shares": 400,
+        "group": "A",
+        "expectedLots": 0.0282,
+        "oneLotHitRate": 1.0102
+      },
+      {
+        "lots": 5,
+        "shares": 500,
+        "group": "A",
+        "expectedLots": 0.0332,
+        "oneLotHitRate": 1.0102
+      },
+      {
+        "lots": 6,
+        "shares": 600,
+        "group": "A",
+        "expectedLots": 0.038,
+        "oneLotHitRate": 1.0102
+      },
+      {
+        "lots": 7,
+        "shares": 700,
+        "group": "A",
+        "expectedLots": 0.0426,
+        "oneLotHitRate": 1.0102
+      },
+      {
+        "lots": 8,
+        "shares": 800,
+        "group": "A",
+        "expectedLots": 0.0471,
+        "oneLotHitRate": 1.0102
+      },
+      {
+        "lots": 9,
+        "shares": 900,
+        "group": "A",
+        "expectedLots": 0.0514,
+        "oneLotHitRate": 1.0102
+      },
+      {
+        "lots": 10,
+        "shares": 1000,
+        "group": "A",
+        "expectedLots": 0.0555,
+        "oneLotHitRate": 1.0102
+      },
+      {
+        "lots": 15,
+        "shares": 1500,
+        "group": "A",
+        "expectedLots": 0.0749,
+        "oneLotHitRate": 1.0102
+      },
+      {
+        "lots": 20,
+        "shares": 2000,
+        "group": "A",
+        "expectedLots": 0.0927,
+        "oneLotHitRate": 1.0102
+      },
+      {
+        "lots": 25,
+        "shares": 2500,
+        "group": "A",
+        "expectedLots": 0.1094,
+        "oneLotHitRate": 1.0102
+      },
+      {
+        "lots": 30,
+        "shares": 3000,
+        "group": "A",
+        "expectedLots": 0.1252,
+        "oneLotHitRate": 1.0102
+      },
+      {
+        "lots": 35,
+        "shares": 3500,
+        "group": "A",
+        "expectedLots": 0.1403,
+        "oneLotHitRate": 1.0102
+      },
+      {
+        "lots": 40,
+        "shares": 4000,
+        "group": "A",
+        "expectedLots": 0.1549,
+        "oneLotHitRate": 1.0102
+      },
+      {
+        "lots": 45,
+        "shares": 4500,
+        "group": "A",
+        "expectedLots": 0.169,
+        "oneLotHitRate": 1.0102
+      },
+      {
+        "lots": 50,
+        "shares": 5000,
+        "group": "A",
+        "expectedLots": 0.1827,
+        "oneLotHitRate": 1.0102
+      },
+      {
+        "lots": 60,
+        "shares": 6000,
+        "group": "A",
+        "expectedLots": 0.2091,
+        "oneLotHitRate": 1.0102
+      },
+      {
+        "lots": 70,
+        "shares": 7000,
+        "group": "A",
+        "expectedLots": 0.2343,
+        "oneLotHitRate": 1.0102
+      },
+      {
+        "lots": 80,
+        "shares": 8000,
+        "group": "A",
+        "expectedLots": 0.2586,
+        "oneLotHitRate": 1.0102
+      },
+      {
+        "lots": 90,
+        "shares": 9000,
+        "group": "A",
+        "expectedLots": 0.2822,
+        "oneLotHitRate": 1.0102
+      },
+      {
+        "lots": 100,
+        "shares": 10000,
+        "group": "A",
+        "expectedLots": 0.3051,
+        "oneLotHitRate": 1.0102
+      },
+      {
+        "lots": 150,
+        "shares": 15000,
+        "group": "A",
+        "expectedLots": 0.4118,
+        "oneLotHitRate": 1.0102
+      },
+      {
+        "lots": 200,
+        "shares": 20000,
+        "group": "A",
+        "expectedLots": 0.5096,
+        "oneLotHitRate": 1.0102
+      },
+      {
+        "lots": 250,
+        "shares": 25000,
+        "group": "A",
+        "expectedLots": 0.601,
+        "oneLotHitRate": 1.0102
+      },
+      {
+        "lots": 300,
+        "shares": 30000,
+        "group": "A",
+        "expectedLots": 0.6879,
+        "oneLotHitRate": 1.0102
+      },
+      {
+        "lots": 400,
+        "shares": 40000,
+        "group": "A",
+        "expectedLots": 0.851,
+        "oneLotHitRate": 1.0102
+      },
+      {
+        "lots": 500,
+        "shares": 50000,
+        "group": "A",
+        "expectedLots": 1.0038,
+        "oneLotHitRate": 1.0102
+      },
+      {
+        "lots": 600,
+        "shares": 60000,
+        "group": "A",
+        "expectedLots": 1.1488,
+        "oneLotHitRate": 1.0102
+      },
+      {
+        "lots": 700,
+        "shares": 70000,
+        "group": "A",
+        "expectedLots": 1.2876,
+        "oneLotHitRate": 1.0102
+      },
+      {
+        "lots": 800,
+        "shares": 80000,
+        "group": "A",
+        "expectedLots": 1.4214,
+        "oneLotHitRate": 1.0102
+      },
+      {
+        "lots": 900,
+        "shares": 90000,
+        "group": "A",
+        "expectedLots": 1.5508,
+        "oneLotHitRate": 1.0102
+      },
+      {
+        "lots": 1000,
+        "shares": 100000,
+        "group": "A",
+        "expectedLots": 1.6766,
+        "oneLotHitRate": 1.0102
+      },
+      {
+        "lots": 1500,
+        "shares": 150000,
+        "group": "B",
+        "expectedLots": 2.6706,
+        "oneLotHitRate": 1.0102
+      },
+      {
+        "lots": 2000,
+        "shares": 200000,
+        "group": "B",
+        "expectedLots": 3.3042,
+        "oneLotHitRate": 1.0102
+      },
+      {
+        "lots": 2500,
+        "shares": 250000,
+        "group": "B",
+        "expectedLots": 3.8975,
+        "oneLotHitRate": 1.0102
+      },
+      {
+        "lots": 3000,
+        "shares": 300000,
+        "group": "B",
+        "expectedLots": 4.4604,
+        "oneLotHitRate": 1.0102
+      },
+      {
+        "lots": 5000,
+        "shares": 500000,
+        "group": "B",
+        "expectedLots": 6.5095,
+        "oneLotHitRate": 1.0102
+      }
+    ]
   },
   {
     "stockCode": "02272",
     "name": "科拓股份",
     "englishName": "",
-    "status": "current",
+    "status": "listed",
     "listDate": "2026-06-26",
     "offerPrice": 39.55,
     "sharesPerLot": 60,
@@ -2143,7 +2926,7 @@ window.IPO_HISTORY_2026 = [
     "stockCode": "01392",
     "name": "海清智元",
     "englishName": "",
-    "status": "current",
+    "status": "listed",
     "listDate": "2026-06-22",
     "offerPrice": 7.2,
     "sharesPerLot": 500,
@@ -2749,7 +3532,7 @@ window.IPO_HISTORY_2026 = [
     "stockCode": "06675",
     "name": "SENASIC",
     "englishName": "",
-    "status": "current",
+    "status": "listed",
     "listDate": "2026-06-17",
     "offerPrice": 18.36,
     "sharesPerLot": 200,
@@ -3341,7 +4124,7 @@ window.IPO_HISTORY_2026 = [
     "stockCode": "06658",
     "name": "溜溜梅",
     "englishName": "",
-    "status": "current",
+    "status": "listed",
     "listDate": "2026-06-15",
     "offerPrice": 43.58,
     "sharesPerLot": 100,
@@ -40442,7 +41225,7 @@ window.IPO_HISTORY_2026 = [
     "stockCode": "01191",
     "name": "海光芯正",
     "englishName": "",
-    "status": "current",
+    "status": "listed",
     "listDate": "2026-06-29",
     "offerPrice": 114.0,
     "sharesPerLot": 50,
@@ -40483,13 +41266,288 @@ window.IPO_HISTORY_2026 = [
     "actualOneLotHitRate": null,
     "subscriptionStart": "",
     "subscriptionEnd": "2026-06-24 12:00",
-    "estimatedSubscriptionMultiple": 1296.89
+    "estimatedSubscriptionMultiple": 1296.89,
+    "applicationTiers": [
+      {
+        "lots": 1,
+        "shares": 50,
+        "group": "A",
+        "expectedLots": 0.0087,
+        "oneLotHitRate": 0.8745
+      },
+      {
+        "lots": 2,
+        "shares": 100,
+        "group": "A",
+        "expectedLots": 0.0146,
+        "oneLotHitRate": 0.8745
+      },
+      {
+        "lots": 3,
+        "shares": 150,
+        "group": "A",
+        "expectedLots": 0.0197,
+        "oneLotHitRate": 0.8745
+      },
+      {
+        "lots": 4,
+        "shares": 200,
+        "group": "A",
+        "expectedLots": 0.0244,
+        "oneLotHitRate": 0.8745
+      },
+      {
+        "lots": 5,
+        "shares": 250,
+        "group": "A",
+        "expectedLots": 0.0288,
+        "oneLotHitRate": 0.8745
+      },
+      {
+        "lots": 6,
+        "shares": 300,
+        "group": "A",
+        "expectedLots": 0.0329,
+        "oneLotHitRate": 0.8745
+      },
+      {
+        "lots": 7,
+        "shares": 350,
+        "group": "A",
+        "expectedLots": 0.0369,
+        "oneLotHitRate": 0.8745
+      },
+      {
+        "lots": 8,
+        "shares": 400,
+        "group": "A",
+        "expectedLots": 0.0407,
+        "oneLotHitRate": 0.8745
+      },
+      {
+        "lots": 9,
+        "shares": 450,
+        "group": "A",
+        "expectedLots": 0.0445,
+        "oneLotHitRate": 0.8745
+      },
+      {
+        "lots": 10,
+        "shares": 500,
+        "group": "A",
+        "expectedLots": 0.0481,
+        "oneLotHitRate": 0.8745
+      },
+      {
+        "lots": 15,
+        "shares": 750,
+        "group": "A",
+        "expectedLots": 0.0649,
+        "oneLotHitRate": 0.8745
+      },
+      {
+        "lots": 20,
+        "shares": 1000,
+        "group": "A",
+        "expectedLots": 0.0803,
+        "oneLotHitRate": 0.8745
+      },
+      {
+        "lots": 25,
+        "shares": 1250,
+        "group": "A",
+        "expectedLots": 0.0947,
+        "oneLotHitRate": 0.8745
+      },
+      {
+        "lots": 30,
+        "shares": 1500,
+        "group": "A",
+        "expectedLots": 0.1083,
+        "oneLotHitRate": 0.8745
+      },
+      {
+        "lots": 35,
+        "shares": 1750,
+        "group": "A",
+        "expectedLots": 0.1214,
+        "oneLotHitRate": 0.8745
+      },
+      {
+        "lots": 40,
+        "shares": 2000,
+        "group": "A",
+        "expectedLots": 0.1341,
+        "oneLotHitRate": 0.8745
+      },
+      {
+        "lots": 45,
+        "shares": 2250,
+        "group": "A",
+        "expectedLots": 0.1463,
+        "oneLotHitRate": 0.8745
+      },
+      {
+        "lots": 50,
+        "shares": 2500,
+        "group": "A",
+        "expectedLots": 0.1581,
+        "oneLotHitRate": 0.8745
+      },
+      {
+        "lots": 60,
+        "shares": 3000,
+        "group": "A",
+        "expectedLots": 0.181,
+        "oneLotHitRate": 0.8745
+      },
+      {
+        "lots": 70,
+        "shares": 3500,
+        "group": "A",
+        "expectedLots": 0.2028,
+        "oneLotHitRate": 0.8745
+      },
+      {
+        "lots": 80,
+        "shares": 4000,
+        "group": "A",
+        "expectedLots": 0.2239,
+        "oneLotHitRate": 0.8745
+      },
+      {
+        "lots": 90,
+        "shares": 4500,
+        "group": "A",
+        "expectedLots": 0.2443,
+        "oneLotHitRate": 0.8745
+      },
+      {
+        "lots": 100,
+        "shares": 5000,
+        "group": "A",
+        "expectedLots": 0.2641,
+        "oneLotHitRate": 0.8745
+      },
+      {
+        "lots": 150,
+        "shares": 7500,
+        "group": "A",
+        "expectedLots": 0.3565,
+        "oneLotHitRate": 0.8745
+      },
+      {
+        "lots": 200,
+        "shares": 10000,
+        "group": "A",
+        "expectedLots": 0.4411,
+        "oneLotHitRate": 0.8745
+      },
+      {
+        "lots": 250,
+        "shares": 12500,
+        "group": "A",
+        "expectedLots": 0.5203,
+        "oneLotHitRate": 0.8745
+      },
+      {
+        "lots": 300,
+        "shares": 15000,
+        "group": "A",
+        "expectedLots": 0.5954,
+        "oneLotHitRate": 0.8745
+      },
+      {
+        "lots": 400,
+        "shares": 20000,
+        "group": "A",
+        "expectedLots": 0.7367,
+        "oneLotHitRate": 0.8745
+      },
+      {
+        "lots": 500,
+        "shares": 25000,
+        "group": "A",
+        "expectedLots": 0.8689,
+        "oneLotHitRate": 0.8745
+      },
+      {
+        "lots": 600,
+        "shares": 30000,
+        "group": "A",
+        "expectedLots": 0.9944,
+        "oneLotHitRate": 0.8745
+      },
+      {
+        "lots": 700,
+        "shares": 35000,
+        "group": "A",
+        "expectedLots": 1.1146,
+        "oneLotHitRate": 0.8745
+      },
+      {
+        "lots": 800,
+        "shares": 40000,
+        "group": "A",
+        "expectedLots": 1.2304,
+        "oneLotHitRate": 0.8745
+      },
+      {
+        "lots": 900,
+        "shares": 45000,
+        "group": "A",
+        "expectedLots": 1.3424,
+        "oneLotHitRate": 0.8745
+      },
+      {
+        "lots": 1000,
+        "shares": 50000,
+        "group": "A",
+        "expectedLots": 1.4513,
+        "oneLotHitRate": 0.8745
+      },
+      {
+        "lots": 1500,
+        "shares": 75000,
+        "group": "B",
+        "expectedLots": 2.3117,
+        "oneLotHitRate": 0.8745
+      },
+      {
+        "lots": 2000,
+        "shares": 100000,
+        "group": "B",
+        "expectedLots": 2.8602,
+        "oneLotHitRate": 0.8745
+      },
+      {
+        "lots": 2500,
+        "shares": 125000,
+        "group": "B",
+        "expectedLots": 3.3737,
+        "oneLotHitRate": 0.8745
+      },
+      {
+        "lots": 3000,
+        "shares": 150000,
+        "group": "B",
+        "expectedLots": 3.861,
+        "oneLotHitRate": 0.8745
+      },
+      {
+        "lots": 4029,
+        "shares": 201450,
+        "group": "B",
+        "expectedLots": 4.8026,
+        "oneLotHitRate": 0.8745
+      }
+    ]
   },
   {
     "stockCode": "01688",
     "name": "領益智造",
     "englishName": "",
-    "status": "current",
+    "status": "listed",
     "listDate": "2026-06-26",
     "offerPrice": 10.18,
     "sharesPerLot": 660,
@@ -40530,13 +41588,288 @@ window.IPO_HISTORY_2026 = [
     "actualOneLotHitRate": null,
     "subscriptionStart": "",
     "subscriptionEnd": "2026-06-23 12:00",
-    "estimatedSubscriptionMultiple": 96.16
+    "estimatedSubscriptionMultiple": 96.16,
+    "applicationTiers": [
+      {
+        "lots": 1,
+        "shares": 660,
+        "group": "A",
+        "expectedLots": 0.0211,
+        "oneLotHitRate": 2.1148
+      },
+      {
+        "lots": 2,
+        "shares": 1320,
+        "group": "A",
+        "expectedLots": 0.0353,
+        "oneLotHitRate": 2.1148
+      },
+      {
+        "lots": 3,
+        "shares": 1980,
+        "group": "A",
+        "expectedLots": 0.0477,
+        "oneLotHitRate": 2.1148
+      },
+      {
+        "lots": 4,
+        "shares": 2640,
+        "group": "A",
+        "expectedLots": 0.059,
+        "oneLotHitRate": 2.1148
+      },
+      {
+        "lots": 5,
+        "shares": 3300,
+        "group": "A",
+        "expectedLots": 0.0696,
+        "oneLotHitRate": 2.1148
+      },
+      {
+        "lots": 6,
+        "shares": 3960,
+        "group": "A",
+        "expectedLots": 0.0796,
+        "oneLotHitRate": 2.1148
+      },
+      {
+        "lots": 7,
+        "shares": 4620,
+        "group": "A",
+        "expectedLots": 0.0893,
+        "oneLotHitRate": 2.1148
+      },
+      {
+        "lots": 8,
+        "shares": 5280,
+        "group": "A",
+        "expectedLots": 0.0985,
+        "oneLotHitRate": 2.1148
+      },
+      {
+        "lots": 9,
+        "shares": 5940,
+        "group": "A",
+        "expectedLots": 0.1075,
+        "oneLotHitRate": 2.1148
+      },
+      {
+        "lots": 10,
+        "shares": 6600,
+        "group": "A",
+        "expectedLots": 0.1162,
+        "oneLotHitRate": 2.1148
+      },
+      {
+        "lots": 15,
+        "shares": 9900,
+        "group": "A",
+        "expectedLots": 0.1569,
+        "oneLotHitRate": 2.1148
+      },
+      {
+        "lots": 20,
+        "shares": 13200,
+        "group": "A",
+        "expectedLots": 0.1941,
+        "oneLotHitRate": 2.1148
+      },
+      {
+        "lots": 25,
+        "shares": 16500,
+        "group": "A",
+        "expectedLots": 0.229,
+        "oneLotHitRate": 2.1148
+      },
+      {
+        "lots": 30,
+        "shares": 19800,
+        "group": "A",
+        "expectedLots": 0.262,
+        "oneLotHitRate": 2.1148
+      },
+      {
+        "lots": 35,
+        "shares": 23100,
+        "group": "A",
+        "expectedLots": 0.2937,
+        "oneLotHitRate": 2.1148
+      },
+      {
+        "lots": 40,
+        "shares": 26400,
+        "group": "A",
+        "expectedLots": 0.3242,
+        "oneLotHitRate": 2.1148
+      },
+      {
+        "lots": 45,
+        "shares": 29700,
+        "group": "A",
+        "expectedLots": 0.3537,
+        "oneLotHitRate": 2.1148
+      },
+      {
+        "lots": 50,
+        "shares": 33000,
+        "group": "A",
+        "expectedLots": 0.3824,
+        "oneLotHitRate": 2.1148
+      },
+      {
+        "lots": 60,
+        "shares": 39600,
+        "group": "A",
+        "expectedLots": 0.4376,
+        "oneLotHitRate": 2.1148
+      },
+      {
+        "lots": 70,
+        "shares": 46200,
+        "group": "A",
+        "expectedLots": 0.4905,
+        "oneLotHitRate": 2.1148
+      },
+      {
+        "lots": 80,
+        "shares": 52800,
+        "group": "A",
+        "expectedLots": 0.5415,
+        "oneLotHitRate": 2.1148
+      },
+      {
+        "lots": 90,
+        "shares": 59400,
+        "group": "A",
+        "expectedLots": 0.5908,
+        "oneLotHitRate": 2.1148
+      },
+      {
+        "lots": 100,
+        "shares": 66000,
+        "group": "A",
+        "expectedLots": 0.6387,
+        "oneLotHitRate": 2.1148
+      },
+      {
+        "lots": 150,
+        "shares": 99000,
+        "group": "A",
+        "expectedLots": 0.8621,
+        "oneLotHitRate": 2.1148
+      },
+      {
+        "lots": 200,
+        "shares": 132000,
+        "group": "A",
+        "expectedLots": 1.0667,
+        "oneLotHitRate": 2.1148
+      },
+      {
+        "lots": 250,
+        "shares": 165000,
+        "group": "A",
+        "expectedLots": 1.2582,
+        "oneLotHitRate": 2.1148
+      },
+      {
+        "lots": 300,
+        "shares": 198000,
+        "group": "A",
+        "expectedLots": 1.4399,
+        "oneLotHitRate": 2.1148
+      },
+      {
+        "lots": 400,
+        "shares": 264000,
+        "group": "A",
+        "expectedLots": 1.7816,
+        "oneLotHitRate": 2.1148
+      },
+      {
+        "lots": 500,
+        "shares": 330000,
+        "group": "A",
+        "expectedLots": 2.1014,
+        "oneLotHitRate": 2.1148
+      },
+      {
+        "lots": 600,
+        "shares": 396000,
+        "group": "A",
+        "expectedLots": 2.405,
+        "oneLotHitRate": 2.1148
+      },
+      {
+        "lots": 700,
+        "shares": 462000,
+        "group": "A",
+        "expectedLots": 2.6955,
+        "oneLotHitRate": 2.1148
+      },
+      {
+        "lots": 800,
+        "shares": 528000,
+        "group": "A",
+        "expectedLots": 2.9755,
+        "oneLotHitRate": 2.1148
+      },
+      {
+        "lots": 900,
+        "shares": 594000,
+        "group": "A",
+        "expectedLots": 3.2465,
+        "oneLotHitRate": 2.1148
+      },
+      {
+        "lots": 1000,
+        "shares": 660000,
+        "group": "A",
+        "expectedLots": 3.5097,
+        "oneLotHitRate": 2.1148
+      },
+      {
+        "lots": 1500,
+        "shares": 990000,
+        "group": "B",
+        "expectedLots": 5.5907,
+        "oneLotHitRate": 2.1148
+      },
+      {
+        "lots": 2000,
+        "shares": 1320000,
+        "group": "B",
+        "expectedLots": 6.917,
+        "oneLotHitRate": 2.1148
+      },
+      {
+        "lots": 2500,
+        "shares": 1650000,
+        "group": "B",
+        "expectedLots": 8.1589,
+        "oneLotHitRate": 2.1148
+      },
+      {
+        "lots": 3000,
+        "shares": 1980000,
+        "group": "B",
+        "expectedLots": 9.3374,
+        "oneLotHitRate": 2.1148
+      },
+      {
+        "lots": 5000,
+        "shares": 3300000,
+        "group": "B",
+        "expectedLots": 13.6268,
+        "oneLotHitRate": 2.1148
+      }
+    ]
   },
   {
     "stockCode": "01956",
     "name": "中科聞歌",
     "englishName": "",
-    "status": "current",
+    "status": "listed",
     "listDate": "2026-06-27",
     "offerPrice": 60.7,
     "sharesPerLot": 200,
@@ -40577,13 +41910,225 @@ window.IPO_HISTORY_2026 = [
     "actualOneLotHitRate": null,
     "subscriptionStart": "",
     "subscriptionEnd": "2026-06-23 12:00",
-    "estimatedSubscriptionMultiple": 5966.78
+    "estimatedSubscriptionMultiple": 5966.78,
+    "applicationTiers": [
+      {
+        "lots": 1,
+        "shares": 200,
+        "group": "A",
+        "expectedLots": 0.005,
+        "oneLotHitRate": 0.4996
+      },
+      {
+        "lots": 2,
+        "shares": 400,
+        "group": "A",
+        "expectedLots": 0.0083,
+        "oneLotHitRate": 0.4996
+      },
+      {
+        "lots": 3,
+        "shares": 600,
+        "group": "A",
+        "expectedLots": 0.0113,
+        "oneLotHitRate": 0.4996
+      },
+      {
+        "lots": 4,
+        "shares": 800,
+        "group": "A",
+        "expectedLots": 0.0139,
+        "oneLotHitRate": 0.4996
+      },
+      {
+        "lots": 5,
+        "shares": 1000,
+        "group": "A",
+        "expectedLots": 0.0164,
+        "oneLotHitRate": 0.4996
+      },
+      {
+        "lots": 6,
+        "shares": 1200,
+        "group": "A",
+        "expectedLots": 0.0188,
+        "oneLotHitRate": 0.4996
+      },
+      {
+        "lots": 7,
+        "shares": 1400,
+        "group": "A",
+        "expectedLots": 0.0211,
+        "oneLotHitRate": 0.4996
+      },
+      {
+        "lots": 8,
+        "shares": 1600,
+        "group": "A",
+        "expectedLots": 0.0233,
+        "oneLotHitRate": 0.4996
+      },
+      {
+        "lots": 9,
+        "shares": 1800,
+        "group": "A",
+        "expectedLots": 0.0254,
+        "oneLotHitRate": 0.4996
+      },
+      {
+        "lots": 10,
+        "shares": 2000,
+        "group": "A",
+        "expectedLots": 0.0275,
+        "oneLotHitRate": 0.4996
+      },
+      {
+        "lots": 15,
+        "shares": 3000,
+        "group": "A",
+        "expectedLots": 0.0371,
+        "oneLotHitRate": 0.4996
+      },
+      {
+        "lots": 20,
+        "shares": 4000,
+        "group": "A",
+        "expectedLots": 0.0459,
+        "oneLotHitRate": 0.4996
+      },
+      {
+        "lots": 25,
+        "shares": 5000,
+        "group": "A",
+        "expectedLots": 0.0541,
+        "oneLotHitRate": 0.4996
+      },
+      {
+        "lots": 30,
+        "shares": 6000,
+        "group": "A",
+        "expectedLots": 0.0619,
+        "oneLotHitRate": 0.4996
+      },
+      {
+        "lots": 35,
+        "shares": 7000,
+        "group": "A",
+        "expectedLots": 0.0694,
+        "oneLotHitRate": 0.4996
+      },
+      {
+        "lots": 40,
+        "shares": 8000,
+        "group": "A",
+        "expectedLots": 0.0766,
+        "oneLotHitRate": 0.4996
+      },
+      {
+        "lots": 45,
+        "shares": 9000,
+        "group": "A",
+        "expectedLots": 0.0836,
+        "oneLotHitRate": 0.4996
+      },
+      {
+        "lots": 50,
+        "shares": 10000,
+        "group": "A",
+        "expectedLots": 0.0903,
+        "oneLotHitRate": 0.4996
+      },
+      {
+        "lots": 60,
+        "shares": 12000,
+        "group": "A",
+        "expectedLots": 0.1034,
+        "oneLotHitRate": 0.4996
+      },
+      {
+        "lots": 70,
+        "shares": 14000,
+        "group": "A",
+        "expectedLots": 0.1159,
+        "oneLotHitRate": 0.4996
+      },
+      {
+        "lots": 80,
+        "shares": 16000,
+        "group": "A",
+        "expectedLots": 0.1279,
+        "oneLotHitRate": 0.4996
+      },
+      {
+        "lots": 90,
+        "shares": 18000,
+        "group": "A",
+        "expectedLots": 0.1396,
+        "oneLotHitRate": 0.4996
+      },
+      {
+        "lots": 100,
+        "shares": 20000,
+        "group": "A",
+        "expectedLots": 0.1509,
+        "oneLotHitRate": 0.4996
+      },
+      {
+        "lots": 150,
+        "shares": 30000,
+        "group": "A",
+        "expectedLots": 0.2037,
+        "oneLotHitRate": 0.4996
+      },
+      {
+        "lots": 200,
+        "shares": 40000,
+        "group": "A",
+        "expectedLots": 0.252,
+        "oneLotHitRate": 0.4996
+      },
+      {
+        "lots": 250,
+        "shares": 50000,
+        "group": "A",
+        "expectedLots": 0.2972,
+        "oneLotHitRate": 0.4996
+      },
+      {
+        "lots": 300,
+        "shares": 60000,
+        "group": "A",
+        "expectedLots": 0.3402,
+        "oneLotHitRate": 0.4996
+      },
+      {
+        "lots": 400,
+        "shares": 80000,
+        "group": "A",
+        "expectedLots": 0.4209,
+        "oneLotHitRate": 0.4996
+      },
+      {
+        "lots": 500,
+        "shares": 100000,
+        "group": "A",
+        "expectedLots": 0.4964,
+        "oneLotHitRate": 0.4996
+      },
+      {
+        "lots": 556,
+        "shares": 111200,
+        "group": "A",
+        "expectedLots": 0.537,
+        "oneLotHitRate": 0.4996
+      }
+    ]
   },
   {
     "stockCode": "02672",
     "name": "白鴿在線",
     "englishName": "",
-    "status": "current",
+    "status": "listed",
     "listDate": "2026-06-27",
     "offerPrice": 20.28,
     "sharesPerLot": 200,
@@ -40624,13 +42169,274 @@ window.IPO_HISTORY_2026 = [
     "actualOneLotHitRate": null,
     "subscriptionStart": "",
     "subscriptionEnd": "2026-06-24 12:00",
-    "estimatedSubscriptionMultiple": 242.05
+    "estimatedSubscriptionMultiple": 242.05,
+    "applicationTiers": [
+      {
+        "lots": 1,
+        "shares": 200,
+        "group": "A",
+        "expectedLots": 0.0131,
+        "oneLotHitRate": 1.3087
+      },
+      {
+        "lots": 2,
+        "shares": 400,
+        "group": "A",
+        "expectedLots": 0.0219,
+        "oneLotHitRate": 1.3087
+      },
+      {
+        "lots": 3,
+        "shares": 600,
+        "group": "A",
+        "expectedLots": 0.0295,
+        "oneLotHitRate": 1.3087
+      },
+      {
+        "lots": 4,
+        "shares": 800,
+        "group": "A",
+        "expectedLots": 0.0365,
+        "oneLotHitRate": 1.3087
+      },
+      {
+        "lots": 5,
+        "shares": 1000,
+        "group": "A",
+        "expectedLots": 0.0431,
+        "oneLotHitRate": 1.3087
+      },
+      {
+        "lots": 6,
+        "shares": 1200,
+        "group": "A",
+        "expectedLots": 0.0493,
+        "oneLotHitRate": 1.3087
+      },
+      {
+        "lots": 7,
+        "shares": 1400,
+        "group": "A",
+        "expectedLots": 0.0552,
+        "oneLotHitRate": 1.3087
+      },
+      {
+        "lots": 8,
+        "shares": 1600,
+        "group": "A",
+        "expectedLots": 0.061,
+        "oneLotHitRate": 1.3087
+      },
+      {
+        "lots": 9,
+        "shares": 1800,
+        "group": "A",
+        "expectedLots": 0.0665,
+        "oneLotHitRate": 1.3087
+      },
+      {
+        "lots": 10,
+        "shares": 2000,
+        "group": "A",
+        "expectedLots": 0.0719,
+        "oneLotHitRate": 1.3087
+      },
+      {
+        "lots": 15,
+        "shares": 3000,
+        "group": "A",
+        "expectedLots": 0.0971,
+        "oneLotHitRate": 1.3087
+      },
+      {
+        "lots": 20,
+        "shares": 4000,
+        "group": "A",
+        "expectedLots": 0.1201,
+        "oneLotHitRate": 1.3087
+      },
+      {
+        "lots": 25,
+        "shares": 5000,
+        "group": "A",
+        "expectedLots": 0.1417,
+        "oneLotHitRate": 1.3087
+      },
+      {
+        "lots": 30,
+        "shares": 6000,
+        "group": "A",
+        "expectedLots": 0.1622,
+        "oneLotHitRate": 1.3087
+      },
+      {
+        "lots": 35,
+        "shares": 7000,
+        "group": "A",
+        "expectedLots": 0.1817,
+        "oneLotHitRate": 1.3087
+      },
+      {
+        "lots": 40,
+        "shares": 8000,
+        "group": "A",
+        "expectedLots": 0.2006,
+        "oneLotHitRate": 1.3087
+      },
+      {
+        "lots": 45,
+        "shares": 9000,
+        "group": "A",
+        "expectedLots": 0.2189,
+        "oneLotHitRate": 1.3087
+      },
+      {
+        "lots": 50,
+        "shares": 10000,
+        "group": "A",
+        "expectedLots": 0.2366,
+        "oneLotHitRate": 1.3087
+      },
+      {
+        "lots": 60,
+        "shares": 12000,
+        "group": "A",
+        "expectedLots": 0.2708,
+        "oneLotHitRate": 1.3087
+      },
+      {
+        "lots": 70,
+        "shares": 14000,
+        "group": "A",
+        "expectedLots": 0.3035,
+        "oneLotHitRate": 1.3087
+      },
+      {
+        "lots": 80,
+        "shares": 16000,
+        "group": "A",
+        "expectedLots": 0.3351,
+        "oneLotHitRate": 1.3087
+      },
+      {
+        "lots": 90,
+        "shares": 18000,
+        "group": "A",
+        "expectedLots": 0.3656,
+        "oneLotHitRate": 1.3087
+      },
+      {
+        "lots": 100,
+        "shares": 20000,
+        "group": "A",
+        "expectedLots": 0.3952,
+        "oneLotHitRate": 1.3087
+      },
+      {
+        "lots": 150,
+        "shares": 30000,
+        "group": "A",
+        "expectedLots": 0.5335,
+        "oneLotHitRate": 1.3087
+      },
+      {
+        "lots": 200,
+        "shares": 40000,
+        "group": "A",
+        "expectedLots": 0.6601,
+        "oneLotHitRate": 1.3087
+      },
+      {
+        "lots": 250,
+        "shares": 50000,
+        "group": "A",
+        "expectedLots": 0.7786,
+        "oneLotHitRate": 1.3087
+      },
+      {
+        "lots": 300,
+        "shares": 60000,
+        "group": "A",
+        "expectedLots": 0.8911,
+        "oneLotHitRate": 1.3087
+      },
+      {
+        "lots": 400,
+        "shares": 80000,
+        "group": "A",
+        "expectedLots": 1.1025,
+        "oneLotHitRate": 1.3087
+      },
+      {
+        "lots": 500,
+        "shares": 100000,
+        "group": "A",
+        "expectedLots": 1.3004,
+        "oneLotHitRate": 1.3087
+      },
+      {
+        "lots": 600,
+        "shares": 120000,
+        "group": "A",
+        "expectedLots": 1.4883,
+        "oneLotHitRate": 1.3087
+      },
+      {
+        "lots": 700,
+        "shares": 140000,
+        "group": "A",
+        "expectedLots": 1.6681,
+        "oneLotHitRate": 1.3087
+      },
+      {
+        "lots": 800,
+        "shares": 160000,
+        "group": "A",
+        "expectedLots": 1.8414,
+        "oneLotHitRate": 1.3087
+      },
+      {
+        "lots": 900,
+        "shares": 180000,
+        "group": "A",
+        "expectedLots": 2.009,
+        "oneLotHitRate": 1.3087
+      },
+      {
+        "lots": 1000,
+        "shares": 200000,
+        "group": "A",
+        "expectedLots": 2.172,
+        "oneLotHitRate": 1.3087
+      },
+      {
+        "lots": 1500,
+        "shares": 300000,
+        "group": "B",
+        "expectedLots": 3.4597,
+        "oneLotHitRate": 1.3087
+      },
+      {
+        "lots": 2000,
+        "shares": 400000,
+        "group": "B",
+        "expectedLots": 4.2805,
+        "oneLotHitRate": 1.3087
+      },
+      {
+        "lots": 2500,
+        "shares": 500000,
+        "group": "B",
+        "expectedLots": 5.049,
+        "oneLotHitRate": 1.3087
+      }
+    ]
   },
   {
     "stockCode": "06228",
     "name": "MERDEKAGOLD-DRS",
     "englishName": "",
-    "status": "current",
+    "status": "listed",
     "listDate": "2026-06-27",
     "offerPrice": 8.0,
     "sharesPerLot": 100,
@@ -40671,13 +42477,288 @@ window.IPO_HISTORY_2026 = [
     "actualOneLotHitRate": null,
     "subscriptionStart": "",
     "subscriptionEnd": "2026-06-23 12:00",
-    "estimatedSubscriptionMultiple": 4.42
+    "estimatedSubscriptionMultiple": 4.42,
+    "applicationTiers": [
+      {
+        "lots": 1,
+        "shares": 100,
+        "group": "A",
+        "expectedLots": 0.0837,
+        "oneLotHitRate": 8.3694
+      },
+      {
+        "lots": 2,
+        "shares": 200,
+        "group": "A",
+        "expectedLots": 0.1398,
+        "oneLotHitRate": 8.3694
+      },
+      {
+        "lots": 3,
+        "shares": 300,
+        "group": "A",
+        "expectedLots": 0.1887,
+        "oneLotHitRate": 8.3694
+      },
+      {
+        "lots": 4,
+        "shares": 400,
+        "group": "A",
+        "expectedLots": 0.2335,
+        "oneLotHitRate": 8.3694
+      },
+      {
+        "lots": 5,
+        "shares": 500,
+        "group": "A",
+        "expectedLots": 0.2754,
+        "oneLotHitRate": 8.3694
+      },
+      {
+        "lots": 6,
+        "shares": 600,
+        "group": "A",
+        "expectedLots": 0.3152,
+        "oneLotHitRate": 8.3694
+      },
+      {
+        "lots": 7,
+        "shares": 700,
+        "group": "A",
+        "expectedLots": 0.3532,
+        "oneLotHitRate": 8.3694
+      },
+      {
+        "lots": 8,
+        "shares": 800,
+        "group": "A",
+        "expectedLots": 0.3899,
+        "oneLotHitRate": 8.3694
+      },
+      {
+        "lots": 9,
+        "shares": 900,
+        "group": "A",
+        "expectedLots": 0.4254,
+        "oneLotHitRate": 8.3694
+      },
+      {
+        "lots": 10,
+        "shares": 1000,
+        "group": "A",
+        "expectedLots": 0.4599,
+        "oneLotHitRate": 8.3694
+      },
+      {
+        "lots": 15,
+        "shares": 1500,
+        "group": "A",
+        "expectedLots": 0.6209,
+        "oneLotHitRate": 8.3694
+      },
+      {
+        "lots": 20,
+        "shares": 2000,
+        "group": "A",
+        "expectedLots": 0.7682,
+        "oneLotHitRate": 8.3694
+      },
+      {
+        "lots": 25,
+        "shares": 2500,
+        "group": "A",
+        "expectedLots": 0.9061,
+        "oneLotHitRate": 8.3694
+      },
+      {
+        "lots": 30,
+        "shares": 3000,
+        "group": "A",
+        "expectedLots": 1.037,
+        "oneLotHitRate": 8.3694
+      },
+      {
+        "lots": 35,
+        "shares": 3500,
+        "group": "A",
+        "expectedLots": 1.1623,
+        "oneLotHitRate": 8.3694
+      },
+      {
+        "lots": 40,
+        "shares": 4000,
+        "group": "A",
+        "expectedLots": 1.283,
+        "oneLotHitRate": 8.3694
+      },
+      {
+        "lots": 45,
+        "shares": 4500,
+        "group": "A",
+        "expectedLots": 1.3998,
+        "oneLotHitRate": 8.3694
+      },
+      {
+        "lots": 50,
+        "shares": 5000,
+        "group": "A",
+        "expectedLots": 1.5133,
+        "oneLotHitRate": 8.3694
+      },
+      {
+        "lots": 60,
+        "shares": 6000,
+        "group": "A",
+        "expectedLots": 1.7319,
+        "oneLotHitRate": 8.3694
+      },
+      {
+        "lots": 70,
+        "shares": 7000,
+        "group": "A",
+        "expectedLots": 1.9412,
+        "oneLotHitRate": 8.3694
+      },
+      {
+        "lots": 80,
+        "shares": 8000,
+        "group": "A",
+        "expectedLots": 2.1428,
+        "oneLotHitRate": 8.3694
+      },
+      {
+        "lots": 90,
+        "shares": 9000,
+        "group": "A",
+        "expectedLots": 2.3379,
+        "oneLotHitRate": 8.3694
+      },
+      {
+        "lots": 100,
+        "shares": 10000,
+        "group": "A",
+        "expectedLots": 2.5275,
+        "oneLotHitRate": 8.3694
+      },
+      {
+        "lots": 150,
+        "shares": 15000,
+        "group": "A",
+        "expectedLots": 3.4119,
+        "oneLotHitRate": 8.3694
+      },
+      {
+        "lots": 200,
+        "shares": 20000,
+        "group": "A",
+        "expectedLots": 4.2214,
+        "oneLotHitRate": 8.3694
+      },
+      {
+        "lots": 250,
+        "shares": 25000,
+        "group": "A",
+        "expectedLots": 4.9793,
+        "oneLotHitRate": 8.3694
+      },
+      {
+        "lots": 300,
+        "shares": 30000,
+        "group": "A",
+        "expectedLots": 5.6985,
+        "oneLotHitRate": 8.3694
+      },
+      {
+        "lots": 400,
+        "shares": 40000,
+        "group": "A",
+        "expectedLots": 7.0505,
+        "oneLotHitRate": 8.3694
+      },
+      {
+        "lots": 500,
+        "shares": 50000,
+        "group": "A",
+        "expectedLots": 8.3163,
+        "oneLotHitRate": 8.3694
+      },
+      {
+        "lots": 600,
+        "shares": 60000,
+        "group": "A",
+        "expectedLots": 9.5175,
+        "oneLotHitRate": 8.3694
+      },
+      {
+        "lots": 700,
+        "shares": 70000,
+        "group": "A",
+        "expectedLots": 10.6676,
+        "oneLotHitRate": 8.3694
+      },
+      {
+        "lots": 800,
+        "shares": 80000,
+        "group": "A",
+        "expectedLots": 11.7755,
+        "oneLotHitRate": 8.3694
+      },
+      {
+        "lots": 900,
+        "shares": 90000,
+        "group": "A",
+        "expectedLots": 12.8479,
+        "oneLotHitRate": 8.3694
+      },
+      {
+        "lots": 1000,
+        "shares": 100000,
+        "group": "A",
+        "expectedLots": 13.8897,
+        "oneLotHitRate": 8.3694
+      },
+      {
+        "lots": 1500,
+        "shares": 150000,
+        "group": "B",
+        "expectedLots": 22.125,
+        "oneLotHitRate": 8.3694
+      },
+      {
+        "lots": 2000,
+        "shares": 200000,
+        "group": "B",
+        "expectedLots": 27.3739,
+        "oneLotHitRate": 8.3694
+      },
+      {
+        "lots": 2500,
+        "shares": 250000,
+        "group": "B",
+        "expectedLots": 32.2887,
+        "oneLotHitRate": 8.3694
+      },
+      {
+        "lots": 3000,
+        "shares": 300000,
+        "group": "B",
+        "expectedLots": 36.9526,
+        "oneLotHitRate": 8.3694
+      },
+      {
+        "lots": 5000,
+        "shares": 500000,
+        "group": "B",
+        "expectedLots": 53.9278,
+        "oneLotHitRate": 8.3694
+      }
+    ]
   },
   {
     "stockCode": "06915",
     "name": "江西生物",
     "englishName": "",
-    "status": "current",
+    "status": "listed",
     "listDate": "2026-06-30",
     "offerPrice": 13.06,
     "sharesPerLot": 500,
@@ -40718,7 +42799,254 @@ window.IPO_HISTORY_2026 = [
     "actualOneLotHitRate": null,
     "subscriptionStart": "",
     "subscriptionEnd": "2026-06-25 12:00",
-    "estimatedSubscriptionMultiple": 476.56
+    "estimatedSubscriptionMultiple": 476.56,
+    "applicationTiers": [
+      {
+        "lots": 1,
+        "shares": 500,
+        "group": "A",
+        "expectedLots": 0.0099,
+        "oneLotHitRate": 0.9865
+      },
+      {
+        "lots": 2,
+        "shares": 1000,
+        "group": "A",
+        "expectedLots": 0.0165,
+        "oneLotHitRate": 0.9865
+      },
+      {
+        "lots": 3,
+        "shares": 1500,
+        "group": "A",
+        "expectedLots": 0.0222,
+        "oneLotHitRate": 0.9865
+      },
+      {
+        "lots": 4,
+        "shares": 2000,
+        "group": "A",
+        "expectedLots": 0.0275,
+        "oneLotHitRate": 0.9865
+      },
+      {
+        "lots": 5,
+        "shares": 2500,
+        "group": "A",
+        "expectedLots": 0.0325,
+        "oneLotHitRate": 0.9865
+      },
+      {
+        "lots": 6,
+        "shares": 3000,
+        "group": "A",
+        "expectedLots": 0.0371,
+        "oneLotHitRate": 0.9865
+      },
+      {
+        "lots": 7,
+        "shares": 3500,
+        "group": "A",
+        "expectedLots": 0.0416,
+        "oneLotHitRate": 0.9865
+      },
+      {
+        "lots": 8,
+        "shares": 4000,
+        "group": "A",
+        "expectedLots": 0.046,
+        "oneLotHitRate": 0.9865
+      },
+      {
+        "lots": 9,
+        "shares": 4500,
+        "group": "A",
+        "expectedLots": 0.0501,
+        "oneLotHitRate": 0.9865
+      },
+      {
+        "lots": 10,
+        "shares": 5000,
+        "group": "A",
+        "expectedLots": 0.0542,
+        "oneLotHitRate": 0.9865
+      },
+      {
+        "lots": 15,
+        "shares": 7500,
+        "group": "A",
+        "expectedLots": 0.0732,
+        "oneLotHitRate": 0.9865
+      },
+      {
+        "lots": 20,
+        "shares": 10000,
+        "group": "A",
+        "expectedLots": 0.0905,
+        "oneLotHitRate": 0.9865
+      },
+      {
+        "lots": 25,
+        "shares": 12500,
+        "group": "A",
+        "expectedLots": 0.1068,
+        "oneLotHitRate": 0.9865
+      },
+      {
+        "lots": 30,
+        "shares": 15000,
+        "group": "A",
+        "expectedLots": 0.1222,
+        "oneLotHitRate": 0.9865
+      },
+      {
+        "lots": 35,
+        "shares": 17500,
+        "group": "A",
+        "expectedLots": 0.137,
+        "oneLotHitRate": 0.9865
+      },
+      {
+        "lots": 40,
+        "shares": 20000,
+        "group": "A",
+        "expectedLots": 0.1512,
+        "oneLotHitRate": 0.9865
+      },
+      {
+        "lots": 45,
+        "shares": 22500,
+        "group": "A",
+        "expectedLots": 0.165,
+        "oneLotHitRate": 0.9865
+      },
+      {
+        "lots": 50,
+        "shares": 25000,
+        "group": "A",
+        "expectedLots": 0.1784,
+        "oneLotHitRate": 0.9865
+      },
+      {
+        "lots": 60,
+        "shares": 30000,
+        "group": "A",
+        "expectedLots": 0.2041,
+        "oneLotHitRate": 0.9865
+      },
+      {
+        "lots": 70,
+        "shares": 35000,
+        "group": "A",
+        "expectedLots": 0.2288,
+        "oneLotHitRate": 0.9865
+      },
+      {
+        "lots": 80,
+        "shares": 40000,
+        "group": "A",
+        "expectedLots": 0.2526,
+        "oneLotHitRate": 0.9865
+      },
+      {
+        "lots": 90,
+        "shares": 45000,
+        "group": "A",
+        "expectedLots": 0.2756,
+        "oneLotHitRate": 0.9865
+      },
+      {
+        "lots": 100,
+        "shares": 50000,
+        "group": "A",
+        "expectedLots": 0.2979,
+        "oneLotHitRate": 0.9865
+      },
+      {
+        "lots": 150,
+        "shares": 75000,
+        "group": "A",
+        "expectedLots": 0.4022,
+        "oneLotHitRate": 0.9865
+      },
+      {
+        "lots": 200,
+        "shares": 100000,
+        "group": "A",
+        "expectedLots": 0.4976,
+        "oneLotHitRate": 0.9865
+      },
+      {
+        "lots": 250,
+        "shares": 125000,
+        "group": "A",
+        "expectedLots": 0.5869,
+        "oneLotHitRate": 0.9865
+      },
+      {
+        "lots": 300,
+        "shares": 150000,
+        "group": "A",
+        "expectedLots": 0.6717,
+        "oneLotHitRate": 0.9865
+      },
+      {
+        "lots": 400,
+        "shares": 200000,
+        "group": "A",
+        "expectedLots": 0.831,
+        "oneLotHitRate": 0.9865
+      },
+      {
+        "lots": 500,
+        "shares": 250000,
+        "group": "A",
+        "expectedLots": 0.9802,
+        "oneLotHitRate": 0.9865
+      },
+      {
+        "lots": 600,
+        "shares": 300000,
+        "group": "A",
+        "expectedLots": 1.1218,
+        "oneLotHitRate": 0.9865
+      },
+      {
+        "lots": 700,
+        "shares": 350000,
+        "group": "A",
+        "expectedLots": 1.2574,
+        "oneLotHitRate": 0.9865
+      },
+      {
+        "lots": 800,
+        "shares": 400000,
+        "group": "A",
+        "expectedLots": 1.388,
+        "oneLotHitRate": 0.9865
+      },
+      {
+        "lots": 900,
+        "shares": 450000,
+        "group": "A",
+        "expectedLots": 1.5144,
+        "oneLotHitRate": 0.9865
+      },
+      {
+        "lots": 1000,
+        "shares": 500000,
+        "group": "A",
+        "expectedLots": 1.6371,
+        "oneLotHitRate": 0.9865
+      },
+      {
+        "lots": 1086,
+        "shares": 543000,
+        "group": "B",
+        "expectedLots": 2.0534,
+        "oneLotHitRate": 0.9865
+      }
+    ]
   },
   {
     "stockCode": "09630",

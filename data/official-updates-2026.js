@@ -10509,6 +10509,139 @@ window.OFFICIAL_UPDATES_2026 = {
       },
       "basisOfAllocation": [],
       "listDate": "2026-06-26"
+    },
+    {
+      "stockCode": "00537",
+      "name": "普源精電",
+      "englishName": "RIGOL Technologies",
+      "status": "subscribing",
+      "subscriptionStart": "2026-06-30 09:00",
+      "subscriptionEnd": "2026-07-04 12:00",
+      "listDate": "2026-07-09",
+      "offerPrice": 45.98,
+      "sharesPerLot": 100,
+      "estimatedSubscriptionMultiple": 6.18,
+      "publicOfferSharesBefore": 2480300,
+      "basisOfAllocation": [],
+      "applicationSummary": {
+        "minAmountHKD": 4644.37,
+        "minShares": 100,
+        "minLots": 1
+      }
+    },
+    {
+      "stockCode": "02523",
+      "name": "永康控股",
+      "englishName": "Yongkang Holdings",
+      "status": "subscribing",
+      "subscriptionStart": "2026-06-30 09:00",
+      "subscriptionEnd": "2026-07-03 12:00",
+      "listDate": "2026-07-13",
+      "offerPrice": 2.44,
+      "sharesPerLot": 2000,
+      "estimatedSubscriptionMultiple": 4.31,
+      "publicOfferSharesBefore": 5160000,
+      "basisOfAllocation": [],
+      "applicationSummary": {
+        "minAmountHKD": 5414.05,
+        "minShares": 2000,
+        "minLots": 1
+      }
+    },
+    {
+      "stockCode": "06745",
+      "name": "濱化集團",
+      "englishName": "Binhua Group",
+      "status": "subscribing",
+      "subscriptionStart": "2026-06-30 09:00",
+      "subscriptionEnd": "2026-07-03 12:00",
+      "listDate": "2026-07-10",
+      "offerPrice": 3.59,
+      "sharesPerLot": 1000,
+      "estimatedSubscriptionMultiple": 0.5,
+      "publicOfferSharesBefore": 35213000,
+      "basisOfAllocation": [],
+      "applicationSummary": {
+        "minAmountHKD": 3626.19,
+        "minShares": 1000,
+        "minLots": 1
+      }
+    },
+    {
+      "stockCode": "02249",
+      "name": "晶合集成",
+      "englishName": "Nexchip Semiconductor",
+      "status": "subscribing",
+      "subscriptionStart": "2026-07-02 09:00",
+      "subscriptionEnd": "2026-07-07 12:00",
+      "listDate": "2026-07-15",
+      "offerPrice": 32.3,
+      "sharesPerLot": 100,
+      "estimatedSubscriptionMultiple": 8.5,
+      "publicOfferSharesBefore": 5000000,
+      "basisOfAllocation": [],
+      "applicationSummary": {
+        "minAmountHKD": 3262.53,
+        "minShares": 100,
+        "minLots": 1
+      }
+    },
+    {
+      "stockCode": "03752",
+      "name": "珞石機器人",
+      "englishName": "Luoshi Robotics",
+      "status": "subscribing",
+      "subscriptionStart": "2026-07-02 09:00",
+      "subscriptionEnd": "2026-07-07 12:00",
+      "listDate": "2026-07-16",
+      "offerPrice": 38.0,
+      "sharesPerLot": 100,
+      "estimatedSubscriptionMultiple": 15.2,
+      "publicOfferSharesBefore": 3000000,
+      "basisOfAllocation": [],
+      "applicationSummary": {
+        "minAmountHKD": 3838.3,
+        "minShares": 100,
+        "minLots": 1
+      }
+    },
+    {
+      "stockCode": "02797",
+      "name": "齊雲山食品",
+      "englishName": "Qiyunshan Food",
+      "status": "subscribing",
+      "subscriptionStart": "2026-07-02 09:00",
+      "subscriptionEnd": "2026-07-07 12:00",
+      "listDate": "2026-07-14",
+      "offerPrice": 6.0,
+      "sharesPerLot": 500,
+      "estimatedSubscriptionMultiple": 3.2,
+      "publicOfferSharesBefore": 5000000,
+      "basisOfAllocation": [],
+      "applicationSummary": {
+        "minAmountHKD": 3030.24,
+        "minShares": 500,
+        "minLots": 1
+      }
+    },
+    {
+      "stockCode": "06951",
+      "name": "三環集團",
+      "englishName": "Three-Ring Group",
+      "status": "subscribing",
+      "subscriptionStart": "2026-07-03 09:00",
+      "subscriptionEnd": "2026-07-08 12:00",
+      "listDate": "2026-07-17",
+      "offerPrice": 100.3,
+      "sharesPerLot": 100,
+      "estimatedSubscriptionMultiple": 12.8,
+      "publicOfferSharesBefore": 2500000,
+      "basisOfAllocation": [],
+      "applicationSummary": {
+        "minAmountHKD": 10130.15,
+        "minShares": 100,
+        "minLots": 1
+      }
     }
   ]
 };

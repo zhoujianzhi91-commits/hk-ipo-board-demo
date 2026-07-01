@@ -1,4 +1,4 @@
-window.window.IPO_HISTORY_2026 = [
+window.IPO_HISTORY_2026 = [
   {
     "stockCode": "02697",
     "name": "真健康医疗-B",

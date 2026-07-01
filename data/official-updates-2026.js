@@ -1,4 +1,4 @@
-window.window.OFFICIAL_UPDATES_2026 = {
+window.OFFICIAL_UPDATES_2026 = {
   "generatedAt": "2026-06-25T11:24:19",
   "stocks": [
     {

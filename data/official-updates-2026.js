@@ -10135,13 +10135,13 @@ window.OFFICIAL_UPDATES_2026 = {
       "englishName": "",
       "status": "subscribing",
       "subscriptionStart": "",
-      "subscriptionEnd": "",
+      "subscriptionEnd": "2026-06-25 12:00",
       "offerPrice": 85.5,
       "sharesPerLot": 100,
       "totalOfferShares": null,
       "publicOfferSharesBefore": 672000,
       "publicOfferSharesFinal": 672000,
-      "estimatedSubscriptionMultiple": null,
+      "estimatedSubscriptionMultiple": 4571.99,
       "applicationSummary": {
         "minShares": 100,
         "minLots": 1,
@@ -10165,13 +10165,13 @@ window.OFFICIAL_UPDATES_2026 = {
       "englishName": "",
       "status": "subscribing",
       "subscriptionStart": "",
-      "subscriptionEnd": "",
+      "subscriptionEnd": "2026-06-25 12:00",
       "offerPrice": 75.5,
       "sharesPerLot": 100,
       "totalOfferShares": 16332900,
       "publicOfferSharesBefore": 1633200,
       "publicOfferSharesFinal": 1633200,
-      "estimatedSubscriptionMultiple": null,
+      "estimatedSubscriptionMultiple": 2134.81,
       "applicationSummary": {
         "minShares": 100,
         "minLots": 1,
@@ -10195,13 +10195,13 @@ window.OFFICIAL_UPDATES_2026 = {
       "englishName": "",
       "status": "subscribing",
       "subscriptionStart": "",
-      "subscriptionEnd": "",
+      "subscriptionEnd": "2026-06-24 12:00",
       "offerPrice": 22.6,
       "sharesPerLot": 100,
       "totalOfferShares": 56755400,
       "publicOfferSharesBefore": 5675600,
       "publicOfferSharesFinal": 5675600,
-      "estimatedSubscriptionMultiple": null,
+      "estimatedSubscriptionMultiple": 963.56,
       "applicationSummary": {
         "minShares": 100,
         "minLots": 1,
@@ -10217,7 +10217,7 @@ window.OFFICIAL_UPDATES_2026 = {
         "maxAmountHKD": 64781074.22
       },
       "basisOfAllocation": [],
-      "listDate": "2026-06-29"
+      "listDate": "2026-06-30"
     },
     {
       "stockCode": "02272",
@@ -10246,13 +10246,13 @@ window.OFFICIAL_UPDATES_2026 = {
       "englishName": "",
       "status": "subscribing",
       "subscriptionStart": "",
-      "subscriptionEnd": "",
+      "subscriptionEnd": "2026-06-23 12:00",
       "offerPrice": 85.2,
       "sharesPerLot": 100,
       "totalOfferShares": 54001200,
       "publicOfferSharesBefore": 5400200,
       "publicOfferSharesFinal": 5400200,
-      "estimatedSubscriptionMultiple": null,
+      "estimatedSubscriptionMultiple": 251.73,
       "applicationSummary": {
         "minShares": 100,
         "minLots": 1,
@@ -10276,13 +10276,13 @@ window.OFFICIAL_UPDATES_2026 = {
       "englishName": "",
       "status": "subscribing",
       "subscriptionStart": "",
-      "subscriptionEnd": "",
+      "subscriptionEnd": "2026-06-26 12:00",
       "offerPrice": 99.32,
       "sharesPerLot": 100,
       "totalOfferShares": 46632800,
       "publicOfferSharesBefore": 4663200,
       "publicOfferSharesFinal": 4663200,
-      "estimatedSubscriptionMultiple": null,
+      "estimatedSubscriptionMultiple": 27.57,
       "applicationSummary": {
         "minShares": 100,
         "minLots": 1,
@@ -10298,7 +10298,7 @@ window.OFFICIAL_UPDATES_2026 = {
         "maxAmountHKD": 233909940.95
       },
       "basisOfAllocation": [],
-      "listDate": ""
+      "listDate": "2026-07-02"
     },
     {
       "stockCode": "01191",
@@ -10306,13 +10306,13 @@ window.OFFICIAL_UPDATES_2026 = {
       "englishName": "",
       "status": "subscribing",
       "subscriptionStart": "",
-      "subscriptionEnd": "",
+      "subscriptionEnd": "2026-06-24 12:00",
       "offerPrice": 114.0,
       "sharesPerLot": 50,
       "totalOfferShares": 13431500,
       "publicOfferSharesBefore": 1343100,
       "publicOfferSharesFinal": 1343100,
-      "estimatedSubscriptionMultiple": null,
+      "estimatedSubscriptionMultiple": 1296.89,
       "applicationSummary": {
         "minShares": 50,
         "minLots": 1,
@@ -10328,7 +10328,7 @@ window.OFFICIAL_UPDATES_2026 = {
         "maxAmountHKD": 77328774.32
       },
       "basisOfAllocation": [],
-      "listDate": ""
+      "listDate": "2026-06-29"
     },
     {
       "stockCode": "01688",
@@ -10336,13 +10336,13 @@ window.OFFICIAL_UPDATES_2026 = {
       "englishName": "",
       "status": "subscribing",
       "subscriptionStart": "",
-      "subscriptionEnd": "",
+      "subscriptionEnd": "2026-06-23 12:00",
       "offerPrice": 10.18,
       "sharesPerLot": 660,
       "totalOfferShares": 811811880,
       "publicOfferSharesBefore": 81181320,
       "publicOfferSharesFinal": 81181320,
-      "estimatedSubscriptionMultiple": null,
+      "estimatedSubscriptionMultiple": 96.16,
       "applicationSummary": {
         "minShares": 660,
         "minLots": 1,
@@ -10358,7 +10358,7 @@ window.OFFICIAL_UPDATES_2026 = {
         "maxAmountHKD": 417380171.09
       },
       "basisOfAllocation": [],
-      "listDate": ""
+      "listDate": "2026-06-26"
     },
     {
       "stockCode": "01956",
@@ -10366,13 +10366,13 @@ window.OFFICIAL_UPDATES_2026 = {
       "englishName": "",
       "status": "subscribing",
       "subscriptionStart": "",
-      "subscriptionEnd": "",
+      "subscriptionEnd": "2026-06-23 12:00",
       "offerPrice": 60.7,
       "sharesPerLot": 200,
       "totalOfferShares": 14834600,
       "publicOfferSharesBefore": 741600,
       "publicOfferSharesFinal": 741600,
-      "estimatedSubscriptionMultiple": null,
+      "estimatedSubscriptionMultiple": 5966.78,
       "applicationSummary": {
         "minShares": 200,
         "minLots": 1,
@@ -10388,7 +10388,7 @@ window.OFFICIAL_UPDATES_2026 = {
         "maxAmountHKD": 22734548.74
       },
       "basisOfAllocation": [],
-      "listDate": ""
+      "listDate": "2026-06-27"
     },
     {
       "stockCode": "02672",
@@ -10396,13 +10396,13 @@ window.OFFICIAL_UPDATES_2026 = {
       "englishName": "",
       "status": "subscribing",
       "subscriptionStart": "",
-      "subscriptionEnd": "",
+      "subscriptionEnd": "2026-06-24 12:00",
       "offerPrice": 20.28,
       "sharesPerLot": 200,
       "totalOfferShares": 33344400,
       "publicOfferSharesBefore": 3334400,
       "publicOfferSharesFinal": 3334400,
-      "estimatedSubscriptionMultiple": null,
+      "estimatedSubscriptionMultiple": 242.05,
       "applicationSummary": {
         "minShares": 200,
         "minLots": 1,
@@ -10418,7 +10418,7 @@ window.OFFICIAL_UPDATES_2026 = {
         "maxAmountHKD": 34151798.08
       },
       "basisOfAllocation": [],
-      "listDate": ""
+      "listDate": "2026-06-27"
     },
     {
       "stockCode": "06228",
@@ -10426,13 +10426,13 @@ window.OFFICIAL_UPDATES_2026 = {
       "englishName": "",
       "status": "subscribing",
       "subscriptionStart": "",
-      "subscriptionEnd": "",
+      "subscriptionEnd": "2026-06-23 12:00",
       "offerPrice": 8.0,
       "sharesPerLot": 100,
       "totalOfferShares": null,
       "publicOfferSharesBefore": 8966800,
       "publicOfferSharesFinal": 8966800,
-      "estimatedSubscriptionMultiple": null,
+      "estimatedSubscriptionMultiple": 4.42,
       "applicationSummary": {
         "minShares": 100,
         "minLots": 1,
@@ -10448,7 +10448,7 @@ window.OFFICIAL_UPDATES_2026 = {
         "maxAmountHKD": 120461161.37
       },
       "basisOfAllocation": [],
-      "listDate": ""
+      "listDate": "2026-06-27"
     },
     {
       "stockCode": "06915",
@@ -10456,13 +10456,13 @@ window.OFFICIAL_UPDATES_2026 = {
       "englishName": "",
       "status": "subscribing",
       "subscriptionStart": "",
-      "subscriptionEnd": "",
+      "subscriptionEnd": "2026-06-25 12:00",
       "offerPrice": 13.06,
       "sharesPerLot": 500,
       "totalOfferShares": 36234500,
       "publicOfferSharesBefore": 3623000,
       "publicOfferSharesFinal": 3623000,
-      "estimatedSubscriptionMultiple": null,
+      "estimatedSubscriptionMultiple": 476.56,
       "applicationSummary": {
         "minShares": 500,
         "minLots": 1,
@@ -10478,7 +10478,7 @@ window.OFFICIAL_UPDATES_2026 = {
         "maxAmountHKD": 23896782.85
       },
       "basisOfAllocation": [],
-      "listDate": ""
+      "listDate": "2026-06-30"
     },
     {
       "stockCode": "09630",
@@ -10486,13 +10486,13 @@ window.OFFICIAL_UPDATES_2026 = {
       "englishName": "",
       "status": "subscribing",
       "subscriptionStart": "",
-      "subscriptionEnd": "",
+      "subscriptionEnd": "2026-06-23 12:00",
       "offerPrice": 252.73,
       "sharesPerLot": 50,
       "totalOfferShares": null,
       "publicOfferSharesBefore": 1283900,
       "publicOfferSharesFinal": 1283900,
-      "estimatedSubscriptionMultiple": null,
+      "estimatedSubscriptionMultiple": 1007.22,
       "applicationSummary": {
         "minShares": 50,
         "minLots": 1,
@@ -10508,7 +10508,7 @@ window.OFFICIAL_UPDATES_2026 = {
         "maxAmountHKD": 163876214.14
       },
       "basisOfAllocation": [],
-      "listDate": ""
+      "listDate": "2026-06-26"
     }
   ]
 };

@@ -315,7 +315,7 @@ window.IPO_HISTORY_2026 = [
     "listingMarketCap": null,
     "publicOfferSharesBefore": 672000,
     "publicOfferSharesFinal": 672000,
-    "publicOfferMultiple": null,
+    "publicOfferMultiple": 4571.99,
     "totalApplications": null,
     "successfulApplications": null,
     "mechanism": "主板B",
@@ -346,7 +346,8 @@ window.IPO_HISTORY_2026 = [
     "finalPublicOfferPercent": null,
     "actualOneLotHitRate": null,
     "subscriptionStart": "",
-    "subscriptionEnd": ""
+    "subscriptionEnd": "2026-06-25 12:00",
+    "estimatedSubscriptionMultiple": 4571.99
   },
   {
     "stockCode": "06715",
@@ -361,7 +362,7 @@ window.IPO_HISTORY_2026 = [
     "listingMarketCap": null,
     "publicOfferSharesBefore": 1633200,
     "publicOfferSharesFinal": 1633200,
-    "publicOfferMultiple": null,
+    "publicOfferMultiple": 2134.81,
     "totalApplications": null,
     "successfulApplications": null,
     "mechanism": "主板B",
@@ -392,14 +393,15 @@ window.IPO_HISTORY_2026 = [
     "finalPublicOfferPercent": null,
     "actualOneLotHitRate": null,
     "subscriptionStart": "",
-    "subscriptionEnd": ""
+    "subscriptionEnd": "2026-06-25 12:00",
+    "estimatedSubscriptionMultiple": 2134.81
   },
   {
     "stockCode": "09637",
     "name": "禮邦醫藥－Ｂ",
     "englishName": "",
     "status": "current",
-    "listDate": "2026-06-29",
+    "listDate": "2026-06-30",
     "offerPrice": 22.6,
     "sharesPerLot": 100,
     "totalOfferShares": 56755400,
@@ -407,7 +409,7 @@ window.IPO_HISTORY_2026 = [
     "listingMarketCap": null,
     "publicOfferSharesBefore": 5675600,
     "publicOfferSharesFinal": 5675600,
-    "publicOfferMultiple": null,
+    "publicOfferMultiple": 963.56,
     "totalApplications": null,
     "successfulApplications": null,
     "mechanism": "主板B",
@@ -438,7 +440,8 @@ window.IPO_HISTORY_2026 = [
     "finalPublicOfferPercent": null,
     "actualOneLotHitRate": null,
     "subscriptionStart": "",
-    "subscriptionEnd": ""
+    "subscriptionEnd": "2026-06-24 12:00",
+    "estimatedSubscriptionMultiple": 963.56
   },
   {
     "stockCode": "02272",
@@ -749,7 +752,7 @@ window.IPO_HISTORY_2026 = [
     "stockCode": "03661",
     "name": "聖邦股份",
     "englishName": "",
-    "status": "current",
+    "status": "listed",
     "listDate": "2026-06-26",
     "offerPrice": 85.2,
     "sharesPerLot": 100,
@@ -758,7 +761,7 @@ window.IPO_HISTORY_2026 = [
     "listingMarketCap": null,
     "publicOfferSharesBefore": 5400200,
     "publicOfferSharesFinal": 5400200,
-    "publicOfferMultiple": null,
+    "publicOfferMultiple": 251.73,
     "totalApplications": null,
     "successfulApplications": null,
     "mechanism": "主板B",
@@ -787,9 +790,10 @@ window.IPO_HISTORY_2026 = [
     },
     "basisOfAllocation": [],
     "finalPublicOfferPercent": null,
-    "actualOneLotHitRate": null,
+    "actualOneLotHitRate": 10.0,
     "subscriptionStart": "",
-    "subscriptionEnd": ""
+    "subscriptionEnd": "2026-06-23 12:00",
+    "estimatedSubscriptionMultiple": 251.73
   },
   {
     "stockCode": "06106",
@@ -39996,7 +40000,7 @@ window.IPO_HISTORY_2026 = [
     "name": "安克創新",
     "englishName": "",
     "status": "current",
-    "listDate": "",
+    "listDate": "2026-07-02",
     "offerPrice": 99.32,
     "sharesPerLot": 100,
     "totalOfferShares": 46632800,
@@ -40004,7 +40008,7 @@ window.IPO_HISTORY_2026 = [
     "listingMarketCap": null,
     "publicOfferSharesBefore": 4663200,
     "publicOfferSharesFinal": 4663200,
-    "publicOfferMultiple": null,
+    "publicOfferMultiple": 27.57,
     "totalApplications": null,
     "successfulApplications": null,
     "mechanism": "主板B",
@@ -40035,14 +40039,15 @@ window.IPO_HISTORY_2026 = [
     "finalPublicOfferPercent": null,
     "actualOneLotHitRate": null,
     "subscriptionStart": "",
-    "subscriptionEnd": ""
+    "subscriptionEnd": "2026-06-26 12:00",
+    "estimatedSubscriptionMultiple": 27.57
   },
   {
     "stockCode": "01191",
     "name": "海光芯正",
     "englishName": "",
     "status": "current",
-    "listDate": "",
+    "listDate": "2026-06-29",
     "offerPrice": 114.0,
     "sharesPerLot": 50,
     "totalOfferShares": 13431500,
@@ -40050,7 +40055,7 @@ window.IPO_HISTORY_2026 = [
     "listingMarketCap": null,
     "publicOfferSharesBefore": 1343100,
     "publicOfferSharesFinal": 1343100,
-    "publicOfferMultiple": null,
+    "publicOfferMultiple": 1296.89,
     "totalApplications": null,
     "successfulApplications": null,
     "mechanism": "主板B",
@@ -40081,14 +40086,15 @@ window.IPO_HISTORY_2026 = [
     "finalPublicOfferPercent": null,
     "actualOneLotHitRate": null,
     "subscriptionStart": "",
-    "subscriptionEnd": ""
+    "subscriptionEnd": "2026-06-24 12:00",
+    "estimatedSubscriptionMultiple": 1296.89
   },
   {
     "stockCode": "01688",
     "name": "領益智造",
     "englishName": "",
     "status": "current",
-    "listDate": "",
+    "listDate": "2026-06-26",
     "offerPrice": 10.18,
     "sharesPerLot": 660,
     "totalOfferShares": 811811880,
@@ -40096,7 +40102,7 @@ window.IPO_HISTORY_2026 = [
     "listingMarketCap": null,
     "publicOfferSharesBefore": 81181320,
     "publicOfferSharesFinal": 81181320,
-    "publicOfferMultiple": null,
+    "publicOfferMultiple": 96.16,
     "totalApplications": null,
     "successfulApplications": null,
     "mechanism": "主板B",
@@ -40127,14 +40133,15 @@ window.IPO_HISTORY_2026 = [
     "finalPublicOfferPercent": null,
     "actualOneLotHitRate": null,
     "subscriptionStart": "",
-    "subscriptionEnd": ""
+    "subscriptionEnd": "2026-06-23 12:00",
+    "estimatedSubscriptionMultiple": 96.16
   },
   {
     "stockCode": "01956",
     "name": "中科聞歌",
     "englishName": "",
     "status": "current",
-    "listDate": "",
+    "listDate": "2026-06-27",
     "offerPrice": 60.7,
     "sharesPerLot": 200,
     "totalOfferShares": 14834600,
@@ -40142,7 +40149,7 @@ window.IPO_HISTORY_2026 = [
     "listingMarketCap": null,
     "publicOfferSharesBefore": 741600,
     "publicOfferSharesFinal": 741600,
-    "publicOfferMultiple": null,
+    "publicOfferMultiple": 5966.78,
     "totalApplications": null,
     "successfulApplications": null,
     "mechanism": "主板B",
@@ -40173,14 +40180,15 @@ window.IPO_HISTORY_2026 = [
     "finalPublicOfferPercent": null,
     "actualOneLotHitRate": null,
     "subscriptionStart": "",
-    "subscriptionEnd": ""
+    "subscriptionEnd": "2026-06-23 12:00",
+    "estimatedSubscriptionMultiple": 5966.78
   },
   {
     "stockCode": "02672",
     "name": "白鴿在線",
     "englishName": "",
     "status": "current",
-    "listDate": "",
+    "listDate": "2026-06-27",
     "offerPrice": 20.28,
     "sharesPerLot": 200,
     "totalOfferShares": 33344400,
@@ -40188,7 +40196,7 @@ window.IPO_HISTORY_2026 = [
     "listingMarketCap": null,
     "publicOfferSharesBefore": 3334400,
     "publicOfferSharesFinal": 3334400,
-    "publicOfferMultiple": null,
+    "publicOfferMultiple": 242.05,
     "totalApplications": null,
     "successfulApplications": null,
     "mechanism": "主板B",
@@ -40219,14 +40227,15 @@ window.IPO_HISTORY_2026 = [
     "finalPublicOfferPercent": null,
     "actualOneLotHitRate": null,
     "subscriptionStart": "",
-    "subscriptionEnd": ""
+    "subscriptionEnd": "2026-06-24 12:00",
+    "estimatedSubscriptionMultiple": 242.05
   },
   {
     "stockCode": "06228",
     "name": "MERDEKAGOLD-DRS",
     "englishName": "",
     "status": "current",
-    "listDate": "",
+    "listDate": "2026-06-27",
     "offerPrice": 8.0,
     "sharesPerLot": 100,
     "totalOfferShares": null,
@@ -40234,7 +40243,7 @@ window.IPO_HISTORY_2026 = [
     "listingMarketCap": null,
     "publicOfferSharesBefore": 8966800,
     "publicOfferSharesFinal": 8966800,
-    "publicOfferMultiple": null,
+    "publicOfferMultiple": 4.42,
     "totalApplications": null,
     "successfulApplications": null,
     "mechanism": "主板B",
@@ -40265,14 +40274,15 @@ window.IPO_HISTORY_2026 = [
     "finalPublicOfferPercent": null,
     "actualOneLotHitRate": null,
     "subscriptionStart": "",
-    "subscriptionEnd": ""
+    "subscriptionEnd": "2026-06-23 12:00",
+    "estimatedSubscriptionMultiple": 4.42
   },
   {
     "stockCode": "06915",
     "name": "江西生物",
     "englishName": "",
     "status": "current",
-    "listDate": "",
+    "listDate": "2026-06-30",
     "offerPrice": 13.06,
     "sharesPerLot": 500,
     "totalOfferShares": 36234500,
@@ -40280,7 +40290,7 @@ window.IPO_HISTORY_2026 = [
     "listingMarketCap": null,
     "publicOfferSharesBefore": 3623000,
     "publicOfferSharesFinal": 3623000,
-    "publicOfferMultiple": null,
+    "publicOfferMultiple": 476.56,
     "totalApplications": null,
     "successfulApplications": null,
     "mechanism": "主板B",
@@ -40311,14 +40321,15 @@ window.IPO_HISTORY_2026 = [
     "finalPublicOfferPercent": null,
     "actualOneLotHitRate": null,
     "subscriptionStart": "",
-    "subscriptionEnd": ""
+    "subscriptionEnd": "2026-06-25 12:00",
+    "estimatedSubscriptionMultiple": 476.56
   },
   {
     "stockCode": "09630",
     "name": "芯碁微裝",
     "englishName": "",
-    "status": "current",
-    "listDate": "",
+    "status": "listed",
+    "listDate": "2026-06-26",
     "offerPrice": 252.73,
     "sharesPerLot": 50,
     "totalOfferShares": null,
@@ -40326,7 +40337,7 @@ window.IPO_HISTORY_2026 = [
     "listingMarketCap": null,
     "publicOfferSharesBefore": 1283900,
     "publicOfferSharesFinal": 1283900,
-    "publicOfferMultiple": null,
+    "publicOfferMultiple": 1007.22,
     "totalApplications": null,
     "successfulApplications": null,
     "mechanism": "主板B",
@@ -40355,8 +40366,9 @@ window.IPO_HISTORY_2026 = [
     },
     "basisOfAllocation": [],
     "finalPublicOfferPercent": null,
-    "actualOneLotHitRate": null,
+    "actualOneLotHitRate": 5.0,
     "subscriptionStart": "",
-    "subscriptionEnd": ""
+    "subscriptionEnd": "2026-06-23 12:00",
+    "estimatedSubscriptionMultiple": 1007.22
   }
 ];

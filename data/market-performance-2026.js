@@ -4124,7 +4124,22 @@ window.MARKET_PERFORMANCE_2026 = {
       "turnoverShares": 6299700,
       "turnoverAmount": 673000000,
       "lotGain": 220,
-      "date": "2026-06-24"
+      "date": "2026-06-24",
+      "volume": 6299740
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 101.6,
+      "asOf": "2026-06-30T08:08:05.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 6106.HK",
+        "url": "https://finance.yahoo.com/quote/6106.HK"
+      },
+      "dayHigh": 106.9,
+      "dayLow": 101.6,
+      "volume": 860750,
+      "fiftyTwoWeekHigh": 140.5,
+      "fiftyTwoWeekLow": 101.6
     }
   },
   "06067": {
@@ -4172,7 +4187,22 @@ window.MARKET_PERFORMANCE_2026 = {
       "turnoverShares": 66432100,
       "turnoverAmount": 811999999.9999999,
       "lotGain": 1010,
-      "date": "2026-06-23"
+      "date": "2026-06-23",
+      "volume": 66432145
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 9.9,
+      "asOf": "2026-06-30T08:08:05.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 6067.HK",
+        "url": "https://finance.yahoo.com/quote/6067.HK"
+      },
+      "dayHigh": 10.68,
+      "dayLow": 9.11,
+      "volume": 20805900,
+      "fiftyTwoWeekHigh": 13.41,
+      "fiftyTwoWeekLow": 8.9
     }
   },
   "06132": {
@@ -4219,7 +4249,22 @@ window.MARKET_PERFORMANCE_2026 = {
       "turnoverShares": 8250599.999999999,
       "turnoverAmount": 602000000,
       "lotGain": -4654,
-      "date": "2026-06-23"
+      "date": "2026-06-23",
+      "volume": 8250640
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 35.88,
+      "asOf": "2026-06-30T08:08:05.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 6132.HK",
+        "url": "https://finance.yahoo.com/quote/6132.HK"
+      },
+      "dayHigh": 38.44,
+      "dayLow": 35,
+      "volume": 292300,
+      "fiftyTwoWeekHigh": 82,
+      "fiftyTwoWeekLow": 32
     }
   },
   "02335": {
@@ -4268,6 +4313,180 @@ window.MARKET_PERFORMANCE_2026 = {
       "turnoverAmount": 379000000,
       "lotGain": 3740,
       "date": ""
+    }
+  },
+  "02697": {
+    "firstDay": {
+      "label": "上市首日",
+      "date": "2026-06-30",
+      "source": {
+        "title": "Yahoo Finance 日线 2697.HK",
+        "url": "https://finance.yahoo.com/quote/2697.HK/history"
+      },
+      "open": 327.20001220703125,
+      "high": 424.79998779296875,
+      "low": 326.3999938964844,
+      "close": 400,
+      "volume": 911040
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 400,
+      "asOf": "2026-06-30T08:08:05.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 2697.HK",
+        "url": "https://finance.yahoo.com/quote/2697.HK"
+      },
+      "dayHigh": 424.8,
+      "dayLow": 326.4,
+      "volume": 911140,
+      "fiftyTwoWeekHigh": 424.8,
+      "fiftyTwoWeekLow": 326.4
+    }
+  },
+  "03952": {
+    "firstDay": {
+      "label": "上市首日",
+      "date": "2026-06-30",
+      "source": {
+        "title": "Yahoo Finance 日线 3952.HK",
+        "url": "https://finance.yahoo.com/quote/3952.HK/history"
+      },
+      "open": 88.19999694824219,
+      "high": 98.5999984741211,
+      "low": 73,
+      "close": 73,
+      "volume": 10394900
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 73,
+      "asOf": "2026-06-30T08:08:05.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 3952.HK",
+        "url": "https://finance.yahoo.com/quote/3952.HK"
+      },
+      "dayHigh": 98.6,
+      "dayLow": 73,
+      "volume": 10395000,
+      "fiftyTwoWeekHigh": 98.6,
+      "fiftyTwoWeekLow": 73
+    }
+  },
+  "06715": {
+    "firstDay": {
+      "label": "上市首日",
+      "date": "2026-06-30",
+      "source": {
+        "title": "Yahoo Finance 日线 6715.HK",
+        "url": "https://finance.yahoo.com/quote/6715.HK/history"
+      },
+      "open": 103,
+      "high": 120.19999694824219,
+      "low": 101,
+      "close": 114,
+      "volume": 4944600
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 114,
+      "asOf": "2026-06-30T08:08:05.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 6715.HK",
+        "url": "https://finance.yahoo.com/quote/6715.HK"
+      },
+      "dayHigh": 120.2,
+      "dayLow": 101,
+      "volume": 4944700,
+      "fiftyTwoWeekHigh": 120.2,
+      "fiftyTwoWeekLow": 101
+    }
+  },
+  "09637": {
+    "firstDay": {
+      "label": "上市首日",
+      "date": "2026-06-29",
+      "source": {
+        "title": "Yahoo Finance 日线 9637.HK",
+        "url": "https://finance.yahoo.com/quote/9637.HK/history"
+      },
+      "open": 42,
+      "high": 46,
+      "low": 40.5,
+      "close": 46,
+      "volume": 12782400
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 45.92,
+      "asOf": "2026-06-30T08:08:05.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 9637.HK",
+        "url": "https://finance.yahoo.com/quote/9637.HK"
+      },
+      "dayHigh": 46.82,
+      "dayLow": 44.78,
+      "volume": 2433220,
+      "fiftyTwoWeekHigh": 46.82,
+      "fiftyTwoWeekLow": 40.5
+    }
+  },
+  "02272": {
+    "firstDay": {
+      "label": "上市首日",
+      "date": "2026-06-26",
+      "source": {
+        "title": "Yahoo Finance 日线 2272.HK",
+        "url": "https://finance.yahoo.com/quote/2272.HK/history"
+      },
+      "open": 110.0999984741211,
+      "high": 122.80000305175781,
+      "low": 110.0999984741211,
+      "close": 120.19999694824219,
+      "volume": 2027040
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 115.2,
+      "asOf": "2026-06-30T08:08:05.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 2272.HK",
+        "url": "https://finance.yahoo.com/quote/2272.HK"
+      },
+      "dayHigh": 122.1,
+      "dayLow": 110,
+      "volume": 218520,
+      "fiftyTwoWeekHigh": 122.8,
+      "fiftyTwoWeekLow": 105.1
+    }
+  },
+  "03661": {
+    "firstDay": {
+      "label": "上市首日",
+      "date": "2026-06-26",
+      "source": {
+        "title": "Yahoo Finance 日线 3661.HK",
+        "url": "https://finance.yahoo.com/quote/3661.HK/history"
+      },
+      "open": 105.0999984741211,
+      "high": 133,
+      "low": 102.69999694824219,
+      "close": 125.30000305175781,
+      "volume": 19937780
+    },
+    "currentQuote": {
+      "label": "当前股价",
+      "price": 121.4,
+      "asOf": "2026-06-30T08:08:05.000Z",
+      "source": {
+        "title": "Yahoo Finance 现价 3661.HK",
+        "url": "https://finance.yahoo.com/quote/3661.HK"
+      },
+      "dayHigh": 126.8,
+      "dayLow": 111.5,
+      "volume": 1654004,
+      "fiftyTwoWeekHigh": 142.3,
+      "fiftyTwoWeekLow": 102.7
     }
   }
 };

@@ -10642,6 +10642,25 @@ window.OFFICIAL_UPDATES_2026 = {
         "minShares": 100,
         "minLots": 1
       }
+    },
+    {
+      "stockCode": "06880",
+      "name": "MOMENTA-W",
+      "englishName": "Momenta Global Limited",
+      "status": "subscribing",
+      "subscriptionStart": "2026-06-29 09:00",
+      "subscriptionEnd": "2026-07-03 12:00",
+      "listDate": "2026-07-08",
+      "offerPrice": 295.6,
+      "sharesPerLot": 20,
+      "estimatedSubscriptionMultiple": 39.48,
+      "publicOfferSharesBefore": 1993800,
+      "basisOfAllocation": [],
+      "applicationSummary": {
+        "minAmountHKD": 5971.62,
+        "minShares": 20,
+        "minLots": 1
+      }
     }
   ]
 };

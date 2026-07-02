@@ -45811,5 +45811,30 @@ window.IPO_HISTORY_2026 = [
     ],
     "finalPublicOfferPercent": null,
     "actualOneLotHitRate": 3.0
+  },
+  {
+    "stockCode": "06880",
+    "name": "MOMENTA-W",
+    "englishName": "Momenta Global Limited",
+    "offerPrice": 295.6,
+    "sharesPerLot": 20,
+    "estimatedSubscriptionMultiple": 39.48,
+    "publicOfferMultiple": 39.48,
+    "listDate": "2026-07-08",
+    "status": "current",
+    "subscriptionStart": "2026-06-29 09:00",
+    "subscriptionEnd": "2026-07-03 12:00",
+    "publicOfferSharesBefore": 1993800,
+    "publicOfferSharesFinal": 1993800,
+    "totalOfferShares": 19938300,
+    "listingType": "同股不同權W",
+    "mechanism": "主板B",
+    "applicationSummary": {
+      "minAmountHKD": 5971.62,
+      "minShares": 20,
+      "minLots": 1
+    },
+    "basisOfAllocation": [],
+    "actualOneLotHitRate": null
   }
 ];

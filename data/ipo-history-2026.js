@@ -2038,8 +2038,8 @@ window.IPO_HISTORY_2026 = [
     "basisOfAllocation": [],
     "finalPublicOfferPercent": null,
     "actualOneLotHitRate": null,
-    "subscriptionStart": "",
-    "subscriptionEnd": "2026-06-26 12:00",
+    "subscriptionStart": "2026-06-22 09:00",
+    "subscriptionEnd": "2026-06-29 12:00",
     "estimatedSubscriptionMultiple": 27.57,
     "applicationTiers": [
       {
@@ -2617,8 +2617,8 @@ window.IPO_HISTORY_2026 = [
         "oneLotHitRate": 0.9869
       }
     ],
-    "subscriptionStart": "",
-    "subscriptionEnd": ""
+    "subscriptionStart": "2026-06-20 09:00",
+    "subscriptionEnd": "2026-06-27 12:00"
   },
   {
     "stockCode": "03952",
@@ -2628,7 +2628,7 @@ window.IPO_HISTORY_2026 = [
     "listDate": "2026-06-30",
     "offerPrice": 85.5,
     "sharesPerLot": 100,
-    "totalOfferShares": null,
+    "totalOfferShares": 6720000,
     "marketCap": null,
     "listingMarketCap": null,
     "publicOfferSharesBefore": 672000,
@@ -2663,8 +2663,8 @@ window.IPO_HISTORY_2026 = [
     "basisOfAllocation": [],
     "finalPublicOfferPercent": null,
     "actualOneLotHitRate": null,
-    "subscriptionStart": "",
-    "subscriptionEnd": "2026-06-25 12:00",
+    "subscriptionStart": "2026-06-20 09:00",
+    "subscriptionEnd": "2026-06-27 12:00",
     "estimatedSubscriptionMultiple": 4571.99,
     "applicationTiers": [
       {
@@ -2957,8 +2957,8 @@ window.IPO_HISTORY_2026 = [
     "basisOfAllocation": [],
     "finalPublicOfferPercent": null,
     "actualOneLotHitRate": null,
-    "subscriptionStart": "",
-    "subscriptionEnd": "2026-06-25 12:00",
+    "subscriptionStart": "2026-06-20 09:00",
+    "subscriptionEnd": "2026-06-27 12:00",
     "estimatedSubscriptionMultiple": 2134.81,
     "applicationTiers": [
       {
@@ -3265,8 +3265,8 @@ window.IPO_HISTORY_2026 = [
     "basisOfAllocation": [],
     "finalPublicOfferPercent": null,
     "actualOneLotHitRate": null,
-    "subscriptionStart": "",
-    "subscriptionEnd": "2026-06-24 12:00",
+    "subscriptionStart": "2026-06-20 09:00",
+    "subscriptionEnd": "2026-06-27 12:00",
     "estimatedSubscriptionMultiple": 963.56,
     "applicationTiers": [
       {
@@ -3587,8 +3587,8 @@ window.IPO_HISTORY_2026 = [
     "basisOfAllocation": [],
     "finalPublicOfferPercent": null,
     "actualOneLotHitRate": null,
-    "subscriptionStart": "",
-    "subscriptionEnd": "2026-06-25 12:00",
+    "subscriptionStart": "2026-06-20 09:00",
+    "subscriptionEnd": "2026-06-27 12:00",
     "estimatedSubscriptionMultiple": 476.56,
     "applicationTiers": [
       {
@@ -4170,8 +4170,8 @@ window.IPO_HISTORY_2026 = [
     ],
     "finalPublicOfferPercent": null,
     "actualOneLotHitRate": 4.0,
-    "subscriptionStart": "",
-    "subscriptionEnd": "2026-06-24 12:00",
+    "subscriptionStart": "2026-06-19 09:00",
+    "subscriptionEnd": "2026-06-26 12:00",
     "estimatedSubscriptionMultiple": 1296.89
   },
   {
@@ -4217,8 +4217,8 @@ window.IPO_HISTORY_2026 = [
     "basisOfAllocation": [],
     "finalPublicOfferPercent": null,
     "actualOneLotHitRate": null,
-    "subscriptionStart": "",
-    "subscriptionEnd": "2026-06-23 12:00",
+    "subscriptionStart": "2026-06-17 09:00",
+    "subscriptionEnd": "2026-06-24 12:00",
     "estimatedSubscriptionMultiple": 5966.78,
     "applicationTiers": [
       {
@@ -4476,7 +4476,7 @@ window.IPO_HISTORY_2026 = [
     "basisOfAllocation": [],
     "finalPublicOfferPercent": null,
     "actualOneLotHitRate": null,
-    "subscriptionStart": "",
+    "subscriptionStart": "2026-06-17 09:00",
     "subscriptionEnd": "2026-06-24 12:00",
     "estimatedSubscriptionMultiple": 242.05,
     "applicationTiers": [
@@ -4749,7 +4749,7 @@ window.IPO_HISTORY_2026 = [
     "listDate": "2026-06-27",
     "offerPrice": 8.0,
     "sharesPerLot": 100,
-    "totalOfferShares": null,
+    "totalOfferShares": 89668000,
     "marketCap": null,
     "listingMarketCap": null,
     "publicOfferSharesBefore": 8966800,
@@ -4784,8 +4784,8 @@ window.IPO_HISTORY_2026 = [
     "basisOfAllocation": [],
     "finalPublicOfferPercent": null,
     "actualOneLotHitRate": null,
-    "subscriptionStart": "",
-    "subscriptionEnd": "2026-06-23 12:00",
+    "subscriptionStart": "2026-06-17 09:00",
+    "subscriptionEnd": "2026-06-24 12:00",
     "estimatedSubscriptionMultiple": 4.42,
     "applicationTiers": [
       {
@@ -5365,8 +5365,8 @@ window.IPO_HISTORY_2026 = [
         "oneLotHitRate": 0.8974
       }
     ],
-    "subscriptionStart": "",
-    "subscriptionEnd": ""
+    "subscriptionStart": "2026-06-16 09:00",
+    "subscriptionEnd": "2026-06-23 12:00"
   },
   {
     "stockCode": "03661",
@@ -5655,7 +5655,7 @@ window.IPO_HISTORY_2026 = [
     ],
     "finalPublicOfferPercent": null,
     "actualOneLotHitRate": 10.0,
-    "subscriptionStart": "",
+    "subscriptionStart": "2026-06-16 09:00",
     "subscriptionEnd": "2026-06-23 12:00",
     "estimatedSubscriptionMultiple": 251.73
   },
@@ -5702,7 +5702,7 @@ window.IPO_HISTORY_2026 = [
     "basisOfAllocation": [],
     "finalPublicOfferPercent": null,
     "actualOneLotHitRate": null,
-    "subscriptionStart": "",
+    "subscriptionStart": "2026-06-16 09:00",
     "subscriptionEnd": "2026-06-23 12:00",
     "estimatedSubscriptionMultiple": 96.16,
     "applicationTiers": [
@@ -5989,7 +5989,7 @@ window.IPO_HISTORY_2026 = [
     "listDate": "2026-06-26",
     "offerPrice": 252.73,
     "sharesPerLot": 50,
-    "totalOfferShares": null,
+    "totalOfferShares": 12839000,
     "marketCap": null,
     "listingMarketCap": null,
     "publicOfferSharesBefore": 1283900,
@@ -6340,7 +6340,7 @@ window.IPO_HISTORY_2026 = [
     ],
     "finalPublicOfferPercent": null,
     "actualOneLotHitRate": 3.0009,
-    "subscriptionStart": "",
+    "subscriptionStart": "2026-06-16 09:00",
     "subscriptionEnd": "2026-06-23 12:00",
     "estimatedSubscriptionMultiple": 1007.22
   },
@@ -6520,7 +6520,9 @@ window.IPO_HISTORY_2026 = [
       }
     ],
     "finalPublicOfferPercent": null,
-    "actualOneLotHitRate": 4.9996
+    "actualOneLotHitRate": 4.9996,
+    "subscriptionStart": "2026-06-14 09:00",
+    "subscriptionEnd": "2026-06-21 12:00"
   },
   {
     "stockCode": "06067",
@@ -6853,7 +6855,9 @@ window.IPO_HISTORY_2026 = [
       }
     ],
     "finalPublicOfferPercent": null,
-    "actualOneLotHitRate": 0.0975
+    "actualOneLotHitRate": 0.0975,
+    "subscriptionStart": "2026-06-13 09:00",
+    "subscriptionEnd": "2026-06-20 12:00"
   },
   {
     "stockCode": "06132",
@@ -7442,7 +7446,9 @@ window.IPO_HISTORY_2026 = [
       }
     ],
     "finalPublicOfferPercent": null,
-    "actualOneLotHitRate": 2.0
+    "actualOneLotHitRate": 2.0,
+    "subscriptionStart": "2026-06-13 09:00",
+    "subscriptionEnd": "2026-06-20 12:00"
   },
   {
     "stockCode": "01392",
@@ -11540,7 +11546,9 @@ window.IPO_HISTORY_2026 = [
         "approxPercent": 0.06,
         "rawBasis": "1,000股H股，另523名申請人中的450名獲發額外200股H股"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-05-24 09:00",
+    "subscriptionEnd": "2026-05-31 12:00"
   },
   {
     "stockCode": "03388",
@@ -15345,7 +15353,9 @@ window.IPO_HISTORY_2026 = [
         "expectedShares": 16.748815165876778,
         "rawBasis": "5,275名申請人中1,767名獲配發50股H股股份"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-05-10 09:00",
+    "subscriptionEnd": "2026-05-17 12:00"
   },
   {
     "stockCode": "07688",
@@ -15990,7 +16000,9 @@ window.IPO_HISTORY_2026 = [
         "approxPercent": 0.01,
         "rawBasis": "400股H股股份加上1,118名申請人中541名獲配發額外100股H股股份"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-05-10 09:00",
+    "subscriptionEnd": "2026-05-17 12:00"
   },
   {
     "stockCode": "06871",
@@ -16625,7 +16637,9 @@ window.IPO_HISTORY_2026 = [
         "expectedShares": 105.78244649518948,
         "rawBasis": "100股H股股份加上10,186名申請人中589名獲配發額外100股H股股份"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-05-08 09:00",
+    "subscriptionEnd": "2026-05-15 12:00"
   },
   {
     "stockCode": "07630",
@@ -17308,7 +17322,9 @@ window.IPO_HISTORY_2026 = [
         "displayHitText": "400股 + 840名中572名额外获200股",
         "rawBasis": "400股股份加上840名中572名獲發額外200股股份"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-05-03 09:00",
+    "subscriptionEnd": "2026-05-10 12:00"
   },
   {
     "stockCode": "07666",
@@ -17991,7 +18007,9 @@ window.IPO_HISTORY_2026 = [
         "displayHitText": "1,500股 + 2,536名中1,674名额外获500股",
         "rawBasis": "5,030,500 2,536 1,500΅̋ɪ 2,536 Τʕ1,674 Τᐏ೯ᕘ̮ 500΅ 0.04%"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-05-03 09:00",
+    "subscriptionEnd": "2026-05-10 12:00"
   },
   {
     "stockCode": "01236",
@@ -18581,7 +18599,9 @@ window.IPO_HISTORY_2026 = [
         "approxPercent": 0.01,
         "rawBasis": "1,838 out of 2,600 applicants to receive 200 H Shares"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-05-01 09:00",
+    "subscriptionEnd": "2026-05-08 12:00"
   },
   {
     "stockCode": "01187",
@@ -19119,7 +19139,9 @@ window.IPO_HISTORY_2026 = [
         "approxPercent": 0.15,
         "rawBasis": "2,000 H Shares plus 53 out of 122 applicants to receive an additional 100 H Shares"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-04-26 09:00",
+    "subscriptionEnd": "2026-05-03 12:00"
   },
   {
     "stockCode": "01609",
@@ -19669,7 +19691,9 @@ window.IPO_HISTORY_2026 = [
         "approxPercent": 0.01,
         "rawBasis": "1,806 out of 3,245 to receive 50 Shares"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-04-25 09:00",
+    "subscriptionEnd": "2026-05-02 12:00"
   },
   {
     "stockCode": "06810",
@@ -20219,7 +20243,9 @@ window.IPO_HISTORY_2026 = [
         "approxPercent": 0.02,
         "rawBasis": "400 H Shares"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-04-19 09:00",
+    "subscriptionEnd": "2026-04-26 12:00"
   },
   {
     "stockCode": "01879",
@@ -20721,7 +20747,9 @@ window.IPO_HISTORY_2026 = [
         "approxPercent": 0.02,
         "rawBasis": "60 H Shares plus 836 out of 2,015 applicants to receive an additional 15 H Shares"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-04-18 09:00",
+    "subscriptionEnd": "2026-04-25 12:00"
   },
   {
     "stockCode": "02493",
@@ -21324,7 +21352,9 @@ window.IPO_HISTORY_2026 = [
         "expectedShares": 2200,
         "rawBasis": "2,200股H股股份"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-04-18 09:00",
+    "subscriptionEnd": "2026-04-25 12:00"
   },
   {
     "stockCode": "03296",
@@ -21898,7 +21928,9 @@ window.IPO_HISTORY_2026 = [
         "approxPercent": 0.05,
         "rawBasis": "1,400 H Shares"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-04-13 09:00",
+    "subscriptionEnd": "2026-04-20 12:00"
   },
   {
     "stockCode": "02476",
@@ -22148,7 +22180,9 @@ window.IPO_HISTORY_2026 = [
         "approxPercent": 87.7956,
         "hitRate": 0.877956
       }
-    ]
+    ],
+    "subscriptionStart": "2026-04-11 09:00",
+    "subscriptionEnd": "2026-04-18 12:00"
   },
   {
     "stockCode": "00068",
@@ -22662,7 +22696,9 @@ window.IPO_HISTORY_2026 = [
         "approxPercent": 0.02,
         "rawBasis": "2,000 Shares"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-04-07 09:00",
+    "subscriptionEnd": "2026-04-14 12:00"
   },
   {
     "stockCode": "03277",
@@ -23212,7 +23248,9 @@ window.IPO_HISTORY_2026 = [
         "approxPercent": 0.03,
         "rawBasis": "900 H Shares plus 115 out of 245 applicants to receive an additional 100 H Shares"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-04-07 09:00",
+    "subscriptionEnd": "2026-04-14 12:00"
   },
   {
     "stockCode": "06656",
@@ -23790,7 +23828,9 @@ window.IPO_HISTORY_2026 = [
         "expectedShares": 100,
         "rawBasis": "100股H股股份"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-04-06 09:00",
+    "subscriptionEnd": "2026-04-13 12:00"
   },
   {
     "stockCode": "00664",
@@ -24304,7 +24344,9 @@ window.IPO_HISTORY_2026 = [
         "approxPercent": 2.8,
         "rawBasis": "10,200 Shares plus 10 out of 14 to receive additional 100 Shares"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-03-21 09:00",
+    "subscriptionEnd": "2026-03-28 12:00"
   },
   {
     "stockCode": "03625",
@@ -24830,7 +24872,9 @@ window.IPO_HISTORY_2026 = [
         "approxPercent": 0.08,
         "rawBasis": "200 Shares plus 498 out of 2,044 to receive additional 100 Shares"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-03-21 09:00",
+    "subscriptionEnd": "2026-03-28 12:00"
   },
   {
     "stockCode": "01021",
@@ -25320,7 +25364,9 @@ window.IPO_HISTORY_2026 = [
         "approxPercent": 0.11,
         "rawBasis": "400 H Shares plus 1,589 out of 2,018 applicants to receive an additional 200 H Shares"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-03-20 09:00",
+    "subscriptionEnd": "2026-03-27 12:00"
   },
   {
     "stockCode": "02526",
@@ -25330,7 +25376,7 @@ window.IPO_HISTORY_2026 = [
     "listDate": "2026-03-30",
     "offerPrice": 99,
     "sharesPerLot": 50,
-    "totalOfferShares": null,
+    "totalOfferShares": 7999500,
     "marketCap": null,
     "listingMarketCap": null,
     "publicOfferSharesBefore": 799950,
@@ -25870,7 +25916,9 @@ window.IPO_HISTORY_2026 = [
         "approxPercent": 4.6215,
         "rawBasis": "150 Shares plus 58 out of 360 to receive additional 50 Shares"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-03-20 09:00",
+    "subscriptionEnd": "2026-03-27 12:00"
   },
   {
     "stockCode": "02726",
@@ -26502,7 +26550,9 @@ window.IPO_HISTORY_2026 = [
         "approxPercent": 1.1,
         "rawBasis": "11,800 Shares"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-03-20 09:00",
+    "subscriptionEnd": "2026-03-27 12:00"
   },
   {
     "stockCode": "06636",
@@ -27028,7 +27078,9 @@ window.IPO_HISTORY_2026 = [
         "approxPercent": null,
         "rawBasis": "150 H Shares"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-03-20 09:00",
+    "subscriptionEnd": "2026-03-27 12:00"
   },
   {
     "stockCode": "02632",
@@ -27038,7 +27090,7 @@ window.IPO_HISTORY_2026 = [
     "listDate": "2026-03-24",
     "offerPrice": 44.2,
     "sharesPerLot": 50,
-    "totalOfferShares": null,
+    "totalOfferShares": 16226500,
     "marketCap": null,
     "listingMarketCap": null,
     "publicOfferSharesBefore": 1622650,
@@ -27590,7 +27642,9 @@ window.IPO_HISTORY_2026 = [
         "approxPercent": 0.16,
         "rawBasis": "13,800 H Shares"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-03-14 09:00",
+    "subscriptionEnd": "2026-03-21 12:00"
   },
   {
     "stockCode": "02729",
@@ -28056,7 +28110,9 @@ window.IPO_HISTORY_2026 = [
         "expectedShares": 200,
         "rawBasis": "200股H股股份"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-03-14 09:00",
+    "subscriptionEnd": "2026-03-21 12:00"
   },
   {
     "stockCode": "02701",
@@ -28602,7 +28658,9 @@ window.IPO_HISTORY_2026 = [
         "expectedShares": 23000,
         "rawBasis": "23,000股H股股份"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-03-13 09:00",
+    "subscriptionEnd": "2026-03-20 12:00"
   },
   {
     "stockCode": "03355",
@@ -29313,7 +29371,9 @@ window.IPO_HISTORY_2026 = [
         "expectedShares": 67.0487106017192,
         "rawBasis": "349名申請人中234名獲配發100股H股股份"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-03-13 09:00",
+    "subscriptionEnd": "2026-03-20 12:00"
   },
   {
     "stockCode": "01989",
@@ -29875,7 +29935,9 @@ window.IPO_HISTORY_2026 = [
         "approxPercent": 0.03,
         "rawBasis": "700 shares plus 132 out of 135 applicants to receive an additional 100 shares"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-03-10 09:00",
+    "subscriptionEnd": "2026-03-17 12:00"
   },
   {
     "stockCode": "03268",
@@ -29885,7 +29947,7 @@ window.IPO_HISTORY_2026 = [
     "listDate": "2026-03-10",
     "offerPrice": 28.86,
     "sharesPerLot": 100,
-    "totalOfferShares": null,
+    "totalOfferShares": 35000000,
     "marketCap": null,
     "listingMarketCap": null,
     "publicOfferSharesBefore": 3500000,
@@ -30437,7 +30499,9 @@ window.IPO_HISTORY_2026 = [
         "approxPercent": 0.4,
         "rawBasis": "7,000 Shares"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-02-28 09:00",
+    "subscriptionEnd": "2026-03-07 12:00"
   },
   {
     "stockCode": "02649",
@@ -30963,7 +31027,9 @@ window.IPO_HISTORY_2026 = [
         "approxPercent": 0.01,
         "rawBasis": "1,043 out of 4,075 to receive 500 Shares"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-02-27 09:00",
+    "subscriptionEnd": "2026-03-06 12:00"
   },
   {
     "stockCode": "02692",
@@ -31525,7 +31591,9 @@ window.IPO_HISTORY_2026 = [
         "approxPercent": 0.03,
         "rawBasis": "400 H Shares plus 50 out of 317 applicants to receive an additional 100 H Shares"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-02-27 09:00",
+    "subscriptionEnd": "2026-03-06 12:00"
   },
   {
     "stockCode": "02715",
@@ -32039,7 +32107,9 @@ window.IPO_HISTORY_2026 = [
         "approxPercent": 5.43,
         "rawBasis": "262,600 Shares"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-02-27 09:00",
+    "subscriptionEnd": "2026-03-06 12:00"
   },
   {
     "stockCode": "02706",
@@ -32713,7 +32783,9 @@ window.IPO_HISTORY_2026 = [
         "expectedShares": 165.8221559860904,
         "rawBasis": "2,013名申請人中1,669名獲配發200股H股股份"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-02-03 09:00",
+    "subscriptionEnd": "2026-02-10 12:00"
   },
   {
     "stockCode": "09981",
@@ -32723,7 +32795,7 @@ window.IPO_HISTORY_2026 = [
     "listDate": "2026-02-13",
     "offerPrice": 20.09,
     "sharesPerLot": 200,
-    "totalOfferShares": null,
+    "totalOfferShares": 139990000,
     "marketCap": null,
     "listingMarketCap": null,
     "publicOfferSharesBefore": 13999000,
@@ -33251,7 +33323,9 @@ window.IPO_HISTORY_2026 = [
         "approxPercent": 0.12,
         "rawBasis": "8,400 Shares plus 12 out of 104 to receive additional 200 Shares"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-02-03 09:00",
+    "subscriptionEnd": "2026-02-10 12:00"
   },
   {
     "stockCode": "00470",
@@ -33897,7 +33971,9 @@ window.IPO_HISTORY_2026 = [
         "approxPercent": 0.47,
         "rawBasis": "21,900 Shares"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-02-01 09:00",
+    "subscriptionEnd": "2026-02-08 12:00"
   },
   {
     "stockCode": "00600",
@@ -34420,7 +34496,9 @@ window.IPO_HISTORY_2026 = [
         "expectedShares": 20800,
         "rawBasis": "20,800股H股股份"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-01-31 09:00",
+    "subscriptionEnd": "2026-02-07 12:00"
   },
   {
     "stockCode": "02720",
@@ -34922,7 +35000,9 @@ window.IPO_HISTORY_2026 = [
         "approxPercent": 0.02,
         "rawBasis": "1,001 out of 2,144 applicants to receive 500 shares"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-01-31 09:00",
+    "subscriptionEnd": "2026-02-07 12:00"
   },
   {
     "stockCode": "06809",
@@ -35605,7 +35685,9 @@ window.IPO_HISTORY_2026 = [
         "expectedShares": 1500,
         "rawBasis": "1,500股H股股份"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-01-30 09:00",
+    "subscriptionEnd": "2026-02-06 12:00"
   },
   {
     "stockCode": "02677",
@@ -36107,7 +36189,9 @@ window.IPO_HISTORY_2026 = [
         "approxPercent": 0.01,
         "rawBasis": "1,173 out of 1,757 applicants to receive 50 shares"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-01-27 09:00",
+    "subscriptionEnd": "2026-02-03 12:00"
   },
   {
     "stockCode": "02714",
@@ -36838,7 +36922,9 @@ window.IPO_HISTORY_2026 = [
         "expectedShares": 1322700,
         "rawBasis": "1,322,700股H股股份"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-01-27 09:00",
+    "subscriptionEnd": "2026-02-03 12:00"
   },
   {
     "stockCode": "03200",
@@ -37388,7 +37474,9 @@ window.IPO_HISTORY_2026 = [
         "approxPercent": 0.03,
         "rawBasis": "600 H Shares"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-01-27 09:00",
+    "subscriptionEnd": "2026-02-03 12:00"
   },
   {
     "stockCode": "02768",
@@ -37398,7 +37486,7 @@ window.IPO_HISTORY_2026 = [
     "listDate": "2026-02-04",
     "offerPrice": 36,
     "sharesPerLot": 200,
-    "totalOfferShares": null,
+    "totalOfferShares": 30000000,
     "marketCap": null,
     "listingMarketCap": null,
     "publicOfferSharesBefore": 3000000,
@@ -37962,7 +38050,9 @@ window.IPO_HISTORY_2026 = [
         "approxPercent": 0.02,
         "rawBasis": "200 Shares plus 152 out of 442 to receive additional 200 Shares"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-01-25 09:00",
+    "subscriptionEnd": "2026-02-01 12:00"
   },
   {
     "stockCode": "09980",
@@ -37972,7 +38062,7 @@ window.IPO_HISTORY_2026 = [
     "listDate": "2026-02-03",
     "offerPrice": 248,
     "sharesPerLot": 100,
-    "totalOfferShares": null,
+    "totalOfferShares": 40890000,
     "marketCap": null,
     "listingMarketCap": null,
     "publicOfferSharesBefore": 4089000,
@@ -38566,7 +38656,9 @@ window.IPO_HISTORY_2026 = [
         "approxPercent": 1.04,
         "rawBasis": "21,300 Shares"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-01-24 09:00",
+    "subscriptionEnd": "2026-01-31 12:00"
   },
   {
     "stockCode": "01768",
@@ -38576,7 +38668,7 @@ window.IPO_HISTORY_2026 = [
     "listDate": "2026-01-28",
     "offerPrice": 236.6,
     "sharesPerLot": 100,
-    "totalOfferShares": null,
+    "totalOfferShares": 14102000,
     "marketCap": null,
     "listingMarketCap": null,
     "publicOfferSharesBefore": 1410200,
@@ -39080,7 +39172,9 @@ window.IPO_HISTORY_2026 = [
         "approxPercent": 0.01,
         "rawBasis": "137 out of 387 to receive 100 H Shares"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-01-18 09:00",
+    "subscriptionEnd": "2026-01-25 12:00"
   },
   {
     "stockCode": "09611",
@@ -39090,7 +39184,7 @@ window.IPO_HISTORY_2026 = [
     "listDate": "2026-01-22",
     "offerPrice": 31,
     "sharesPerLot": 100,
-    "totalOfferShares": null,
+    "totalOfferShares": 52260000,
     "marketCap": null,
     "listingMarketCap": null,
     "publicOfferSharesBefore": 5226000,
@@ -39594,7 +39688,9 @@ window.IPO_HISTORY_2026 = [
         "approxPercent": 0.06,
         "rawBasis": "1,400 Shares plus 126 out of 270 to receive additional 100 Shares"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-01-12 09:00",
+    "subscriptionEnd": "2026-01-19 12:00"
   },
   {
     "stockCode": "01641",
@@ -39604,7 +39700,7 @@ window.IPO_HISTORY_2026 = [
     "listDate": "2026-01-13",
     "offerPrice": 12.26,
     "sharesPerLot": 500,
-    "totalOfferShares": null,
+    "totalOfferShares": 23265000,
     "marketCap": null,
     "listingMarketCap": null,
     "publicOfferSharesBefore": 2326500,
@@ -40093,7 +40189,9 @@ window.IPO_HISTORY_2026 = [
         "approxPercent": 0.35,
         "rawBasis": "850 out of 1,628 applicants to receive 500 H Shares"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-01-03 09:00",
+    "subscriptionEnd": "2026-01-10 12:00"
   },
   {
     "stockCode": "03986",
@@ -40815,7 +40913,9 @@ window.IPO_HISTORY_2026 = [
         "expectedShares": 600,
         "rawBasis": "600股H股股份"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-01-03 09:00",
+    "subscriptionEnd": "2026-01-10 12:00"
   },
   {
     "stockCode": "00501",
@@ -40825,7 +40925,7 @@ window.IPO_HISTORY_2026 = [
     "listDate": "2026-01-12",
     "offerPrice": 104.8,
     "sharesPerLot": 100,
-    "totalOfferShares": null,
+    "totalOfferShares": 45800000,
     "marketCap": null,
     "listingMarketCap": null,
     "publicOfferSharesBefore": 4580000,
@@ -41433,7 +41533,9 @@ window.IPO_HISTORY_2026 = [
         "approxPercent": 8.52,
         "rawBasis": "195,200 H Shares"
       }
-    ]
+    ],
+    "subscriptionStart": "2026-01-02 09:00",
+    "subscriptionEnd": "2026-01-09 12:00"
   },
   {
     "stockCode": "00100",
@@ -41627,7 +41729,9 @@ window.IPO_HISTORY_2026 = [
         "expectedShares": 100,
         "rawBasis": "100股H股股份"
       }
-    ]
+    ],
+    "subscriptionStart": "2025-12-30 09:00",
+    "subscriptionEnd": "2026-01-06 12:00"
   },
   {
     "stockCode": "03636",
@@ -41637,7 +41741,7 @@ window.IPO_HISTORY_2026 = [
     "listDate": "2026-01-09",
     "offerPrice": 30,
     "sharesPerLot": 200,
-    "totalOfferShares": null,
+    "totalOfferShares": 36766000,
     "marketCap": null,
     "listingMarketCap": null,
     "publicOfferSharesBefore": 3676600,
@@ -42227,7 +42331,9 @@ window.IPO_HISTORY_2026 = [
         "approxPercent": 0.38,
         "rawBasis": "7,000 H Shares"
       }
-    ]
+    ],
+    "subscriptionStart": "2025-12-30 09:00",
+    "subscriptionEnd": "2026-01-06 12:00"
   },
   {
     "stockCode": "06938",
@@ -42237,7 +42343,7 @@ window.IPO_HISTORY_2026 = [
     "listDate": "2026-01-09",
     "offerPrice": 57.97,
     "sharesPerLot": 200,
-    "totalOfferShares": null,
+    "totalOfferShares": 87,
     "marketCap": null,
     "listingMarketCap": null,
     "publicOfferSharesBefore": null,
@@ -42741,7 +42847,9 @@ window.IPO_HISTORY_2026 = [
         "approxPercent": 0.72,
         "rawBasis": "9,800 Shares plus 10 out of 34 to receive additional 200 Shares"
       }
-    ]
+    ],
+    "subscriptionStart": "2025-12-30 09:00",
+    "subscriptionEnd": "2026-01-06 12:00"
   },
   {
     "stockCode": "02513",
@@ -43345,7 +43453,9 @@ window.IPO_HISTORY_2026 = [
         "approxPercent": 0.14,
         "rawBasis": "1,300 H Shares"
       }
-    ]
+    ],
+    "subscriptionStart": "2025-12-29 09:00",
+    "subscriptionEnd": "2026-01-05 12:00"
   },
   {
     "stockCode": "02675",
@@ -43883,7 +43993,9 @@ window.IPO_HISTORY_2026 = [
         "approxPercent": 0.04,
         "rawBasis": "400 H Shares plus 274 out of 285 applicants to receive an additional 100 H Shares"
       }
-    ]
+    ],
+    "subscriptionStart": "2025-12-29 09:00",
+    "subscriptionEnd": "2026-01-05 12:00"
   },
   {
     "stockCode": "09903",
@@ -44614,7 +44726,9 @@ window.IPO_HISTORY_2026 = [
         "expectedShares": 160.71428571428572,
         "rawBasis": "100股H股股份加上84名申請人中51名獲配發額外100股H股股份"
       }
-    ]
+    ],
+    "subscriptionStart": "2025-12-29 09:00",
+    "subscriptionEnd": "2026-01-05 12:00"
   },
   {
     "stockCode": "06082",
@@ -45231,7 +45345,9 @@ window.IPO_HISTORY_2026 = [
     ],
     "actualOneLotHitRate": 5.0,
     "finalPublicOfferPercent": 20,
-    "marketCap": 46964181320
+    "marketCap": 46964181320,
+    "subscriptionStart": "2025-12-23 09:00",
+    "subscriptionEnd": "2025-12-30 12:00"
   },
   {
     "stockCode": "02335",
